@@ -1,0 +1,60 @@
+<svg viewBox="0 0 700 880" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif" role="img" aria-labelledby="mlt mld">
+  <title id="mlt">The modal ladder</title>
+  <desc id="mld">A vertical diagram ascending from the primordial opposition of nothing against unity, through continuity, cohesion, and elasticity, to solidity and exceptional geometry, with each rung produced by Aufhebung.</desc>
+  <defs>
+    <marker id="arrUp" viewBox="0 0 10 10" refX="5" refY="3" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 10 L 5 0 L 10 10 z" fill="#888780"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="700" height="880" fill="#FFFFFF"/>
+  <text x="350" y="42" text-anchor="middle" font-size="24" fill="#2C2C2A">The modal ladder</text>
+  <text x="350" y="66" text-anchor="middle" font-size="14" fill="#5F5E5A" font-style="italic">forced fecundity — from the primordial bit to exceptional geometry</text>
+
+  <g transform="translate(0,70)">
+    <line x1="282" y1="715" x2="172" y2="105" stroke="#AFA9EC" stroke-width="1.5"/>
+    <line x1="418" y1="715" x2="528" y2="105" stroke="#AFA9EC" stroke-width="1.5"/>
+
+    <rect x="180" y="80" width="340" height="60" rx="6" fill="#E1F5EE" stroke="#0F6E56"/>
+    <text x="350" y="105" text-anchor="middle" font-size="16" fill="#085041">exceptional geometry</text>
+    <text x="350" y="126" text-anchor="middle" font-size="12" fill="#0F6E56">rheonomy · super Cartan geometry · 11d supergravity</text>
+
+    <rect x="210" y="170" width="280" height="56" rx="6" fill="#EEEDFE" stroke="#534AB7"/>
+    <text x="350" y="193" text-anchor="middle" font-size="16" fill="#3C3489">⇉ ⊣ ⇝</text>
+    <text x="350" y="213" text-anchor="middle" font-size="12" fill="#534AB7">solidity — supergeometry</text>
+
+    <rect x="230" y="290" width="240" height="56" rx="6" fill="#EEEDFE" stroke="#534AB7"/>
+    <text x="350" y="313" text-anchor="middle" font-size="16" fill="#3C3489">ℜ ⊣ ℑ ⊣ &amp;</text>
+    <text x="350" y="333" text-anchor="middle" font-size="12" fill="#534AB7">elasticity — differential structure</text>
+
+    <rect x="250" y="410" width="200" height="56" rx="6" fill="#EEEDFE" stroke="#534AB7"/>
+    <text x="350" y="433" text-anchor="middle" font-size="16" fill="#3C3489">ʃ ⊣ ♭</text>
+    <text x="350" y="453" text-anchor="middle" font-size="12" fill="#534AB7">cohesion — shape and space</text>
+
+    <rect x="270" y="530" width="160" height="56" rx="6" fill="#EEEDFE" stroke="#534AB7"/>
+    <text x="350" y="553" text-anchor="middle" font-size="16" fill="#3C3489">♭ ⊣ ♯</text>
+    <text x="350" y="573" text-anchor="middle" font-size="12" fill="#534AB7">continuity as such</text>
+
+    <rect x="290" y="650" width="120" height="56" rx="6" fill="#EEEDFE" stroke="#534AB7"/>
+    <text x="350" y="673" text-anchor="middle" font-size="16" fill="#3C3489">∅ ⊣ ∗</text>
+    <text x="350" y="693" text-anchor="middle" font-size="12" fill="#534AB7">the primordial bit</text>
+
+    <line x1="350" y1="644" x2="350" y2="592" stroke="#888780" stroke-width="1.5" marker-end="url(#arrUp)"/>
+    <line x1="350" y1="524" x2="350" y2="472" stroke="#888780" stroke-width="1.5" marker-end="url(#arrUp)"/>
+    <line x1="350" y1="404" x2="350" y2="352" stroke="#888780" stroke-width="1.5" marker-end="url(#arrUp)"/>
+    <line x1="350" y1="284" x2="350" y2="232" stroke="#888780" stroke-width="1.5" marker-end="url(#arrUp)"/>
+    <line x1="350" y1="164" x2="350" y2="146" stroke="#888780" stroke-width="1.5" marker-end="url(#arrUp)"/>
+
+    <text x="368" y="384" font-size="12" fill="#5F5E5A" font-style="italic">Aufhebung</text>
+
+    <text x="150" y="202" text-anchor="end" font-size="12" fill="#888780">solid</text>
+    <text x="150" y="322" text-anchor="end" font-size="12" fill="#888780">elastic</text>
+    <text x="150" y="442" text-anchor="end" font-size="12" fill="#888780">cohesive</text>
+    <text x="150" y="562" text-anchor="end" font-size="12" fill="#888780">continuous</text>
+    <text x="150" y="682" text-anchor="end" font-size="12" fill="#888780">distinct</text>
+
+    <text x="350" y="738" text-anchor="middle" font-size="12" fill="#5F5E5A">nothing against unity — no choice made, none available</text>
+    <text x="350" y="758" text-anchor="middle" font-size="12" fill="#888780">each rung: the previous opposition, resolved and preserved</text>
+  </g>
+
+  <text x="350" y="862" text-anchor="middle" font-size="12" fill="#888780" font-style="italic">it from bit, transformationally — after Lawvere, Schreiber, Wheeler</text>
+</svg>
