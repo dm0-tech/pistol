@@ -21,6 +21,10 @@ Bayes' rule; then He drew His pistol."*
   (roadmap §4.3, graded).
 - [`spec/NOTATION.md`](spec/NOTATION.md) — the notation and conventions
   register (proposed; freezes on plan approval).
+- [`notes/bootstrap-stones.md`](notes/bootstrap-stones.md) — Wheeler's
+  self-reference exhortation (primary-sourced) and the catalogue of
+  self-referential/bootstrap structures to cross-reference against the
+  Aufhebung/rheonomy and Thread P threads.
 
 ## Where things stand
 

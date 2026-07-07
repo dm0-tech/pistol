@@ -53,3 +53,21 @@ provisional until the Phase 0 spec exists to grade them against.*
 - **OP-12. The exceptional Jordan algebra's other face.** What, if anything,
   does its possibility-calculus correspond to on the geometric side of the
   summit? *Grade: open. Thread P4.*
+
+## Wheeler / self-reference (from `notes/bootstrap-stones.md`)
+
+- **OP-13. The Löb question.** Does the "later" modality ▷ (topos of trees,
+  guarded recursion) occupy a definite position relative to a cohesion
+  ladder? Can Löb induction be consistently adjoined to cohesive HoTT, and
+  does any of ♭, ♯, ʃ validate or refute a Löb-type axiom? Includes the
+  "modal Lawvere theorem" sub-question: which modalities preserve/reflect
+  point-surjectivity. Wheeler's 1989 agenda item Four cites the GL
+  literature directly, so this is his exhortation transcribed into our
+  setting. *Grade: conjectural. Cross-references the Aufhebung thread;
+  candidate Phase 2 side-quest.*
+- **OP-14. Wheeler's clue as a theorem.** State Kheyfets–Wheeler's
+  "all law from no law" via ∂∂ = 0 as the theorem it wants to be: the
+  brane-scan cocycle conditions (Baez–Huerta; Schreiber's L∞ formulation)
+  as the nontrivial solutions of d² = 0 constraints on super-Minkowski
+  Chevalley–Eilenberg algebras. *Grade: conjectural. Feeds the Phase 1
+  essay and Phase 4; cross-references OP-5, OP-11.*
