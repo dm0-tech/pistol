@@ -29,7 +29,12 @@ Bayes' rule; then He drew His pistol."*
 ## Where things stand
 
 Phase 0 is planned and awaiting review. The plan resolves the notation
-decisions (N1–N4) against a July 2026 audit of the sources, fixes the formal
-toolchain (Agda 2.8.0 `--cohesion` on agda-unimath, N6), and scopes the
-remaining deliverables: spec rungs 0–1, the three-track text draft, the
-Sierpiński explorer, and the Agda toy theorem.
+decisions (N1–N4) against a July 2026 audit of the sources and scopes the
+deliverables: spec rungs 0–1, the three-track text draft, the Sierpiński
+explorer, executable examples for the finite models, and a red-leg review at
+phase exit. Proof-assistant work is descoped (roadmap draft 1.2, decision
+N6): the July 2026 toolchain survey showed Agda's `--cohesion` is a bolt-on
+(no native ♯, no ʃ, infective flags), so proofs stay pen-and-paper — kept
+honest by being written self-evidently clearly, by computing every
+finite-model claim, and by adversarial review. Formalization frameworks stay
+on a watch list for the Phase 2 gate.

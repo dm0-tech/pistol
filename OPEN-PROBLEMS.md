@@ -9,11 +9,14 @@ provisional until the Phase 0 spec exists to grade them against.*
 
 - **OP-1. Internal universes for ♭.** Licata–Orton–Pitts–Spitters show a no-go
   for naive internal universes in models with ♭; workarounds exist. What is
-  the precise statement of the obstruction as it applies to our Agda skeleton?
-  *Grade: established (the no-go); open (best workaround for us). Informs P0.5, Phase 1.*
+  the precise statement of the obstruction? *Grade: established (the no-go);
+  open (best workaround). Watch item since the draft-1.2 formalization
+  descope — relevant again only if formalization is readopted at the Phase 2
+  gate.*
 - **OP-2. Substitution-stability for the elastic modalities.** ℜ, ℑ, & as
   type-formers: which have a known judgmental discipline, which don't?
-  *Grade: open. Blocks any Phase 3 formalization; Phase 2 framework decision.*
+  *Grade: open. Watch item (see OP-1); part of the Phase 2 framework
+  re-assessment.*
 - **OP-3. Is Aufhebung statable internally?** Or is it irreducibly
   external/2-categorical (mode-theory-level)? *Grade: open. Central to Phase 2.*
 - **OP-4. The fermionic modality ⇉ in existing syntax.** Does any current

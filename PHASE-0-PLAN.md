@@ -2,6 +2,13 @@
 
 *Status: draft for review. Derived from `objective-logic-roadmap.md` §6 (Phase 0) and §8 (immediate next actions).*
 
+*Revision (July 2026): formalization descoped from proof-assistant work to
+executable examples, per the toolchain survey's findings and the project
+owner's call. Proof integrity now rests on three legs: full pen-and-paper
+proofs in the spec, adversarial red-leg review before any exit criterion is
+declared met, and the educational discipline that proofs must be written to
+be self-evidently clear. See N6 and §Honesty mechanism.*
+
 ## Objective
 
 Produce the canonical spec that every later artifact must agree with, plus the
@@ -15,12 +22,13 @@ in weeks not months.
 
 | ID | Deliverable | Description | Acceptance test |
 |---|---|---|---|
-| P0.1 | `spec/NOTATION.md` | The frozen notation and conventions register: every modal operator, adjunction ordering, and diagram convention, each with the source it follows and the alternatives rejected | Zero notational choices left implicit; every symbol machine-typeable (Unicode) and used consistently by P0.2–P0.4 |
+| P0.1 | `spec/NOTATION.md` | The frozen notation and conventions register: every modal operator, adjunction ordering, and diagram convention, each with the source it follows and the alternatives rejected | Zero notational choices left implicit; every symbol machine-typeable (Unicode) and used consistently by P0.2–P0.5 |
 | P0.2 | `spec/` rungs 0–1 | Precise statement of levels 0 (∅ ⊣ ∗) and 1 (♭ ⊣ ♯): definitions, the Sierpiński topos and sSet worked in full, Aufhebung relation between the rungs stated exactly, every claim graded established/claimed/conjectural | A category-theory-literate reader can verify every proof by hand; the two small models are computed, not sketched |
 | P0.3 | `text/` rungs 0–1 draft | D2 treatment of rungs 0–1 in the three-track format (roadmap §3): dialectical motivation, categorical definition, small models, payoff | Track A readable standalone; Track A asserts nothing Track B doesn't prove |
 | P0.4 | `explorer/` Sierpiński explorer prototype | Single-file React artifact: objects of Set^→ as clickable function-of-sets diagrams; apply ♭, ♯, ∅, ∗ and watch the images; exhibit the first Aufhebung | A reader who knows only "a function between two sets" can click through discreteness vs codiscreteness |
-| P0.5 | `formal/` Agda toolchain check | Agda skeleton against agda-unimath's `modal-type-theory` namespace; one toy theorem through `--cohesion` end to end | The toy theorem type-checks in CI; a written note records what the toolchain can and cannot express |
+| P0.5 | `examples/` executable examples | Plain-code computations (no proof assistant) that machine-*compute* the spec's model claims: the modal operators, their images, and the Aufhebung check ♯∅ ≃ ∅ over the Sierpiński topos and small finite graph models — feasible because these models are finite | Every concrete computation asserted in P0.2's model sections is reproduced by a script; any mismatch is a spec bug filed before exit |
 | P0.6 | `OPEN-PROBLEMS.md` | The maintained open-problems list, seeded from roadmap §4.3, each item graded and with its blocking relationship to phases noted | Every §4.3 seed item captured; format supports public issue-style tracking |
+| P0.7 | Red-leg review | A fresh-context, authorship-blind adversarial review of the P0.2 spec sections and P0.3 text before the exit criterion is declared met (protocol per §Honesty mechanism) | Review memo produced; every Break fixed; Underpriced items dispositioned; Preferences recorded |
 
 ## Work breakdown and order
 
@@ -28,9 +36,9 @@ Dependencies run left to right; items on the same line can proceed in parallel.
 
 ```
 P0.1 (notation freeze)
-  ├─► P0.2 (spec rungs 0–1) ──► P0.3 (text rungs 0–1)
+  ├─► P0.2 (spec rungs 0–1) ──► P0.3 (text rungs 0–1) ──► P0.7 (red leg)
   ├─► P0.4 (explorer)            [P0.4 needs only rung-0/1 notation]
-  └─► P0.5 (Agda skeleton)       [independent of P0.2 content]
+  └─► P0.5 (examples)            [tracks P0.2's model sections as they land]
 P0.6 (open problems) — anytime; finalize after P0.2 so gradings are informed
 ```
 
@@ -38,9 +46,9 @@ P0.6 (open problems) — anytime; finalize after P0.2 so gradings are informed
    shape symbol (ʃ vs ∫ vs Π), infinitesimal-flat symbol (& vs ♭-variant),
    super-rung symbols (⇉/⇝), Aufhebung notation, adjunction ordering
    conventions, and the grading vocabulary (established / claimed /
-   conjectural). Research inputs: notation audit across nLab, dcct, Shulman
-   2018, Myers, agda-unimath, and current Sati–Schreiber papers (in flight,
-   see §Decision register).
+   conjectural). Research inputs: the July 2026 notation audit across nLab,
+   dcct, Shulman 2018, Myers, agda-unimath, and current Schreiber-school
+   papers (complete; resolutions in §Decision register).
 2. **Spec rungs 0–1 (P0.2, the bulk of the phase).** Level 0: initial/terminal
    opposition in an arbitrary topos, the subobject-classifier remark from
    roadmap §1.1 stated precisely. Level 1: ♭ ⊣ ♯ over Set^→ (Sierpiński) and
@@ -50,13 +58,39 @@ P0.6 (open problems) — anytime; finalize after P0.2 so gradings are informed
 3. **Explorer prototype (P0.4, parallel).** Single-file React artifact, zero
    infrastructure, per roadmap §5. Scope strictly to Sierpiński: objects,
    the four modal images, the Aufhebung click-through.
-4. **Agda skeleton (P0.5, parallel).** Confirm the `--cohesion` toolchain does
-   what Phase 1 needs *before* Phase 1 depends on it. Output is a go/no-go
-   note, not a library.
+4. **Executable examples (P0.5, parallel).** Ordinary code, not a proof
+   assistant: objects of Set^→ and small graph categories are finite data, so
+   the functors ♭, ♯, ʃ (where defined) and the Aufhebung condition are
+   directly computable. Each model computation in the spec gets a script that
+   reproduces it. Natural home: the same code that powers the explorer
+   (P0.4), factored so the mathematical core is shared.
 5. **Text draft (P0.3).** Written after P0.2 stabilizes; the three-track
    discipline is cheaper to apply to settled mathematics.
 6. **Open-problems list (P0.6).** Transcribe §4.3 seeds early; grade and
    cross-link after P0.2.
+7. **Red leg (P0.7, last).** Dispatched as a fresh subagent (or separate
+   session) that receives only the artifacts, never the authoring rationale.
+   Gate for declaring the phase done.
+
+## Honesty mechanism
+
+With machine-checked proof descoped, the spec's claims are kept honest by
+three reinforcing disciplines:
+
+1. **Proofs written to be checkable.** The P0.2 acceptance test stands: a
+   category-literate reader can verify every proof by hand, no "clearly".
+   The educational goal and the honesty goal are the same artifact — a proof
+   that isn't self-evidently clear fails *both*.
+2. **Executable examples (P0.5).** Everything the spec asserts about a
+   finite model is computed, not trusted. This catches the class of error
+   proof assistants catch cheapest — wrong concrete calculations — without
+   the type-theory overhead.
+3. **Red legs (P0.7).** Fresh-context, authorship-blind adversarial review
+   before any phase exit, per the memo format: **Break** (contradiction or
+   wrong proof — blocks exit), **Underpriced** (claim's grade or evidence
+   doesn't justify it — fixed before exit), **Preference** (recorded, never
+   blocks). The reviewer reconstructs the justification from the artifacts
+   alone; where they cannot, that is itself a finding.
 
 ## Decision register (Phase 0)
 
@@ -71,48 +105,51 @@ approval:
 | N3 | Super-rung symbols | ⇉ ⊣ ⇝ vs current Sati–Schreiber usage | **⇉ ⊣ ⇝ ⊣ Rh** (fermionic ⊣ bosonic ⊣ rheonomic) per dcct/nLab/Myers–Riley; the GSS decorator form X^⇝ (bosonic body) admitted as derived notation |
 | N4 | Aufhebung notation | Lawvere's level notation vs explicit ⊣-diagrams | **nLab convention:** oppositions □ ⊣ ◯ with unity transform □X → X → ◯X; levels i ≺ j; "j resolves i" as i ≪ j (◯ⱼ□ᵢ = □ᵢ); Aufhebung of level i written ī |
 | N5 | Spec source format | Markdown with Unicode vs LaTeX | Markdown-first (repo-native, diffable, nLab-compatible); LaTeX only if a rung's diagrams defeat it. All frozen symbols are single Unicode codepoints, so this is compatible with N1–N3 |
-| N6 | Formal toolchain for rungs 1–2 | Agda `--cohesion` on agda-unimath vs standalone Agda vs wait for Narya | **Agda 2.8.0 with `--cohesion --flat-split`, building on agda-unimath's `modal-type-theory` namespace, pinned to a release tag.** Rationale and red flags in §Toolchain findings below. Narya watched, not adopted (its multimodal support is aspirational as of 2026); mitten remains a preorder-mode-theory prototype |
+| N6 | Formalization level | Proof-assistant cores (Agda `--cohesion`) vs executable examples vs nothing | **Executable examples only; no proof-assistant dependency.** Revised July 2026, superseding the initial Agda resolution. The toolchain survey showed `--cohesion` is a bolt-on: no native ♯ in any released Agda (postulates until 2.9.0), no ʃ at all, infective flags, dormant upstream. Rather than build on postulates, proofs stay pen-and-paper and honesty comes from the three-leg mechanism (§Honesty mechanism). Proof assistants (Agda 2.9.0, Narya, MTT) stay on the watch list — OP-1/OP-2 remain open as *watch items*, and the roadmap's Phase 2 framework decision becomes "re-assess with evidence, adopt only if the gymnastics have disappeared" |
 | N7 | Explorer stack | Single-file React (roadmap §5) | Adopted as stated; no build infrastructure in Phase 0 |
 
-## Toolchain findings (July 2026 survey)
+## Toolchain findings (July 2026 survey) — the evidence behind N6
 
-Facts the P0.5 toy theorem is scoped around:
+Retained as the record of why proof-assistant work was descoped:
 
 - Agda 2.8.0 (current stable) provides crisp variables (`@♭`) and, with
   `--flat-split`, crisp induction. **♯ is not a native type former** in any
-  released Agda — agda-unimath postulates it (self-declared unstable) and
-  proves e.g. ♭(♯A) ≃ ♭A from the postulates. Native `@♯` lands in the
-  unreleased 2.9.0. **ʃ does not exist at all** and would be fully axiomatic.
+  released Agda — agda-unimath postulates it (self-declared unstable).
+  Native `@♯` lands only in the unreleased 2.9.0. **ʃ does not exist at all**
+  and would be fully axiomatic.
 - `--cohesion` is infective (propagates to importing modules) — an
   architectural choice, not a local one. Cubical + cohesion don't mix yet
   (crisp matching may not compute).
-- agda-unimath's `modal-type-theory` namespace has the crisp/♭ infrastructure
-  and the postulated ♭ ⊣ ♯ adjunction, but has been essentially dormant since
-  late 2024; expect to upstream fixes.
-- **P0.5 toy theorem, concretely:** (1) with no postulates, the ♭ idempotent
-  comonad package — counit, ♭♭A ≃ ♭A, functoriality, crisp identity
-  induction, ♭(A × B) ≃ ♭A × ♭B; (2) with agda-unimath's postulated ♯,
-  reprove ♭(♯A) ≃ ♭A, using upstream as the oracle.
-- For Thread P (later): Lean/Mathlib now has `Stoch` as a Markov category —
-  the Phase 2 framework decision should weigh this.
+- agda-unimath's `modal-type-theory` namespace has been essentially dormant
+  since late 2024.
+- Net: rung-2 formalization today means building on unstable postulates with
+  hand-crafted judgmental structure — exactly the "applied type theory
+  gymnastics" the roadmap's corner-avoidance principles warn about. The
+  ladder's mathematics is topos-theoretic (semantics is the spine); the
+  finite models are computable without any of this machinery.
+- Watch list for re-assessment (Phase 2): Agda 2.9.0's native `@♯`; Narya's
+  multimodal roadmap; MTT implementations. For Thread P (later): Lean/Mathlib
+  now has `Stoch` as a Markov category — relevant if Thread P ever wants a
+  machine-checked synthetic-probability result.
 
-## Roadmap errata (fold into next D1 iteration)
+## Roadmap errata — discharged in draft 1.2
 
-The notation audit surfaced two errors in `objective-logic-roadmap.md`:
+The notation audit surfaced two errors in `objective-logic-roadmap.md`, both
+now corrected in the draft-1.2 iteration (kept here as the record):
 
-1. **Rung-4 labels (§1 table):** the roadmap writes "⇉ ⊣ ⇝ (fermionic ⊣
+1. **Rung-4 labels (§1 table):** draft 1.1 wrote "⇉ ⊣ ⇝ (fermionic ⊣
    rheonomic)". Per dcct/nLab, ⇝ is the *bosonic* modality; the rheonomy
    modality is Rh, the third member of ⇉ ⊣ ⇝ ⊣ Rh. Physical super-fields are
-   modal types for Rh, not ⇝.
+   modal types for Rh, not ⇝. Corrected.
 2. **Attribution (§6 Phase 0 sources, Appendix):** *Commuting Cohesions*
    (arXiv:2301.13780) is by **Myers–Riley**, not Sati–Schreiber (Schreiber is
-   acknowledged, not an author).
+   acknowledged, not an author). Corrected.
 
 ## Out of scope for Phase 0
 
-Rungs 2–4 spec content; any Agda work beyond the toy theorem; the §1.1 Wheeler
-essay (Phase 1); all of Thread P (enters after Phase 1); site/static
-infrastructure for the explorer.
+Rungs 2–4 spec content; all proof-assistant work (descoped per N6; watch-list
+only); the §1.1 Wheeler essay (Phase 1); all of Thread P (enters after Phase
+1); site/static infrastructure for the explorer.
 
 ## Risks specific to this phase
 
@@ -122,9 +159,13 @@ infrastructure for the explorer.
 - **Notation churn after the freeze.** Mitigation: N1–N4 are resolved against
   the audit of what sources actually use, and the spec records the rejected
   alternatives so the question doesn't reopen.
-- **Agda toolchain surprises.** If `--cohesion` can't express the toy theorem,
-  that is a Phase 0 *result* (roadmap §4.2(4): the obstruction is a
-  first-class output), recorded in P0.5's note and `OPEN-PROBLEMS.md`.
+- **Prose proofs drifting from rigor without a type-checker backstop.** This
+  is the risk the descoping buys. Mitigation is the three-leg honesty
+  mechanism, and one structural rule: any spec claim about a *finite* model
+  must have a P0.5 script — no concrete assertion rests on prose alone.
+- **Red leg run by the author in disguise.** A review that shares the
+  authoring context grades its own homework. Mitigation: the reviewer gets
+  file paths and the memo format, never the rationale or this plan's history.
 
 ## Proposed repo layout after Phase 0
 
@@ -143,7 +184,9 @@ pistol/
 │   └── rung-0-1-draft.md           # P0.3 — three-track exposition
 ├── explorer/
 │   └── sierpinski.html             # P0.4 — single-file artifact
-└── formal/
-    ├── README.md                   # P0.5 — toolchain go/no-go note
-    └── ...                         # Agda skeleton
+├── examples/
+│   ├── README.md                   # P0.5 — what each script verifies
+│   └── ...                         # plain-code model computations
+└── reviews/
+    └── phase-0-red-leg.md          # P0.7 — memo + triage
 ```
