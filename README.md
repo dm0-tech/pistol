@@ -24,6 +24,11 @@ Bayes' rule; then He drew His pistol."*
 - [`spec/00-level-0.md`](spec/00-level-0.md) — Level 0: the opposition
   ∅ ⊣ ∗, with the Sierpiński and truncated-sSet models worked in full and a
   claim ledger for the examples scripts.
+- [`spec/01-level-1.md`](spec/01-level-1.md) — Level 1: ♭ ⊣ ♯ via one
+  general theorem for presheaf sites with a terminal object; the complete
+  level lattice of the Sierpiński topos (a diamond); and the finding that
+  the Aufhebung of level 0 is model-dependent — it fails in 𝒮 (the
+  obstruction is the site's pointless representable) and holds in sSet.
 - [`notes/bootstrap-stones.md`](notes/bootstrap-stones.md) — Wheeler's
   self-reference exhortation (primary-sourced) and the catalogue of
   self-referential/bootstrap structures to cross-reference against the

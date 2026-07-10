@@ -57,6 +57,19 @@ provisional until the Phase 0 spec exists to grade them against.*
   does its possibility-calculus correspond to on the geometric side of the
   summit? *Grade: open. Thread P4.*
 
+## Spec-internal
+
+- **OP-15. The resolution-clause fork.** The frozen D0.4 defines i ≪ j by
+  the single clause ◯ⱼ□ᵢ ≅ □ᵢ; some sources add the companion □ⱼ◯ᵢ ≅ ◯ᵢ.
+  The two definitions give *different Aufhebung answers in the Sierpiński
+  topos* (`spec/01-level-1.md` §5.4: 0̄ = open level vs 0̄ = maximal level),
+  though they agree in sSet. To resolve: check Lawvere's "way above"
+  relation in Kelly–Lawvere 1989 and the Marmolejo–Menni Aufhebung papers,
+  and verify the cited classification of sSet levels as skeleta (used by
+  Prop 1.12). Must be settled before the level-2 file freezes its Aufhebung
+  statements; a notation erratum to D0.4 may result. *Grade: open. Blocks
+  part of P0.2's level-2 successor; red-leg attention requested.*
+
 ## Wheeler / self-reference (from `notes/bootstrap-stones.md`)
 
 - **OP-13. The Löb question.** Does the "later" modality ▷ (topos of trees,
