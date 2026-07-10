@@ -26,9 +26,16 @@ Bayes' rule; then He drew His pistol."*
   self-referential/bootstrap structures to cross-reference against the
   Aufhebung/rheonomy and Thread P threads.
 
+## License
+
+Text, specs, and notes (everything except code) are licensed under
+[CC BY 4.0](LICENSE). Code — the explorer and the executable examples — is
+licensed under [MIT](LICENSE-MIT).
+
 ## Where things stand
 
-Phase 0 is planned and awaiting review. The plan resolves the notation
+Phase 0 is approved (July 9, 2026) and underway: lightweight push-to-main
+process, public repo at `dm0-tech/pistol`. The plan resolves the notation
 decisions (N1–N4) against a July 2026 audit of the sources and scopes the
 deliverables: spec rungs 0–1, the three-track text draft, the Sierpiński
 explorer, executable examples for the finite models, and a red-leg review at

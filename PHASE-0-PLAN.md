@@ -1,6 +1,11 @@
 # Phase 0 Plan — Spec and Seed
 
-*Status: draft for review. Derived from `objective-logic-roadmap.md` §6 (Phase 0) and §8 (immediate next actions).*
+*Status: **approved** (July 9, 2026) — notation frozen (N1–N4), decisions
+N5–N7 in force. Process decisions recorded at approval: public repo at
+`dm0-tech/pistol`; licensing CC BY 4.0 for text/spec/notes, MIT for code
+(explorer, examples), confirmed with client; lightweight push-to-main until
+the project demonstrably needs more. Derived from
+`objective-logic-roadmap.md` §6 (Phase 0) and §8 (immediate next actions).*
 
 *Revision (July 2026): formalization descoped from proof-assistant work to
 executable examples, per the toolchain survey's findings and the project
@@ -26,7 +31,7 @@ in weeks not months.
 | P0.2 | `spec/` rungs 0–1 | Precise statement of levels 0 (∅ ⊣ ∗) and 1 (♭ ⊣ ♯): definitions, the Sierpiński topos and sSet worked in full, Aufhebung relation between the rungs stated exactly, every claim graded established/claimed/conjectural | A category-theory-literate reader can verify every proof by hand; the two small models are computed, not sketched |
 | P0.3 | `text/` rungs 0–1 draft | D2 treatment of rungs 0–1 in the three-track format (roadmap §3): dialectical motivation, categorical definition, small models, payoff | Track A readable standalone; Track A asserts nothing Track B doesn't prove |
 | P0.4 | `explorer/` Sierpiński explorer prototype | Single-file React artifact: objects of Set^→ as clickable function-of-sets diagrams; apply ♭, ♯, ∅, ∗ and watch the images; exhibit the first Aufhebung | A reader who knows only "a function between two sets" can click through discreteness vs codiscreteness |
-| P0.5 | `examples/` executable examples | Plain-code computations (no proof assistant) that machine-*compute* the spec's model claims: the modal operators, their images, and the Aufhebung check ♯∅ ≃ ∅ over the Sierpiński topos and small finite graph models — feasible because these models are finite | Every concrete computation asserted in P0.2's model sections is reproduced by a script; any mismatch is a spec bug filed before exit |
+| P0.5 | `examples/` executable examples | Plain-code computations (no proof assistant) that machine-*compute* the spec's model claims: the modal operators, their images, and the Aufhebung check ♯∅ ≃ ∅ over the Sierpiński topos and small finite graph models — feasible because these models are finite. sSet is covered via truncated/finite fragments only; the examples never claim to compute the infinite case (approved scope call: educate up the ladder, don't push frontiers en route) | Every concrete computation asserted in P0.2's model sections is reproduced by a script; any mismatch is a spec bug filed before exit |
 | P0.6 | `OPEN-PROBLEMS.md` | The maintained open-problems list, seeded from roadmap §4.3, each item graded and with its blocking relationship to phases noted | Every §4.3 seed item captured; format supports public issue-style tracking |
 | P0.7 | Red-leg review | A fresh-context, authorship-blind adversarial review of the P0.2 spec sections and P0.3 text before the exit criterion is declared met (protocol per §Honesty mechanism) | Review memo produced; every Break fixed; Underpriced items dispositioned; Preferences recorded |
 

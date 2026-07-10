@@ -1,8 +1,8 @@
 # Notation and Conventions Register
 
-*Status: **proposed** — freezes on Phase 0 plan approval. After the freeze,
-changes require an erratum entry here, never a silent edit. Sources for every
-choice are in §5; the July 2026 audit that informed them is summarized in §4.*
+*Status: **frozen** (plan approved July 9, 2026). Changes require an erratum
+entry here, never a silent edit. Sources for every choice are in §5; the July
+2026 audit that informed them is summarized in §4.*
 
 ## 1. The ladder
 
