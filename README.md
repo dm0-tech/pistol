@@ -20,7 +20,10 @@ Bayes' rule; then He drew His pistol."*
 - [`OPEN-PROBLEMS.md`](OPEN-PROBLEMS.md) — the maintained open-problems list
   (roadmap §4.3, graded).
 - [`spec/NOTATION.md`](spec/NOTATION.md) — the notation and conventions
-  register (proposed; freezes on plan approval).
+  register (frozen July 9, 2026).
+- [`spec/00-level-0.md`](spec/00-level-0.md) — Level 0: the opposition
+  ∅ ⊣ ∗, with the Sierpiński and truncated-sSet models worked in full and a
+  claim ledger for the examples scripts.
 - [`notes/bootstrap-stones.md`](notes/bootstrap-stones.md) — Wheeler's
   self-reference exhortation (primary-sourced) and the catalogue of
   self-referential/bootstrap structures to cross-reference against the
