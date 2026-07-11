@@ -159,7 +159,7 @@ check('1.10', 'both obstructions are the same object: ♯∅ ≅ □_open ∗ �
   () => isomorphic(sharp(initial), boxOpen(terminal)) &&
     isomorphic(boxOpen(terminal), ya));
 
-check('§5.4', 'fork horn 1 (one-clause ◯ⱼ∅ ≅ ∅): resolving levels of 𝒮 = {open, max}, so 0̄ = open',
+check('1.13/§5.4', 'resolution (one-clause ◯ⱼ∅ ≅ ∅, the literature definition): resolving levels of 𝒮 = {open, max}, so 0̄_𝒮 = open',
   () => {
     const resolves = {
       trivial: isomorphic(circ0(initial), initial),
@@ -170,13 +170,12 @@ check('§5.4', 'fork horn 1 (one-clause ◯ⱼ∅ ≅ ∅): resolving levels of 
     return !resolves.trivial && resolves.open && !resolves.closed && resolves.max;
   });
 
-check('§5.4', 'fork horn 2 (adding □ⱼ∗ ≅ ∗): no middle level qualifies, so 0̄ = max',
+check('§5.4', 'co-resolution (□ⱼ∗ ≅ ∗) diverges from resolution in 𝒮: open resolves but does not co-resolve; closed co-resolves but does not resolve',
   () => {
     const companion = {
       open: isomorphic(boxOpen(terminal), terminal),
       closed: isomorphic(flat(terminal), terminal),
     };
-    // open passes primary but fails companion; closed passes companion but fails primary
     return !companion.open && companion.closed;
   });
 

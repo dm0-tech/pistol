@@ -56,12 +56,14 @@ are project-internal.
 **D0.3 (ordering of levels).** For levels i, j write **i ≼ j** if every
 i-□-modal object is j-□-modal *and* every i-◯-modal object is j-◯-modal.
 Write **i ≺ j** when i ≼ j and j ⋠ i. This containment-of-both-moments
-order is the only order used in this spec. Whether it coincides with other
-orders in the literature (inclusion of subtoposes; the Kelly–Lawvere lattice
-of essential localizations) is deliberately *not asserted* here; settling
-that is part of the OP-15 source audit.
-*Grade: established (as a definition; no equivalence with other orders is
-claimed).*
+order is the only order used in this spec. The literature orders levels by
+subtopos inclusion and states the equivalence with the two-moment
+containment: for levels, factoring of l₊ through j₊ is equivalent to
+factoring of l₋ through j₋ (Menni, TAC 34 (2019) no. 25, p. 715; Lawvere
+1991's parenthetical "included on the left and equivalently on the right").
+So the orders coincide. *Grade of the definition: established. Grade of the
+equivalence with subtopos inclusion: claimed (cited: Menni 2019; not
+reproved here — this spec never relies on it).*
 *Erratum note (July 10, 2026):* an earlier draft offered subcategory
 containment "compatibly with both adjoints" as the definition with the
 two-moment condition as an unproven "equivalently." The two-moment condition
@@ -71,14 +73,17 @@ is what every proof in this spec actually uses, so it is now the definition.
 level i, written **i ≪ j**, if ◯ⱼ□ᵢ ≅ □ᵢ (naturally). The **Aufhebung** of
 level i, written **ī**, is the minimal level (if it exists) with i ≺ ī and
 i ≪ ī. *Grade: established (nLab "Aufhebung").*
-*Honesty remark:* some sources state resolution with a companion clause
-□ⱼ◯ᵢ ≅ ◯ᵢ. For the oppositions treated in this spec the companion clause is
-verified explicitly in each instance rather than assumed from generalities;
-for level 0 the companion clause is ♭∗ ≅ ∗, verified in `01-level-1.md`
-(see §7). The one-clause and two-clause definitions give *different*
-Aufhebung answers in 𝒮 (`01-level-1.md` §5.4); which one the primary
-literature uses is **OP-15**, open at the time of writing, and this
-definition may receive an erratum when it is resolved.
+*Source note (OP-15, resolved July 11, 2026):* the one-clause definition
+above is the literature's, unanimously — Lawvere 1991 (Como) / 1992 / 2009,
+Kennett–Riehl–Roy–Zaks 2011, Marmolejo–Menni and Menni 2019 ("way above":
+both lower inclusions factor through the higher *sheaf* inclusion, i.e.
+◯ⱼ□ᵢ ≅ □ᵢ with ◯ⱼ◯ᵢ ≅ ◯ᵢ automatic from i ≼ j), and nLab "Aufhebung". The
+companion condition □ⱼ◯ᵢ ≅ ◯ᵢ is a *different* notion, named
+**co-resolution** on the nLab (**bi-resolution** when both hold), and never
+enters the Aufhebung. This spec still verifies the companion clause
+explicitly wherever it holds (for level 0: ♭∗ ≅ ∗, `01-level-1.md` §7) —
+as information about the model, not as part of the definition. The two
+notions genuinely diverge: see the 𝒮 computation in `01-level-1.md` §5.4.
 
 ## 2. Level 0 exists in every topos
 

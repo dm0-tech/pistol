@@ -59,26 +59,28 @@ provisional until the Phase 0 spec exists to grade them against.*
 
 ## Spec-internal
 
-- **OP-15. The resolution-clause fork.** The frozen D0.4 defines i ≪ j by
-  the single clause ◯ⱼ□ᵢ ≅ □ᵢ; some sources add the companion □ⱼ◯ᵢ ≅ ◯ᵢ.
-  The two definitions give *different Aufhebung answers in the Sierpiński
-  topos* (`spec/01-level-1.md` §5.4: 0̄ = open level vs 0̄ = maximal level),
-  though they agree in sSet. To resolve: check Lawvere's "way above"
-  relation in Kelly–Lawvere 1989 and the Marmolejo–Menni Aufhebung papers.
-  The same source audit must settle how the sources define the *order* on
-  levels (subtopos inclusion vs containment of both modal images); D0.3
-  now defines the order self-containedly by the two-moment condition,
-  claiming no equivalence. Must be settled before the level-2 file freezes
-  its Aufhebung statements; a notation erratum to D0.4 may result.
-  *Partially discharged (July 10):* the sSet-levels-as-skeleta
-  classification is no longer a caveat — verified against Kelly–Lawvere
-  1989 Thm 4.4 (original scan) and proved self-containedly via the
-  idempotent ideals of Δ (`spec/01-level-1.md` Lemmas 1.12a–b); Prop 1.12
-  is now established. Also settled: no exotic level exists below the
-  0-skeletal level in sSet, and Marmolejo–Menni's "level ε" degenerates to
-  level 0 there. *Remaining and still open: the clause question — which
-  resolution definition matches Lawvere's "way above" — and the order
-  question. Source research in progress; red-leg attention requested.*
+- **OP-15. The resolution-clause fork. RESOLVED (July 11, 2026).** D0.4
+  defines i ≪ j by the single clause ◯ⱼ□ᵢ ≅ □ᵢ; the question was whether
+  the literature adds the companion □ⱼ◯ᵢ ≅ ◯ᵢ — the two variants give
+  different Aufhebung answers in 𝒮 (`spec/01-level-1.md` §5.4). All three
+  parts are now discharged from primary sources:
+  1. *Clause question:* one-clause, unanimously (Lawvere 1991 Como / 1992 /
+     2009; Kennett–Riehl–Roy–Zaks 2011; Marmolejo–Menni "Level ε"; Menni
+     TAC 2019; nLab "Aufhebung"). The companion clause is the nLab's
+     separate notion of *co-resolution*, never part of the Aufhebung. Hence
+     0̄_𝒮 = the open level (Prop 1.13), consistent with nLab's ⊥-scattered
+     result (Aufhebung of ∅ ⊣ ∗ is the ¬¬-subtopos).
+  2. *Order question:* sources order levels by subtopos inclusion and state
+     equivalence with containment of both modal images (Menni 2019 p. 715;
+     Lawvere 1991); D0.3 cites this as *claimed* and never relies on it.
+  3. *sSet classification:* verified against Kelly–Lawvere 1989 Thm 4.4
+     (original scan) and proved self-containedly via the idempotent ideals
+     of Δ (`spec/01-level-1.md` Lemmas 1.12a–b); no exotic level below the
+     0-skeletal one; Marmolejo–Menni's "level ε" degenerates to level 0 in
+     sSet.
+  Residue for the red leg: the D0.4 source note and Lemma 1.12a citation
+  were verified by research agents (July 10–11), not independently;
+  re-verification is cheap and requested. *Grade: resolved.*
 
 ## Wheeler / self-reference (from `notes/bootstrap-stones.md`)
 
