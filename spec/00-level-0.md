@@ -15,28 +15,57 @@ These definitions serve the whole ladder; they are stated once, here.
 **D0.1 (idempotent (co)monad, adjoint modality).** A monad ◯ on ℰ is
 *idempotent* if its multiplication ◯◯ → ◯ is an isomorphism; dually for a
 comonad □ and its comultiplication. An **adjoint modality** on ℰ is an
-adjunction □ ⊣ ◯ where □ is an idempotent comonad and ◯ an idempotent monad,
-and both have the same fixed subcategory of definition — concretely, the
-pair arises from a single adjoint triple L ⊣ C ⊣ R : ℱ → ℰ with L, R : ℱ → ℰ
-fully faithful, via □ = L∘C and ◯ = R∘C. The **unity of opposites** is the
-composite transform □X → X → ◯X (counit followed by unit).
+adjoint pair between an idempotent comonad □ and an idempotent monad ◯, in
+either orientation, induced by an adjoint triple F ⊣ G ⊣ H in one of two
+shapes:
+
+- **Outer shape, □ ⊣ ◯.** F, H : ℱ → ℰ are fully faithful and G : ℰ → ℱ;
+  set □ = F∘G and ◯ = H∘G. (In a triple the two outer functors are fully
+  faithful together, so requiring both is no extra condition.) The □-modal
+  objects — those X with □X → X invertible — form the essential image of F,
+  and the ◯-modal objects the essential image of H: *two* subcategories of
+  ℰ, each equivalent to the common base ℱ, but in general **distinct as
+  subcategories** (in 𝒮: discrete vs codiscrete, `01-level-1.md` §2).
+  Rungs 0 and 1 have this shape; so does every level (D0.2).
+- **Inner shape, ◯ ⊣ □.** F, H : ℰ → ℱ and G : ℱ → ℰ is fully faithful;
+  set ◯ = G∘F and □ = G∘H. Here the ◯-modal and □-modal objects
+  **coincide** — both are the essential image of G. Rung 2 has this shape:
+  ʃ ⊣ ♭ arises from Π₀ ⊣ Disc ⊣ Γ with Disc the fully faithful middle, and
+  both moments are fixed on the discrete objects. Inner-shape modalities
+  arise on the ladder not from a single level but from a triple *straddling*
+  one.
+
+In both shapes the **unity of opposites** is the composite transform
+□X → X → ◯X (counit of the comonad followed by unit of the monad).
 *Grade: established (Lawvere 1991; nLab "adjoint modality").*
+*Erratum note (July 10, 2026):* an earlier draft of this definition required
+□ and ◯ to have "the same fixed subcategory," which is the inner shape's
+property only and contradicted the rung-1 construction; see `NOTATION.md`
+errata E2.
 
 **D0.2 (level).** A **level** of ℰ is an essential subtopos: a geometric
 embedding i₊ : ℱ ↪ ℰ (direct image fully faithful, inverse image i* left
 exact) whose inverse image has a further left adjoint i₋, giving
-i₋ ⊣ i* ⊣ i₊ and hence, by D0.1, an adjoint modality □ = i₋ i* ⊣ ◯ = i₊ i*
-on ℰ. *Grade: established (Lawvere 1991; nLab "level of a topos").*
+i₋ ⊣ i* ⊣ i₊ and hence, by D0.1, an outer-shape adjoint modality
+□ = i₋ i* ⊣ ◯ = i₊ i* on ℰ. *Grade: established (Lawvere 1991; nLab "level of a topos").*
 *Remark on numbering:* this project numbers ladder rungs 0, 1, 2, … per the
 roadmap; Lawvere's own examples index levels by "dimension" (in sSet, level
 n = n-skeletal objects). The two schemes are not identified; rung numbers
 are project-internal.
 
-**D0.3 (ordering of levels).** For levels i, j write **i ≼ j** if the
-level-i subcategory is contained in the level-j subcategory compatibly with
-both adjoints (equivalently: every i-□-modal object is j-□-modal and every
-i-◯-modal object is j-◯-modal). Write i ≺ j for strict containment.
-*Grade: established.*
+**D0.3 (ordering of levels).** For levels i, j write **i ≼ j** if every
+i-□-modal object is j-□-modal *and* every i-◯-modal object is j-◯-modal.
+Write **i ≺ j** when i ≼ j and j ⋠ i. This containment-of-both-moments
+order is the only order used in this spec. Whether it coincides with other
+orders in the literature (inclusion of subtoposes; the Kelly–Lawvere lattice
+of essential localizations) is deliberately *not asserted* here; settling
+that is part of the OP-15 source audit.
+*Grade: established (as a definition; no equivalence with other orders is
+claimed).*
+*Erratum note (July 10, 2026):* an earlier draft offered subcategory
+containment "compatibly with both adjoints" as the definition with the
+two-moment condition as an unproven "equivalently." The two-moment condition
+is what every proof in this spec actually uses, so it is now the definition.
 
 **D0.4 (resolution and Aufhebung).** Level j **resolves** the opposition of
 level i, written **i ≪ j**, if ◯ⱼ□ᵢ ≅ □ᵢ (naturally). The **Aufhebung** of
@@ -46,7 +75,10 @@ i ≪ ī. *Grade: established (nLab "Aufhebung").*
 □ⱼ◯ᵢ ≅ ◯ᵢ. For the oppositions treated in this spec the companion clause is
 verified explicitly in each instance rather than assumed from generalities;
 for level 0 the companion clause is ♭∗ ≅ ∗, verified in `01-level-1.md`
-(see §7).
+(see §7). The one-clause and two-clause definitions give *different*
+Aufhebung answers in 𝒮 (`01-level-1.md` §5.4); which one the primary
+literature uses is **OP-15**, open at the time of writing, and this
+definition may receive an erratum when it is resolved.
 
 ## 2. Level 0 exists in every topos
 

@@ -66,9 +66,13 @@ provisional until the Phase 0 spec exists to grade them against.*
   though they agree in sSet. To resolve: check Lawvere's "way above"
   relation in Kelly–Lawvere 1989 and the Marmolejo–Menni Aufhebung papers,
   and verify the cited classification of sSet levels as skeleta (used by
-  Prop 1.12). Must be settled before the level-2 file freezes its Aufhebung
-  statements; a notation erratum to D0.4 may result. *Grade: open. Blocks
-  part of P0.2's level-2 successor; red-leg attention requested.*
+  Prop 1.12). The same source audit must settle how the sources define the
+  *order* on levels (subtopos inclusion vs containment of both modal
+  images); D0.3 now defines the order self-containedly by the two-moment
+  condition, claiming no equivalence. Must be settled before the level-2
+  file freezes its Aufhebung statements; a notation erratum to D0.4 may
+  result. *Grade: open — source research in progress (July 10). Blocks part
+  of P0.2's level-2 successor; red-leg attention requested.*
 
 ## Wheeler / self-reference (from `notes/bootstrap-stones.md`)
 

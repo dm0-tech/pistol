@@ -289,7 +289,9 @@ proved above); the correspondence question is open.*
 
 Both models carry a further left adjoint Π₀ ⊣ Disc (𝒮: Π₀X = X₁, sSet:
 π₀ = connected components), extending the triple to the cohesive quadruple
-and furnishing ʃ = Disc ∘ Π₀ — rung 2's opposition ʃ ⊣ ♭. The level-2 file
+and furnishing ʃ = Disc ∘ Π₀ — rung 2's opposition ʃ ⊣ ♭, an *inner-shape*
+modality per D0.1: both moments are fixed on the discrete objects, unlike
+rungs 0–1 whose moments are fixed on distinct subcategories. The level-2 file
 must: (a) verify cohesion (Π₀ preserving finite products) in both models;
 (b) state and check the Aufhebung relations of level 1 by level 2 under the
 D0.4 definition *as resolved by OP-15*; (c) work the fracture/unity

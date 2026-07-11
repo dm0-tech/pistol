@@ -1,8 +1,8 @@
 # Notation and Conventions Register
 
 *Status: **frozen** (plan approved July 9, 2026). Changes require an erratum
-entry here, never a silent edit. Sources for every choice are in §5; the July
-2026 audit that informed them is summarized in §4.*
+entry here, never a silent edit; the erratum log is §5. Sources for every
+choice are in §6; the July 2026 audit that informed them is summarized in §4.*
 
 ## 1. The ladder
 
@@ -40,13 +40,20 @@ operator between two adjoint pairs):
 
 ## 2. Aufhebung and oppositions
 
-- A generic adjoint modality (unity of opposites): **□ ⊣ ◯** between
-  idempotent (co)monads; the unity is the transform **□X → X → ◯X**
-  (e.g. points-to-pieces ♭X → X → ʃX).
-- Levels are written i, j with order **i ≺ j**.
-- "j **resolves** the opposite of i": **i ≪ j**, defined by ◯ⱼ□ᵢ = □ᵢ.
+- A generic adjoint modality (unity of opposites) is an adjoint pair of an
+  idempotent comonad □ and an idempotent monad ◯, in either orientation:
+  **□ ⊣ ◯** (outer shape, e.g. ♭ ⊣ ♯) or **◯ ⊣ □** (inner shape, e.g.
+  ʃ ⊣ ♭); see spec D0.1 for the two shapes of inducing triple. In both, the
+  unity is the transform **□X → X → ◯X** (e.g. points-to-pieces ♭X → X → ʃX).
+- Levels are written i, j with order **i ≼ j** (strict: i ≺ j), defined by
+  containment of both modal images (spec D0.3).
+- "j **resolves** the opposite of i": **i ≪ j**, defined by the natural
+  isomorphism ◯ⱼ□ᵢ ≅ □ᵢ (one-clause; the definitional fork with the
+  companion clause □ⱼ◯ᵢ ≅ ◯ᵢ is OP-15, unresolved).
 - The **Aufhebung** of level i is the minimal resolving level, written **ī**.
-  Example: the Aufhebung of ∅ ⊣ ∗ is ♭ ⊣ ♯ iff ♯∅ ≃ ∅.
+  Level j resolves ∅ ⊣ ∗ iff ◯ⱼ∅ ≅ ∅; for the cohesive rung this reads
+  ♯∅ ≅ ∅. Which resolving level is *minimal* — hence the Aufhebung — is
+  model-dependent (`spec/01-level-1.md` §5).
 
 ## 3. Auxiliary conventions
 
@@ -81,7 +88,17 @@ The only genuinely contested cell in the field is shape; ʃ is what Shulman,
 Myers, Myers–Riley, and the maintained nLab pages use, and it wins on
 typeability (one codepoint, valid in Agda identifiers).
 
-## 5. Sources
+## 5. Errata
+
+Per the freeze policy, changes are logged here — never made silently.
+
+| # | Date | Change | Reason |
+|---|---|---|---|
+| E1 | 2026-07-10 | §2: resolution condition corrected from the equality ◯ⱼ□ᵢ = □ᵢ to the natural isomorphism ◯ⱼ□ᵢ ≅ □ᵢ | Register had drifted from spec D0.4; strict functor equality was never meant |
+| E2 | 2026-07-10 | §2: the generic opposition now records both orientations — □ ⊣ ◯ (outer, ♭ ⊣ ♯) and ◯ ⊣ □ (inner, ʃ ⊣ ♭) — with the unity □X → X → ◯X in both | The frozen ladder alternates orientation from rung to rung (rung 2 is monad-left); the old text covered only the outer shape and made D0.1 incoherent at rung 2. See repaired spec D0.1 |
+| E3 | 2026-07-10 | §2: the Aufhebung example no longer asserts that rung 1 is the Aufhebung of level 0 whenever ♯∅ ≅ ∅ | Minimality is model-dependent: in 𝒮 the open level resolves level 0 strictly below rung 1 (`spec/01-level-1.md` §5); the clause-count fork is OP-15 |
+
+## 6. Sources
 
 nLab: *shape modality*, *adjoint modality*, *Aufhebung*, *infinitesimal shape
 modality*, *reduction modality*, *rheonomy modality*, *bosonic modality*,
