@@ -247,19 +247,52 @@ the dialectical gloss is Track-A material, not a claim.*
 *Proof.* Every [n] admits a map from [0] (any vertex v_i : [0] → [n]), so
 Lemma 1.5 applies: (♯∅)_n = ∅^(n+1) = ∅. Companion: Prop 1.4. ∎
 
+**Lemma 1.12a (Kelly–Lawvere criterion).** For a small category C, the
+levels of PSh(C) are in order-preserving bijection with the **idempotent
+two-sided ideals** of C: classes I of morphisms closed under composition
+with arbitrary morphisms on both sides, such that every f ∈ I factors as
+f = g∘h with g, h ∈ I. Moreover the level induced by a full subcategory
+B ⊆ C has ideal {morphisms of C factoring through an object of B}.
+*Grade: established (cited: Kelly–Lawvere 1989, Theorems 4.4 and 4.6;
+statement verified July 10, 2026 against the original paper — the scan on
+the Lawvere Archives — and against three independent paraphrases
+(Lucyshyn-Wright arXiv:1108.4032 Rem. 1.5.6; Marmolejo–Menni "Level ε"
+Def. 2.6; nLab "level of a topos"). Proof not reproduced here.)*
+
+**Lemma 1.12b (ideals of Δ).** The two-sided ideals of Δ are exactly ∅,
+I_n = {f : f factors through some [k] with k ≤ n} for n ≥ 0, and mor Δ —
+and every one is idempotent. *Grade: established (proved here; the
+argument follows Kennett–Riehl–Roy–Zaks, arXiv:1003.5944, where the
+classification is asserted with a proof idea but not as a numbered
+theorem).*
+
+*Proof.* In Δ every epi and every mono is split: an order-preserving
+surjection (resp. injection) of nonempty finite linear orders admits an
+order-preserving section (resp. retraction). Let I be an ideal and f ∈ I
+with image factorization f = m∘e through [j]. Picking a section s of e and
+a retraction r of m gives id_{[j]} = r∘f∘s ∈ I (two-sidedness). So
+S := {j : id_{[j]} ∈ I} determines I: two-sidedness gives
+I ⊇ {f factoring through [j], j ∈ S}, and the argument just given proves
+the reverse containment. Since [i] is a retract of [j] for i ≤ j, S is
+down-closed in ℕ, so S ∈ {∅, {0,…,n}, ℕ} and I ∈ {∅, I_n, mor Δ}.
+Idempotence: ∅ trivially; any f ∈ I_n has epi–mono factorization f = m∘e
+through its image [j], j ≤ n, with both factors in I_n; mor Δ contains
+identities. ∎
+
 **Proposition 1.12 (minimality in sSet).** The levels of sSet are the
-trivial level, the n-skeletal levels for n ≥ 0, and the maximal level; the
-0-skeletal level is level 1 of §3 (its triple is left Kan extension ⊣
-restriction ⊣ right Kan extension along Δ_{≤0} ↪ Δ, which is
-Disc ⊣ Γ ⊣ coDisc). Hence level 1 is the minimal nontrivial level, and
-since it resolves level 0 while level 0 does not resolve itself
+trivial level, the n-skeletal levels for n ≥ 0, and the maximal level
+(Lemmas 1.12a–b: ∅ ↔ trivial, I_n ↔ PSh(Δ_{≤n}) = n-skeletal, mor Δ ↔
+sSet); in particular no exotic level sits between the trivial and
+0-skeletal levels. The 0-skeletal level is level 1 of §3 (its triple is
+left Kan extension ⊣ restriction ⊣ right Kan extension along Δ_{≤0} ↪ Δ,
+which is Disc ⊣ Γ ⊣ coDisc). Hence level 1 is the minimal nontrivial
+level, and since it resolves level 0 while level 0 does not resolve itself
 (◯₀∅ = ∗ ≇ ∅), the Aufhebung is 0̄ = level 1 in sSet.
-*Grade of the level classification: claimed (cited: Kelly–Lawvere 1989 for
-lattices of essential localizations; nLab "level of a topos", simplicial
-example; **citation to be verified — OP-15**). Grade of the conclusion
-given the classification: established (proved here). Grade of the
-identification 0-skeletal = level 1: established (the Kan extensions along
-Δ_{≤0} ≅ {[0]} ↪ Δ are computed by the §3 formulas).*
+*Grade: established (classification from Lemmas 1.12a–b; identification
+0-skeletal = level 1 by the Kan extensions along Δ_{≤0} ≅ {[0]} ↪ Δ being
+computed by the §3 formulas). The former "citation to be verified" caveat
+is discharged; the remaining OP-15 content is only the resolution-clause
+question of §5.4.*
 
 ### 5.4 The definitional fork (OP-15)
 
@@ -283,7 +316,7 @@ proved above); the correspondence question is open.*
 |---|---|
 | (a) verify ♯∅ ≅ ∅ in 𝒮 and sSet-like models where it holds | Done: holds in sSet (Prop 1.11); **fails in 𝒮** (Prop 1.9), with the general criterion (Lemma 1.5) locating the failure |
 | (b) verify companion ♭∗ ≅ ∗ | Done generally (Prop 1.4) |
-| (c) minimality: is ♭ ⊣ ♯ the Aufhebung 0̄? | sSet: yes, modulo cited level classification (Prop 1.12). 𝒮: no — 0̄ is the open level (one-clause) or the maximal level (two-clause); fork registered as OP-15 (§5.4) |
+| (c) minimality: is ♭ ⊣ ♯ the Aufhebung 0̄? | sSet: yes (Prop 1.12, classification now proved via Lemmas 1.12a–b). 𝒮: no — 0̄ is the open level (one-clause) or the maximal level (two-clause); fork registered as OP-15 (§5.4) |
 
 ## 7. Forward: toward rung 2
 
@@ -313,16 +346,21 @@ structure. Nothing is claimed here.
 | 1.9 | ♯∅ ≇ ∅ in 𝒮; open level dual failure | established (proved here) | full check ⚙ |
 | 1.10 | Both obstructions = y a (the pointless figure) | established (proved here) | full check ⚙ |
 | 1.11 | Both clauses hold in sSet | established (proved here) | truncated check ⚙ |
-| 1.12 | 0̄ = level 1 in sSet | claimed (level classification cited, unverified — OP-15) | — |
+| 1.12a | Kelly–Lawvere: levels ↔ idempotent ideals | established (cited; statement verified against the original) | — |
+| 1.12b | Ideals of Δ = {∅, I_n, mor Δ}, all idempotent | established (proved here) | — |
+| 1.12 | 0̄ = level 1 in sSet | established (proved here via 1.12a–b) | — |
 | §5.4 | The definitional fork in 𝒮 | established (both horns proved) | full check ⚙ |
 | §5.4 | Which definition is Lawvere's "way above" | open (OP-15) | — |
 
 ## References for this section
 
 Kelly–Lawvere, *On the complete lattice of essential localizations* (Bull.
-Soc. Math. Belg. 1989) — essential subtoposes. — Mac Lane–Moerdijk,
+Soc. Math. Belg. Sér. A 41, 1989, 289–319) — Thms 4.4/4.6: levels ↔
+idempotent ideals; scan at lawverearchives.com. — Kennett–Riehl–Roy–Zaks,
+*Levels in the toposes of simplicial sets and cubical sets* (JPAA 215,
+2011; arXiv:1003.5944) — sSet levels = skeleta. — Mac Lane–Moerdijk,
 *Sheaves in Geometry and Logic* (1992) — Ch. III (Grothendieck topologies),
 Ch. V (subtoposes ↔ topologies). — Lawvere, *Axiomatic cohesion* (TAC
-2007). — Marmolejo–Menni, *Level ε* and related Aufhebung computations (to
-be sourced precisely under OP-15). — nLab: *level of a topos*, *Aufhebung*,
-*flat modality*, *sharp modality*.
+2007). — Marmolejo–Menni, *Level ε* (arXiv:1909.12757) and related
+Aufhebung computations (clause question still open under OP-15). — nLab:
+*level of a topos*, *Aufhebung*, *flat modality*, *sharp modality*.

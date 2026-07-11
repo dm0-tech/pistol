@@ -64,15 +64,21 @@ provisional until the Phase 0 spec exists to grade them against.*
   The two definitions give *different Aufhebung answers in the Sierpiński
   topos* (`spec/01-level-1.md` §5.4: 0̄ = open level vs 0̄ = maximal level),
   though they agree in sSet. To resolve: check Lawvere's "way above"
-  relation in Kelly–Lawvere 1989 and the Marmolejo–Menni Aufhebung papers,
-  and verify the cited classification of sSet levels as skeleta (used by
-  Prop 1.12). The same source audit must settle how the sources define the
-  *order* on levels (subtopos inclusion vs containment of both modal
-  images); D0.3 now defines the order self-containedly by the two-moment
-  condition, claiming no equivalence. Must be settled before the level-2
-  file freezes its Aufhebung statements; a notation erratum to D0.4 may
-  result. *Grade: open — source research in progress (July 10). Blocks part
-  of P0.2's level-2 successor; red-leg attention requested.*
+  relation in Kelly–Lawvere 1989 and the Marmolejo–Menni Aufhebung papers.
+  The same source audit must settle how the sources define the *order* on
+  levels (subtopos inclusion vs containment of both modal images); D0.3
+  now defines the order self-containedly by the two-moment condition,
+  claiming no equivalence. Must be settled before the level-2 file freezes
+  its Aufhebung statements; a notation erratum to D0.4 may result.
+  *Partially discharged (July 10):* the sSet-levels-as-skeleta
+  classification is no longer a caveat — verified against Kelly–Lawvere
+  1989 Thm 4.4 (original scan) and proved self-containedly via the
+  idempotent ideals of Δ (`spec/01-level-1.md` Lemmas 1.12a–b); Prop 1.12
+  is now established. Also settled: no exotic level exists below the
+  0-skeletal level in sSet, and Marmolejo–Menni's "level ε" degenerates to
+  level 0 there. *Remaining and still open: the clause question — which
+  resolution definition matches Lawvere's "way above" — and the order
+  question. Source research in progress; red-leg attention requested.*
 
 ## Wheeler / self-reference (from `notes/bootstrap-stones.md`)
 
