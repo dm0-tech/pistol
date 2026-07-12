@@ -27,8 +27,18 @@ Bayes' rule; then He drew His pistol."*
 - [`spec/01-level-1.md`](spec/01-level-1.md) — Level 1: ♭ ⊣ ♯ via one
   general theorem for presheaf sites with a terminal object; the complete
   level lattice of the Sierpiński topos (a diamond); and the finding that
-  the Aufhebung of level 0 is model-dependent — it fails in 𝒮 (the
-  obstruction is the site's pointless representable) and holds in sSet.
+  where the Aufhebung of level 0 lands is model-dependent — in sSet it is
+  level 1 (proved via the Kelly–Lawvere classification), while in 𝒮 rung 1
+  is obstructed by the site's pointless representable and the Aufhebung is
+  the smaller open level (OP-15, resolved from primary sources).
+- [`text/rung-0-1-draft.md`](text/rung-0-1-draft.md) — the three-track
+  expository text for rungs 0–1 (P0.3): the dialectical narrative (Track A),
+  the mathematics with spec pointers (Track B), and the executable checks
+  (Track C), ending in a track-discipline ledger tying every A-claim to a
+  proved B-statement.
+- [`examples/`](examples/README.md) — the executable examples (P0.5):
+  every finite-model claim in the spec's ledgers, machine-computed
+  (`node examples/run.mjs`).
 - [`notes/bootstrap-stones.md`](notes/bootstrap-stones.md) — Wheeler's
   self-reference exhortation (primary-sourced) and the catalogue of
   self-referential/bootstrap structures to cross-reference against the
