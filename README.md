@@ -43,6 +43,12 @@ Bayes' rule; then He drew His pistol."*
   self-reference exhortation (primary-sourced) and the catalogue of
   self-referential/bootstrap structures to cross-reference against the
   Aufhebung/rheonomy and Thread P threads.
+- [`notes/internal-language-and-room-for-two.md`](notes/internal-language-and-room-for-two.md) —
+  session distillate (July 14, 2026): the missing lineage track (Track H)
+  and the generative discipline; the adjunction essay for the Phase 1
+  essay; the internal-language claim graded against OP-3; 𝒮 as the
+  two-stage topos of trees (OP-13 sharpened); and the room-for-two
+  doubling conjecture (OP-16, stone S17).
 
 ## License
 
