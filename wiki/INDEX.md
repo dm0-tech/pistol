@@ -10,6 +10,7 @@ mirrors its entry's header exactly (the audit checks this). See
 | [W-0002](entries/w-0002-sierpinski-is-two-stage-trees.md) | 𝒮 is the two-stage truncation of the topos of trees | llm-derived | llm-checked | claimed / conjectural | draft | OP-13 |
 | [W-0003](entries/w-0003-room-for-two.md) | The room for two: doubling as a precondition of self-representation | human-conjecture + llm-derived | source-audited (stones); unverified (splice) | conjectural | checked | OP-16; S17 |
 | [W-0004](entries/w-0004-leaping-language.md) | The leaping language: two theorems and one open problem | llm-derived / sourced | llm-checked | established / open / conjectural | draft | OP-3; OP-7 |
+| [W-0005](entries/w-0005-llm-wiki-landscape.md) | The pistol wiki against the llm-wiki landscape | sourced + llm-derived | source-audited | established / conjectural | checked | Epic 2; AGENTS.md |
 
 ## Standing queues
 

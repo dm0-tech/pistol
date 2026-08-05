@@ -49,12 +49,16 @@ Bayes' rule; then He drew His pistol."*
   essay; the internal-language claim graded against OP-3; 𝒮 as the
   two-stage topos of trees (OP-13 sharpened); and the room-for-two
   doubling conjecture (OP-16, stone S17).
+- [`AGENTS.md`](AGENTS.md) — the schema layer: standing instructions that
+  make any agent a disciplined maintainer of the layers below (read first,
+  every session).
 - [`wiki/`](wiki/README.md) — the labeled knowledge base: atomic claims
   from the project's dialogues, each carrying provenance (sourced vs
   LLM/human conjecture, with transcript pointers), verification
   (llm-checked through formally-verified), and grade; with
-  [index](wiki/INDEX.md) and transcript registry. The spec never cites
-  the wiki.
+  [index](wiki/INDEX.md), [log](wiki/log.md), transcript registry, and a
+  deterministic lint (`node wiki/lint.mjs`). The spec never cites the
+  wiki.
 - [`epics/`](epics/) — gate-A briefs for the standing epics: the daily
   gated-epic loop ([Epic 1](epics/epic-1-daily-gated-epics.md)) and the
   knowledge base ([Epic 2](epics/epic-2-knowledge-base.md)); ready to

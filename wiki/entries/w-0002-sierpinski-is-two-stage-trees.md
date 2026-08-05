@@ -42,3 +42,4 @@ equivalence PSh(2-chain) ≃ Set^→ survives.
 ## Log
 
 - 2026-08-05 — created from T-2026-07-14-A; identification checked by the authoring LLM only.
+- 2026-08-05 — reprocessed under `wiki/lint.mjs`; transcript pointer now resolves to the archived digest.

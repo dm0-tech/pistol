@@ -38,3 +38,4 @@ machine-computed check for form's sake.
 ## Log
 
 - 2026-08-05 — created from T-2026-07-14-A (llm exposition of sourced mathematics); citations audited against the standard literature.
+- 2026-08-05 — reprocessed under `wiki/lint.mjs`; transcript pointer now resolves to the archived digest.

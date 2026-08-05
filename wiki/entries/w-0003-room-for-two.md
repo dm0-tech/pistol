@@ -50,3 +50,4 @@ upgrades it to a real OP-16 attack surface.
 ## Log
 
 - 2026-08-05 — created from T-2026-07-14-A; component citations audited (including the d = 32 mass bound against King 2003).
+- 2026-08-05 — reprocessed under `wiki/lint.mjs`; transcript pointer now resolves to the archived digest (owner's wager quoted verbatim there).

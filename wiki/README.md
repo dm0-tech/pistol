@@ -71,13 +71,26 @@ Flow is one-way upward: the wiki may cite spec and sources; **the spec must
 never cite the wiki**. Promotion means the content is re-established at the
 destination's own standard, not that the entry is trusted.
 
-## Index and transcripts
+## Navigation, log, and lint
 
 - [`INDEX.md`](INDEX.md) — the register: every entry with its three labels
-  and status. Regenerated whenever entries change.
+  and status, plus the standing upgrade and attack queues. Read first when
+  querying; regenerated whenever entries change.
+- [`log.md`](log.md) — append-only chronological record of ingests,
+  audits, surveys, and reprocessing. Entries start
+  `## [YYYY-MM-DD] <op> | <subject>`, so
+  `grep "^## \[" wiki/log.md | tail -5` gives recent history.
 - [`transcripts/`](transcripts/README.md) — the registry of dialogue
   transcripts that conjecture entries point into. An entry with provenance
-  `llm-*` or `human-conjecture` must name its transcript.
+  `llm-*` or `human-conjecture` must name its transcript, and the pointer
+  must resolve to an archived file (digest or verbatim).
+- [`lint.mjs`](lint.mjs) — deterministic structural lint:
+  `node wiki/lint.mjs` checks header fields and vocabularies, ID/filename
+  agreement, required sections, index/entry agreement, link integrity,
+  transcript resolvability, and log format. Run it before committing any
+  wiki change. **A green lint is not verification** — it checks structure,
+  never whether a source says what an entry claims; that remains the
+  audit's job (below).
 
 ## Audit discipline
 
