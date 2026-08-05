@@ -1,18 +1,23 @@
 # Rungs 0 and 1 — Nothing, Unity, and the Two Completions of a Point
 
-*P0.3 draft. The D2 expository treatment of the ladder's first two rungs, in
-the three-track format of roadmap §3. The canonical mathematics lives in
-`spec/00-level-0.md` and `spec/01-level-1.md`; this text teaches it. Every
-Track A assertion is backed by a numbered Track B statement, which is proved
-in the spec — the ledger at the end makes that checkable. Notation per
-`spec/NOTATION.md`.*
+*P0.3 draft, revised August 2026 after rung 0·0 landed. The D2 expository
+treatment of the ladder's first two rungs, in the three-track format of
+roadmap §3. Prerequisite: `text/rung-0-0-draft.md` introduces adjunction,
+modality, and topos from nothing — this text now uses those words in their
+precise senses throughout, keeping the flavorful vocabulary ("universe",
+"world") only where the prose is at its most expository. The canonical
+mathematics lives in `spec/00-level-0.md` and `spec/01-level-1.md`; this
+text teaches it. Every Track A assertion is backed by a numbered Track B
+statement, which is proved in the spec — the ledger at the end makes that
+checkable. Notation per `spec/NOTATION.md`.*
 
 ## How to read this
 
 The text is written in three interleaved tracks, marked at each section:
 
-- **Track A — the story.** Prose and pictures only. No category theory
-  assumed. Readable on its own, start to finish: if you read only the A
+- **Track A — the story.** Prose and pictures only. Nothing assumed
+  beyond rung 0·0, which supplies adjunction, modality, and topos from
+  nothing. Readable on its own, start to finish: if you read only the A
   sections, you get the whole arc.
 - **Track B — the mathematics.** Precise definitions and theorem
   statements, with proofs given where they teach and cited to the spec
@@ -25,6 +30,12 @@ The discipline (roadmap §3): Track A never asserts anything Track B cannot
 prove; where Track A offers a *reading* rather than a theorem, it says so
 in the sentence itself.
 
+One device is new since the first draft. At marked points — **⊢ Predict**
+— the text stops and asks you to commit to a guess *in writing* before
+reading the answer. The ladder is not learnable by watching; the marked
+questions are the places where a wrong guess, honestly made, teaches one
+clause more than the right answer read passively.
+
 **Suggested first pass:** read all the A sections straight through,
 ignoring B and C. Second pass: A and B together, with the spec open.
 Third pass: run the examples and break things.
@@ -36,18 +47,20 @@ Third pass: run the examples and break things.
 ## A0. The first distinction · *Track A*
 
 Start with as little as possible. Not with space, not with time, not with
-sets of particles — just with the idea of a *universe of things*: some
-collection of possible objects, and the ways they map into one another.
-(Track B will call this a *topos*; for now, "universe" will do, and you may
-safely picture the universe of ordinary sets.)
+sets of particles — just with a **topos**: a world of objects and maps in
+which best-solutions abound (rung 0·0, Part III), so that a nothing, a
+unity, function-objects, and a truth-value object are all guaranteed
+before anything particular has been said. The flavor word *universe* will
+reappear when the prose earns it; you may safely picture the topos of
+ordinary sets throughout.
 
-Here is the first fact, and it costs nothing: **every universe contains a
+Here is the first fact, and it costs nothing: **every topos contains a
 nothing and a unity.** There is an object ∅ with no stuff in it — *nothing*
 — characterized by the property that it maps into everything in exactly one
 way (there is nothing to send, so no choices to make). And there is an
 object ∗ with exactly one featureless point in it — *unity* — characterized
 dually: everything maps into it in exactly one way (there is nowhere to
-choose to go). Every object X of the universe is therefore suspended on a
+choose to go). Every object X of the topos is therefore suspended on a
 thread between the two:
 
 ```
@@ -57,37 +70,37 @@ nothing              unity
 
 This pair is the ladder's ground floor. It is not two arbitrary objects; it
 is an *opposition* — two extremes produced by one and the same act (Track B:
-both come from a single adjoint triple, D0.1/Prop 0.1), pulling in opposite
-directions. Lawvere's name for this shape, borrowed deliberately from
+both come from a single adjoint triple, in exactly rung 0·0 Part II's
+sense — D0.1/Prop 0.1), pulling in opposite directions. Lawvere's name for this shape, borrowed deliberately from
 Hegel, is a **unity of opposites**. The lineage is real but never
 load-bearing: everything we say about ∅ ⊣ ∗ is a theorem, whatever one
 thinks of the *Science of Logic*.
 
 Two things about this opposition deserve to be felt before they are proved.
 
-**First: the opposition is genuine exactly when the universe is.** Suppose
+**First: the opposition is genuine exactly when the topos is.** Suppose
 nothing and unity were secretly the same — suppose ∅ ≅ ∗. Then unity's one
 point would live inside nothing; every object, being stretched on the
-thread above, would be crushed between them; and the whole universe would
+thread above, would be crushed between them; and the whole topos would
 collapse to a single degenerate object (B0, Prop 0.5). *To be a nontrivial
 universe at all is to keep nothing and unity apart.* The first distinction
 is not one structure among many; it is the precondition of there being
 structure.
 
 **Second: the opposition is a bit — but the bit is subtler than two
-symbols.** Every universe has an intrinsic yes/no object, written Ω: the
+symbols.** Every topos has an intrinsic yes/no object, written Ω: the
 object whose points are the possible *truth values*, the possible answers
 to "is this thing in that part?" Unity ∗ maps into Ω twice, canonically:
 once saying **⊤** ("yes, all of it") and once saying **⊥** ("no, none of
 it") — and these two answers are the rung-0 opposition wearing logical
 clothes: ⊤ classifies the part *all of ∗*, ⊥ classifies the part *nothing*
-(B0, D0.6). These two points are distinct exactly when the universe is
+(B0, D0.6). These two points are distinct exactly when the topos is
 nondegenerate (B0, Prop 0.7). So far this sounds like a binary digit.
 
-But here is the subtlety: in most universes, ⊤ and ⊥ do **not exhaust Ω**.
+But here is the subtlety: in most toposes, ⊤ and ⊥ do **not exhaust Ω**.
 The naive bit — the two-symbol alphabet {⊤, ⊥} — coincides with the true
-truth-value object only in the special universes logicians call *Boolean*
-(B0, Prop 0.8). Our first nontrivial universe below is not Boolean, and its
+truth-value object only in the special toposes logicians call *Boolean*
+(B0, Prop 0.8). Our first nontrivial topos below is not Boolean, and its
 third truth value has a name you already understand: **later**.
 
 When Wheeler said *it from bit*, the reading this project explores — and
@@ -97,13 +110,13 @@ whose refusal to collapse is what having a universe means, and whose
 logical shadow Ω is richer than binary the moment the universe has any
 internal structure worth speaking of.
 
-## A0′. A universe with two stages · *Track A*
+## A0′. A topos with two stages · *Track A*
 
-To see all of this concretely we need the smallest universe that is richer
-than plain sets. Here it is: the universe of **two-stage things** — things
+To see all of this concretely we need the smallest topos that is richer
+than plain sets. Here it is: the world of **two-stage things** — things
 seen *now* and *later*.
 
-An object of this universe is: a set X₀ of things existing now, a set X₁ of
+An object of this topos is: a set X₀ of things existing now, a set X₁ of
 things existing later, and an arrow ξ : X₀ → X₁ saying what each present
 thing becomes.
 
@@ -116,7 +129,7 @@ thing becomes.
 
 (Two present things may merge into one future thing, as b and c do here;
 and a future thing may have no present ancestor at all — hold that thought,
-it becomes the villain of rung 1.) This universe is called the
+it becomes the villain of rung 1.) This topos is called the
 **Sierpiński topos**, written 𝒮 (B0, §5.2). Its nothing is (∅ → ∅): nothing
 now, nothing later. Its unity is (1 → 1): one thing now, staying one thing.
 
@@ -143,8 +156,25 @@ future-truth-values (B0, Prop 0.10):
 
 The naive bit ∗ + ∗ has only two values at each stage — it cannot say
 *later*. So 𝒮 is not Boolean (B0, Cor 0.11), and the extra truth value is
-precisely the universe's internal sense of *time deferred*. A bit, in a
+precisely the topos's internal sense of *time deferred*. A bit, in a
 universe with becoming, is bigger inside than outside.
+
+**⊢ Predict.** Two stages bought a third truth value. Suppose the world
+had *three* stages — now, soon, later. How many honest answers could a
+part then give about a present thing, and what would you name them?
+Commit to a number before moving on; the computation is exactly B0's, one
+stage longer, and it belongs to OP-13's work program below.
+
+*A remark for the road (a reading under investigation, so marked).* The
+truth value **later** is not a private quirk of 𝒮. There is a topos —
+presheaves on the infinite chain 0 ≤ 1 ≤ 2 ≤ ⋯, the *topos of trees* —
+where deferral is the whole organizing principle: it hosts *guarded
+recursion*, in which self-referential definitions become consistent
+precisely when routed through a "later" modality ▷. 𝒮 is its two-stage
+truncation, and our third truth value is ▷'s shadow. Whether ▷ bears any
+definite relation to the ladder's levels is an open problem of this
+project (**OP-13**, sharpened to a finite computation; the thread is
+worked at `notes/internal-language-and-room-for-two.md` §4).
 
 ## B0. The mathematics of rung 0 · *Track B*
 
@@ -207,14 +237,16 @@ Sub(X) ≅ Hom(X, Ω), both round trips, exhaustively), `0.11` (𝒮 not
 Boolean), `5.3` (sSet truncated: Ω₀ = 2, Ω₁ = 5, not Boolean). The
 `examples/README.md` explains what "exhaustively" means for each. The
 interactive version — click a two-stage object, watch its parts and their
-three-valued answers — is the P0.4 explorer (pending).
+three-valued answers, and walk rung 1's Aufhebung story step by step — is
+the P0.4 explorer, `explorer/sierpinski.html`: one self-contained file;
+open it in any browser.
 
 ## Payoff 0 · *Track A, with grades*
 
 What does rung 0 buy? Three things. (1) A *criterion of existence*: a
-universe is nontrivial exactly when its first opposition is (theorem).
-(2) The *intrinsic bit*: logic is not imported into a universe, it is
-secreted by it, and it is binary only in Boolean universes (theorem).
+topos is nondegenerate exactly when its first opposition is (theorem).
+(2) The *intrinsic bit*: logic is not imported into a topos, it is
+secreted by it, and it is binary only in Boolean toposes (theorem).
 (3) The Wheeler peg: a precise place to hang "it from bit" — on the
 opposition, not the alphabet (conjecture, so marked). Rung 0 also sets the
 pattern every higher rung repeats: *an opposition, its failure to collapse,
@@ -226,7 +258,7 @@ and the question of what resolves it* — which is rung 1's business.
 
 ## A1. Discrete and codiscrete · *Track A*
 
-Stay in the two-stage universe 𝒮. Among all two-stage things, one kind is
+Stay in the Sierpiński topos 𝒮. Among all two-stage things, one kind is
 special: the **points** — the things you can see *now*. Formally, a point
 of X is a way of picking one present element (and hence, following ξ, its
 future). Write Γ X for the set of points of X. In the picture from A0′,
@@ -264,30 +296,38 @@ A thing equal to its codiscrete completion is codiscrete (in 𝒮: the future
 is a single lump).
 
 And here is the first structural surprise, small but telling: the discrete
-things and the codiscrete things are *both* just copies of the universe of
+things and the codiscrete things are *both* just copies of the topos of
 plain sets, embedded in 𝒮 in two different postures (B1, Thm 1.1 — one
 base, two gluings). Rung 1 does not add new *stuff*; it adds a new
 *opposition on the same stuff*. That is what "unity of opposites" means in
-practice: one thing (here: the plain sets, sitting inside the two-stage
-universe), two opposed moments.
+practice: one base, two opposed moments — and the reader who worked
+rung 0·0 has already held the miniature: ♭ and ♯ stand to two-stage
+things exactly as floor and ceiling stand to the reals, two opposite
+perfections over the same fixed points, one level up.
 
-The same construction runs in a very different universe: **simplicial
-sets** (sSet), the universe of shapes built from points, edges, triangles,
+The same construction runs in a very different topos: **simplicial
+sets** (sSet), the topos of shapes built from points, edges, triangles,
 and their higher cousins — the combinatorial skeleton of space, with no
 time reading at all. There, ♭S is the shape that is just dots, and ♯S is
 the shape where *any* list of points spans a simplex — everything connected
 to everything, as codiscretely as combinatorics allows (B1, §3). Discrete
 = scattered dots; codiscrete = total blob. Same opposition, different
-universe. That portability is the point of doing this abstractly.
+topos. That portability is the point of doing this abstractly.
 
 ## A2. The pointless figure, and where sublation happens · *Track A*
 
 Now the drama. Rung 0 left us with an opposition (nothing vs unity) and
 rung 1 has produced a new one (frozen vs merged). Hegel's word for what a
 higher stage does to a lower opposition is *Aufhebung* — usually rendered
-**sublation**: the lower opposition is simultaneously *preserved* (it
-still exists) and *resolved* (the higher stage no longer feels it). Lawvere
-made this a definition, and — this matters — a definition with **one
+**sublation** — and for once the lineage deserves its peek rather than a
+name-check. Hegel, in the remark he devotes to the word itself (*Science
+of Logic*, Doctrine of Being, the remark "The Expression 'To Sublate'";
+Miller trans.): "'To sublate' has a twofold meaning in the language: on
+the one hand it means to preserve, to maintain, and equally it also means
+to cause to cease, to put an end to." The double meaning *is* the
+definition: the lower opposition is simultaneously *preserved* (it still
+exists) and *resolved* (the higher stage no longer feels it). Lawvere made
+this mathematical, and — this matters — his definition has **one
 clause**, taken from the literature and confirmed against it (B1, §5.4):
 
 > Level j **resolves** level 0 when, from level j's standpoint, *nothing
@@ -300,23 +340,31 @@ definition. Rung 1's own companion fact, that the discrete completion of
 unity is unity (♭∗ ≅ ∗), holds always (B1, Prop 1.4); the asymmetry is
 real and we will see it bite.
 
+**⊢ Predict.** Here is the question this text has been building toward,
+and you should meet it with a commitment, not a shrug: *is rung 1 the
+sublation of rung 0?* Decide separately for the topos of shapes and for
+the two-stage topos, write down a reason for each, and only then read on.
+(This project's own roadmap guessed too, in its first draft — and guessed
+wrong. You are in good company either way, and the clause you learn from
+a wrong guess here is the sharpest one in the file.)
+
 So: **is rung 1 the sublation of rung 0?** The honest answer — and this is
 a genuine finding of the spec, not a textbook fact we are retelling — is:
-*it depends on the universe*, and the dependence is itself illuminating.
+*it depends on the topos*, and the dependence is itself illuminating.
 
-**In sSet: yes.** In the universe of shapes, every basic figure — every
+**In sSet: yes.** In the topos of shapes, every basic figure — every
 edge, every triangle — has at least one point (a vertex). And that is
 exactly the criterion (B1, Lemma 1.5): the codiscrete completion of
 nothing is nothing precisely when *every basic figure has a point*. In
 sSet it does, so ♯∅ = ∅, rung 1 resolves rung 0 — and since one can
 classify *all* the levels of sSet (they are exactly the skeleta: the
-sub-universes of things built from simplices up to dimension n; B1,
-Prop 1.12), rung 1 is the *smallest* resolving level. **In the universe of
+subtoposes of things built from simplices up to dimension n; B1,
+Prop 1.12), rung 1 is the *smallest* resolving level. **In the topos of
 shapes, the sublation of nothing-vs-unity is exactly points-vs-blobs.**
 The ladder's first two rungs sit flush.
 
-**In 𝒮: no — and the culprit has a name.** The two-stage universe contains
-one basic figure the universe of shapes has no analogue of: the thing that
+**In 𝒮: no — and the culprit has a name.** The two-stage topos contains
+one basic figure the topos of shapes has no analogue of: the thing that
 exists later but not now —
 
 ```
@@ -333,7 +381,7 @@ not nothing** (B1, Prop 1.9–1.10). Rung 1 fails to resolve rung 0 in 𝒮.
 In a universe where the future can outrun the present, "nothing stays
 nothing" fails at rung 1 — *becoming leaks*.
 
-Then what *is* the sublation in 𝒮? Here the two-stage universe shows its
+Then what *is* the sublation in 𝒮? Here the two-stage topos shows its
 whole hand, because one can write down **all** of its levels — there are
 exactly four, in a diamond (B1, Prop 1.6–1.7):
 
@@ -446,19 +494,27 @@ The pointless figure is a two-line object — build it yourself in
 
 ## Payoff 1 · *Track A, with grades*
 
-(1) **The point/figure split** (theorem): rung 1 is where a universe first
+(1) **The point/figure split** (theorem): rung 1 is where a topos first
 distinguishes "the points of X" from "X itself", and offers the two
 canonical repairs — freeze or merge. Every geometry to come lives in the
 gap between a space and its set of points; rung 1 is that gap's first
 appearance. (2) **Sublation as a computable invariant** (theorem): where
-the Aufhebung of ∅ ⊣ ∗ lands is a property of the universe — rung 1 in
+the Aufhebung of ∅ ⊣ ∗ lands is a property of the topos — rung 1 in
 sSet, strictly below it in 𝒮 — detected by one question: *can the future
 outrun the present?* (3) **A calibration for the ladder** (reading, so
 marked): rung 2 (cohesion, ʃ ⊣ ♭) is where shape enters and where the
 next Aufhebung question — what resolves *rung 1's* opposition — gets
 asked. The machinery you have just watched work on a diamond is the same
 machinery that will run there; nothing about it was special to toy
-universes except the ability to draw every level on one screen.
+toposes except the ability to draw every level on one screen.
+
+**⊢ Predict (the standing exercise).** Before rung 2 is written, pose it
+yourself: what should an opposition of *shape against flatness* feel
+like; which toposes would you test it in first; and — knowing now that
+sublation location is model-dependent — where would you bet the Aufhebung
+of ♭ ⊣ ♯ lands in each? File your guess somewhere you cannot quietly
+revise it; rung 2 will grade it. That habit, repeated rung over rung, is
+the difference between reading the ladder and climbing it.
 
 ---
 
@@ -469,10 +525,10 @@ substantive A-claim, its B-statement, its spec home, and its script check:
 
 | Track A assertion | Track B | Spec | Script (`examples/run.mjs`) |
 |---|---|---|---|
-| Every universe contains ∅ and ∗, one opposition | Prop 0.1, Cor 0.2 | 00 §2 | 0.1/0.2 |
-| Collapse of ∅ ≅ ∗ collapses the universe | Prop 0.5 | 00 §3 | 0.5 |
+| Every topos contains ∅ and ∗, one opposition | Prop 0.1, Cor 0.2 | 00 §2 | 0.1/0.2 |
+| Collapse of ∅ ≅ ∗ collapses the topos | Prop 0.5 | 00 §3 | 0.5 |
 | ⊤, ⊥ canonical; distinct iff nondegenerate | D0.6, Prop 0.7 | 00 §4 | 0.7 |
-| Naive bit = Ω only in Boolean universes | Prop 0.8 | 00 §4 | 0.8/5.1 |
+| Naive bit = Ω only in Boolean toposes | Prop 0.8 | 00 §4 | 0.8/5.1 |
 | 𝒮's third truth value "later"; 𝒮 not Boolean | Prop 0.10, Cor 0.11 | 00 §5.2 | 0.10, 0.11 |
 | sSet not Boolean either | §5.3 | 00 §5.3 | 5.3 |
 | Wheeler bit-as-opposition | Remark 0.9 — **conjectural** | 00 §4 | — |
@@ -486,7 +542,16 @@ substantive A-claim, its B-statement, its spec home, and its script check:
 | Aufhebung of rung 0 in 𝒮 = the open level | Prop 1.13 | 01 §5.4 | 1.13/§5.4 |
 | One-clause definition is the literature's | §5.4 source verdict; D0.4 note | 01 §5.4, 00 §1 | — (source question) |
 | Sublation location measures future-outrunning-present | Lemma 1.5 + Props 1.11–1.13 | 01 §5 | (composite) |
+| 𝒮 as two-stage topos of trees; "later" as ▷'s shadow | — reading under investigation, **OP-13** | `notes/internal-language-and-room-for-two.md` §4 | — (OP-13 work program) |
+| Hegel's "twofold meaning" as the sublation gloss | — lineage, shown not load-bearing | *Science of Logic*, "The Expression 'To Sublate'" | — (source question) |
 
 *Draft status: awaiting P0.7 red-leg review alongside the spec sections.
-The A-track metaphor "universe" for topos, and the time reading of 𝒮, are
-expository devices; the B-track and spec carry the definitions.*
+Revised August 2026 (T-2026-08-05-A), after rung 0·0 landed: precise
+vocabulary (topos, adjoint triple, moment) now used throughout, with
+"universe" retained only in the most expository sentences; ⊢ Predict
+prompts added (the generative discipline — including the trap at A2 that
+this project's own roadmap fell into); the Aufhebung passage now shows
+its Hegel line rather than name-checking it; the topos-of-trees remark
+added at A0′, flagged and ledgered under OP-13; the stale explorer
+"(pending)" corrected. The time reading of 𝒮 remains an expository
+device; the B-track and spec carry the definitions.*

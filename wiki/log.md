@@ -48,3 +48,14 @@ preservation (RAPL/LAPC), and internal language (W-0004's theorem-halves).
 Track B cites literature rather than spec; source ledger ties A-claims to
 citations and to `examples/run.mjs` items where instances are computed.
 W-0001 and W-0004 cross-refs updated.
+
+## [2026-08-05] reprocess | text/rung-0-1-draft.md — precision pass, ⊢ Predict prompts, Hegel peek, OP-13 remark
+
+Post-rung-0·0 revision (owner-commissioned, T-2026-08-05-A): "universe"
+retained only in the most expository sentences, topos / adjoint triple /
+moment used precisely elsewhere (ledger rows updated to match); the
+generative discipline enters as three ⊢ Predict prompts, including the
+trap at A2 that the project's own roadmap fell into; the Aufhebung
+passage now shows Hegel's "twofold meaning" line (shown, not leaned on);
+W-0002's topos-of-trees identification surfaces as a flagged A0′ remark,
+ledgered under OP-13; the stale explorer "(pending)" corrected.
