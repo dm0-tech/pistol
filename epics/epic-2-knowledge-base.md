@@ -23,6 +23,18 @@ W-0001 (sourced/established), W-0002 (llm-derived/claimed), W-0003
 (human-conjecture/conjectural), W-0004 (mixed-grade). One-way flow rule:
 the wiki may cite the spec; the spec never cites the wiki.
 
+*Status update (2026-08-05, after the llm-wiki landscape survey, W-0005):*
+the survey re-scoped **D6 from optional to mandatory-but-tiny** — the
+ecosystem's clearest empirical finding is that structure should be checked
+by code and model judgment spent on semantics only. Delivered in the
+wiring branch: **D1** as `AGENTS.md` (the Karpathy pattern's schema layer,
+read at session start); **D6** as `wiki/lint.mjs` (headers, vocabularies,
+index agreement, links, transcript resolvability, log format); **D5**
+partially — agent-written digests archived for T-2026-07-14-A and
+T-2026-08-05-A, with verbatim exports remaining with the owner; plus
+`wiki/log.md` (the pattern's chronological navigation file, adopted from
+the gist). Existing entries W-0001–W-0004 reprocessed under the lint.
+
 ## Deliverables
 
 - **D1. Intake pipeline.** Any session or agent that produces a claim
