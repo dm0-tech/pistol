@@ -92,10 +92,35 @@ provisional until the Phase 0 spec exists to grade them against.*
   point-surjectivity. Wheeler's 1989 agenda item Four cites the GL
   literature directly, so this is his exhortation transcribed into our
   setting. *Grade: conjectural. Cross-references the Aufhebung thread;
-  candidate Phase 2 side-quest.*
+  candidate Phase 2 side-quest.* **Sharpened (July 14, 2026):** 𝒮 is the
+  two-stage truncation of the topos of trees (modulo a variance dictionary
+  to be pinned), so Ω_𝒮's third truth value "later" is ▷'s two-stage
+  shadow. Finite attack available now: compute ▷ and its internal
+  Ω-operator in the 2-/3-/4-stage truncations and locate ▷ against the
+  level diamond of `spec/01-level-1.md` §4 (▷ is not idempotent, so it is
+  no level's modality — the question is its relation to the open level,
+  and whether any level modality validates or refutes a Löb-type axiom).
+  See `notes/internal-language-and-room-for-two.md` §4.
 - **OP-14. Wheeler's clue as a theorem.** State Kheyfets–Wheeler's
   "all law from no law" via ∂∂ = 0 as the theorem it wants to be: the
   brane-scan cocycle conditions (Baez–Huerta; Schreiber's L∞ formulation)
   as the nontrivial solutions of d² = 0 constraints on super-Minkowski
   Chevalley–Eilenberg algebras. *Grade: conjectural. Feeds the Phase 1
   essay and Phase 4; cross-references OP-5, OP-11.*
+- **OP-16. The room for two.** Is "containing two independent copies of
+  one's own possibility-structure" a formal precondition of
+  self-representation? The stones: the 240 unit integral octonions are the
+  E8 roots (Coxeter 1946); d = 16 admits exactly two even unimodular
+  lattices, E8 ⊕ E8 and D16⁺ (Witt 1941), and heterotic consistency forces
+  exactly this pair; Lawvere's diagonal requires a point-surjection
+  A → Yᴬ — the universe holding a copy of its own self-transformations
+  beside itself. The typed question: a fixed-point or valuation-theoretic
+  statement in which second-order possibility (valuing the valuations)
+  forces the doubling, with d = 16 as an instance rather than a metaphor.
+  Cheapest attacks first: the rootless Leech lattice at d = 24; the generic
+  doubling at d = 32 (> 10⁷ classes, King 2003) — any formal claim must
+  explain why 16 and not 32, or die. The exponentials-vs-orthogonal-sums
+  gap in the analogy is currently untyped; a proof that no bridge exists
+  is an acceptable disposal. *Grade: conjectural. Thread P4;
+  cross-references OP-11, OP-12; stone S17 and
+  `notes/internal-language-and-room-for-two.md` §5.*

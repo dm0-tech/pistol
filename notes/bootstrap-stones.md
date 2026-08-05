@@ -137,6 +137,21 @@ exceptional-geometry/Thread-P summit. "None apparent" means exactly that.
   lattices — E8 × E8 or Spin(32)/ℤ₂ (Gross–Harvey–Martinec–Rohm 1985);
   Narain lattices likewise. *Contact: genuine — the one place where a
   self-duality condition literally forces E8 into physics.*
+- **S17. Room for two: the even unimodular doublings.** The unit integral
+  octonions (Coxeter–Dickson maximal order) are the 240 roots of E8
+  (Coxeter 1946); E8 is the unique even unimodular lattice in d = 8
+  (Mordell 1938) and the densest packing there (Viazovska 2017). Dimension
+  16 is the first with room for two copies: exactly two even unimodular
+  lattices, E8 ⊕ E8 and D16⁺ (Witt 1941) — isospectral, non-isometric
+  (Milnor 1964) — and heterotic consistency forces exactly this pair (S11).
+  Independently, the amplitudes double copy (KLT 1986; BCJ 2008) exhibits
+  gravity as the "square" of gauge theory. In d = 24 the densest lattice
+  (Leech) has no roots; in d = 32 the doubling is generic (King 2003 mass
+  formula: > 10⁷ classes). *Contact: direct with Thread P's terminus
+  (OP-11/OP-12) via the integral-octonion identification; whether
+  "containing two copies of one's own possibility-structure" has a
+  fixed-point-theoretic formulation is OP-16's question — see
+  `internal-language-and-room-for-two.md` §5.*
 
 ### 2.3 Physics bootstraps
 
@@ -176,6 +191,12 @@ first. All grades: **conjectural** unless noted.
    ♭, ♯, ʃ validate or refute a Löb-type axiom? Sharpened by §1: Wheeler's
    own citation for self-reference is the GL literature, so this question
    *is* agenda item Four transcribed into our setting. → new **OP-13**.
+   *Sharpened again July 14, 2026:* 𝒮 is the two-stage truncation of the
+   topos of trees (modulo a variance dictionary), so the spec's third truth
+   value "later" is ▷'s shadow and the finite attack is available now —
+   compute ▷ and its Ω-operator in the 2-/3-/4-stage truncations and locate
+   it against the level diamond. See
+   `internal-language-and-room-for-two.md` §4.
 2. **The modal Lawvere theorem (S1 ↔ everything).** Classify which
    modalities preserve/reflect point-surjectivity — fixed points guaranteed
    only up to ◯. One lemma that would organize S1–S5 inside the program's
@@ -195,6 +216,15 @@ first. All grades: **conjectural** unless noted.
    universe-hierarchy resolution of Girard's paradox instantiate Aufhebung
    formally — each Uₙ₊₁ sublating the self-reference forbidden at Uₙ? Ties
    the ladder's logical spine to its own consistency mechanism.
+6. **The room for two (S17 + S1 ↔ Thread P summit).** Is "containing two
+   independent copies of one's own possibility-structure" a formal
+   precondition of self-representation — the diagonal's A-beside-Yᴬ and the
+   dimension-16 doubling E8 ⊕ E8 as two instances of one statement, or
+   provably not? The analogy is currently untyped (exponentials vs
+   orthogonal sums); typing it or disposing of it is the first task, and
+   the d = 24 (rootless Leech) and d = 32 (generic doubling) countermodels
+   are the cheapest attacks. → new **OP-16**; see
+   `internal-language-and-room-for-two.md` §5.
 
 ## 4. Primary sources for §1
 
