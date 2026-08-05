@@ -43,3 +43,4 @@ should be attacked in the Phase 1 essay's red leg.
 ## Log
 
 - 2026-08-05 — created from T-2026-07-14-A.
+- 2026-08-05 — reprocessed under `wiki/lint.mjs`; transcript pointer now resolves to the archived digest.
