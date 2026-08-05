@@ -6,7 +6,7 @@
 - **Grade:** claimed (the identification); conjectural (the deferral resonance)
 - **Sources:** Birkedal–Møgelberg–Schwinghammer–Støvring, *First steps in synthetic guarded domain theory: step-indexing in the topos of trees* (LMCS 2012); Smoryński, *Self-Reference and Modal Logic* (1985) — Wheeler's ref [159]
 - **Transcript:** T-2026-07-14-A
-- **Cross-refs:** OP-13 (sharpened); `notes/internal-language-and-room-for-two.md` §4; `spec/00-level-0.md` Prop 0.10 (the "later" truth value); `spec/01-level-1.md` §4 (the level diamond)
+- **Cross-refs:** OP-13 (sharpened); `notes/internal-language-and-room-for-two.md` §4; `spec/00-level-0.md` Prop 0.10 (the "later" truth value); `spec/01-level-1.md` §4 (the level diamond); `text/rung-0-1-draft.md` A0′ (flagged remark + three-stage ⊢ Predict)
 - **Status:** draft
 
 ## Statement
@@ -43,3 +43,4 @@ equivalence PSh(2-chain) ≃ Set^→ survives.
 
 - 2026-08-05 — created from T-2026-07-14-A; identification checked by the authoring LLM only.
 - 2026-08-05 — reprocessed under `wiki/lint.mjs`; transcript pointer now resolves to the archived digest.
+- 2026-08-05 — surfaced in the text as a flagged "reading under investigation" remark at rung 0–1 A0′, with a ledger row citing OP-13; grade unchanged (entering the text is not promotion).
