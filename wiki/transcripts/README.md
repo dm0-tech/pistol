@@ -9,7 +9,7 @@ index.*
 | ID | Date | Participants | Subject | Archive |
 |---|---|---|---|---|
 | T-2026-07-14-A | 2026-07-14 | owner + cloud agent | Criticism of the P0.3 text; adjunction distillate; internal language and OP-3; 𝒮 as two-stage topos of trees; room-for-two conjecture. Distilled in `notes/internal-language-and-room-for-two.md` | [digest](T-2026-07-14-A.md); verbatim pending |
-| T-2026-08-05-A | 2026-08-05 | owner + cloud agent | Wiki/knowledge-base design; provenance taxonomy; epic briefs; llm-wiki landscape survey (W-0005); the four-gap wiring | [digest](T-2026-08-05-A.md); verbatim pending |
+| T-2026-08-05-A | 2026-08-05 | owner + cloud agent | Wiki/knowledge-base design; provenance taxonomy; epic briefs; llm-wiki landscape survey (W-0005); the four-gap wiring; rung 0·0 text commissioned | [digest](T-2026-08-05-A.md); verbatim pending |
 
 ## Conventions
 

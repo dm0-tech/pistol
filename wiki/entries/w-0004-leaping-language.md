@@ -6,7 +6,7 @@
 - **Grade:** established (claims 1–2); open (claim 3 = OP-3); conjectural (the pregeometry reversal and ladder-as-loop readings)
 - **Sources:** Mac Lane–Moerdijk VI (Mitchell–Bénabou language, Kripke–Joyal semantics); Lawvere, *Adjointness in Foundations* (1969); Lawvere, *Diagonal arguments…* (1969); Wheeler, *Information, Physics, Quantum* (1989); MTW §44.4–44.5 (pregeometry as calculus of propositions; retreat folklore-flagged per `notes/bootstrap-stones.md` §1)
 - **Transcript:** T-2026-07-14-A
-- **Cross-refs:** OP-3; OP-7; S1; S6; convergence candidate 5; `notes/internal-language-and-room-for-two.md` §3; `text/rung-0-1-draft.md` Payoff 0
+- **Cross-refs:** OP-3; OP-7; S1; S6; convergence candidate 5; `notes/internal-language-and-room-for-two.md` §3; `text/rung-0-1-draft.md` Payoff 0; `text/rung-0-0-draft.md` Part III (theorem-halves in expository form)
 - **Status:** draft
 
 ## Statement
@@ -44,3 +44,4 @@ should be attacked in the Phase 1 essay's red leg.
 
 - 2026-08-05 — created from T-2026-07-14-A.
 - 2026-08-05 — reprocessed under `wiki/lint.mjs`; transcript pointer now resolves to the archived digest.
+- 2026-08-05 — the two theorem-halves (secreted; spoken-from-inside) entered the text as `text/rung-0-0-draft.md` Part III A″; claim 3 (OP-3) referenced there without promotion.

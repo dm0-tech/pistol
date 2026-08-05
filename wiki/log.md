@@ -37,3 +37,14 @@ re-scoped from optional to mandatory-but-tiny).
 
 Header/index agreement verified mechanically; transcript pointers now
 resolve to archived digests; log lines appended to each entry.
+
+## [2026-08-05] file | text/rung-0-0-draft.md — the self-contained on-ramp
+
+Owner-commissioned (T-2026-08-05-A): rung 0·0 covering adjunctions (the
+W-0001 distillate, expository form, including the ∞-categorical lift),
+modalities as ways of being (adjunction's internal presentation), and
+topoi as accumulated adjoints with forced logical elements, handedness
+preservation (RAPL/LAPC), and internal language (W-0004's theorem-halves).
+Track B cites literature rather than spec; source ledger ties A-claims to
+citations and to `examples/run.mjs` items where instances are computed.
+W-0001 and W-0004 cross-refs updated.
