@@ -31,6 +31,15 @@ Bayes' rule; then He drew His pistol."*
   level 1 (proved via the Kelly–Lawvere classification), while in 𝒮 rung 1
   is obstructed by the site's pointless representable and the Aufhebung is
   the smaller open level (OP-15, resolved from primary sources).
+- [`text/rung-0-0-draft.md`](text/rung-0-0-draft.md) — rung 0·0, the
+  self-contained on-ramp preceding the ladder: adjunctions ("best" as an
+  exactly-when, and why adjunction is the last word in suspended
+  opposition, surviving the ∞-categorical transition unchanged),
+  modalities as ways of being (the adjunction's internal presentation),
+  and topoi as worlds where adjoints accumulate — objective logical
+  elements forced, preserved by handedness, and speakable from inside
+  (the internal language). Track B cites the standard literature; the
+  source ledger ties every A-claim to citation and machine check.
 - [`text/rung-0-1-draft.md`](text/rung-0-1-draft.md) — the three-track
   expository text for rungs 0–1 (P0.3): the dialectical narrative (Track A),
   the mathematics with spec pointers (Track B), and the executable checks

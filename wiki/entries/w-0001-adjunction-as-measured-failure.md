@@ -6,7 +6,7 @@
 - **Grade:** established (the mathematics); the *reading* is exposition, not a claim
 - **Sources:** Kan, *Adjoint functors* (TAMS 1958); Mac Lane, *CWM* ch. IV (equivalence = adjunction with invertible unit/counit; uniqueness of adjoints); Lawvere, *Adjointness in Foundations* (Dialectica 1969); Schanuel–Street, *The free adjunction* (Cahiers 1986); Riehl–Verity, *Homotopy coherent adjunctions…* (2016)
 - **Transcript:** T-2026-07-14-A
-- **Cross-refs:** `notes/internal-language-and-room-for-two.md` §2; roadmap §1 (unity of opposites); Track H queue
+- **Cross-refs:** `notes/internal-language-and-room-for-two.md` §2; roadmap §1 (unity of opposites); Track H queue; `text/rung-0-0-draft.md` (expository form, Part I–II)
 - **Status:** checked
 
 ## Statement
@@ -39,3 +39,4 @@ machine-computed check for form's sake.
 
 - 2026-08-05 — created from T-2026-07-14-A (llm exposition of sourced mathematics); citations audited against the standard literature.
 - 2026-08-05 — reprocessed under `wiki/lint.mjs`; transcript pointer now resolves to the archived digest.
+- 2026-08-05 — expository form entered the text as `text/rung-0-0-draft.md` Parts I–II (owner-commissioned); floor/ceiling remains finger-checkable per its source ledger, the queued one-line machine check still optional.
