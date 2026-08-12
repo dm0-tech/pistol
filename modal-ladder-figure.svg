@@ -1,6 +1,6 @@
 <svg viewBox="0 0 700 880" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif" role="img" aria-labelledby="mlt mld">
   <title id="mlt">The modal ladder</title>
-  <desc id="mld">A vertical diagram ascending from the primordial opposition of nothing against unity, through continuity, cohesion, and elasticity, to solidity and exceptional geometry, with each rung produced by Aufhebung.</desc>
+  <desc id="mld">The programme's named ascent from nothing against unity through continuity, cohesion, elasticity, and solidity. Each proposed Aufhebung edge must be proved in the ambient level lattice; a Sierpiński inset shows the first path branching.</desc>
   <defs>
     <marker id="arrUp" viewBox="0 0 10 10" refX="5" refY="3" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M 0 10 L 5 0 L 10 10 z" fill="#888780"/>
@@ -19,7 +19,7 @@
     <text x="350" y="126" text-anchor="middle" font-size="12" fill="#0F6E56">rheonomy · super Cartan geometry · 11d supergravity</text>
 
     <rect x="210" y="170" width="280" height="56" rx="6" fill="#EEEDFE" stroke="#534AB7"/>
-    <text x="350" y="193" text-anchor="middle" font-size="16" fill="#3C3489">⇉ ⊣ ⇝</text>
+    <text x="350" y="193" text-anchor="middle" font-size="16" fill="#3C3489">⇉ ⊣ ⇝ ⊣ Rh</text>
     <text x="350" y="213" text-anchor="middle" font-size="12" fill="#534AB7">solidity — supergeometry</text>
 
     <rect x="230" y="290" width="240" height="56" rx="6" fill="#EEEDFE" stroke="#534AB7"/>
@@ -38,13 +38,26 @@
     <text x="350" y="673" text-anchor="middle" font-size="16" fill="#3C3489">∅ ⊣ ∗</text>
     <text x="350" y="693" text-anchor="middle" font-size="12" fill="#534AB7">the primordial bit</text>
 
+    <g aria-label="Sierpiński level diamond inset">
+      <rect x="465" y="585" width="205" height="128" rx="6" fill="#F7F7F5" stroke="#888780"/>
+      <text x="567" y="603" text-anchor="middle" font-size="11" fill="#2C2C2A">first test: 𝒮 branches</text>
+      <text x="567" y="620" text-anchor="middle" font-size="10" fill="#5F5E5A">max</text>
+      <line x1="567" y1="624" x2="520" y2="650" stroke="#888780"/>
+      <line x1="567" y1="624" x2="614" y2="650" stroke="#888780"/>
+      <text x="510" y="662" text-anchor="middle" font-size="10" fill="#0F6E56">open = 0̄</text>
+      <text x="624" y="662" text-anchor="middle" font-size="10" fill="#534AB7">closed = rung 1</text>
+      <line x1="520" y1="666" x2="567" y2="690" stroke="#888780"/>
+      <line x1="614" y1="666" x2="567" y2="690" stroke="#888780"/>
+      <text x="567" y="705" text-anchor="middle" font-size="10" fill="#5F5E5A">level 0</text>
+    </g>
+
     <line x1="350" y1="644" x2="350" y2="592" stroke="#888780" stroke-width="1.5" marker-end="url(#arrUp)"/>
     <line x1="350" y1="524" x2="350" y2="472" stroke="#888780" stroke-width="1.5" marker-end="url(#arrUp)"/>
     <line x1="350" y1="404" x2="350" y2="352" stroke="#888780" stroke-width="1.5" marker-end="url(#arrUp)"/>
     <line x1="350" y1="284" x2="350" y2="232" stroke="#888780" stroke-width="1.5" marker-end="url(#arrUp)"/>
     <line x1="350" y1="164" x2="350" y2="146" stroke="#888780" stroke-width="1.5" marker-end="url(#arrUp)"/>
 
-    <text x="368" y="384" font-size="12" fill="#5F5E5A" font-style="italic">Aufhebung</text>
+    <text x="368" y="384" font-size="12" fill="#5F5E5A" font-style="italic">proposed Aufhebung path</text>
 
     <text x="150" y="202" text-anchor="end" font-size="12" fill="#888780">solid</text>
     <text x="150" y="322" text-anchor="end" font-size="12" fill="#888780">elastic</text>
@@ -53,7 +66,7 @@
     <text x="150" y="682" text-anchor="end" font-size="12" fill="#888780">distinct</text>
 
     <text x="350" y="738" text-anchor="middle" font-size="12" fill="#5F5E5A">nothing against unity — no choice made, none available</text>
-    <text x="350" y="758" text-anchor="middle" font-size="12" fill="#888780">each rung: the previous opposition, resolved and preserved</text>
+    <text x="350" y="758" text-anchor="middle" font-size="12" fill="#888780">each edge is tested for resolution and minimality in its ambient lattice</text>
   </g>
 
   <text x="350" y="862" text-anchor="middle" font-size="12" fill="#888780" font-style="italic">it from bit, transformationally — after Lawvere, Schreiber, Wheeler</text>

@@ -1,7 +1,11 @@
 # Phase 0 Assessment
 
-*Candid review after the completion of `spec/00-level-0.md` and
-`spec/01-level-1.md`, July 10, 2026.*
+*Historical candid review after the completion of `spec/00-level-0.md` and
+`spec/01-level-1.md`, July 10, 2026. Its mathematical diagnosis triggered
+errata E1–E4 and remains useful; its deliverable-status sections are
+superseded. The text, explorer, and executable examples now exist, OP-15 is
+resolved, and P0.7 remains the phase-exit gate. See `README.md` “Where things
+stand.”*
 
 ## Bottom line
 

@@ -58,6 +58,15 @@ Bayes' rule; then He drew His pistol."*
   essay; the internal-language claim graded against OP-3; 𝒮 as the
   two-stage topos of trees (OP-13 sharpened); and the room-for-two
   doubling conjecture (OP-16, stone S17).
+- [`notes/rung-0-to-1-research-dossier.md`](notes/rung-0-to-1-research-dossier.md) —
+  the source-audited strand map and analogy atlas for the textual ascent:
+  primary Hegel/Lawvere lineage, level/Aufhebung source joints, the exact
+  finite guarded-recursion dictionary, graded analogy cards, and promotion
+  rules.
+- [`notes/project-complexity-handoff.md`](notes/project-complexity-handoff.md) —
+  artifact/dependency map for the post-push complexity review: which
+  mechanisms are mathematically necessary, epistemically protective,
+  pedagogically valuable, or merely procedural.
 - [`AGENTS.md`](AGENTS.md) — the schema layer: standing instructions that
   make any agent a disciplined maintainer of the layers below (read first,
   every session).
@@ -81,14 +90,18 @@ licensed under [MIT](LICENSE-MIT).
 
 ## Where things stand
 
-Phase 0 is approved (July 9, 2026) and underway: lightweight push-to-main
-process, public repo at `dm0-tech/pistol`. The plan resolves the notation
-decisions (N1–N4) against a July 2026 audit of the sources and scopes the
-deliverables: spec rungs 0–1, the three-track text draft, the Sierpiński
-explorer, executable examples for the finite models, and a red-leg review at
-phase exit. Proof-assistant work is descoped (roadmap draft 1.2, decision
-N6): the July 2026 toolchain survey showed Agda's `--cohesion` is a bolt-on
-(no native ♯, no ʃ, infective flags), so proofs stay pen-and-paper — kept
-honest by being written self-evidently clearly, by computing every
-finite-model claim, and by adversarial review. Formalization frameworks stay
-on a watch list for the Phase 2 gate.
+Phase 0 is approved (July 9, 2026) and at its final draft/review leg. The
+notation register, rung-0/1 specs, three-track text, Sierpiński explorer,
+finite-model checks, and open-problems register exist. The spec's central
+early finding is that the named ladder sits inside a model-dependent level
+lattice: rung 1 is the first Aufhebung in sSet, but the open arm of the
+Sierpiński diamond resolves first. The remaining exit gate is P0.7, the
+authorship-blind red-leg review of spec and text.
+
+Proof-assistant work is descoped (roadmap draft 1.2, decision N6): the July
+2026 toolchain survey showed Agda's `--cohesion` is a bolt-on (no native ♯,
+no ʃ, infective flags), so proofs stay pen-and-paper—kept honest by being
+written self-evidently clearly, by computing every finite-model claim, and
+by adversarial review. Formalization frameworks stay on a watch list for the
+Phase 2 gate; examples above the finite rungs are added only when they remain
+cheaper than the mathematics they illuminate.

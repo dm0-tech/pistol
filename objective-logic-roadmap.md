@@ -16,7 +16,9 @@ There is a line of work — initiated by F. W. Lawvere and carried furthest by U
 - the adjunction **∅ ⊣ ∗** (the empty modality against the terminal one — pure nothing against pure unity), and
 - the degenerate adjunction **id ⊣ id**,
 
-and ascends, by Lawvere's *Aufhebung* (each opposition resolved and preserved at the next level), through:
+and proposes the following named ascent. Lawvere's *Aufhebung* supplies the
+test between levels; it does **not** guarantee that the next named rung is the
+least resolving level in every topos:
 
 | Level | Opposition | Quality determined |
 |---|---|---|
@@ -25,6 +27,13 @@ and ascends, by Lawvere's *Aufhebung* (each opposition resolved and preserved at
 | 2 | ʃ ⊣ ♭ (shape ⊣ flat) | cohesion — homotopy/geometry unified |
 | 3 | ℜ ⊣ ℑ ⊣ & (reduction, infinitesimal shape, infinitesimal flat) | elasticity — differential structure, jets, PDEs |
 | 4 | ⇉ ⊣ ⇝ ⊣ Rh (fermionic ⊣ bosonic ⊣ **rheonomic**) | solidity — supergeometry |
+
+The distinction is load-bearing. Levels form a partial order, and the named
+rungs select a path whose successive relations must be proved in each model.
+Phase 0 found the first counterexample to a naive linear reading: in sSet
+level 1 is the Aufhebung of level 0, while in the Sierpiński topos the level
+poset is a diamond and the smaller open level resolves first. The ladder is
+the research programme; the ambient lattice judges each step.
 
 The striking empirical fact: the top of this ladder recovers the **rheonomy principle** of D'Auria–Fré supergravity — a working physical principle discovered independently by physicists in the 1980s — as the statement that physical super-fields are *modal types* for the rheonomy modality Rh. A dialectical formalism that begins with literally nothing and literally unity terminates in the constraint structure of 11-dimensional supergravity.
 
@@ -93,7 +102,10 @@ Three coupled deliverables, in dependency order:
 
 1. *Dialectical motivation* — what opposition is being posited, in plain language, with the Hegel–Lawvere lineage stated but never load-bearing.
 2. *Categorical definition* — adjoint (co)monads, Aufhebung, the relevant fracture/differential-cohomology diagrams.
-3. *Small concrete models* — worked in full: the Sierpiński topos, simplicial sets, smooth sets, formal smooth sets, super smooth sets. Every abstract claim exhibited in a model a graduate student can compute in.
+3. *Concrete models at honest scope* — worked closely enough to expose what
+   the abstraction says: finite models computed exhaustively, truncated
+   models labeled as such, and higher/smooth models carried by derivation and
+   source when exhaustive computation would outgrow the mathematics.
 4. *Physical payoff* — what the rung buys: gauge fields (rung 2), variational calculus and PDEs (rung 3), superspace and rheonomy (rung 4).
 
 **D3. The Ladder, computed and interactive** — executable examples that machine-*compute* every claim the spec makes about finite and small models (the finite toposes make this cheap and total), plus interactive visualizations (see §5) that let a reader *manipulate* the oppositions in small models rather than only read about them. Machine-checked *proof* is deliberately not a deliverable (see §4): proof integrity comes from proofs written to be self-evidently checkable, adversarial red-team review at each phase exit, and the executable examples as the concrete-calculation backstop.
@@ -148,7 +160,11 @@ Seeded with: internal universes for ♭ (Licata et al.'s no-go and workarounds);
 
 The oppositions are unusually visualizable, because the small models are finite or nearly so:
 
-- **The Sierpiński topos explorer.** Objects are just functions of sets; ∅ ⊣ ∗, ♭ ⊣ ♯, and the first genuine Aufhebung can be *clicked through*. A reader drags an object and watches its modal images.
+- **The Sierpiński topos explorer.** Objects are just functions of sets;
+  ∅ ⊣ ∗, ♭ ⊣ ♯, the complete four-level diamond, and the failure of the
+  expected first Aufhebung can be *clicked through*. A reader watches the
+  pointless representable obstruct the closed level and locate the actual
+  Aufhebung at the open level.
 - **Simplicial sets / graphs.** ʃ as "collapse the paths": animate a graph contracting to its π₀ / its homotopy type. Discrete vs. codiscrete as two ways a set can sit inside a category of graphs.
 - **The ladder diagram itself** as the project's navigational UI: the site *is* the lattice of modalities; clicking a rung opens its four-part treatment (§2 D2). Form mirrors content — the Lawverian move again.
 - **Infinitesimals:** dual-numbers arithmetic playground for ℜ ⊣ ℑ (formal smooth sets in miniature).
@@ -162,7 +178,7 @@ Overview for review — each phase has an exit criterion, and no phase starts un
 | Phase | Name | Core output | Exit criterion | Rough scale |
 |---|---|---|---|---|
 | 0 | Spec and seed | The spec; D2 rungs 0–1 draft; Sierpiński explorer prototype | Spec notation frozen; rungs 0–1 checkable by a category-literate reader | weeks |
-| 1 | The cohesive rung | D2 rung 2 in all three tracks; executable examples for the cohesive models; sSet visuals; the §1.1 essay | One nontrivial cohesive theorem proven in full, red-team-reviewed, *and* readable in Track A, with its model instances computed | months |
+| 1 | The cohesive rung | D2 rung 2 in all three tracks; judicious examples for cohesive models; sSet visuals; the §1.1 essay | One nontrivial cohesive theorem proven in full, red-team-reviewed, *and* readable in Track A, with model instances worked at explicitly bounded scope | months |
 | 2 | The ladder as object | The Aufhebung lattice worked as a small 2-categorical object (pen-and-paper + computed examples); framework watch-list re-assessment | Standalone artifact publishable on its own; formalization readopted only if the corner-risk has demonstrably disappeared | months |
 | 3 | Elasticity | D2 rung 3; jets/PDE/variational material; link to smooth-sets field theory | Physics-facing reader can follow Track C into Giotopoulos–Sati | months |
 | 4 | Solidity and rheonomy | D2 rung 4; D'Auria–Fré dictionary; open-problems list doing real work | Rheonomy-as-modality stated at spec grade "established/claimed/conjectural" per case | open-ended |
@@ -172,7 +188,14 @@ Overview for review — each phase has an exit criterion, and no phase starts un
 Write the "spec": a 15–25 page precise statement of the ladder (definitions, models, Aufhebung relations, the rheonomy endpoint) that all other artifacts must agree with. Sources: Lawvere ("Axiomatic cohesion" 2007, "Some thoughts on the future of category theory" 1991), Schreiber (dcct §§ on elasticity/solidity; *Modern Physics formalized in Modal HoTT*), Shulman (real cohesion), Myers (modal prism), Myers–Riley (*Commuting Cohesions*), Sati–Schreiber (*Geometric Orbifold Cohomology*, 2026), D'Auria–Fré via Castellani–D'Auria–Fré. Deliverable: the spec + rungs 0–1 of D2 in draft + the Sierpiński explorer prototype.
 
 **Phase 1 — The cohesive rung, complete.**
-D2 rungs 2 (cohesion) written across all three tracks — the core internal results (fracture, differential cohomology diagram fragments per Myers) proven in full and red-team-reviewed, with their finite-model instances computed; simplicial/graph visualizations. This rung is the make-or-break pedagogical test: it is where most readers currently fall off the literature.
+D2 rung 2 (cohesion) written across all three tracks — the core internal
+results (fracture, differential cohomology diagram fragments per Myers)
+proven in full and red-team-reviewed, with finite or truncated instances
+computed only where they discriminate; simplicial/graph visualizations used
+only where they teach more cheaply than prose. Track C may become a hand
+calculation or a precise source path when code would be the larger project.
+This rung is the make-or-break pedagogical test: it is where most readers
+currently fall off the literature.
 
 **Phase 2 — The ladder as object.**
 Work the mode theory / Aufhebung lattice as a small, self-contained 2-categorical object (pen-and-paper, with its finite instances computed; publishable on its own). Re-assess the framework watch list (Agda 2.9.0, Narya/H.O.T.T., MTT) with evidence in hand; readopt formalization only if the corner-risk has demonstrably disappeared.
@@ -192,13 +215,21 @@ Each phase ends with a *dialectical review*: what did the material itself teach 
 - **The dialectical framing invites dismissal** from mathematicians and physicists alike. Mitigation: Track discipline (§3) — the philosophy is always cashed out, never appealed to.
 - **One-person bus factor.** Mitigation: public repo, nLab-compatible conventions, and the open-problems list as an invitation surface for collaborators.
 
-## 8. Immediate next actions
+## 8. Current next actions
 
-1. Fix the spec's table of contents and notation (½ day; decide ʃ/∫, & vs ♭', ⇝ conventions once).
-2. Write rung 0–1 of the spec: ∅ ⊣ ∗ and ♭ ⊣ ♯ with the Sierpiński topos and sSet worked in full.
-3. Build the Sierpiński explorer prototype (single React artifact).
-4. Write the executable examples for every finite-model computation in the rung 0–1 spec (shared mathematical core with the explorer), and stand up the red-leg review protocol for the phase exit.
-5. Draft the open-problems list from the seeds in §4.3.
+The original five Phase 0 actions have landed: notation and spec rungs 0–1,
+the explorer, the finite-model checks, and the open-problems register. The
+remaining exit work is:
+
+1. source-audit the few externally load-bearing joints and keep the result in
+   the rung-0→1 source dossier;
+2. finish the generative text pass, including Track H with independently
+   graded correspondences;
+3. keep the guarded-recursion experiment bounded to the finite dictionary
+   and a non-idempotence kill test;
+4. run the authorship-blind P0.7 red leg over spec and text, fix every Break,
+   and disposition Underpriced findings;
+5. stop at the Phase 0 owner gate before beginning rung 2.
 
 ## Appendix: core bibliography (working)
 
