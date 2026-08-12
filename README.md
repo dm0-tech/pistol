@@ -90,13 +90,17 @@ licensed under [MIT](LICENSE-MIT).
 
 ## Where things stand
 
-Phase 0 is approved (July 9, 2026) and at its final draft/review leg. The
+Phase 0 is approved (July 9, 2026) and at its owner exit gate. The
 notation register, rung-0/1 specs, three-track text, Sierpiński explorer,
 finite-model checks, and open-problems register exist. The spec's central
 early finding is that the named ladder sits inside a model-dependent level
 lattice: rung 1 is the first Aufhebung in sSet, but the open arm of the
-Sierpiński diamond resolves first. The remaining exit gate is P0.7, the
-authorship-blind red-leg review of spec and text.
+Sierpiński diamond resolves first.
+
+P0.7 ran on August 12, 2026 and passed after three Breaks and four
+Underpriced findings were fixed or narrowed
+(`reviews/phase-0-red-leg.md`). This does not self-declare Phase 0 complete:
+the owner still judges the education and closes the phase.
 
 Proof-assistant work is descoped (roadmap draft 1.2, decision N6): the July
 2026 toolchain survey showed Agda's `--cohesion` is a bolt-on (no native ♯,

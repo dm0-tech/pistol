@@ -89,3 +89,14 @@ The untyped diagonal ceiling (“no topos defines its own truth”) was
 withdrawn: any obstruction must specify a syntax object, truth predicate,
 and the hypotheses of Lawvere's fixed-point theorem. W-0004 upgraded to
 source-audited at its narrowed theorem scope.
+
+## [2026-08-12] audit | Phase 0 P0.7 red leg passed
+
+Fresh-context artifacts-only review found three Breaks and four Underpriced
+items. Breaks repaired: reflexive way-above/self-Aufhebung (notation erratum
+E5), the general-adjunction versus idempotent-modality distinction, and the
+typed outer/inner formulas in B7. Evidence claims were narrowed; guarded
+sieves gained independent enumeration and an object-level
+non-idempotence witness; philosophical readings were graded. The reviewer
+reran every attack and returned PASS. Memo:
+`reviews/phase-0-red-leg.md`. Phase 0 still awaits the owner exit gate.

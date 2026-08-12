@@ -251,5 +251,43 @@ described above.
 
 ## Author triage
 
-Pending. Every Break must be fixed and every Underpriced item dispositioned
-before this memo can carry a final gate verdict.
+| Finding | Disposition |
+|---|---|
+| B-01 | **Fixed.** D0.4 and `NOTATION.md` now define way-above as reflexive `i ≼ j` plus the one nonautomatic isomorphism. An Aufhebung may equal its level; max resolves itself. Erratum E5 records the correction. The level-0 model conclusions are unchanged. |
+| B-02 | **Fixed.** Rung 0·0 now distinguishes every adjunction's monad/comonad from an idempotent modality, explains triangle identities as zig-zag coherence, gives free/forgetful as the counterexample, and narrows the boundary claim. |
+| B-03 | **Fixed.** B7 separately types outer and inner triples, their fully faithful functors, induced monad/comonad, and adjunction orientation, matching D0.1. |
+| U-01 | **Dispositioned by narrowing.** Text and examples call the 121-pair checks bounded hom-cardinality evidence, not transposition or naturality checks. Theorem 1.1 remains the proof. |
+| U-02 | **Dispositioned by narrowing and one hard-coded removal.** Ledgers distinguish bounded formula regressions, direct witnesses, truncated checks, and full topology enumeration; the test-family duplicate-isomorphism note is explicit; `circMax(initial)` replaces `max: true`; no unbounded exhaustiveness is claimed. |
+| U-03 | **Fixed and narrowed.** Finite-chain sieves are independently enumerated; predicate later, `next`, and the later endofunctor are distinguished; a component-cardinality witness proves object-level non-idempotence. Löb and guarded fixed-point results remain source-backed and untested. |
+| U-04 | **Fixed.** The identified temporal, secretion, measurement, observer-participancy, and Wheeler claims are explicitly graded as readings; the classifier is described as representability, not adjunction. W-0004 was narrowed accordingly. |
+
+## Reviewer disposition verification
+
+The same fresh-context reviewer re-opened only the permitted artifacts and
+reran its attacks after the fixes.
+
+| Finding | Verified status |
+|---|---|
+| B-01 | dispositioned |
+| B-02 | dispositioned |
+| B-03 | dispositioned |
+| U-01 | dispositioned |
+| U-02 | dispositioned after a second narrowing pass on spec-ledger and Track C labels |
+| U-03 | dispositioned |
+| U-04 | dispositioned |
+
+Attacks against self-Aufhebung, general-adjunction idempotence, both B7
+orientations, hom-cardinality overclaiming, circular Ω counts,
+predicate/endofunctor conflation, and ungraded Track A/H assertions were
+rerun and blocked. No new Break or Underpriced finding was introduced.
+
+Mechanical evidence at final disposition:
+
+```
+node examples/run.mjs   # all checks passed
+node wiki/lint.mjs      # 7 entries, 0 errors, 0 warnings
+```
+
+## Final gate verdict
+
+**PASS — no Break remains; every Underpriced finding is dispositioned.**

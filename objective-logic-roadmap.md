@@ -217,19 +217,17 @@ Each phase ends with a *dialectical review*: what did the material itself teach 
 
 ## 8. Current next actions
 
-The original five Phase 0 actions have landed: notation and spec rungs 0–1,
-the explorer, the finite-model checks, and the open-problems register. The
-remaining exit work is:
+The original five Phase 0 actions have landed, as have the source dossier,
+generative Track-H pass, bounded guarded-recursion kill test, and P0.7
+authorship-blind review. P0.7 passed after three Breaks and four Underpriced
+findings were dispositioned. The current actions are:
 
-1. source-audit the few externally load-bearing joints and keep the result in
-   the rung-0→1 source dossier;
-2. finish the generative text pass, including Track H with independently
-   graded correspondences;
-3. keep the guarded-recursion experiment bounded to the finite dictionary
-   and a non-idempotence kill test;
-4. run the authorship-blind P0.7 red leg over spec and text, fix every Break,
-   and disposition Underpriced findings;
-5. stop at the Phase 0 owner gate before beginning rung 2.
+1. owner review of the revised educational ascent and red-leg memo;
+2. the planned project-complexity review, using
+   `notes/project-complexity-handoff.md`;
+3. an explicit Phase 0 exit decision.
+
+Do not begin rung 2 before that owner gate.
 
 ## Appendix: core bibliography (working)
 

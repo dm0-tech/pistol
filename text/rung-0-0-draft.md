@@ -601,8 +601,10 @@ warranty's rung-0 instance (left/right adjoints forcing □₀ = ∅,
 | Hegel lineage (unity of opposites, moments) | — | shown, never load-bearing: Hegel, *Science of Logic*; Lawvere 1991/1996; W-0007 | — |
 
 *Draft status: commissioned by the owner (T-2026-08-05-A) as the
-self-contained on-ramp; awaiting red-leg review alongside the P0.3
-material. The "ways of being" reading of modalities and the Hegel
+self-contained on-ramp. P0.7 passed on August 12, 2026 after correcting
+the general-adjunction/idempotent-modality distinction and B7's two typed
+triple shapes; the draft now awaits the owner gate. The "ways of being"
+reading of modalities and the Hegel
 vocabulary are expository devices graded as readings; every mathematical
 claim above is standard literature, cited, with project-specific
 instances deferred to the spec. The August 12 pass added Track H as a

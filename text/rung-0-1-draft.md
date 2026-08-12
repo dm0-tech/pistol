@@ -618,8 +618,9 @@ substantive A-claim, its B-statement, its spec home, and its script check:
 | Hegel's "twofold meaning" as the sublation gloss | — source fact; Lawvere correspondence **claimed** | *Science of Logic*, "The Expression 'To Sublate'"; Lawvere 1991 §II; W-0007 | — |
 | Hegel Being/Nothing/Becoming beside the trivial level | — source facts; correspondence **claimed**; isomorphism reading rejected | *Science of Logic* §134; Lawvere 1991 §II; W-0007 | `0.5` rejects ∅ ≅ ∗ in a nondegenerate topos |
 
-*Draft status: awaiting P0.7 red-leg review alongside the spec sections.
-Revised August 2026 (T-2026-08-05-A), after rung 0·0 landed: precise
+*Draft status: P0.7 passed on August 12, 2026 after the review's Breaks and
+Underpriced findings were dispositioned; the draft now awaits the owner
+gate. Revised August 2026 (T-2026-08-05-A), after rung 0·0 landed: precise
 vocabulary (topos, adjoint triple, moment) now used throughout, with
 "universe" retained only in the most expository sentences; ⊢ Predict
 prompts added (the generative discipline — including the trap at A2 that
