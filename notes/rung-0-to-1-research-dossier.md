@@ -63,7 +63,7 @@ Three source conclusions materially affect the exposition:
 | 0: internal bit | Why can truth exceed a binary alphabet? | Wheeler reading marked conjectural | Ω ≅ 1+1 iff Boolean; Ω_𝒮 = (3→2) | classifier round trips; three-stage prediction |
 | hinge: deferral | Can something exist without a point yet? | no Hegelian conclusion required | the representable `(∅→1)`; finite tree dictionary | bounded 2/3/4-stage Ω and ▷ calculation |
 | 1: points/figures | How can the same points determine opposite figures? | unity of opposites as Lawvere's proposed model | Disc ⊣ Γ ⊣ coDisc; ♭ ⊣ ♯ | existing hom-count and idempotence checks |
-| 1: Aufhebung | Does this higher opposition actually resolve the first? | Hegel's “preserve”/“cause to cease” supplies the gloss; Lawvere supplies the definition | one-clause resolution, co-resolution distinct, minimality in each level poset | Sierpiński diamond and truncated sSet |
+| 1: Aufhebung | Does this candidate opposition actually resolve the first? | Hegel's “preserve”/“cause to cease” supplies the gloss; Lawvere supplies the definition | reflexive level order plus one nonautomatic resolution clause; co-resolution distinct; minimality in each level poset | Sierpiński diamond and truncated sSet |
 
 The writing order follows the B-column; the first reading follows the
 A-column. Track H appears only after the reader can name the formal feature
@@ -112,8 +112,9 @@ LNM 1488 (1991), §II, pp. 6–9.
   guide.
 - The higher coskeleton fixing the lower skeleton is the nonautomatic
   condition; its fixing of the lower coskeleton follows from the assumed
-  order. This is the source shape behind the spec's one-clause resolution,
-  not the separate companion condition now called co-resolution.
+  order. This is the source shape behind the spec's “one additional clause”
+  resolution, not a license to omit the reflexive order and not the separate
+  companion condition now called co-resolution.
 - He warns that a smallest resolving level exists in some but not all
   examples. The definite article in “the Aufhebung” therefore requires an
   existence/minimality proof.
@@ -177,10 +178,12 @@ of Trees,” *Logical Methods in Computer Science* 8(4), 2012, §§2.1–2.4.
 For the topos of trees `Set^(ω^op)`:
 
 - an object has restrictions `X(n+1) → X(n)`;
-- `▷X(1) = 1` and `▷X(n+1) = X(n)`;
+- the later endofunctor has `▷X(1) = 1` and
+  `▷X(n+1) = X(n)`;
 - `next : X → ▷X` is given by the restrictions;
 - `Ω(m) = {0,…,m}` with restriction `k ↦ min(m-1,k)`;
-- the predicate operator maps `k ∈ Ω(m)` to `min(m,k+1)`;
+- the distinct, induced predicate operator on Ω maps
+  `k ∈ Ω(m)` to `min(m,k+1)`;
 - stage 1 always forces `▷φ`, while stage `n+1` forces it exactly when stage
   `n` forces φ;
 - the operator satisfies Löb's rule and is not idempotent.
@@ -195,9 +198,12 @@ never ↦ later ↦ now ↦ now
 no    ↦ yes   ↦ yes
 ```
 
-so it cannot be any of 𝒮's idempotent level modalities. That disposes the
-strongest naive identification. A subtler relation to the open level remains
-an OP-13 question.
+An independent component-cardinality witness in `examples/src/guarded.mjs`
+shows the later endofunctor itself is not idempotent, so it cannot be any of
+𝒮's idempotent level modalities. That disposes the strongest naive
+identification. A subtler relation to the open level remains an OP-13
+question. The script does not test Löb's rule or a guarded fixed-point
+theorem; those remain source-backed.
 
 ## 4. Track H: correspondences and frictions
 
@@ -229,9 +235,10 @@ an OP-13 question.
 
 - **Hegel source fact — established:** sublation preserves and ends, producing
   a mediated result rather than nothing.
-- **Lawvere definition — established as a mathematical definition:** a higher
-  level resolves a lower one under the way-above condition; “the” Aufhebung
-  is the least such level when it exists.
+- **Lawvere definition — established as a mathematical definition:** a level
+  resolves another under the reflexive way-above condition; “the” Aufhebung
+  is the least such level when it exists. A self-resolving level may be its
+  own Aufhebung.
 - **Correspondence — claimed:** the categorical relation models the
   preserve/cease structure.
 - **Productive test:** because the least resolving level is model-dependent,
@@ -323,8 +330,10 @@ vocabulary alone.
 - **Grade:** the three components established; the single explanation
   conjectural.
 - **Neighbors:** A-03, A-05, A-07.
-- **Attack:** the finite calculation shows ▷ is non-idempotent and hence not a
-  level modality. A common name is not a common modal operator.
+- **Attack:** the finite calculation distinguishes the predicate map from
+  the endofunctor and gives an object-level witness that the latter is
+  non-idempotent, hence not a level modality. A common name is not a common
+  modal operator.
 - **Promotion:** formulate a typed relation—distributive law, comparison
   transformation, or preservation theorem—or leave as resonance.
 - **Wiki:** W-0002 / OP-13.

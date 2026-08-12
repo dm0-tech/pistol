@@ -12,8 +12,9 @@ topos** (§5.2), where the obstruction is exactly the site's pointless
 representable. 𝒮 also exposed a definitional fork in D0.4 — one-clause vs
 two-clause resolution give different Aufhebung answers in 𝒮 — registered as
 OP-15 and since **resolved from the primary sources** (§5.4): the
-literature is unanimously one-clause, and the Aufhebung of level 0 in 𝒮 is
-the open level (Prop 1.13), not ♭ ⊣ ♯.
+literature uses the reflexive level order plus one additional resolution
+clause (not the companion co-resolution clause), and the Aufhebung of level
+0 in 𝒮 is the open level (Prop 1.13), not ♭ ⊣ ♯.
 
 ## 1. The general theorem: presheaf toposes over a site with a point-like terminal object
 
@@ -211,8 +212,9 @@ opposite orientations. *Grade: established.*
 
 ## 5. Resolution of level 0: where the Aufhebung lives
 
-Recall D0.4: level j resolves level 0 (0 ≪ j) iff ◯ⱼ∅ ≅ ∅; the honesty
-remark's companion clause is □ⱼ∗ ≅ ∗.
+Recall D0.4: level j resolves level 0 (0 ≪ j) iff 0 ≼ j and
+◯ⱼ∅ ≅ ∅; Proposition 0.3 makes the order condition automatic for every
+level j here. The honesty remark's companion clause is □ⱼ∗ ≅ ∗.
 
 ### 5.1 General criterion
 
@@ -288,7 +290,7 @@ sSet); in particular no exotic level sits between the trivial and
 left Kan extension ⊣ restriction ⊣ right Kan extension along Δ_{≤0} ↪ Δ,
 which is Disc ⊣ Γ ⊣ coDisc). Hence level 1 is the minimal nontrivial
 level, and since it resolves level 0 while level 0 does not resolve itself
-(◯₀∅ = ∗ ≇ ∅), the Aufhebung is 0̄ = level 1 in sSet.
+(although 0 ≼ 0, ◯₀∅ = ∗ ≇ ∅), the Aufhebung is 0̄ = level 1 in sSet.
 *Grade: established (classification from Lemmas 1.12a–b; identification
 0-skeletal = level 1 by the Kan extensions along Δ_{≤0} ≅ {[0]} ↪ Δ being
 computed by the §3 formulas). Both former OP-15 caveats — the citation and
@@ -296,15 +298,17 @@ the resolution-clause question — are now discharged (§5.4).*
 
 ### 5.4 The definitional fork, resolved (OP-15)
 
-Under the one-clause D0.4, the resolving levels of 𝒮 are exactly
+Under D0.4 (order plus one nonautomatic resolution clause), the resolving
+levels of 𝒮 are exactly
 {open, max} (Prop 1.9; ◯_max = id fixes ∅), so **0̄_𝒮 = the open level** —
 and it is *not* ♭ ⊣ ♯. Under the two-clause variant (adding □ⱼ∗ ≅ ∗),
 neither middle level of 𝒮 would qualify and the answer would jump to the
 maximal level. In sSet both variants agree (0̄ = level 1, §5.3), so 𝒮 is the
 minimal discriminating model.
 
-**The source question is settled (July 11, 2026): one-clause is the
-literature's definition, unanimously** — see the source note at D0.4. The
+**The source question is settled (July 11, 2026; reflexive order restored
+by erratum E5 during P0.7): the literature uses order plus one additional
+resolution clause, unanimously** — see the source note at D0.4. The
 companion clause is nLab's separate notion of *co-resolution*; the nLab
 "Aufhebung" page uses this very 𝒮 example to warn that resolution does not
 imply co-resolution, and states the general result that in a ⊥-scattered
@@ -328,7 +332,7 @@ the definitional question is closed.*
 |---|---|
 | (a) verify ♯∅ ≅ ∅ in 𝒮 and sSet-like models where it holds | Done: holds in sSet (Prop 1.11); **fails in 𝒮** (Prop 1.9), with the general criterion (Lemma 1.5) locating the failure |
 | (b) verify companion ♭∗ ≅ ∗ | Done generally (Prop 1.4) |
-| (c) minimality: is ♭ ⊣ ♯ the Aufhebung 0̄? | sSet: yes (Prop 1.12, classification proved via Lemmas 1.12a–b). 𝒮: no — 0̄_𝒮 = the open level (Prop 1.13, under the literature's one-clause definition; OP-15 resolved, §5.4) |
+| (c) minimality: is ♭ ⊣ ♯ the Aufhebung 0̄? | sSet: yes (Prop 1.12, classification proved via Lemmas 1.12a–b). 𝒮: no — 0̄_𝒮 = the open level (Prop 1.13, under the literature's order-plus-one-clause definition; OP-15 resolved, §5.4) |
 
 ## 7. Forward: toward rung 2
 
@@ -362,7 +366,7 @@ structure. Nothing is claimed here.
 | 1.12b | Ideals of Δ = {∅, I_n, mor Δ}, all idempotent | established (proved here) | — |
 | 1.12 | 0̄ = level 1 in sSet | established (proved here via 1.12a–b) | — |
 | §5.4 | The two notions diverge in 𝒮 (resolution ≠ co-resolution) | established (both horns proved) | full check ⚙ |
-| 1.13 | 0̄_𝒮 = the open level | established (proved here; one-clause definition confirmed by sources — OP-15 resolved) | full check ⚙ |
+| 1.13 | 0̄_𝒮 = the open level | established (proved here; order-plus-one-clause definition confirmed by sources — OP-15 resolved) | full check ⚙ |
 
 ## References for this section
 
@@ -375,7 +379,7 @@ idempotent ideals; scan at lawverearchives.com. — Kennett–Riehl–Roy–Zaks
 Ch. V (subtoposes ↔ topologies). — Lawvere, *Axiomatic cohesion* (TAC
 2007). — Lawvere, *Some thoughts on the future of category theory* (Como,
 LNM 1488, 1991) and *Categories of Space and of Quantity* (1992) — the
-"way above" relation, one-clause. — Marmolejo–Menni, *Level ε*
+"way above" relation, order plus one additional clause. — Marmolejo–Menni, *Level ε*
 (arXiv:1909.12757) — way-above, Def. §2. — Menni, *Monic skeleta,
 boundaries, Aufhebung* (TAC 34 (2019) no. 25) — way-above and the
 order-equivalence, p. 715. — nLab: *level of a topos*, *Aufhebung*

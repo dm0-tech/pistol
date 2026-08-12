@@ -47,12 +47,16 @@ operator between two adjoint pairs):
   unity is the transform **□X → X → ◯X** (e.g. points-to-pieces ♭X → X → ʃX).
 - Levels are written i, j with order **i ≼ j** (strict: i ≺ j), defined by
   containment of both modal images (spec D0.3).
-- "j **resolves** the opposite of i": **i ≪ j**, defined by the natural
-  isomorphism ◯ⱼ□ᵢ ≅ □ᵢ (one-clause — the literature's definition,
-  unanimously; OP-15 resolved July 11, 2026). The companion condition
+- "j **resolves** the opposite of i": **i ≪ j**, defined by **i ≼ j**
+  together with the natural isomorphism ◯ⱼ□ᵢ ≅ □ᵢ. The order is the
+  background “above” condition; the isomorphism is the one additional
+  resolution clause in the literature's definition (OP-15 resolved July
+  11, 2026). The companion condition
   □ⱼ◯ᵢ ≅ ◯ᵢ is the distinct notion **co-resolution** (both together:
   **bi-resolution**), per the nLab; it never enters the Aufhebung.
 - The **Aufhebung** of level i is the minimal resolving level, written **ī**.
+  Minimality is reflexive: if i resolves itself then ī may equal i (the
+  maximal identity level is the basic example).
   Level j resolves ∅ ⊣ ∗ iff ◯ⱼ∅ ≅ ∅; for the cohesive rung this reads
   ♯∅ ≅ ∅. Which resolving level is *minimal* — hence the Aufhebung — is
   model-dependent (`spec/01-level-1.md` §5).
@@ -99,7 +103,8 @@ Per the freeze policy, changes are logged here — never made silently.
 | E1 | 2026-07-10 | §2: resolution condition corrected from the equality ◯ⱼ□ᵢ = □ᵢ to the natural isomorphism ◯ⱼ□ᵢ ≅ □ᵢ | Register had drifted from spec D0.4; strict functor equality was never meant |
 | E2 | 2026-07-10 | §2: the generic opposition now records both orientations — □ ⊣ ◯ (outer, ♭ ⊣ ♯) and ◯ ⊣ □ (inner, ʃ ⊣ ♭) — with the unity □X → X → ◯X in both | The frozen ladder alternates orientation from rung to rung (rung 2 is monad-left); the old text covered only the outer shape and made D0.1 incoherent at rung 2. See repaired spec D0.1 |
 | E3 | 2026-07-10 | §2: the Aufhebung example no longer asserts that rung 1 is the Aufhebung of level 0 whenever ♯∅ ≅ ∅ | Minimality is model-dependent: in 𝒮 the open level resolves level 0 strictly below rung 1 (`spec/01-level-1.md` §5); the clause-count fork is OP-15 |
-| E4 | 2026-07-11 | §2: resolution confirmed one-clause; companion clause named co-resolution (nLab), recorded as a distinct notion | OP-15 resolved from primary sources — Lawvere 1991/1992/2009, KRRZ 2011, Marmolejo–Menni, Menni 2019, nLab all define way-above/Aufhebung by the single clause ◯ⱼ□ᵢ ≅ □ᵢ |
+| E4 | 2026-07-11 | §2: resolution confirmed with one nonautomatic clause beyond level order; companion clause named co-resolution (nLab), recorded as a distinct notion | OP-15 resolved from primary sources — Lawvere 1991/1992/2009, KRRZ 2011, Marmolejo–Menni, Menni 2019, and nLab define way-above/Aufhebung by “above” plus the factorization corresponding to ◯ⱼ□ᵢ ≅ □ᵢ |
+| E5 | 2026-08-12 | §2/D0.4: restored the reflexive order condition i ≼ j to resolution and removed the requirement that an Aufhebung be strictly higher | Menni 2019 Def. 1.1 defines Aufhebung as the least level way above l; way-above includes “above,” and a level (notably max) may be way above itself. The “one clause” verdict means one additional factorization/isomorphism beyond order, not that order may be omitted. P0.7 Break B-01 |
 
 ## 6. Sources
 
