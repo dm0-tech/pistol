@@ -29,7 +29,8 @@ recorded for the owner's gate:
 - **A generative discipline.** The text should make the reader predict
   before it tells. The rung-1 material is the perfect trap: a reader who
   guesses "♭ ⊣ ♯ sublates ∅ ⊣ ∗" is *wrong in 𝒮*, and discovering that
-  personally teaches the one-clause definition better than the ledger can.
+  personally teaches the order-plus-one-nonautomatic-clause definition
+  better than the ledger can.
 
 Working protocol adopted for the daily practice: one atom per day (one
 proposition, fork, passage, or OP item); a pre-committed prediction; a
@@ -59,11 +60,13 @@ cannot feel).
   doing necessary work: (i) adjoints are unique up to unique isomorphism —
   the poles determine each other, nothing is chosen (the objectivity);
   (ii) unit/counit need not invert — the difference is genuine, and
-  quantified rather than dissolved; (iii) the triangle identities — each
-  side's correction of its own correction is the identity; the exchange
-  locks after one round, a truce with exact terms, not an oscillation.
-  Weaken any clause and the opposition becomes arbitrary; strengthen any
-  and it collapses. Adjunction sits at the boundary point.
+  quantified rather than dissolved; (iii) the triangle identities make the
+  two canonical zig-zags identities, giving coherence without implying
+  idempotence. Remove the exactly-when/naturality and the relation becomes
+  arbitrary; make both unit and counit invertible and it becomes an
+  equivalence. Reflections and other proper strengthenings remain between
+  those extremes. Adjunction is the general exact form; the ladder uses its
+  idempotent special cases.
 - **Deeper than toposes — three precise senses, one counterweight.**
   (a) A topos is a category defined by the *existence* of adjoints to
   canonical functors (limits, exponentials, Ω-representability), its logic

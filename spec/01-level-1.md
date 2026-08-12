@@ -9,9 +9,10 @@ owed to `examples/` (P0.5). Claim ledger in §8.*
 one general theorem (§1). The resolution of level 0, however, is
 *model-dependent*: it holds in sSet (§5.3) and **fails in the Sierpiński
 topos** (§5.2), where the obstruction is exactly the site's pointless
-representable. 𝒮 also exposed a definitional fork in D0.4 — one-clause vs
-two-clause resolution give different Aufhebung answers in 𝒮 — registered as
-OP-15 and since **resolved from the primary sources** (§5.4): the
+representable. 𝒮 also exposed a definitional fork in D0.4: adding the
+companion co-resolution clause gives a different Aufhebung answer in 𝒮.
+That fork was registered as OP-15 and **resolved from the primary sources**
+(§5.4): the
 literature uses the reflexive level order plus one additional resolution
 clause (not the companion co-resolution clause), and the Aufhebung of level
 0 in 𝒮 is the open level (Prop 1.13), not ♭ ⊣ ♯.

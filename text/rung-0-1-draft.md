@@ -480,8 +480,8 @@ on the right, resolution on the left.
 (The asymmetry promised above: the open level resolves but does not
 co-resolve — from its standpoint nothing stays nothing but unity does
 *not* stay unity — while rung 1 co-resolves but does not resolve. No
-middle level of 𝒮 does both. The one-clause definition is not a pedantic
-choice; it decides where the Aufhebung lands. B1, §5.4.)
+middle level of 𝒮 does both. Excluding the companion clause from resolution
+is not a pedantic choice; it decides where the Aufhebung lands. B1, §5.4.)
 
 Step back and say it dialectically, with the theorem numbers holding the
 net: the first opposition (nothing ⊣ unity) is sublated at the first level

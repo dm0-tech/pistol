@@ -98,11 +98,12 @@ provisional until the Phase 0 spec exists to grade them against.*
   candidate Phase 2 side-quest.* **Sharpened (July 14, 2026):** 𝒮 is the
   two-stage truncation of the topos of trees (modulo a variance dictionary
   to be pinned), so Ω_𝒮's third truth value "later" is ▷'s two-stage
-  shadow. Finite attack available now: compute ▷ and its internal
-  Ω-operator in the 2-/3-/4-stage truncations and locate ▷ against the
-  level diamond of `spec/01-level-1.md` §4 (▷ is not idempotent, so it is
-  no level's modality — the question is its relation to the open level,
-  and whether any level modality validates or refutes a Löb-type axiom).
+  shadow. The finite attack was to distinguish the later endofunctor,
+  `next`, and its induced Ω-operator in the 2-/3-/4-stage truncations, then
+  locate the later structure against the level diamond of
+  `spec/01-level-1.md` §4. The endofunctor is not idempotent, so it is no
+  level's modality; the question is its typed relation to the open level
+  and whether any level modality validates or refutes a Löb-type axiom.
   **Bounded result (August 12, 2026):** independent finite-sieve
   enumeration, the 2/3/4-stage Ω counts, predicate-level later action, and
   exact variance dictionary are implemented in

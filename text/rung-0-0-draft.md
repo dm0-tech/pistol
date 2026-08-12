@@ -565,12 +565,12 @@ Prop 0.10.]
 
 ## C. Run or check it · *Track C*
 
-The truth-value object of 𝒮 with its three-valued now-stage — the
-fingerprint claim of A″(2) — is computed exhaustively by `run.mjs` items
-`0.10/0.11` (the full classification bijection, both round trips), and
-the preservation warranty's rung-0 instance (left/right adjoints forcing
-□₀ = ∅, ◯₀ = ∗ to be minimal) is items `0.1/0.2`. Nothing in this Part
-rests on prose alone that the finite universe can check.
+The truth-value object of 𝒮 with its three-valued now-stage—the formal
+core behind A″(2)'s fingerprint reading—is checked by `run.mjs` items
+`0.10/0.11`: both classification round trips on the bounded 11-object
+family. The spec proves the general classifier statement. The preservation
+warranty's rung-0 instance (left/right adjoints forcing □₀ = ∅,
+◯₀ = ∗ to be minimal) is items `0.1/0.2`.
 
 ---
 

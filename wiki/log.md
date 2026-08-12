@@ -74,7 +74,18 @@ graded Hegel–Lawvere correspondence.
 
 Birkedal et al.'s stage, restriction, Ω, and predicate-level ▷ formulas
 reproduced in 2/3/4-stage truncations. The dictionary
-`X₀ = X(2)`, `X₁ = X(1)` matches repo 𝒮 exactly; non-idempotence refutes
-the naive identification of ▷ with a level modality. W-0002 upgraded to
+`X₀ = X(2)`, `X₁ = X(1)` matches repo 𝒮 exactly; an object-level witness
+shows the later endofunctor is non-idempotent and refutes its naive
+identification with a level modality. W-0002 upgraded to
 machine-computed for the finite claim; the deferral/Aufhebung resonance
 remains conjectural and moves to the typed-relation attack queue.
+
+## [2026-08-12] audit | W-0004 internal-language claims narrowed and sourced
+
+P0.7 confirmed Mitchell–Bénabou interpretation from topos structure and
+Kripke–Joyal evaluation at generalized stages. “Secreted,”
+observer-participancy, and world→logic remain explicitly graded readings.
+The untyped diagonal ceiling (“no topos defines its own truth”) was
+withdrawn: any obstruction must specify a syntax object, truth predicate,
+and the hypotheses of Lawvere's fixed-point theorem. W-0004 upgraded to
+source-audited at its narrowed theorem scope.
