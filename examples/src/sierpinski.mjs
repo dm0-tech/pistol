@@ -2,8 +2,9 @@
 //
 // An object X is a set map ξ : X₀ → X₁ (spec 00-level-0.md §5.2 coordinates:
 // X₀ = value at the terminal site object b, X₁ = value at a). Elements are
-// strings; ξ is a plain record. Everything here is finite and total, so
-// every spec claim about 𝒮 marked ⚙ reduces to exhaustive enumeration.
+// strings; ξ is a plain record. Operations are finite and total on supplied
+// objects. run.mjs exercises a stated bounded family; only the topology
+// module enumerates its entire finite search space independently.
 
 export const obj = (X0, X1, xi) => ({ X0, X1, xi });
 
@@ -121,7 +122,9 @@ export const serializeSub = sub =>
 
 // --- a small exhaustive test family ----------------------------------------
 
-// All objects with |X₀| ≤ 2, |X₁| ≤ 2, one representative per shape.
+// All maps between canonical labeled sets of cardinality 0, 1, or 2.
+// This is a bounded presentation family, not a quotient by isomorphism;
+// some entries therefore represent isomorphic arrow shapes.
 export function testFamily() {
   const family = [];
   const zeros = [[], ['x'], ['x', 'y']];

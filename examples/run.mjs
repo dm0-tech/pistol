@@ -4,7 +4,7 @@
 
 import {
   obj, initial, terminal, ya, homs, isomorphic,
-  box0, circ0, boxOpen, circOpen, flat, sharp, disc, coDisc, gamma,
+  box0, circ0, boxOpen, circOpen, flat, sharp, circMax, disc, coDisc, gamma,
   jMinusOpen, subobjects, subsets, omega, chi, pullbackTrue, serializeSub,
   serializeMorphism, testFamily, countFunctions,
 } from './src/sierpinski.mjs';
@@ -14,7 +14,8 @@ import {
   truncIsomorphic,
 } from './src/sset.mjs';
 import {
-  omegaValues, laterTruth, laterIsNatural, laterIsIdempotentAt,
+  finiteChainSieves, omegaValues, laterTruth, laterIsNatural,
+  laterIsIdempotentAt, laterEndofunctorIsNotIdempotentWitness,
   repoOmegaMatchesTwoStageTree, twoStageLaterLabels,
 } from './src/guarded.mjs';
 
@@ -169,7 +170,7 @@ check('1.13/§5.4', 'resolution (one-clause ◯ⱼ∅ ≅ ∅, the literature de
       trivial: isomorphic(circ0(initial), initial),
       open: isomorphic(circOpen(initial), initial),
       closed: isomorphic(sharp(initial), initial),
-      max: true, // ◯_max = id
+      max: isomorphic(circMax(initial), initial),
     };
     return !resolves.trivial && resolves.open && !resolves.closed && resolves.max;
   });
@@ -195,20 +196,23 @@ check('§3', 'sSet truncated: (coDisc S)_n = S^(n+1) — sizes for |S| = 2 are 2
 
 console.log('— OP-13 bounded guarded-recursion check —');
 
-check('OP-13', 'finite trees: Ω has 3, 4, 5 top-stage values at 2, 3, 4 stages',
-  () => [2, 3, 4].every(stage => omegaValues(stage).length === stage + 1));
+check('OP-13', 'finite trees: independent sieve enumeration gives 3, 4, 5 Ω-values at stages 2, 3, 4',
+  () => [2, 3, 4].every(stage =>
+    finiteChainSieves(stage).length === omegaValues(stage).length &&
+    finiteChainSieves(stage).length === stage + 1));
 
 check('OP-13', 'two-stage tree dictionary is exactly repo Ω: stage 2 = X₀, stage 1 = X₁',
   () => repoOmegaMatchesTwoStageTree(omega));
 
-check('OP-13', '▷ on Ω is natural under finite restrictions and acts never → later → now → now',
+check('OP-13', 'predicate later on Ω is natural and acts never → later → now → now',
   () => laterIsNatural(4) &&
     JSON.stringify(twoStageLaterLabels) ===
       JSON.stringify({ never: 'later', later: 'now', now: 'now' }));
 
-check('OP-13', '▷ is not idempotent from two stages onward, so it is not a level modality',
+check('OP-13', 'predicate later is non-idempotent; an object-level witness independently shows the later endofunctor is non-idempotent',
   () => [2, 3, 4].every(stage => !laterIsIdempotentAt(stage)) &&
-    laterTruth(laterTruth(0, 2), 2) !== laterTruth(0, 2));
+    laterTruth(laterTruth(0, 2), 2) !== laterTruth(0, 2) &&
+    laterEndofunctorIsNotIdempotentWitness());
 
 console.log(failures === 0
   ? '\nAll checks passed.'

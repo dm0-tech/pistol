@@ -10,6 +10,31 @@
 export const omegaValues = stage =>
   Array.from({ length: stage + 1 }, (_, value) => value);
 
+function* subsets(values) {
+  if (values.length === 0) {
+    yield [];
+    return;
+  }
+  const [first, ...rest] = values;
+  for (const subset of subsets(rest)) {
+    yield subset;
+    yield [first, ...subset];
+  }
+}
+
+// Sieves on stage m in the finite chain are down-closed subsets of
+// {1,...,m}. Enumerate them from that closure condition rather than from the
+// closed Ω(m) formula.
+export function finiteChainSieves(stage) {
+  const worlds = Array.from({ length: stage }, (_, index) => index + 1);
+  return [...subsets(worlds)].filter(sieve => {
+    const included = new Set(sieve);
+    return sieve.every(world =>
+      worlds.filter(candidate => candidate <= world)
+        .every(candidate => included.has(candidate)));
+  });
+}
+
 export const restrictTruth = (value, targetStage) =>
   Math.min(targetStage, value);
 
@@ -32,6 +57,24 @@ export function laterIsNatural(topStage) {
 export const laterIsIdempotentAt = stage =>
   omegaValues(stage).every(value =>
     laterTruth(laterTruth(value, stage), stage) === laterTruth(value, stage));
+
+// Object-level later endofunctor: (▷X)(1)=1 and (▷X)(n+1)=X(n).
+// Component cardinalities alone suffice for the witness below: naturally
+// isomorphic presheaves must be componentwise bijective.
+export function laterObject(stageSets) {
+  const result = [undefined, ['*']];
+  for (let stage = 2; stage < stageSets.length; stage += 1) {
+    result[stage] = [...stageSets[stage - 1]];
+  }
+  return result;
+}
+
+export function laterEndofunctorIsNotIdempotentWitness() {
+  const constantTwo = [undefined, ['a', 'b'], ['a', 'b']];
+  const once = laterObject(constantTwo);
+  const twice = laterObject(once);
+  return once[2].length === 2 && twice[2].length === 1;
+}
 
 const topLabels = new Map([
   [0, 'never'],
