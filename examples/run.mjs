@@ -13,6 +13,10 @@ import {
   truncEmpty, truncPoint, truncDelta1, subPresheaves, truncDisc, truncCoDisc,
   truncIsomorphic,
 } from './src/sset.mjs';
+import {
+  omegaValues, laterTruth, laterIsNatural, laterIsIdempotentAt,
+  repoOmegaMatchesTwoStageTree, twoStageLaterLabels,
+} from './src/guarded.mjs';
 
 let failures = 0;
 function check(ledger, description, condition) {
@@ -188,6 +192,23 @@ check('§3', 'sSet truncated: (coDisc S)_n = S^(n+1) — sizes for |S| = 2 are 2
     const cd = truncCoDisc(['a', 'b']);
     return cd.S[0].length === 2 && cd.S[1].length === 4 && cd.S[2].length === 8;
   });
+
+console.log('— OP-13 bounded guarded-recursion check —');
+
+check('OP-13', 'finite trees: Ω has 3, 4, 5 top-stage values at 2, 3, 4 stages',
+  () => [2, 3, 4].every(stage => omegaValues(stage).length === stage + 1));
+
+check('OP-13', 'two-stage tree dictionary is exactly repo Ω: stage 2 = X₀, stage 1 = X₁',
+  () => repoOmegaMatchesTwoStageTree(omega));
+
+check('OP-13', '▷ on Ω is natural under finite restrictions and acts never → later → now → now',
+  () => laterIsNatural(4) &&
+    JSON.stringify(twoStageLaterLabels) ===
+      JSON.stringify({ never: 'later', later: 'now', now: 'now' }));
+
+check('OP-13', '▷ is not idempotent from two stages onward, so it is not a level modality',
+  () => [2, 3, 4].every(stage => !laterIsIdempotentAt(stage)) &&
+    laterTruth(laterTruth(0, 2), 2) !== laterTruth(0, 2));
 
 console.log(failures === 0
   ? '\nAll checks passed.'
