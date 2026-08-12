@@ -65,4 +65,3 @@ export const twoStageLaterLabels = Object.fromEntries(
     topLabels.get(laterTruth(value, 2)),
   ]),
 );
-

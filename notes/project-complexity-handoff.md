@@ -132,4 +132,3 @@ checkable mathematics and from mathematics to readable text while preserving
 the mechanisms that exposed the Sierpiński counterexample. It fails if it
 merely removes visible ceremony while leaving hidden epistemic work to chat
 memory.
-

@@ -69,3 +69,12 @@ theorem, modeling correspondence, and conjectural resonance; defines
 analogy-card promotion rules; and records the exact two-stage guarded
 dictionary. W-0006 files the ladder/lattice distinction; W-0007 files the
 graded Hegel–Lawvere correspondence.
+
+## [2026-08-12] audit | W-0002 finite guarded dictionary computed
+
+Birkedal et al.'s stage, restriction, Ω, and predicate-level ▷ formulas
+reproduced in 2/3/4-stage truncations. The dictionary
+`X₀ = X(2)`, `X₁ = X(1)` matches repo 𝒮 exactly; non-idempotence refutes
+the naive identification of ▷ with a level modality. W-0002 upgraded to
+machine-computed for the finite claim; the deferral/Aufhebung resonance
+remains conjectural and moves to the typed-relation attack queue.

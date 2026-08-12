@@ -403,4 +403,3 @@ vocabulary alone.
   <https://arxiv.org/abs/1208.3596>
 - Kennett–Riehl–Roy–Zaks 2011:
   <https://doi.org/10.1016/j.jpaa.2010.07.002>
-

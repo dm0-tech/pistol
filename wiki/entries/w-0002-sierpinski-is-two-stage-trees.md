@@ -2,8 +2,8 @@
 
 - **ID:** W-0002
 - **Provenance:** llm-derived
-- **Verification:** llm-checked
-- **Grade:** claimed (the identification); conjectural (the deferral resonance)
+- **Verification:** machine-computed
+- **Grade:** established (finite identification and ▷ formulas); conjectural (the deferral resonance)
 - **Sources:** Birkedal–Møgelberg–Schwinghammer–Støvring, *First steps in synthetic guarded domain theory: step-indexing in the topos of trees* (LMCS 2012); Smoryński, *Self-Reference and Modal Logic* (1985) — Wheeler's ref [159]
 - **Transcript:** T-2026-07-14-A
 - **Cross-refs:** OP-13 (sharpened); `notes/internal-language-and-room-for-two.md` §4; `spec/00-level-0.md` Prop 0.10 (the "later" truth value); `spec/01-level-1.md` §4 (the level diamond); `text/rung-0-1-draft.md` A0′ (flagged remark + three-stage ⊢ Predict)
@@ -11,17 +11,19 @@
 
 ## Statement
 
-The topos of trees PSh(ω) truncates at two stages to presheaves on the
-walking arrow — the project's 𝒮 — modulo a variance dictionary (trees'
-restriction maps run later→earlier; the repo's ξ runs now→later) that has
-not yet been pinned. Truth-value counts match (trees: n+1 values at stage
-n; 𝒮: three over two), and Ω_𝒮's third value **later** is the two-stage
-shadow of ▷'s "when does this become true?". Consequence pursued in OP-13:
-▷ and its internal Ω-operator are finitely computable in the 2-/3-/4-stage
-truncations and can be located against 𝒮's level diamond. The *resonance* —
+The topos of trees PSh(ω) truncates at stages 2 and 1 to presheaves on the
+walking arrow—the project's 𝒮—under the exact dictionary
+`X₀ = X(2)`, `X₁ = X(1)`. The repo's arrow `X₀ → X₁` is the tree
+restriction, and Birkedal et al. call the smaller index a future world.
+At stage 2, Ω's values `2,1,0` are respectively the repo's **now**,
+**later**, **never**, restricting to **yes**, **yes**, **no** at stage 1.
+The predicate operator ▷ acts `never → later → now → now`.
+`examples/src/guarded.mjs` computes these formulas and the 3/4/5 truth-value
+counts for 2/3/4 stages, checks naturality, and shows ▷ is not idempotent.
+It is therefore not one of 𝒮's level modalities. The *resonance* —
 the same deferral that obstructs the expected Aufhebung (the pointless
 figure, Props 1.9–1.10) is what makes guarded self-reference consistent —
-is a reading, graded conjectural, awaiting the computation.
+remains a reading, graded conjectural, awaiting a typed relation.
 
 ## Context
 
@@ -32,15 +34,17 @@ nursery of guarded self-reference since its first spec file.
 
 ## What would change the labels
 
-Upgrade to `machine-computed`: implement ▷ in `examples/src/sierpinski.mjs`
-and the truncations, verify the Ω-operator against the trees literature,
-pin the variance dictionary. Cheap — this is the OP-13 weekend program.
-Refutation risk sits in the dictionary: if the time-readings cannot be
-aligned functorially, the "shadow of ▷" clause dies even though the bare
-equivalence PSh(2-chain) ≃ Set^→ survives.
+The finite identification is now source-backed and machine-computed. It
+would be refuted by a mismatch with Birkedal et al.'s restriction or
+predicate-operator formulas; the current checks reproduce both directly.
+The resonance upgrades only if a typed comparison—such as a distributive
+law, comparison transformation, or preservation/reflection theorem—relates
+▷ to the open level. Non-idempotence has already refuted the naive
+identification of the two modalities.
 
 ## Log
 
 - 2026-08-05 — created from T-2026-07-14-A; identification checked by the authoring LLM only.
 - 2026-08-05 — reprocessed under `wiki/lint.mjs`; transcript pointer now resolves to the archived digest.
 - 2026-08-05 — surfaced in the text as a flagged "reading under investigation" remark at rung 0–1 A0′, with a ledger row citing OP-13; grade unchanged (entering the text is not promotion).
+- 2026-08-12 — finite variance dictionary pinned against Birkedal et al. §§2.1–2.2 and machine-computed in 2/3/4-stage truncations; naive level-modality identification refuted by non-idempotence; broader resonance remains conjectural.

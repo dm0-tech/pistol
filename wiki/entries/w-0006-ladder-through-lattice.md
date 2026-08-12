@@ -5,6 +5,7 @@
 - **Verification:** spec-proved
 - **Grade:** established (𝒮 and sSet results); conjectural (programme-wide path)
 - **Sources:** Kelly–Lawvere, *On the Complete Lattice of Essential Localizations* (1989), Thms 4.4/4.6; Menni, *Monic skeleta, Boundaries, Aufhebung…* (TAC 2019), §1
+- **Transcript:** none (spec-derived entry; no transcript provenance required)
 - **Cross-refs:** `spec/00-level-0.md` D0.3–D0.4; `spec/01-level-1.md` Props 1.6–1.13; `notes/rung-0-to-1-research-dossier.md` A-04; roadmap §1
 - **Status:** checked
 
@@ -41,4 +42,3 @@ not refute the computed 𝒮/sSet claim; it revises the programme-wide path.
 ## Log
 
 - 2026-08-12 — filed from the model-dependent Aufhebung proved in the spec and the source-audited level-lattice terminology.
-
