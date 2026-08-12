@@ -318,8 +318,8 @@ established in `01-level-1.md`; nothing is claimed here.*
 | 0.7 | ⊤ ≠ ⊥ ⇔ nondegenerate | established (proved here) | model instances ⚙ |
 | 0.8 | Ω ≅ 1+1 ⇔ Boolean | established (cited: MM VI.1) | model instances ⚙ |
 | 0.9 | Wheeler bit-as-opposition reading | conjectural (project) | — |
-| 0.10 | Ω_𝒮 = (3 → 2), classifier verified | established (proved here) | full check ⚙ |
-| 0.11 | 𝒮 non-Boolean | established (proved here) | full check ⚙ |
+| 0.10 | Ω_𝒮 = (3 → 2), classifier verified | established (proved here) | both round trips on bounded 11-object family ⚙ |
+| 0.11 | 𝒮 non-Boolean | established (proved here) | bounded direct witness ⚙ |
 | 5.3 | Ω₀, Ω₁ in sSet; sSet non-Boolean | established (proved here, truncated; general form cited) | truncated check ⚙ |
 | 6 | id ⊣ id is the maximal level | established (proved here) | — |
 

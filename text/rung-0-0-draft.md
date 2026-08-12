@@ -420,10 +420,12 @@ of opposites"; spec D0.1–D0.4.]
 
 ## C. Run or check it · *Track C*
 
-Idempotence and fixed points, machine-computed: `run.mjs` items `1.1/1.2`
-include ♭♭ ≅ ♭ and ♯♯ ≅ ♯ with their fixed subcategories exhibited; item
-`1.4` (♭∗ ≅ ∗) is a one-object instance of "the moments agree on the
-base". The rounding modality needs only your fingers, as before.
+Bounded idempotence evidence is machine-computed: `run.mjs` items
+`1.1/1.2` check ♭♭ ≅ ♭ and ♯♯ ≅ ♯ on the 11-object family. The spec
+proves idempotence and characterizes the fixed subcategories; the script
+does not enumerate those subcategories. Item `1.4` (♭∗ ≅ ∗) is a
+one-object instance of “the moments agree on the base.” The rounding
+modality needs only your fingers, as before.
 
 ---
 

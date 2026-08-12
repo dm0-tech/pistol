@@ -356,18 +356,18 @@ structure. Nothing is claimed here.
 | 1.3 | 0 ≺ 1 strictly | established (proved here) | — |
 | 1.4 | Companion clause ♭∗ ≅ ∗, general | established (proved here) | model instances ⚙ |
 | 1.5 | ♯∅ ≅ ∅ ⇔ every site object has a point | established (proved here) | — |
-| §2 | 𝒮 dictionary and level-1 formulas | established (proved here) | full check ⚙ |
+| §2 | 𝒮 dictionary and level-1 formulas | established (proved here) | bounded formula regression ⚙ |
 | §3 | sSet level-1 formulas | established (proved here) | truncated check ⚙ |
 | 1.6 | Exactly four topologies on {a → b} | established (proved here) | full enumeration ⚙ |
-| 1.7 | Level lattice of 𝒮 = diamond | established (proved here) | full check ⚙ |
-| 1.9 | ♯∅ ≇ ∅ in 𝒮; open level dual failure | established (proved here) | full check ⚙ |
-| 1.10 | Both obstructions = y a (the pointless figure) | established (proved here) | full check ⚙ |
+| 1.7 | Level lattice of 𝒮 = diamond | established (proved here) | bounded modal checks + explicit incomparability witnesses ⚙ |
+| 1.9 | ♯∅ ≇ ∅ in 𝒮; open level dual failure | established (proved here) | direct finite witnesses ⚙ |
+| 1.10 | Both obstructions = y a (the pointless figure) | established (proved here) | direct finite witness ⚙ |
 | 1.11 | Both clauses hold in sSet | established (proved here) | truncated check ⚙ |
 | 1.12a | Kelly–Lawvere: levels ↔ idempotent ideals | established (cited; statement verified against the original) | — |
 | 1.12b | Ideals of Δ = {∅, I_n, mor Δ}, all idempotent | established (proved here) | — |
 | 1.12 | 0̄ = level 1 in sSet | established (proved here via 1.12a–b) | — |
-| §5.4 | The two notions diverge in 𝒮 (resolution ≠ co-resolution) | established (both horns proved) | full check ⚙ |
-| 1.13 | 0̄_𝒮 = the open level | established (proved here; order-plus-one-clause definition confirmed by sources — OP-15 resolved) | full check ⚙ |
+| §5.4 | The two notions diverge in 𝒮 (resolution ≠ co-resolution) | established (both horns proved) | direct finite witnesses ⚙ |
+| 1.13 | 0̄_𝒮 = the open level | established (proved here; order-plus-one-clause definition confirmed by sources — OP-15 resolved) | full topology enumeration + direct finite witnesses ⚙ |
 
 ## References for this section
 
