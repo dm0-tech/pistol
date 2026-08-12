@@ -93,8 +93,9 @@ concept this Part introduces:
 We write ⌈−⌉ ⊣ ι ("ceiling is left adjoint to the inclusion") and
 ι ⊣ ⌊−⌋ ("floor is right adjoint to it"). One inclusion, two opposite
 perfections — already the shape the whole ladder will climb. Three
-features of this small example deserve to be felt now, because they are
-the general theorems of the next section:
+features of this small example deserve to be felt now. The first two
+generalize to every adjunction; the third will force us to distinguish a
+general adjunction from the idempotent kind used by the ladder:
 
 **First: no choices.** Once you say what you want — the least integer not
 below x — the answer is forced. There is nothing to tune, no convention
@@ -108,11 +109,14 @@ and floor do not make x an integer; ⌈x⌉ − x and x − ⌊x⌋ are exactly 
 gaps, and they vanish precisely on the integers. An adjunction never
 pretends the two worlds are the same; it *quantifies* how they differ.
 
-**Third: the exchange settles immediately.** Round x up; round the result
-up again: nothing happens. ⌈⌈x⌉⌉ = ⌈x⌉. The correction, corrected, is no
-further correction. The back-and-forth between the worlds does not
-oscillate or spiral — it locks after one step. Hold this; it becomes the
-*triangle identities* in general and *idempotence* in Part II.
+**Third: this particular exchange settles immediately.** Round x up; round
+the result up again: nothing happens. ⌈⌈x⌉⌉ = ⌈x⌉. This is the special
+idempotence of a reflection, not a property of every adjunction—the free
+group of the underlying set of a free group, for example, need not be the
+same free group. What generalizes to every adjunction is instead the pair
+of triangle identities: the two canonical zig-zags back across the bridge
+are identities. Part II will separate those facts before using the
+idempotent special case as a modality.
 
 ## A″. The same shape, everywhere · *Track A*
 
@@ -177,7 +181,8 @@ The two comparison maps — the **unit** x → GFx (what the round trip
 added) and the **counit** FGy → y (what it forgot) — localize the
 failure at every single thing; on the things where they invert, the two
 worlds genuinely agree; and elsewhere the *shape* of the disagreement is
-itself a structure (Part II's modality). An adjunction holds identity and
+itself a structure (Part II's monad and comonad; modalities only in the
+idempotent case). An adjunction holds identity and
 difference in one package, which is why Lawvere could read Hegel's
 **unity of opposites** into it without forcing (the lineage is real; as
 always in this text it is shown, not leaned on — the theorems stand
@@ -191,13 +196,17 @@ answer, one clause per feature felt in A′:
   is chosen; an opposition by decree is thereby excluded. (B2.)
 - **Genuine difference** (non-invertibility permitted): sameness is not
   smuggled in; equivalence is the degenerate case, not the target. (B3.)
-- **Exactness** (triangle identities): each side's correction of its own
-  correction is the identity — the tension is a truce with terms, not an
-  infinite regress. (B2.)
+- **Coherence** (triangle identities): cross the bridge by the unit and
+  return by the counit—or dually—and the canonical zig-zag is the
+  identity. This does not say repeated round trips are idempotent; it says
+  the two translations and their comparison maps fit exactly. (B2.)
 
-Weaken any clause and the opposition goes arbitrary; strengthen any and
-it collapses into sameness. Adjunction sits at the boundary point, and
-that is what "last word" means.
+Remove the exactly-when or its naturality and the relationship goes
+arbitrary. Strengthen *both* comparison maps to isomorphisms and it
+collapses into equivalence. Other genuine strengthenings exist between
+these extremes—reflections and coreflections among them—and the ladder
+uses their idempotent round trips. “Last word” means that adjunction is the
+general exact form; it does not mean it has no important special cases.
 
 One more fact belongs in the story, because it certifies "bedrock". The
 definition of an adjunction uses nothing but arrows and two equations —
@@ -232,11 +241,12 @@ every adjunction formalizes a passage in Hegel. The source verb is
 *modeled*, not *translated without remainder*.
 
 **Question generated.** If an opposition is to be objective rather than
-declared, which part of the adjunction prevents choice, which part prevents
-collapse into sameness, and which part prevents an endless correction of
-correction? Close the text and recover the three clauses in A‴ before
-moving on. This is Track H doing work: it sends the reader back to the
-definition, not around it.
+declared, which part of the adjunction prevents choice, which part permits
+genuine difference, and which equations make the translations cohere?
+Close the text and recover the three clauses in A‴ before moving on. Then
+name the extra hypothesis that makes a round trip settle after one step.
+This is Track H doing work: it sends the reader back to the definition, not
+around it.
 
 ## B. The mathematics of Part I · *Track B*
 
@@ -282,12 +292,12 @@ re-axiomatization via descent [Lurie, *Higher Topos Theory*].
 ## C. Run or check it · *Track C*
 
 The floor/ceiling triple is finger-arithmetic; check the biconditionals
-on x = 2.4, n = 2, 3 and be done. A categorical adjunction *is*
-machine-checked in this repo: `node examples/run.mjs` items `1.1/1.2`
-verify the ♭ ⊣ ♯ hom-set bijections of rung 1 as hom-count identities
-over 121 object pairs of the two-stage universe, plus idempotence — the
-exactly-when of B2, computed exhaustively in a world small enough to
-enumerate.
+on x = 2.4, n = 2, 3 and be done. For the rung-1 adjunction,
+`node examples/run.mjs` items `1.1/1.2` provide bounded
+**hom-cardinality evidence** over 121 object pairs, plus genuine
+idempotence checks for ♭ and ♯. Equal cardinalities do not construct the
+canonical transposition or test its naturality; Theorem 1.1 in the spec
+does that proof work.
 
 ---
 
@@ -334,18 +344,20 @@ determinations a thing has within a larger unity. Shown, not leaned on.
 Two turns close the loop between Parts I and II, and they are the reason
 this Part exists:
 
-**Every adjunction, felt from inside one world, is a modality** — the
-round trip GF (a monad) or FG (a comonad), with the unit/counit as the
-"you may have moved" maps. When the adjunction is of the well-behaved
-kind the ladder uses, the round trips are idempotent and the previous
-paragraph applies verbatim. (B6.)
+**Every adjunction, felt from inside one world, induces a monad and a
+comonad** — the round trips GF and FG, with the unit/counit as the
+"you may have moved" maps. These round trips are not generally
+idempotent. When they are—the reflective/coreflective special case used by
+the ladder—they are modalities and the fixed-point reading above applies.
+(B6.)
 
-**Every modality, unfolded, is an adjunction.** The fixed points of ◯
+**Every idempotent modality, unfolded, is an adjunction.** The fixed points of ◯
 form a sub-world; "complete X" is the best translation into it; the
 exactly-when certifies it. A way of being *is* a translation problem with
-a best solution, in disguise. Modality and adjunction are one phenomenon
-seen from inside and from outside — the internal and external
-presentations of the same opposition. (B6.)
+a best solution, in disguise. An idempotent modality and its
+reflection/coreflection are one phenomenon seen from inside and from
+outside—the internal and external presentations of the same special
+adjunction. (B6.)
 
 ## A′. Oppositions of moments, and the ladder's shape · *Track A*
 
@@ -387,14 +399,24 @@ modal-logic reading of monads/comonads as moods is standard in the
 modal-type-theory literature [Corfield, *Modal HoTT* (OUP 2020), ch. 4;
 nLab "modal type theory"].
 
-**B7 (adjoint modalities, unity of opposites).** An adjoint triple
-L ⊣ M ⊣ R with M fully faithful induces an idempotent comonad □ = LM (or
-ML, per shape) and idempotent monad ◯ = RM with □ ⊣ ◯ and the unity
-transform □X → X → ◯X; the project's precise conventions and the two
-shapes are D0.1 of `spec/00-level-0.md` — from here on the spec takes
-over from the literature. [Lawvere, *Some thoughts on the future of
-category theory* (Como 1991); nLab "adjoint modality", "unity of
-opposites"; spec D0.1–D0.4.]
+**B7 (adjoint modalities, unity of opposites).** There are two typed
+shapes; writing the categories is what prevents them being conflated.
+
+- **Outer:** `L, R : ℱ → ℰ`, `M : ℰ → ℱ`, with
+  `L ⊣ M ⊣ R` and both outer functors fully faithful. On ℰ,
+  `□ = LM` is an idempotent comonad, `◯ = RM` an idempotent monad, and
+  `LM ⊣ RM`.
+- **Inner:** `L, R : ℰ → ℱ`, `M : ℱ → ℰ`, with
+  `L ⊣ M ⊣ R` and the middle functor fully faithful. On ℰ,
+  `◯ = ML` is an idempotent monad, `□ = MR` an idempotent comonad, and
+  `ML ⊣ MR`.
+
+In both cases the counit/unit give `□X → X → ◯X`; the adjunction is
+`□ ⊣ ◯` in the outer case and `◯ ⊣ □` in the inner. The project's
+precise conventions are D0.1 of `spec/00-level-0.md`—from here on the
+spec takes over from the literature. [Lawvere, *Some thoughts on the
+future of category theory* (Como 1991); nLab "adjoint modality", "unity
+of opposites"; spec D0.1–D0.4.]
 
 ## C. Run or check it · *Track C*
 
@@ -423,8 +445,9 @@ is demanded to have an adjoint:
   "pair with X". (The deduction theorem of A″ is this demand's logical
   face.)
 - **A truth-value thing.** An object Ω that classifies parts: parts of X
-  correspond exactly to ways X → Ω. An exactly-when again — the local,
-  pointwise form of adjointness.
+  correspond exactly to ways X → Ω. This is a representability
+  exactly-when in the same objective style as adjunction; the classifier
+  property is not itself an adjunction.
 
 A world meeting these demands is an (elementary) **topos** (B8) — this
 text's *universe*. Sets form one; rung 0–1's two-stage world 𝒮 forms one;
@@ -432,8 +455,9 @@ so do worlds of shapes, of smooth spaces, of super-spaces: the ladder
 lives in these.
 
 Now the point this Part exists to stress, the one that earns the word
-*objective*. In a universe, the logical apparatus is not installed; it
-**precipitates**. ∅ and ∗ exist with no choices (they are adjoints); Ω
+*objective*. In a universe, the logical apparatus is not installed; in
+the project's reading it **precipitates** from the defining structure.
+∅ and ∗ exist with no choices (they are adjoints); Ω
 exists with no choices (an exactly-when); the quantifiers and implication
 exist with no choices (A″'s items 2–3, now internal to the universe).
 Nothing was imported, nothing configured. To be a universe is already to
@@ -485,22 +509,22 @@ connectives are Part I's adjunctions and whose truth values are points
 and parts of Ω. Three facts, in ascending order of consequence for this
 project:
 
-1. **The language is secreted, not imported.** It is derived from the
-   universe's structure with zero choices — the same objectivity as
-   everything above.
+1. **The language is secreted, not imported (construction theorem,
+   followed by our reading).** Mitchell–Bénabou syntax and semantics are
+   canonically interpreted from the topos structure. Calling that
+   “secretion” is the project's gloss on the construction, not extra
+   mathematical content.
 2. **It fingerprints the universe.** In the universe of sets the secreted
    logic is the classical one, with Ω a plain yes/no. In the two-stage
-   universe 𝒮 the logic grows a third truth value — **later** — before
-   the universe has geometry or even a second dimension. The logic of a
-   world is a *measurement* of that world's way of becoming. (This is
-   proved concretely two pages from here: rung 0–1, Prop 0.10.)
-3. **Every assertion is made from somewhere.** The internal language's
+   universe 𝒮 the logic grows a third truth value — **later**. Prop 0.10
+   proves the classifier; saying that the logic thereby *measures a
+   world's way of becoming* is a project reading of that result.
+3. **Every assertion is evaluated at a stage.** The internal language's
    semantics evaluates truth *at stages* — truth for the now-stage, truth
-   for the later-stage — with no stage called nowhere. A universe's logic
-   is constitutively a logic of standpoints. Readers with Wheeler on the
-   shelf: this is where *observer-participancy* stops being a slogan and
-   becomes a semantics; the project's notes pursue exactly that thread
-   (`notes/internal-language-and-room-for-two.md`, OP-3, OP-7).
+   for the later-stage — through generalized elements. Readers with
+   Wheeler on the shelf may compare this with observer-participancy; that
+   comparison is a conjectural project reading, not the Kripke–Joyal
+   theorem (`notes/internal-language-and-room-for-two.md`, OP-3, OP-7).
 
 **⊢ Predict.** Sets secrete a two-valued Ω. A world whose objects unfold
 across two stages has one additional structural possibility: false here,
@@ -560,17 +584,17 @@ rests on prose alone that the finite universe can check.
 | Free ⊣ forgetful; deduction theorem; ∃ ⊣ subst ⊣ ∀ | B2, B4 | CWM IV; Lawvere 1969; MM I.9 | — |
 | Hilbert-space naming; Kan 1958 | B2 | Kan, TAMS 87 (1958) | — |
 | Equivalence = invertible adjunction; failure measured by η, ε | B3 | CWM IV.4; CTC §4.4 | — |
-| Triangle identities as settled exchange | B2 | CWM IV.1 | `1.1/1.2` (instance) |
+| Triangle identities as zig-zag coherence (not idempotence) | B2 | CWM IV.1 | — |
 | Walking adjunction; definable anywhere | B5 | Schanuel–Street 1986 | — |
 | ∞-lift unchanged; topos rebuilt | B5 | Riehl–Verity 2016/2022; Lurie HTT | — |
 | Modality = idempotent (co)monad; fixed points = the way of being | B6 | CWM VI; Borceux §4.2; nLab | `1.1/1.2` (idempotence) |
 | Modality ↔ adjunction (two presentations, one phenomenon) | B6 | CTC ch. 5 (resolutions); CWM VI.2 | — |
 | Adjoint triple → □ ⊣ ◯ with unity □X → X → ◯X | B7 | spec D0.1; Lawvere 1991 | `1.4` |
 | Topos = accumulated adjoint demands | B8 | MM I, IV | — |
-| Logical elements precipitate, zero choices | B8 | MM IV; Elephant A2 | `0.1/0.2` |
+| Topos structure canonically supplies logical elements; “precipitates” is the reading | B8 + graded gloss | MM IV; Elephant A2 | `0.1/0.2` |
 | LAPC/RAPL; preservation warranty; Prop 0.3's engine | B9 | CWM V.5 | `0.1/0.2` |
 | Geometric morphisms preserve the geometric fragment | B9 | MM VII; Elephant D1 | — |
-| Internal language secreted; stages; 𝒮 grows "later" | B10 | MM VI; spec §5.2 | `0.10/0.11` |
+| Internal language interpreted from topos structure; forcing at stages; “secreted/standpoints” are readings | B10 + graded gloss | MM VI; spec §5.2 | `0.10/0.11` |
 | Lawvere proposes adjoint opposition as a model of dialectical structure | —, source fact + graded correspondence | Lawvere 1991 §II; Lawvere 1996 abstract/§1; W-0007 | — |
 | Hegel lineage (unity of opposites, moments) | — | shown, never load-bearing: Hegel, *Science of Logic*; Lawvere 1991/1996; W-0007 | — |
 

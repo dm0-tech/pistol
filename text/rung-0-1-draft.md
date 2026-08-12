@@ -105,11 +105,11 @@ clothes: ⊤ classifies the part *all of ∗*, ⊥ classifies the part *nothing*
 (B0, D0.6). These two points are distinct exactly when the topos is
 nondegenerate (B0, Prop 0.7). So far this sounds like a binary digit.
 
-But here is the subtlety: in most toposes, ⊤ and ⊥ do **not exhaust Ω**.
-The naive bit — the two-symbol alphabet {⊤, ⊥} — coincides with the true
-truth-value object only in the special toposes logicians call *Boolean*
-(B0, Prop 0.8). Our first nontrivial topos below is not Boolean, and its
-third truth value has a name you already understand: **later**.
+But here is the subtlety: ⊤ and ⊥ need not exhaust Ω. The naive bit—the
+two-symbol alphabet {⊤, ⊥}—coincides with the true truth-value object
+**exactly** in the toposes logicians call *Boolean* (B0, Prop 0.8). Our
+first nontrivial test topos below is not Boolean, and its third truth value
+has a name you already understand: **later**.
 
 When Wheeler said *it from bit*, the reading this project explores — and
 grades openly as a conjecture, not a theorem (B0, Remark 0.9) — is that the
@@ -146,9 +146,9 @@ word *degenerate* and point to a theorem, not a metaphor.
 
 ## A0′. A topos with two stages · *Track A*
 
-To see all of this concretely we need the smallest topos that is richer
-than plain sets. Here it is: the world of **two-stage things** — things
-seen *now* and *later*.
+To see all of this concretely we use the smallest staged diagram topos in
+our test bench: the world of **two-stage things**—things read, in this
+text's chosen temporal picture, as seen *now* and *later*.
 
 An object of this topos is: a set X₀ of things existing now, a set X₁ of
 things existing later, and an arrow ξ : X₀ → X₁ saying what each present
@@ -188,10 +188,11 @@ future-truth-values (B0, Prop 0.10):
    later:   yes   yes     no
 ```
 
-The naive bit ∗ + ∗ has only two values at each stage — it cannot say
-*later*. So 𝒮 is not Boolean (B0, Cor 0.11), and the extra truth value is
-precisely the topos's internal sense of *time deferred*. A bit, in a
-universe with becoming, is bigger inside than outside.
+The naive bit ∗ + ∗ has only two values at each stage—it cannot say
+*later*. So 𝒮 is not Boolean (B0, Cor 0.11). Calling the extra value the
+topos's internal sense of *time deferred*, and saying that a bit in a
+universe with becoming is bigger inside than outside, are Track A readings
+of this classifier computation.
 
 **⊢ Predict.** Two stages bought a third truth value. Suppose the world
 had *three* stages — now, soon, later. How many honest answers could a
@@ -201,8 +202,10 @@ stage longer, and it belongs to OP-13's work program below.
 
 *A sourced fact followed by a conjecture, kept separate.* The truth value
 **later** is not a private quirk of 𝒮. In the topos of trees, an object has
-restriction maps `X(n+1) → X(n)` and self-reference is guarded by a
-non-idempotent modality ▷. Truncate to stages 2 and 1 and set
+restriction maps `X(n+1) → X(n)`. Its non-idempotent **later
+endofunctor**, the natural transformation `next : X → ▷X`, and the induced
+predicate operator on Ω guard recursive definitions. Truncate to stages 2
+and 1 and set
 `X₀ = X(2)`, `X₁ = X(1)`: the restriction is exactly the repo's
 `X₀ → X₁`. Birkedal et al. call the smaller index a future world, so the
 repo's now→later reading needs no arrow reversal. At stage 2, Ω has the
@@ -213,9 +216,10 @@ dictionary is sourced and machine-computed in C0.
 The proposed *single explanation* remains conjectural: the deferral that
 gives Ω its middle value also appears as the pointless figure obstructing
 rung-1 resolution, while guarded deferral licenses recursive definitions.
-Since ▷ is not idempotent, it is not one of 𝒮's levels. A subtler relation
-to the open level is **OP-13**, not a fact smuggled in by the shared word
-“later” (`notes/rung-0-to-1-research-dossier.md` A-06).
+An object-level witness shows the later endofunctor is not idempotent, so
+it is not one of 𝒮's level modalities. A subtler relation to the open level
+is **OP-13**, not a fact smuggled in by the shared word “later”
+(`notes/rung-0-to-1-research-dossier.md` A-06).
 
 ## B0. The mathematics of rung 0 · *Track B*
 
@@ -230,10 +234,12 @@ moments' fixed subcategories are distinct embeddings of one base) or
 with unity of opposites □X → X → ◯X in both. A *level* is an essential
 subtopos i₋ ⊣ i* ⊣ i₊ : ℱ ↪ ℰ, giving an outer-shape modality
 □ = i₋i* ⊣ ◯ = i₊i*. Levels are ordered by containment of both modal
-images (i ≼ j). Level j *resolves* level i (i ≪ j) when ◯ⱼ□ᵢ ≅ □ᵢ; the
-*Aufhebung* ī is the least resolving level strictly above i. (One clause —
-the literature's definition; the companion □ⱼ◯ᵢ ≅ ◯ᵢ is the separate notion
-of *co-resolution*. See the D0.4 source note.)
+images (i ≼ j). Level j *resolves* level i (i ≪ j) when i ≼ j and
+◯ⱼ□ᵢ ≅ □ᵢ; the *Aufhebung* ī is the least resolving level. It may equal i
+when i resolves itself (max does). “One clause” means one nonautomatic
+isomorphism in addition to the order condition; the companion
+□ⱼ◯ᵢ ≅ ◯ᵢ is the separate notion of *co-resolution*. See the D0.4 source
+note.
 
 **Proposition 0.1 + Corollary 0.2.** Every topos has the *trivial adjoint
 triple* 1 → ℰ with i₋(•) = ∅, i₊(•) = ∗, exhibiting **level 0** with
@@ -273,29 +279,33 @@ node examples/run.mjs
 
 Rung-0 checks (ledger numbers from `spec/00-level-0.md` §8): `0.1/0.2`
 (the trivial modalities, computed on an 11-object family of 𝒮), `0.5`
-(nondegeneracy), `0.7` (⊤ ≠ ⊥), `0.10` (the full classifier bijection
-Sub(X) ≅ Hom(X, Ω), both round trips, exhaustively), `0.11` (𝒮 not
-Boolean), `5.3` (sSet truncated: Ω₀ = 2, Ω₁ = 5, not Boolean). The
-`examples/README.md` explains what "exhaustively" means for each. The
+(nondegeneracy), `0.7` (⊤ ≠ ⊥), `0.10` (both classifier round trips
+Sub(X) ≅ Hom(X, Ω) for each object in that bounded family), `0.11`
+(𝒮 not Boolean), `5.3` (sSet truncated: Ω₀ = 2, Ω₁ = 5, not Boolean).
+The `examples/README.md` separates bounded formula-regression checks from
+independent enumeration. The
 interactive version — click a two-stage object, watch its parts and their
 three-valued answers, and walk rung 1's Aufhebung story step by step — is
 the P0.4 explorer, `explorer/sierpinski.html`: one self-contained file;
 open it in any browser.
 
 The bounded OP-13 checks answer A0′'s prediction without growing a new
-verification project: finite trees with 2, 3, and 4 stages have respectively
-3, 4, and 5 top-stage truth values; their restriction maps are truncated
-minimum; and `▷(k) = min(stage,k+1)` is natural but already non-idempotent
-at two stages. This pins the variance dictionary and kills the naive claim
-that ▷ is a level modality. It does not settle ▷'s subtler relation to the
-open level.
+verification project: independent sieve enumeration gives 3, 4, and 5
+top-stage truth values for finite chains with 2, 3, and 4 stages. The
+predicate-level later map `k ↦ min(stage,k+1)` is checked separately from
+an object-level cardinality witness showing the later endofunctor is not
+idempotent. This pins the variance dictionary and kills the naive claim
+that the endofunctor is a level modality. It does not test Löb's rule or
+settle a subtler relation to the open level.
 
 ## Payoff 0 · *Track A, with grades*
 
 What does rung 0 buy? Three things. (1) A *criterion of existence*: a
 topos is nondegenerate exactly when its first opposition is (theorem).
-(2) The *intrinsic bit*: logic is not imported into a topos, it is
-secreted by it, and it is binary only in Boolean toposes (theorem).
+(2) The *intrinsic bit*: Ω and the internal-language interpretation are
+supplied by the topos structure, and Ω is the naive binary object exactly
+in Boolean toposes (theorem); saying the topos *secretes* its logic is the
+project's reading of that construction.
 (3) The Wheeler peg: a precise place to hang "it from bit" — on the
 opposition, not the alphabet (conjecture, so marked). Rung 0 also sets the
 pattern every higher rung repeats: *an opposition, its failure to collapse,
@@ -321,10 +331,12 @@ Given a plain set S of points:
 
 - **The discrete completion ♭:** decree that *nothing happens*. Later is a
   frozen copy of now: ♭S = (S = S). Every element persists, nothing
-  merges, nothing appears. Pure being, no becoming.
+  merges, nothing appears. In the temporal Track A reading: pure being, no
+  becoming.
 - **The codiscrete completion ♯:** decree that *everything merges*. Later
   is a single undifferentiated lump: ♯S = (S → 1). All distinctions
-  present now are erased in the future. Pure becoming-one.
+  present now are erased in the future. In the same reading: pure
+  becoming-one.
 
 Every two-stage thing X is suspended between the two completions of its
 own points:
@@ -434,7 +446,8 @@ is always a single lump — even the future of nothing. So ♯∅ = (∅ → 1):
 **the codiscrete completion of nothing is precisely the pointless figure,
 not nothing** (B1, Prop 1.9–1.10). Rung 1 fails to resolve rung 0 in 𝒮.
 In a universe where the future can outrun the present, "nothing stays
-nothing" fails at rung 1 — *becoming leaks*.
+nothing" fails at rung 1—*becoming leaks*, in this text's temporal
+reading.
 
 Then what *is* the sublation in 𝒮? Here the two-stage topos shows its
 whole hand, because one can write down **all** of its levels — there are
@@ -530,9 +543,9 @@ Lemma 1.12b), the 0-skeletal level is level 1, hence 0̄ = level 1 in sSet.
 {open, max}; minimality in the diamond gives 0̄_𝒮 = the open level.
 Consistent with the nLab's general ⊥-scattered result (the Aufhebung of
 ∅ ⊣ ∗ is the ¬¬-subtopos). §5.4 records the source verdict: resolution is
-one-clause unanimously in Lawvere 1991/1992/2009, KRRZ 2011,
-Marmolejo–Menni, Menni 2019, nLab; the companion clause is co-resolution,
-a distinct notion.
+the level order plus one nonautomatic clause in Lawvere 1991/1992/2009,
+KRRZ 2011, Marmolejo–Menni, Menni 2019, and nLab; the companion clause is
+co-resolution, a distinct notion.
 
 ## C1. Run it · *Track C*
 

@@ -26,7 +26,8 @@ modal example: ⌈−⌉ ⊣ ι ⊣ ⌊−⌋ for ℤ ↪ ℝ, an idempotent adj
 Distillate of the July 14 session's answer to "what is an adjunction
 really, and why is it the last word in suspending abstractions in
 opposition?" — the boundary-point argument (uniqueness = objectivity;
-non-invertibility = genuine difference; triangle identities = the truce)
+non-invertibility = genuine difference; triangle identities = zig-zag
+coherence, not idempotence)
 is Track A material for the Phase 1 essay and Track H.
 
 ## What would change the labels
