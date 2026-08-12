@@ -164,7 +164,7 @@ check('1.10', 'both obstructions are the same object: ♯∅ ≅ □_open ∗ �
   () => isomorphic(sharp(initial), boxOpen(terminal)) &&
     isomorphic(boxOpen(terminal), ya));
 
-check('1.13/§5.4', 'resolution (one-clause ◯ⱼ∅ ≅ ∅, the literature definition): resolving levels of 𝒮 = {open, max}, so 0̄_𝒮 = open',
+check('1.13/§5.4', 'resolution (level order plus ◯ⱼ∅ ≅ ∅): resolving levels of 𝒮 = {open, max}, so 0̄_𝒮 = open',
   () => {
     const resolves = {
       trivial: isomorphic(circ0(initial), initial),
