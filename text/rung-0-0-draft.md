@@ -24,11 +24,18 @@ Same three tracks as the rest of the text:
 - **Track C — the computations.** Where an instance of a claim is already
   machine-computed in `examples/`, we say so. Much of this rung is
   arithmetic you can check on your fingers; we say that too.
+- **Track H — the lineage.** Short primary-source sidecars place Hegel and
+  Lawvere beside the formal structure. Each sidecar grades the
+  correspondence separately. H is allowed to generate a question; it is
+  never evidence for a B-statement.
 
 **Suggested first pass:** all the A sections straight through. This rung
 is deliberately slower than the ones above it — it is the ground floor
 below the ground floor, and the right pace for foundations is the pace of
 chewing.
+
+At **⊢ Predict**, stop and write before continuing. A prediction need not be
+right. It must only be definite enough that the mathematics can change it.
 
 ---
 
@@ -149,6 +156,12 @@ is visibly the inner-product formula with hom-sets in place of inner
 products. The name began as a pun and turned out to be load-bearing — a
 recurring event in this subject.
 
+**⊢ Predict.** We have now met free/forgetful, conjunction/implication,
+quantification/substitution, and a Galois connection. Before reading the
+interpretation below, write down what all four preserve from an equivalence
+and what they permit to fail. If the answer is only “they go both ways,” try
+again: arbitrary pairs of translations do that too.
+
 ## A‴. What an adjunction really is · *Track A*
 
 Here is the reading this project stands on, and it needs one more notion.
@@ -198,6 +211,32 @@ literally an adjunction in the classical sense, computed in an ordinary
 "universe" had to be rebuilt from the ground up to survive that
 transition (∞-topos; Part III); the notion of adjunction did not.
 Earthquake; bedrock.
+
+## H. Why Lawvere heard opposition here · *Track H*
+
+**Source fact — established.** Lawvere opens “Some Thoughts on the Future
+of Category Theory” (1991) by describing an “incessant contradiction” in
+mathematical practice: an object must be held precisely in order to reason
+about it and continually transformed in order to do mathematics. He then
+proposes adjointly related inclusions as a mathematical form of
+unity-and-identity-of-opposites. In “Unity and Identity of Opposites in
+Calculus and Physics” (1996) his abstract says that a significant fraction
+of dialectical philosophy can be *modeled mathematically* and that
+oppositeness in a bicategory can be characterized effectively by
+adjointness.
+
+**Correspondence — claimed, not proved.** Track A's phrase “equivalence
+that failed” is our explanation of why the proposal has bite: unit and
+counit keep both identity and difference visible. It is not a theorem that
+every adjunction formalizes a passage in Hegel. The source verb is
+*modeled*, not *translated without remainder*.
+
+**Question generated.** If an opposition is to be objective rather than
+declared, which part of the adjunction prevents choice, which part prevents
+collapse into sameness, and which part prevents an endless correction of
+correction? Close the text and recover the three clauses in A‴ before
+moving on. This is Track H doing work: it sends the reader back to the
+definition, not around it.
 
 ## B. The mathematics of Part I · *Track B*
 
@@ -278,6 +317,12 @@ phrase precisely:
 > already-), carves the core out of a thing: □X → X. The monad kind,
 > written ◯ ("sharp" moods: completed-, at-best-), completes a thing:
 > X → ◯X. (B6)
+
+**⊢ Predict.** Round a real number up and down, then list the things left
+unchanged by each operation. From that one example, predict what data inside
+a category should determine a modality: the arrows into its fixed objects,
+the arrows out of them, or both? B6 gives the answer after you have made the
+question your own.
 
 Being an integer-from-above, being rounded, being discrete, being frozen,
 being a pure shape, being bosonic — every rung of the ladder above this
@@ -457,6 +502,12 @@ project:
    becomes a semantics; the project's notes pursue exactly that thread
    (`notes/internal-language-and-room-for-two.md`, OP-3, OP-7).
 
+**⊢ Predict.** Sets secrete a two-valued Ω. A world whose objects unfold
+across two stages has one additional structural possibility: false here,
+true after restriction. Before opening the next text, draw the smallest Ω
+that can classify that possibility. Rung 0 will calculate whether your
+drawing was forced.
+
 And with that, the ground is fully laid. A universe is a world where
 best-solutions abound; its logical elements are forced, portable, and
 speakable from inside; the simplest opposition its structure secretes is
@@ -520,11 +571,14 @@ rests on prose alone that the finite universe can check.
 | LAPC/RAPL; preservation warranty; Prop 0.3's engine | B9 | CWM V.5 | `0.1/0.2` |
 | Geometric morphisms preserve the geometric fragment | B9 | MM VII; Elephant D1 | — |
 | Internal language secreted; stages; 𝒮 grows "later" | B10 | MM VI; spec §5.2 | `0.10/0.11` |
-| Hegel lineage (unity of opposites, moments) | — | shown, never load-bearing: Lawvere 1991/1996; nLab "Science of Logic" | — |
+| Lawvere proposes adjoint opposition as a model of dialectical structure | —, source fact + graded correspondence | Lawvere 1991 §II; Lawvere 1996 abstract/§1; W-0007 | — |
+| Hegel lineage (unity of opposites, moments) | — | shown, never load-bearing: Hegel, *Science of Logic*; Lawvere 1991/1996; W-0007 | — |
 
 *Draft status: commissioned by the owner (T-2026-08-05-A) as the
 self-contained on-ramp; awaiting red-leg review alongside the P0.3
 material. The "ways of being" reading of modalities and the Hegel
 vocabulary are expository devices graded as readings; every mathematical
 claim above is standard literature, cited, with project-specific
-instances deferred to the spec.*
+instances deferred to the spec. The August 12 pass added Track H as a
+source-bearing but non-evidentiary strand and prediction/re-derivation
+beats; its source dossier is `notes/rung-0-to-1-research-dossier.md`.*

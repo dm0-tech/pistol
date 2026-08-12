@@ -25,6 +25,10 @@ The text is written in three interleaved tracks, marked at each section:
 - **Track C — the computations.** Where to *run* each claim. Everything
   concrete in rungs 0–1 happens in finite models, so nothing here asks for
   trust: `node examples/run.mjs` reproduces every computation in this text.
+- **Track H — the lineage.** Primary Hegel and Lawvere passages appear
+  beside the formal feature they may illuminate. Source fact and
+  correspondence receive separate grades; H generates questions but never
+  proves a B-statement.
 
 The discipline (roadmap §3): Track A never asserts anything Track B cannot
 prove; where Track A offers a *reading* rather than a theorem, it says so
@@ -39,6 +43,10 @@ clause more than the right answer read passively.
 **Suggested first pass:** read all the A sections straight through,
 ignoring B and C. Second pass: A and B together, with the spec open.
 Third pass: run the examples and break things.
+
+The ascent has four movements: **existence and nondegeneracy**; **Ω and
+deferral**; **points and figures**; **the Aufhebung test**. The first three
+prepare a prediction. The fourth lets two models judge it.
 
 ---
 
@@ -110,6 +118,32 @@ whose refusal to collapse is what having a universe means, and whose
 logical shadow Ω is richer than binary the moment the universe has any
 internal structure worth speaking of.
 
+## H0. Being, nothing, becoming—and a necessary mismatch · *Track H*
+
+**Hegel source fact — established.** In *Science of Logic*, “Being,” §134
+(Miller numbering), Hegel writes that pure being and pure nothing are the
+same, insists equally that they are distinct, and calls their truth
+**becoming**: the movement in which each vanishes into the other. In the
+remark “The Expression ‘To Sublate’,” he later insists that a mediated,
+sublated result is not simply nothing.
+
+**Lawvere source fact — established.** In “Some Thoughts on the Future of
+Category Theory” (1991, §II), Lawvere calls the terminal object of the
+trivial level “pure Being” and the initial object “non Being,” and proposes
+the adjoint structure as a mathematical model of unity-and-identity of
+opposites.
+
+**Correspondence — claimed; mismatch — established.** Hegel's “same” cannot
+mean `∅ ≅ ∗` here: B0 proves that isomorphism collapses the topos. The
+categorical model instead keeps the two moments distinct as embedded
+objects while uniting them through one universal adjoint shape. This
+friction is not to be explained away. It tells us exactly where Lawvere's
+proposal is a model rather than a dictionary.
+
+**⊢ Re-derive.** Without rereading A0, explain why becoming cannot be
+represented by simply identifying ∅ and ∗. Your answer should end in the
+word *degenerate* and point to a theorem, not a metaphor.
+
 ## A0′. A topos with two stages · *Track A*
 
 To see all of this concretely we need the smallest topos that is richer
@@ -165,16 +199,23 @@ part then give about a present thing, and what would you name them?
 Commit to a number before moving on; the computation is exactly B0's, one
 stage longer, and it belongs to OP-13's work program below.
 
-*A remark for the road (a reading under investigation, so marked).* The
-truth value **later** is not a private quirk of 𝒮. There is a topos —
-presheaves on the infinite chain 0 ≤ 1 ≤ 2 ≤ ⋯, the *topos of trees* —
-where deferral is the whole organizing principle: it hosts *guarded
-recursion*, in which self-referential definitions become consistent
-precisely when routed through a "later" modality ▷. 𝒮 is its two-stage
-truncation, and our third truth value is ▷'s shadow. Whether ▷ bears any
-definite relation to the ladder's levels is an open problem of this
-project (**OP-13**, sharpened to a finite computation; the thread is
-worked at `notes/internal-language-and-room-for-two.md` §4).
+*A sourced fact followed by a conjecture, kept separate.* The truth value
+**later** is not a private quirk of 𝒮. In the topos of trees, an object has
+restriction maps `X(n+1) → X(n)` and self-reference is guarded by a
+non-idempotent modality ▷. Truncate to stages 2 and 1 and set
+`X₀ = X(2)`, `X₁ = X(1)`: the restriction is exactly the repo's
+`X₀ → X₁`. Birkedal et al. call the smaller index a future world, so the
+repo's now→later reading needs no arrow reversal. At stage 2, Ω has the
+three values `2,1,0`, which are exactly **now**, **later**, **never**;
+the predicate operator sends `never → later → now → now`. This finite
+dictionary is sourced and machine-computed in C0.
+
+The proposed *single explanation* remains conjectural: the deferral that
+gives Ω its middle value also appears as the pointless figure obstructing
+rung-1 resolution, while guarded deferral licenses recursive definitions.
+Since ▷ is not idempotent, it is not one of 𝒮's levels. A subtler relation
+to the open level is **OP-13**, not a fact smuggled in by the shared word
+“later” (`notes/rung-0-to-1-research-dossier.md` A-06).
 
 ## B0. The mathematics of rung 0 · *Track B*
 
@@ -240,6 +281,14 @@ interactive version — click a two-stage object, watch its parts and their
 three-valued answers, and walk rung 1's Aufhebung story step by step — is
 the P0.4 explorer, `explorer/sierpinski.html`: one self-contained file;
 open it in any browser.
+
+The bounded OP-13 checks answer A0′'s prediction without growing a new
+verification project: finite trees with 2, 3, and 4 stages have respectively
+3, 4, and 5 top-stage truth values; their restriction maps are truncated
+minimum; and `▷(k) = min(stage,k+1)` is natural but already non-idempotent
+at two stages. This pins the variance dictionary and kills the naive claim
+that ▷ is a level modality. It does not settle ▷'s subtler relation to the
+open level.
 
 ## Payoff 0 · *Track A, with grades*
 
@@ -324,11 +373,17 @@ name-check. Hegel, in the remark he devotes to the word itself (*Science
 of Logic*, Doctrine of Being, the remark "The Expression 'To Sublate'";
 Miller trans.): "'To sublate' has a twofold meaning in the language: on
 the one hand it means to preserve, to maintain, and equally it also means
-to cause to cease, to put an end to." The double meaning *is* the
-definition: the lower opposition is simultaneously *preserved* (it still
+to cause to cease, to put an end to." The double meaning is the
+**conceptual constraint**: the lower opposition is simultaneously *preserved* (it still
 exists) and *resolved* (the higher stage no longer feels it). Lawvere made
-this mathematical, and — this matters — his definition has **one
-clause**, taken from the literature and confirmed against it (B1, §5.4):
+this mathematical—or, in his more careful 1996 verb, proposed a
+mathematical *model* of it. Hegel did not define a relation between
+essential subtoposes, and Lawvere introduced the name while “hoping not to
+do too great an injustice to Hegel.” **Source fact and correspondence have
+different grades.**
+
+The mathematical definition has **one nonautomatic clause**, taken from
+the literature and confirmed against it (B1, §5.4):
 
 > Level j **resolves** level 0 when, from level j's standpoint, *nothing
 > stays nothing*: completing ∅ codiscretely at level j gives back ∅.
@@ -422,10 +477,11 @@ figure is anchored in a point, that standpoint is the frozen/merged
 opposition of rung 1 — being and its points suffice. In a universe with
 genuine deferral — where something can exist *later* without existing
 *now* — a thinner standpoint sublates first: the one that sees only the
-future. **Where sublation happens is a property of the universe, and it
-measures exactly whether the universe lets the future outrun the
-present.** That sentence is the cash value of rungs 0–1, and every clause
-of it is a theorem above.
+future. **Where sublation happens is a property of the topos. In these two
+presheaf models, the rung-1 test asks exactly whether every basic figure has
+a point; 𝒮's temporal language renders its failure as the future outrunning
+the present.** The criterion and both model outcomes are theorems; the last
+temporal sentence is their expository reading.
 
 ## B1. The mathematics of rung 1 · *Track B*
 
@@ -500,8 +556,11 @@ canonical repairs — freeze or merge. Every geometry to come lives in the
 gap between a space and its set of points; rung 1 is that gap's first
 appearance. (2) **Sublation as a computable invariant** (theorem): where
 the Aufhebung of ∅ ⊣ ∗ lands is a property of the topos — rung 1 in
-sSet, strictly below it in 𝒮 — detected by one question: *can the future
-outrun the present?* (3) **A calibration for the ladder** (reading, so
+sSet, strictly below it in 𝒮. For a level-1 presheaf presentation, the
+resolution test is the precise question: *does every site object receive a
+map from the point-like terminal object?* “Can the future outrun the
+present?” is 𝒮's reading of that criterion, not its general statement.
+(3) **A calibration for the ladder** (reading, so
 marked): rung 2 (cohesion, ʃ ⊣ ♭) is where shape enters and where the
 next Aufhebung question — what resolves *rung 1's* opposition — gets
 asked. The machinery you have just watched work on a diamond is the same
@@ -541,9 +600,10 @@ substantive A-claim, its B-statement, its spec home, and its script check:
 | 𝒮 has exactly four levels, a diamond | Props 1.6, 1.7 | 01 §4 | 1.6, 1.7 |
 | Aufhebung of rung 0 in 𝒮 = the open level | Prop 1.13 | 01 §5.4 | 1.13/§5.4 |
 | One-clause definition is the literature's | §5.4 source verdict; D0.4 note | 01 §5.4, 00 §1 | — (source question) |
-| Sublation location measures future-outrunning-present | Lemma 1.5 + Props 1.11–1.13 | 01 §5 | (composite) |
-| 𝒮 as two-stage topos of trees; "later" as ▷'s shadow | — reading under investigation, **OP-13** | `notes/internal-language-and-room-for-two.md` §4 | — (OP-13 work program) |
-| Hegel's "twofold meaning" as the sublation gloss | — lineage, shown not load-bearing | *Science of Logic*, "The Expression 'To Sublate'" | — (source question) |
+| In the worked models, Aufhebung location is model-dependent; future-outrunning-present is 𝒮's reading | Lemma 1.5 + Props 1.11–1.13; reading separately marked | 01 §5 | (composite) |
+| 𝒮 as the two-stage truncation of trees; exact variance dictionary and finite ▷ action | — sourced finite construction; the deferral resonance remains **conjectural** | Birkedal et al. 2012 §§2.1–2.4; W-0002; OP-13 | bounded OP-13 checks |
+| Hegel's "twofold meaning" as the sublation gloss | — source fact; Lawvere correspondence **claimed** | *Science of Logic*, "The Expression 'To Sublate'"; Lawvere 1991 §II; W-0007 | — |
+| Hegel Being/Nothing/Becoming beside the trivial level | — source facts; correspondence **claimed**; isomorphism reading rejected | *Science of Logic* §134; Lawvere 1991 §II; W-0007 | `0.5` rejects ∅ ≅ ∗ in a nondegenerate topos |
 
 *Draft status: awaiting P0.7 red-leg review alongside the spec sections.
 Revised August 2026 (T-2026-08-05-A), after rung 0·0 landed: precise
@@ -554,4 +614,7 @@ this project's own roadmap fell into); the Aufhebung passage now shows
 its Hegel line rather than name-checking it; the topos-of-trees remark
 added at A0′, flagged and ledgered under OP-13; the stale explorer
 "(pending)" corrected. The time reading of 𝒮 remains an expository
-device; the B-track and spec carry the definitions.*
+device; the B-track and spec carry the definitions. The August 12 pass
+landed Track H as a graded source strand, pinned the finite guarded
+dictionary, and narrowed the “future outruns present” slogan to 𝒮's
+reading of Lemma 1.5 rather than a general theorem.*
