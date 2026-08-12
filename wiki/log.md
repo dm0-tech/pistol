@@ -59,3 +59,13 @@ trap at A2 that the project's own roadmap fell into; the Aufhebung
 passage now shows Hegel's "twofold meaning" line (shown, not leaned on);
 W-0002's topos-of-trees identification surfaces as a flagged A0′ remark,
 ledgered under OP-13; the stale explorer "(pending)" corrected.
+
+## [2026-08-12] file | Rung 0→1 source dossier and analogy atlas
+
+Primary Hegel, Lawvere, Menni, Kelly–Lawvere, internal-language, and guarded
+recursion joints mapped against the existing spec and text. The resulting
+`notes/rung-0-to-1-research-dossier.md` separates source fact, mathematical
+theorem, modeling correspondence, and conjectural resonance; defines
+analogy-card promotion rules; and records the exact two-stage guarded
+dictionary. W-0006 files the ladder/lattice distinction; W-0007 files the
+graded Hegel–Lawvere correspondence.

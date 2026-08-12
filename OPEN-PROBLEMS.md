@@ -100,7 +100,12 @@ provisional until the Phase 0 spec exists to grade them against.*
   level diamond of `spec/01-level-1.md` §4 (▷ is not idempotent, so it is
   no level's modality — the question is its relation to the open level,
   and whether any level modality validates or refutes a Löb-type axiom).
-  See `notes/internal-language-and-room-for-two.md` §4.
+  **Bounded result (August 12, 2026):** the 2/3/4-stage Ω counts,
+  restriction maps, predicate-level ▷ action, and exact variance dictionary
+  are implemented in `examples/src/guarded.mjs`; non-idempotence kills the
+  naive identification with a level modality. The broader typed-relation
+  and Löb questions remain open. See
+  `notes/internal-language-and-room-for-two.md` §4.
 - **OP-14. Wheeler's clue as a theorem.** State Kheyfets–Wheeler's
   "all law from no law" via ∂∂ = 0 as the theorem it wants to be: the
   brane-scan cocycle conditions (Baez–Huerta; Schreiber's L∞ formulation)

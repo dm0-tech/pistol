@@ -128,15 +128,17 @@ exact content.
 
 ## 4. 𝒮 is the nursery of guarded self-reference (OP-13, sharpened)
 
-**Fact (modulo a variance dictionary to be pinned).** The topos of trees —
+**Fact (finite dictionary pinned August 12, 2026).** The topos of trees —
 presheaves on the chain ω, where Löb induction holds and self-reference is
 consistent when deferred by the "later" modality ▷ (Birkedal et al., LMCS
 2012) — truncates at two stages to presheaves on the walking arrow: the
 project's 𝒮. The truth-value counts match (trees: n+1 values at stage n;
 𝒮: three over two), and the spec's third truth value **later** is the
-two-stage shadow of the trees' "when does this become true?". Aligning the
-repo's now/later reading with step-indexing (whose restriction maps run the
-other way) is step zero of the exercise below. Wheeler's own citation for
+two-stage shadow of the trees' "when does this become true?". Precisely,
+set the repo's `X₀ = X(2)` and `X₁ = X(1)`; its arrow is the tree
+restriction `X(2) → X(1)`, and Birkedal et al. call the smaller index a
+future world. On Ω the guarded operator acts
+`never → later → now → now`. Wheeler's own citation for
 "self-referential deductive system" is Smoryński's GL monograph — the
 provability logic whose characteristic axiom is Löb's. The repo has been
 computing in the nursery of guarded self-reference since its first spec
@@ -153,13 +155,15 @@ theorem; it is exactly the shape of coincidence the Phase 0 assessment says
 should be recorded as conjectural and then attacked with the cheapest
 countermodel.
 
-**Work program (weekend-sized; finite throughout).** Compute ▷ and its
-internal operator on Ω in 𝒮 and in the three- and four-stage truncations;
-pin the variance dictionary; locate ▷ against the level diamond (it is not
-idempotent, so it is no level's modality — the question is what relation it
-bears to the open level, and whether any level modality validates or
-refutes a Löb-type axiom). 𝒮 has four levels and the repo owns all of them;
-a wrong conjecture has nowhere to hide. → recorded under **OP-13**.
+**Bounded work-program result (August 12, 2026).** The finite part is now in
+`examples/src/guarded.mjs`: Ω has 3/4/5 top-stage values in the
+2/3/4-stage truncations; the restriction and ▷ formulas are natural; the
+two-stage dictionary above is exact; and ▷ is not idempotent, so it is no
+level's modality. This is the intended kill test, not a new computation
+programme. The remaining OP-13 question is subtler: what typed relation, if
+any, does ▷ bear to the open level, and does any level modality validate or
+refute a Löb-type axiom? 𝒮 has four levels and the repo owns all of them; a
+wrong conjecture still has nowhere to hide.
 
 ## 5. The room for two (new conjecture → OP-16, S17)
 
