@@ -71,6 +71,20 @@ strength (machine-computed / established-but-unspliced / conjectural).
   d = 3 (ℝ) case in full — small enough to machine-check — and say
   precisely what "the becoming is the vector" asserts there. If it cannot
   be stated at the real rung, it cannot be trusted at the octonionic one.
+  **Reading discipline (owner's correction, T-2026-08-20-A):** the real
+  rung is a *falsifier, not a significance meter* — "cannot be stated"
+  is fatal, but "states as a triviality" is data, since constructs
+  innocuous at ℝ may flower above (the ladder's own base case, ∅ ⊣ ∗ and
+  id ⊣ id, is the extreme instance). The protocol is therefore to track
+  the statement's **proof-theoretic load** across rungs: record what makes
+  it free at ℝ (commutativity + associativity carry the 3-ψ identity
+  there), then log which hypothesis dies at each ascent and what inherits
+  its load (ℍ: associativity carries it; 𝕆: alternativity/Moufang alone —
+  the thinnest support, and the property whose failure past 𝕆 ends the
+  ladder). Flowering = load transfer onto thinner axioms; vacuity at the
+  bottom is a measurement, not a verdict. Compare 𝔥₃(ℝ) (furniture) vs
+  𝔥₃(𝕆) (the unique exceptional Jordan algebra): same construct, all the
+  content in where the load sits.
 - **Cheapest attacks:** (a) **E8 has no outer automorphisms** — its
   Dynkin diagram is asymmetric, so no S₃ acts *on E8 itself*; the
   trialities live at Spin(8), at the magic square construction, and at
@@ -92,3 +106,8 @@ strength (machine-computed / established-but-unspliced / conjectural).
   T-2026-08-20-A); rung-0 shadow already machine-computed via examples
   [0.10]; summit typing unverified; registered as OP-17; filed alongside
   W-0006.
+- 2026-08-20 — upgrade-clause corrected per owner (same session): the
+  d = 3 test reframed as falsifier-not-meter; load-tracking protocol
+  added ("plenty of things that can be stated at the real rung may look
+  innocuous or even vacuous there — only at later rungs might the
+  self-same constructs begin to flower").

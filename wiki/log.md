@@ -82,3 +82,12 @@ D16⁺ necessity attack. W-0007: the owner's ternary sharpening — becoming
 between two referents — with three typings (Ω_𝒮 shadow, machine-computed;
 adjoint-triple engine; SUSY-bracket/triality summit candidate) and the
 E8-no-outer-automorphisms attack. INDEX rows and attack queue updated.
+
+## [2026-08-20] reprocess | W-0007 upgrade clause corrected: falsifier, not meter
+
+Owner's correction (T-2026-08-20-A, same session): statability at the real
+rung is a falsifier, not a significance meter — vacuity at ℝ is data, since
+constructs innocuous there may flower above (the ladder's own base case is
+the extreme instance). Load-tracking protocol added to the entry: record
+what carries the statement at each rung as hypotheses die ascending
+(ℝ: comm + assoc free; ℍ: assoc; 𝕆: alternativity/Moufang alone).
