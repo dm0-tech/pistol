@@ -59,3 +59,26 @@ trap at A2 that the project's own roadmap fell into; the Aufhebung
 passage now shows Hegel's "twofold meaning" line (shown, not leaned on);
 W-0002's topos-of-trees identification surfaces as a flagged A0′ remark,
 ledgered under OP-13; the stale explorer "(pending)" corrected.
+
+## [2026-08-20] audit | Direction review by the originating agent
+
+Full-repo review filed as `notes/direction-review-2026-08-20.md`: examples
+rerun (all green), lint clean, Prop 1.6 enumeration and the Prop 1.7
+diamond independently re-derived. Endpoint named (existence as the fixed
+point of self-valued possibility, per OP-16/S17); path assessed; process
+finding — the originating agent is disqualified from the P0.7 red leg by
+AGENTS.md's authorship-blind standard, hand-off brief included in the note.
+
+## [2026-08-20] ingest | T-2026-08-20-A registered
+
+Digest archived; owner lines quoted verbatim as provenance for W-0006
+acceptance and the W-0007 proposal.
+
+## [2026-08-20] file | W-0006 (linear bridge), W-0007 (the triple); OP-16 sharpened, OP-17 opened
+
+W-0006: the copy-beside-a-co-copy typing of OP-16's exponential/orthogonal
+gap ([A,A] ≅ A* ⊗ A; hyperbolic ⊕-shadow; regime claim), with the
+D16⁺ necessity attack. W-0007: the owner's ternary sharpening — becoming
+between two referents — with three typings (Ω_𝒮 shadow, machine-computed;
+adjoint-triple engine; SUSY-bracket/triality summit candidate) and the
+E8-no-outer-automorphisms attack. INDEX rows and attack queue updated.
