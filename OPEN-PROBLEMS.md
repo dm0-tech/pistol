@@ -120,7 +120,41 @@ provisional until the Phase 0 spec exists to grade them against.*
   Cheapest attacks first: the rootless Leech lattice at d = 24; the generic
   doubling at d = 32 (> 10⁷ classes, King 2003) — any formal claim must
   explain why 16 and not 32, or die. The exponentials-vs-orthogonal-sums
-  gap in the analogy is currently untyped; a proof that no bridge exists
-  is an acceptable disposal. *Grade: conjectural. Thread P4;
-  cross-references OP-11, OP-12; stone S17 and
-  `notes/internal-language-and-room-for-two.md` §5.*
+  gap now has a **candidate typing (Aug 20, 2026, W-0006 — "the linear
+  bridge")**: for dualizable A the internal hom collapses,
+  [A, A] ≅ A* ⊗ A — self-transformation-space as *a copy beside a
+  co-copy* — with the ⊕-shadow via hyperbolicization (A ⊕ A* with the
+  evaluation pairing; self-duality, i.e. unimodularity, collapsing co-copy
+  to copy, giving A ⊕ A at exactly E8); and the regime claim that the
+  statement is well-posed only after the ladder's linear/quantum turn. New
+  attacks inherited with the typing: the D16⁺/Spin(32)/ℤ₂ necessity
+  problem, and the dualizability question (which rung first provides
+  duals). A proof that no bridge exists remains an acceptable disposal.
+  *Grade: conjectural. Thread P4; cross-references OP-11, OP-12, OP-17;
+  stone S17, W-0003, W-0006;
+  `notes/internal-language-and-room-for-two.md` §5 and
+  `notes/direction-review-2026-08-20.md` §4.*
+- **OP-17. The triple at the summit (the becoming between the referents).**
+  The owner's sharpening of OP-16 (Aug 20, 2026, W-0007): the summit's
+  self-reference should *mirror the ladder's own structural setup* — not a
+  binary doubling but a ternary form, "the self-reference becomes the
+  becoming between the two referents of what has become and what will" —
+  with the exceptional trialities hoped to realize it. Candidate typings,
+  in order of ownedness: (1) the rung-0 shadow — Ω_𝒮's three-valued bit
+  {now, later, never}, the middle value pure deferral (machine-computed,
+  spec Prop 0.10); (2) the ladder's engine — every rung an adjoint triple
+  with unity □X → X → ◯X, the object suspended between its two modal
+  referents; (3) the summit candidate — the division-algebra trilinears
+  8ₛ ⊗ 8꜀ → 8ᵥ with {Q, Q} = P (Baez–Huerta), *the becoming as the
+  vector* (translation carries what-has-become to what-will-become),
+  Spin(8) triality as the S₃ symmetrizing referents and becoming; with the
+  sub-conjecture of a symmetrization ladder: asymmetric outer triple →
+  ambidexterity (ℤ/2, the linear turn) → triality (S₃). First attacks: E8
+  has no outer automorphisms, so the triality must live at the
+  Spin(8)/magic-square/𝔥₃(𝕆) level or the phrase is empty; the trilinear
+  exists at all four division-algebra rungs (the mirror-of-ascent reading
+  survives, summit-exclusivity does not); becoming = translation must
+  survive W-0002's variance dictionary; the cheapest full statement is the
+  d = 3 real case. *Grade: conjectural. Thread P4; cross-references OP-13,
+  OP-14, OP-16; S7, S9, S15; W-0007;
+  `notes/direction-review-2026-08-20.md` §5.*
