@@ -91,3 +91,17 @@ constructs innocuous there may flower above (the ladder's own base case is
 the extreme instance). Load-tracking protocol added to the entry: record
 what carries the statement at each rung as hypotheses die ascending
 (ℝ: comm + assoc free; ℍ: assoc; 𝕆: alternativity/Moufang alone).
+
+## [2026-08-20] file | W-0008: the Hopf problem as a load gauge
+
+Owner raised the six-sphere complex-structure question as a triality data
+point. Search: no adjudicated resolution (Etesi existence unaccepted;
+Atiyah/Clemente nonexistence unaccepted; 2025-26 items are negative
+generalized-complex partials). Filed before adjudication because either
+outcome measures W-0007's load quantity: the only spheres with almost
+complex structures are the unit imaginary spheres of H and O
+(Borel-Serre), free at the H-rung (S2 = CP1), blocked at O exactly by the
+associator (Nijenhuis obstruction) - existence would mean flowering by
+total load transfer (LeBrun forbids round-compatible J), nonexistence the
+pattern's first clean death. Watch queue opened in INDEX; T-2026-08-20-A
+digest extended with items 7-8 (load-protocol correction; this exchange).
