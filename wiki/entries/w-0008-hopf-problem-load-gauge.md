@@ -31,6 +31,59 @@ considered incomplete. Clemente claimed nonexistence (2024) —
 unaccepted. Recent partial results (2025–26) are negative in the
 generalized-complex direction. The problem's honest status: **open**.
 
+**The live claim (added same day, owner-supplied: alpo.ge/s6.pdf,
+~100 pp., no author line in the extracted text; the owner attributes it,
+via a social-media post this reviewer could not fetch, to an LLM — a
+Claude model. Attribution unverified; irrelevant to validity either
+way).** The construction is **not octonionic**: it is Dolgachev's
+simply-connected-by-coprime-log-transforms mechanism one dimension up. A
+family of complex 2-tori over P¹ attached to a rank-4 representation of
+the (3, 4, ∞) triangle group (explicit integer matrices T₁, T₂ of orders
+3, 4 with unipotent T₀ = (T₁T₂)⁻¹), completed at its three special
+points: Mumford toric filling at the cusp — central fibre a degree-6 del
+Pezzo with opposite hexagon sides identified, e(W) = 2 carrying the
+whole Euler characteristic — and Kodaira logarithmic transforms of
+multiplicities 3, 4 at the elliptic points, giving bielliptic reduced
+fibres. π₁(X) ≅ ℤ/|12ℓ₀ − 4ℓ₁ − 3ℓ₂|, and the twist choice (0, 1, −1)
+gives |p| = 1; with the integral homology of S⁶, Smale plus Θ₆ = 0 then
+force X ≅ S⁶ diffeomorphically. Claimed invariants: a(X) = 1 with f the
+algebraic reduction, c₃ = 2, K_X non-torsion, Frölicher non-degenerate
+at E₁ — in head-on contradiction with CDP20 Cor. 2.3, with an entire
+section (§10) locating the divergence: R²f∗(T_X ⊗ L) ≠ 0 for every L,
+sourced in the *non-normality* of W, so CDP's Prop. 2.4 hypothesis
+fails; their printed Lemma 4.2 route is claimed to presuppose trivial
+monodromy. **Verification performed here (Aug 20, 2026):** the complete
+§2 lattice/monodromy layer machine-checked — 22/22 pass, including
+orders, duals, A₁A₂M₀ = I, unimodularity of B₀, the fixed sublattices
+and γ(ε) = γ(ε′) = 1, invariance of Q₀, the Gram matrix diag(6, −1) of
+signature (1, 1), the Seifert arithmetic p(0,1,−1) = −1 and the ℤ/7
+control case, and the log-transform freeness conditions. The
+signature-(1,1) fact is load-bearing: the family is non-polarizable —
+outside the reach of the polarized/algebraic no-go machinery, exactly
+where a complex S⁶ must live. Read coverage: front matter, main
+theorem, introduction, §2 in full, §3 through Prop. 3.6 (the fetched
+extraction ends there); §§3.2–10 and appendices assessed
+architecturally only. Residual risk concentrates in Thm 3.4 (global
+existence of the period functions, especially β with (β1)–(β3)), the
+§6 gluing, the §7 topology (computed twice by stated-independent
+routes), and the §10 diagnosis — a two-sided claim: *either* X stands
+and CDP20 Thm 2.2 falls, *or* the error is in the ~85 unread pages. The
+graveyard prior applies undiminished.
+
+**Effect on this entry's reading (honest update).** If *this*
+construction is the one that resolves Hopf affirmatively, it is a point
+**against** the triality-datapoint reading and **for** pure load
+transfer: the flowering happens by elliptic-modular and toric machinery
+— the most classical tools in the book — with no exceptional symmetry
+anywhere in the mechanism. The owner's original conditional ("data
+point for triality") was Etesi-shaped; this claim is Dolgachev-shaped.
+One flagged echo, grade **pun** until typed: the cusp fibre is built on
+the A₂-triangulation — A₂ being the root lattice of SU(3), and
+S⁶ = G₂/SU(3) — and the (3,4) Seifert arithmetic traces the
+S³ → S²(3,4) fibration. Whether either echo is load-bearing or
+coincidence is exactly the kind of question the load protocol exists to
+discipline.
+
 **The reading (conjectural — the owner's data-point proposal, typed via
 W-0007's load protocol).** The Hopf problem is a *load gauge*: the
 statement "the division algebra's unit imaginary sphere is a complex
@@ -91,3 +144,10 @@ deliberate application.
   survey level; claims recorded as unadjudicated in both directions;
   reading unverified; filed as the load protocol's first external test
   case.
+- 2026-08-20 — live claim added (owner-supplied URL, same transcript):
+  the alpo.ge/s6.pdf torus-fibration construction; §2 machine-checked
+  22/22 by this reviewer (script run recorded in T-2026-08-20-A's
+  session); read coverage and residual-risk map recorded; triality
+  reading honestly weakened — this claim, if it stands, favors pure load
+  transfer over exceptional symmetry; A₂/SU(3) echo flagged at grade
+  pun. Watch triggers now include adjudication of the CDP20 conflict.

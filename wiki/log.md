@@ -105,3 +105,18 @@ associator (Nijenhuis obstruction) - existence would mean flowering by
 total load transfer (LeBrun forbids round-compatible J), nonexistence the
 pattern's first clean death. Watch queue opened in INDEX; T-2026-08-20-A
 digest extended with items 7-8 (load-protocol correction; this exchange).
+
+## [2026-08-20] audit | W-0008 live claim: the alpo.ge/s6.pdf construction
+
+Owner supplied a live existence claim for the Hopf problem - a ~100pp
+torus-fibration construction (Dolgachev one dimension up: (3,4,infty)
+triangle group, Mumford toric cusp fibre = dP6 with opposite hexagon
+sides identified, log transforms of orders 3 and 4, Seifert arithmetic
+12l0-4l1-3l2 = -1) claiming a(X)=1 against CDP20 Cor 2.3 with a located
+divergence (non-normal fibre, R2f*(TX(x)L) nonzero for all L). Sec. 2
+lattice layer machine-checked 22/22 by the originating agent, including
+the load-bearing signature-(1,1) non-polarizability. Read coverage:
+through Sec. 3.1 (extraction limit); rest architectural. Attribution to
+an LLM reported by owner via unfetchable social post - unverified,
+irrelevant to validity. Triality reading of W-0008 honestly weakened:
+this claim is load-transfer-shaped, not exceptional-symmetry-shaped.
