@@ -120,3 +120,16 @@ through Sec. 3.1 (extraction limit); rest architectural. Attribution to
 an LLM reported by owner via unfetchable social post - unverified,
 irrelevant to validity. Triality reading of W-0008 honestly weakened:
 this claim is load-transfer-shaped, not exceptional-symmetry-shaped.
+
+## [2026-08-28] audit | W-0008: first community responses to the S6 claim
+
+Owner-reported seminar/list chatter recorded and verified: Pingali's
+blow-up observation (Bl_p of a complex S6 is an exotic non-Kahler
+complex structure on the smooth CP3, c1 = -2e vs 4h; arithmetic checked
+- connected-sum diffeo, canonical-bundle formula, Euler numbers) and
+the Tosatti 2015 non-Kahler Calabi-Yau framing (c1 = 0 with K_X
+non-torsion puts X outside class C). Filed under the
+consequence-not-refutation discipline: each consequence is a new
+falsification surface, sharpest being CP3-rigidity beyond the Kahler
+case (Hirzebruch-Kodaira + Yau close the Kahler escape). Author now
+attributable (Levent Alpoge, per owner + hosting domain).
