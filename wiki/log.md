@@ -149,3 +149,16 @@ proves the total map S6 -> S2 is null regardless (coefficient 66 kills
 the 2-torsion term), so the content lives entirely in g - the naive
 check is recorded as provably empty. Transcript T-2026-08-28-A
 registered; W-0008 transcript field extended.
+
+## [2026-08-28] reprocess | W-0009 addendum: the ±5 dissolved into CRT
+
+Owner queried the ±5 among the units. Filed: (Z/12)* is Klein four; CRT
+splits the twelve as 3 x 4 matching pi6(S3) = Z/4 (+) Z/3 (2-primary
+nu'-part, 3-primary alpha_1); the construction's two log transforms
+dial the two primary components independently (p = -l1 mod 3, p = +l2
+mod 4, machine-checked); |p|=1 forces same-sign, so the template
+reaches generators +-1 only; +-5 needs cone-order product 12/5 - no
+orbifold template reaches it; uniqueness scan shows (3,4) is the only
+triangle group whose sphere output carries a generator (PSL2(Z) gives
+order 6). Third pun-flag: the three special fibres as two prime-dialing
+referents plus the cusp-becoming.
