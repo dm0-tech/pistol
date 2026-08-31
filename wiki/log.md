@@ -133,3 +133,19 @@ consequence-not-refutation discipline: each consequence is a new
 falsification surface, sharpest being CP3-rigidity beyond the Kahler
 case (Hirzebruch-Kodaira + Yau close the Kahler escape). Author now
 attributable (Levent Alpoge, per owner + hosting domain).
+
+## [2026-08-28] file | W-0009: the twelve — collapse map, pi6(S3)=Z/12, e-invariant
+
+Owner observed that the S6 construction's fibration factors (per the
+paper's own heuristic) through the (3,4) Seifert projection S3 -> S2 of
+Hopf invariant 12, and conjectured the collapse map S6 -> S3 generates
+pi6(S3) = Z/12. Sharpened and machine-checked here: the Seifert rational
+Euler number of the twist data is -p/12; the stabilized generator nu'
+maps to 2nu in the third stable stem Z/24, so its Adams e-invariant is
+1/12 - the same fraction. Units mod 12 are +-1,+-5 and simple-
+connectivity forces |p|=1, so sphere-producing twists automatically land
+on generators under the conjectured [g] = p mod 12. Hilton's formula
+proves the total map S6 -> S2 is null regardless (coefficient 66 kills
+the 2-torsion term), so the content lives entirely in g - the naive
+check is recorded as provably empty. Transcript T-2026-08-28-A
+registered; W-0008 transcript field extended.

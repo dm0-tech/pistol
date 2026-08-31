@@ -14,6 +14,7 @@ mirrors its entry's header exactly (the audit checks this). See
 | [W-0006](entries/w-0006-linear-bridge.md) | The linear bridge: a copy beside a co-copy, and the ⊕-shadow via hyperbolicization | llm-conjecture (the bridge and its ⊕-shadow) + sourced (the compact-closure and lattice facts) | llm-checked (component facts are standard literature); unverified (the bridge itself) | conjectural | draft | OP-16; W-0003 |
 | [W-0007](entries/w-0007-the-triple.md) | The triple: self-reference as the becoming between two referents, and the triality hope | human-conjecture (the ternary form and the triality hope) + llm-derived (the three candidate typings) | machine-computed (the rung-0 shadow, `examples/run.mjs` [0.10]); unverified (the summit typing) | conjectural | draft | OP-17; OP-14; S7 |
 | [W-0008](entries/w-0008-hopf-problem-load-gauge.md) | The Hopf problem as a load gauge: does the imaginary-sphere pattern flower at 𝕆? | sourced (the substrate and the claims' status) + human-conjecture (the triality-datapoint reading) + llm-derived (the load-protocol framing) | source-audited (substrate); unverified (the reading); the resolution claims themselves are community-unadjudicated in both directions | established (substrate) / open (the Hopf problem) / conjectural (the reading) | draft | W-0007; OP-17; S7, S9 |
+| [W-0009](entries/w-0009-the-twelve.md) | The twelve: the S⁶ claim's collapse map, π₆(S³) = ℤ/12, and the e-invariant | human-conjecture (the factorization observation and the generator guess) + llm-derived (the e-invariant sharpening, the p mod 12 refinement, the units consistency check, the Hilton nullity of f) | machine-computed (the Seifert/Orlik/Euler-number arithmetic and Hilton coefficient); llm-checked (the Toda/Adams substrate against standard references); unverified (C1 and C2 below) | established (substrate) / conjectural (C1, C2, and the refinement) | draft | W-0008; W-0007; OP-17 |
 
 ## Standing queues
 
@@ -24,7 +25,9 @@ mirrors its entry's header exactly (the audit checks this). See
   program: ▷ in `examples/`).
 - **Watch queue:** W-0008 (Hopf-problem adjudication, either direction:
   Etesi revisions, responses to Clemente, the generalized-complex
-  program).
+  program; the alpo.ge claim and its CP³-rigidity falsification
+  surface); W-0009 (rides on W-0008's adjudication; C1 is attackable
+  now — the collapse map in the paper's own coordinates).
 - **Attack queue:** W-0003 (d = 24 rootless, d = 32 generic-doubling
   countermodels; the exponential/orthogonal-sum bridge — now candidate-typed
   in W-0006); W-0006 (the D16⁺/Spin(32)/ℤ₂ necessity attack; the

@@ -5,7 +5,7 @@
 - **Verification:** source-audited (substrate); unverified (the reading); the resolution claims themselves are community-unadjudicated in both directions
 - **Grade:** established (substrate) / open (the Hopf problem) / conjectural (the reading)
 - **Sources:** Tosatti, *Non-Kähler Calabi-Yau manifolds* (Contemp. Math. 644, 2015, arXiv:1401.4797); Hirzebruch–Kodaira, *On the complex projective spaces* (1957) with Yau's completion; Borel–Serre, *Groupes de Lie et puissances réduites de Steenrod* (1953) — S² and S⁶ are the only spheres with almost complex structures; Eckmann–Frölicher 1951, Ehresmann–Libermann 1951 — the canonical octonionic J is not integrable; Agricola–Bazzoni–Goertsches–Konstantis–Rollenske, *On the history of the Hopf problem* (arXiv:1708.01068) — survey, Nijenhuis-tensor/associator discussion, status as open; LeBrun 1987 — no orthogonal complex structure on the round S⁶; Angella, *The complex geometry of a hypothetical complex structure on S⁶* (arXiv:1912.09719) — constraints any such J must satisfy; Etesi (arXiv:math/0505634, arXiv:1509.02300, rev. Oct 2024) — claimed existence via inner automorphisms of 𝕆, unaccepted; Atiyah (arXiv:1610.09836) — claimed nonexistence, widely considered incomplete; Clemente (Axioms 2024) — claimed nonexistence, unaccepted; Etayo–Gómez-Nicolás–Santamaría (arXiv:2405.05681), Ricciarini (arXiv:2606.03379) — generalized-complex partial results, 2025–26
-- **Transcript:** T-2026-08-20-A
+- **Transcript:** T-2026-08-20-A, T-2026-08-28-A
 - **Cross-refs:** W-0007 (the load protocol — this is its first external test case); OP-17; S7, S9; `notes/direction-review-2026-08-20.md` §5
 - **Status:** draft
 
