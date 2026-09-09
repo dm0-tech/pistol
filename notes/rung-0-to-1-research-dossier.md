@@ -304,7 +304,7 @@ vocabulary alone.
   or fails to be minimal.
 - **Promotion:** diagrams must distinguish “named ascent” from “computed
   Aufhebung.”
-- **Wiki:** W-0006.
+- **Wiki:** W-0010.
 
 ### A-05 — Aufhebung as an invariant of pointlessness
 

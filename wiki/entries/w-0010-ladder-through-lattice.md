@@ -1,6 +1,6 @@
 # The modal ladder is a chosen path through a model-dependent lattice
 
-- **ID:** W-0006
+- **ID:** W-0010
 - **Provenance:** spec
 - **Verification:** spec-proved
 - **Grade:** established (𝒮 and sSet results); conjectural (programme-wide path)
@@ -42,3 +42,4 @@ not refute the computed 𝒮/sSet claim; it revises the programme-wide path.
 ## Log
 
 - 2026-08-12 — filed from the model-dependent Aufhebung proved in the spec and the source-audited level-lattice terminology.
+- 2026-09-09 — renumbered W-0006 → W-0010 on merge with main (main had already assigned W-0006 to the linear bridge).

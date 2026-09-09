@@ -597,8 +597,8 @@ warranty's rung-0 instance (left/right adjoints forcing □₀ = ∅,
 | LAPC/RAPL; preservation warranty; Prop 0.3's engine | B9 | CWM V.5 | `0.1/0.2` |
 | Geometric morphisms preserve the geometric fragment | B9 | MM VII; Elephant D1 | — |
 | Internal language interpreted from topos structure; forcing at stages; “secreted/standpoints” are readings | B10 + graded gloss | MM VI; spec §5.2 | `0.10/0.11` |
-| Lawvere proposes adjoint opposition as a model of dialectical structure | —, source fact + graded correspondence | Lawvere 1991 §II; Lawvere 1996 abstract/§1; W-0007 | — |
-| Hegel lineage (unity of opposites, moments) | — | shown, never load-bearing: Hegel, *Science of Logic*; Lawvere 1991/1996; W-0007 | — |
+| Lawvere proposes adjoint opposition as a model of dialectical structure | —, source fact + graded correspondence | Lawvere 1991 §II; Lawvere 1996 abstract/§1; W-0011 | — |
+| Hegel lineage (unity of opposites, moments) | — | shown, never load-bearing: Hegel, *Science of Logic*; Lawvere 1991/1996; W-0011 | — |
 
 *Draft status: commissioned by the owner (T-2026-08-05-A) as the
 self-contained on-ramp. P0.7 passed on August 12, 2026 after correcting

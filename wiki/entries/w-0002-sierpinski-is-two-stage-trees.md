@@ -7,7 +7,7 @@
 - **Sources:** Birkedal–Møgelberg–Schwinghammer–Støvring, *First steps in synthetic guarded domain theory: step-indexing in the topos of trees* (LMCS 2012); Smoryński, *Self-Reference and Modal Logic* (1985) — Wheeler's ref [159]
 - **Transcript:** T-2026-07-14-A
 - **Cross-refs:** OP-13 (sharpened); `notes/internal-language-and-room-for-two.md` §4; `spec/00-level-0.md` Prop 0.10 (the "later" truth value); `spec/01-level-1.md` §4 (the level diamond); `text/rung-0-1-draft.md` A0′ (flagged remark + three-stage ⊢ Predict)
-- **Status:** draft
+- **Status:** checked
 
 ## Statement
 

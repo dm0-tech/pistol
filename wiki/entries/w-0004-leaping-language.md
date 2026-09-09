@@ -7,7 +7,7 @@
 - **Sources:** Mac Lane–Moerdijk VI (Mitchell–Bénabou language, Kripke–Joyal semantics); Lawvere, *Adjointness in Foundations* (1969); Lawvere, *Diagonal arguments…* (1969); Wheeler, *Information, Physics, Quantum* (1989); MTW §44.4–44.5 (pregeometry as calculus of propositions; retreat folklore-flagged per `notes/bootstrap-stones.md` §1)
 - **Transcript:** T-2026-07-14-A
 - **Cross-refs:** OP-3; OP-7; S1; S6; convergence candidate 5; `notes/internal-language-and-room-for-two.md` §3; `text/rung-0-1-draft.md` Payoff 0; `text/rung-0-0-draft.md` Part III (theorem-halves in expository form)
-- **Status:** draft
+- **Status:** checked
 
 ## Statement
 

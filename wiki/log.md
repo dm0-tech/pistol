@@ -67,7 +67,7 @@ recursion joints mapped against the existing spec and text. The resulting
 `notes/rung-0-to-1-research-dossier.md` separates source fact, mathematical
 theorem, modeling correspondence, and conjectural resonance; defines
 analogy-card promotion rules; and records the exact two-stage guarded
-dictionary. W-0006 files the ladder/lattice distinction; W-0007 files the
+dictionary. W-0010 files the ladder/lattice distinction; W-0011 files the
 graded Hegel–Lawvere correspondence.
 
 ## [2026-08-12] audit | W-0002 finite guarded dictionary computed
@@ -100,3 +100,114 @@ sieves gained independent enumeration and an object-level
 non-idempotence witness; philosophical readings were graded. The reviewer
 reran every attack and returned PASS. Memo:
 `reviews/phase-0-red-leg.md`. Phase 0 still awaits the owner exit gate.
+## [2026-08-20] audit | Direction review by the originating agent
+
+Full-repo review filed as `notes/direction-review-2026-08-20.md`: examples
+rerun (all green), lint clean, Prop 1.6 enumeration and the Prop 1.7
+diamond independently re-derived. Endpoint named (existence as the fixed
+point of self-valued possibility, per OP-16/S17); path assessed; process
+finding — the originating agent is disqualified from the P0.7 red leg by
+AGENTS.md's authorship-blind standard, hand-off brief included in the note.
+
+## [2026-08-20] ingest | T-2026-08-20-A registered
+
+Digest archived; owner lines quoted verbatim as provenance for W-0006
+acceptance and the W-0007 proposal.
+
+## [2026-08-20] file | W-0006 (linear bridge), W-0007 (the triple); OP-16 sharpened, OP-17 opened
+
+W-0006: the copy-beside-a-co-copy typing of OP-16's exponential/orthogonal
+gap ([A,A] ≅ A* ⊗ A; hyperbolic ⊕-shadow; regime claim), with the
+D16⁺ necessity attack. W-0007: the owner's ternary sharpening — becoming
+between two referents — with three typings (Ω_𝒮 shadow, machine-computed;
+adjoint-triple engine; SUSY-bracket/triality summit candidate) and the
+E8-no-outer-automorphisms attack. INDEX rows and attack queue updated.
+
+## [2026-08-20] reprocess | W-0007 upgrade clause corrected: falsifier, not meter
+
+Owner's correction (T-2026-08-20-A, same session): statability at the real
+rung is a falsifier, not a significance meter — vacuity at ℝ is data, since
+constructs innocuous there may flower above (the ladder's own base case is
+the extreme instance). Load-tracking protocol added to the entry: record
+what carries the statement at each rung as hypotheses die ascending
+(ℝ: comm + assoc free; ℍ: assoc; 𝕆: alternativity/Moufang alone).
+
+## [2026-08-20] file | W-0008: the Hopf problem as a load gauge
+
+Owner raised the six-sphere complex-structure question as a triality data
+point. Search: no adjudicated resolution (Etesi existence unaccepted;
+Atiyah/Clemente nonexistence unaccepted; 2025-26 items are negative
+generalized-complex partials). Filed before adjudication because either
+outcome measures W-0007's load quantity: the only spheres with almost
+complex structures are the unit imaginary spheres of H and O
+(Borel-Serre), free at the H-rung (S2 = CP1), blocked at O exactly by the
+associator (Nijenhuis obstruction) - existence would mean flowering by
+total load transfer (LeBrun forbids round-compatible J), nonexistence the
+pattern's first clean death. Watch queue opened in INDEX; T-2026-08-20-A
+digest extended with items 7-8 (load-protocol correction; this exchange).
+
+## [2026-08-20] audit | W-0008 live claim: the alpo.ge/s6.pdf construction
+
+Owner supplied a live existence claim for the Hopf problem - a ~100pp
+torus-fibration construction (Dolgachev one dimension up: (3,4,infty)
+triangle group, Mumford toric cusp fibre = dP6 with opposite hexagon
+sides identified, log transforms of orders 3 and 4, Seifert arithmetic
+12l0-4l1-3l2 = -1) claiming a(X)=1 against CDP20 Cor 2.3 with a located
+divergence (non-normal fibre, R2f*(TX(x)L) nonzero for all L). Sec. 2
+lattice layer machine-checked 22/22 by the originating agent, including
+the load-bearing signature-(1,1) non-polarizability. Read coverage:
+through Sec. 3.1 (extraction limit); rest architectural. Attribution to
+an LLM reported by owner via unfetchable social post - unverified,
+irrelevant to validity. Triality reading of W-0008 honestly weakened:
+this claim is load-transfer-shaped, not exceptional-symmetry-shaped.
+
+## [2026-08-28] audit | W-0008: first community responses to the S6 claim
+
+Owner-reported seminar/list chatter recorded and verified: Pingali's
+blow-up observation (Bl_p of a complex S6 is an exotic non-Kahler
+complex structure on the smooth CP3, c1 = -2e vs 4h; arithmetic checked
+- connected-sum diffeo, canonical-bundle formula, Euler numbers) and
+the Tosatti 2015 non-Kahler Calabi-Yau framing (c1 = 0 with K_X
+non-torsion puts X outside class C). Filed under the
+consequence-not-refutation discipline: each consequence is a new
+falsification surface, sharpest being CP3-rigidity beyond the Kahler
+case (Hirzebruch-Kodaira + Yau close the Kahler escape). Author now
+attributable (Levent Alpoge, per owner + hosting domain).
+
+## [2026-08-28] file | W-0009: the twelve — collapse map, pi6(S3)=Z/12, e-invariant
+
+Owner observed that the S6 construction's fibration factors (per the
+paper's own heuristic) through the (3,4) Seifert projection S3 -> S2 of
+Hopf invariant 12, and conjectured the collapse map S6 -> S3 generates
+pi6(S3) = Z/12. Sharpened and machine-checked here: the Seifert rational
+Euler number of the twist data is -p/12; the stabilized generator nu'
+maps to 2nu in the third stable stem Z/24, so its Adams e-invariant is
+1/12 - the same fraction. Units mod 12 are +-1,+-5 and simple-
+connectivity forces |p|=1, so sphere-producing twists automatically land
+on generators under the conjectured [g] = p mod 12. Hilton's formula
+proves the total map S6 -> S2 is null regardless (coefficient 66 kills
+the 2-torsion term), so the content lives entirely in g - the naive
+check is recorded as provably empty. Transcript T-2026-08-28-A
+registered; W-0008 transcript field extended.
+
+## [2026-08-28] reprocess | W-0009 addendum: the ±5 dissolved into CRT
+
+Owner queried the ±5 among the units. Filed: (Z/12)* is Klein four; CRT
+splits the twelve as 3 x 4 matching pi6(S3) = Z/4 (+) Z/3 (2-primary
+nu'-part, 3-primary alpha_1); the construction's two log transforms
+dial the two primary components independently (p = -l1 mod 3, p = +l2
+mod 4, machine-checked); |p|=1 forces same-sign, so the template
+reaches generators +-1 only; +-5 needs cone-order product 12/5 - no
+orbifold template reaches it; uniqueness scan shows (3,4) is the only
+triangle group whose sphere output carries a generator (PSL2(Z) gives
+order 6). Third pun-flag: the three special fibres as two prime-dialing
+referents plus the cusp-becoming.
+
+## [2026-09-09] reprocess | Merge main: renumber ladder/Hegel wiki IDs
+
+`main` had independently assigned W-0006–W-0009 (linear bridge, triple,
+Hopf load gauge, twelve). This branch's Aug 12 ladder/lattice and
+Hegel–Lawvere entries were renumbered to W-0010 and W-0011 to preserve
+both ID assignments. INDEX and standing queues merged; W-0002/W-0004
+label upgrades from this branch kept.
+

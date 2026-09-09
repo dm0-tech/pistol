@@ -1,12 +1,12 @@
 # Hegel supplies the preserve/cease problem; Lawvere proposes a categorical model
 
-- **ID:** W-0007
+- **ID:** W-0011
 - **Provenance:** sourced
 - **Verification:** source-audited
 - **Grade:** established (what the sources say); claimed (the correspondence)
 - **Sources:** Hegel, *Science of Logic*, Book I, “Being,” §134 and “The Expression ‘To Sublate’”; Lawvere, *Some Thoughts on the Future of Category Theory* (1991), §II pp. 6–9; Lawvere, *Unity and Identity of Opposites in Calculus and Physics* (1996), abstract and §1
 - **Transcript:** none (sourced entry; no transcript provenance required)
-- **Cross-refs:** `notes/rung-0-to-1-research-dossier.md` §4; `text/rung-0-0-draft.md`; `text/rung-0-1-draft.md` A2; W-0001; W-0006
+- **Cross-refs:** `notes/rung-0-to-1-research-dossier.md` §4; `text/rung-0-0-draft.md`; `text/rung-0-1-draft.md` A2; W-0001; W-0010
 - **Status:** checked
 
 ## Statement
@@ -47,3 +47,4 @@ theorem and should be disposed, not softened.
 ## Log
 
 - 2026-08-12 — filed after direct comparison of Hegel's two primary passages with Lawvere 1991/1996; correspondence deliberately graded below the source facts.
+- 2026-09-09 — renumbered W-0007 → W-0011 on merge with main (main had already assigned W-0007 to the triple).

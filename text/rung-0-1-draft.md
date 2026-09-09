@@ -615,8 +615,8 @@ substantive A-claim, its B-statement, its spec home, and its script check:
 | One-clause definition is the literature's | §5.4 source verdict; D0.4 note | 01 §5.4, 00 §1 | — (source question) |
 | In the worked models, Aufhebung location is model-dependent; future-outrunning-present is 𝒮's reading | Lemma 1.5 + Props 1.11–1.13; reading separately marked | 01 §5 | (composite) |
 | 𝒮 as the two-stage truncation of trees; exact variance dictionary and finite ▷ action | — sourced finite construction; the deferral resonance remains **conjectural** | Birkedal et al. 2012 §§2.1–2.4; W-0002; OP-13 | bounded OP-13 checks |
-| Hegel's "twofold meaning" as the sublation gloss | — source fact; Lawvere correspondence **claimed** | *Science of Logic*, "The Expression 'To Sublate'"; Lawvere 1991 §II; W-0007 | — |
-| Hegel Being/Nothing/Becoming beside the trivial level | — source facts; correspondence **claimed**; isomorphism reading rejected | *Science of Logic* §134; Lawvere 1991 §II; W-0007 | `0.5` rejects ∅ ≅ ∗ in a nondegenerate topos |
+| Hegel's "twofold meaning" as the sublation gloss | — source fact; Lawvere correspondence **claimed** | *Science of Logic*, "The Expression 'To Sublate'"; Lawvere 1991 §II; W-0011 | — |
+| Hegel Being/Nothing/Becoming beside the trivial level | — source facts; correspondence **claimed**; isomorphism reading rejected | *Science of Logic* §134; Lawvere 1991 §II; W-0011 | `0.5` rejects ∅ ≅ ∗ in a nondegenerate topos |
 
 *Draft status: P0.7 passed on August 12, 2026 after the review's Breaks and
 Underpriced findings were dispositioned; the draft now awaits the owner
