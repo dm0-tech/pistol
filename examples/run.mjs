@@ -4,7 +4,7 @@
 
 import {
   obj, initial, terminal, ya, homs, isomorphic,
-  box0, circ0, boxOpen, circOpen, flat, sharp, disc, coDisc, gamma,
+  box0, circ0, boxOpen, circOpen, flat, sharp, circMax, disc, coDisc, gamma,
   jMinusOpen, subobjects, subsets, omega, chi, pullbackTrue, serializeSub,
   serializeMorphism, testFamily, countFunctions,
 } from './src/sierpinski.mjs';
@@ -13,6 +13,11 @@ import {
   truncEmpty, truncPoint, truncDelta1, subPresheaves, truncDisc, truncCoDisc,
   truncIsomorphic,
 } from './src/sset.mjs';
+import {
+  finiteChainSieves, omegaValues, laterTruth, laterIsNatural,
+  laterIsIdempotentAt, laterEndofunctorIsNotIdempotentWitness,
+  repoOmegaMatchesTwoStageTree, twoStageLaterLabels,
+} from './src/guarded.mjs';
 
 let failures = 0;
 function check(ledger, description, condition) {
@@ -159,13 +164,13 @@ check('1.10', 'both obstructions are the same object: ♯∅ ≅ □_open ∗ �
   () => isomorphic(sharp(initial), boxOpen(terminal)) &&
     isomorphic(boxOpen(terminal), ya));
 
-check('1.13/§5.4', 'resolution (one-clause ◯ⱼ∅ ≅ ∅, the literature definition): resolving levels of 𝒮 = {open, max}, so 0̄_𝒮 = open',
+check('1.13/§5.4', 'resolution (level order plus ◯ⱼ∅ ≅ ∅): resolving levels of 𝒮 = {open, max}, so 0̄_𝒮 = open',
   () => {
     const resolves = {
       trivial: isomorphic(circ0(initial), initial),
       open: isomorphic(circOpen(initial), initial),
       closed: isomorphic(sharp(initial), initial),
-      max: true, // ◯_max = id
+      max: isomorphic(circMax(initial), initial),
     };
     return !resolves.trivial && resolves.open && !resolves.closed && resolves.max;
   });
@@ -188,6 +193,26 @@ check('§3', 'sSet truncated: (coDisc S)_n = S^(n+1) — sizes for |S| = 2 are 2
     const cd = truncCoDisc(['a', 'b']);
     return cd.S[0].length === 2 && cd.S[1].length === 4 && cd.S[2].length === 8;
   });
+
+console.log('— OP-13 bounded guarded-recursion check —');
+
+check('OP-13', 'finite trees: independent sieve enumeration gives 3, 4, 5 Ω-values at stages 2, 3, 4',
+  () => [2, 3, 4].every(stage =>
+    finiteChainSieves(stage).length === omegaValues(stage).length &&
+    finiteChainSieves(stage).length === stage + 1));
+
+check('OP-13', 'two-stage tree dictionary is exactly repo Ω: stage 2 = X₀, stage 1 = X₁',
+  () => repoOmegaMatchesTwoStageTree(omega));
+
+check('OP-13', 'predicate later on Ω is natural and acts never → later → now → now',
+  () => laterIsNatural(4) &&
+    JSON.stringify(twoStageLaterLabels) ===
+      JSON.stringify({ never: 'later', later: 'now', now: 'now' }));
+
+check('OP-13', 'predicate later is non-idempotent; an object-level witness independently shows the later endofunctor is non-idempotent',
+  () => [2, 3, 4].every(stage => !laterIsIdempotentAt(stage)) &&
+    laterTruth(laterTruth(0, 2), 2) !== laterTruth(0, 2) &&
+    laterEndofunctorIsNotIdempotentWitness());
 
 console.log(failures === 0
   ? '\nAll checks passed.'

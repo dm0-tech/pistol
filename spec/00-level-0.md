@@ -70,11 +70,16 @@ two-moment condition as an unproven "equivalently." The two-moment condition
 is what every proof in this spec actually uses, so it is now the definition.
 
 **D0.4 (resolution and Aufhebung).** Level j **resolves** the opposition of
-level i, written **i ≪ j**, if ◯ⱼ□ᵢ ≅ □ᵢ (naturally). The **Aufhebung** of
-level i, written **ī**, is the minimal level (if it exists) with i ≺ ī and
-i ≪ ī. *Grade: established (nLab "Aufhebung").*
-*Source note (OP-15, resolved July 11, 2026):* the one-clause definition
-above is the literature's, unanimously — Lawvere 1991 (Como) / 1992 / 2009,
+level i, written **i ≪ j**, if i ≼ j and ◯ⱼ□ᵢ ≅ □ᵢ (naturally). The
+order condition is part of the literature's “way above” relation; the
+displayed isomorphism is its one additional, nonautomatic clause. The
+**Aufhebung** of level i, written **ī**, is the least level (if it exists)
+with i ≪ ī. It need not be strictly higher: a level may resolve itself
+(notably, the maximal identity level does) and then may be its own
+Aufhebung. *Grade: established (nLab "Aufhebung"; Menni 2019, Def. 1.1).*
+*Source note (OP-15, resolved July 11, 2026; order correction P0.7):* the
+order-plus-one-additional-clause definition above is the literature's,
+unanimously — Lawvere 1991 (Como) / 1992 / 2009,
 Kennett–Riehl–Roy–Zaks 2011, Marmolejo–Menni and Menni 2019 ("way above":
 both lower inclusions factor through the higher *sheaf* inclusion, i.e.
 ◯ⱼ□ᵢ ≅ □ᵢ with ◯ⱼ◯ᵢ ≅ ◯ᵢ automatic from i ≼ j), and nLab "Aufhebung". The
@@ -284,10 +289,16 @@ to Proposition 0.3. Its opposition has coincident moments — nothing is
 opposed — which is why the ladder's ascent happens strictly between level 0
 and the maximal level. *Grade: established.*
 
+Since max ≼ max and ◯_max□_max = id, max resolves itself. With the
+reflexive way-above definition D0.4, its Aufhebung therefore exists and is
+max itself. *Grade: established.*
+
 ## 7. Forward: what level 1 must resolve
 
-By D0.4, a level j with 0 ≺ j resolves level 0 iff ◯ⱼ∅ ≅ ∅ — "the
-◯ⱼ-reflection of nothing is nothing." For the cohesive rung this reads
+By D0.4, a level j with 0 ≼ j resolves level 0 iff ◯ⱼ∅ ≅ ∅ — "the
+◯ⱼ-reflection of nothing is nothing." In a nondegenerate topos level 0 does
+not resolve itself, since ◯₀∅ = ∗ ≇ ∅, so any resolver is then strictly
+above it. For the cohesive rung this reads
 **♯∅ ≅ ∅**, and `01-level-1.md` must: (a) verify it in 𝒮 and in sSet-like
 models where it holds; (b) verify the companion clause □ⱼ∗ ≅ ∗ (♭∗ ≅ ∗) per
 the honesty remark in D0.4; (c) establish whether ♭ ⊣ ♯ is the *minimal*
@@ -307,8 +318,8 @@ established in `01-level-1.md`; nothing is claimed here.*
 | 0.7 | ⊤ ≠ ⊥ ⇔ nondegenerate | established (proved here) | model instances ⚙ |
 | 0.8 | Ω ≅ 1+1 ⇔ Boolean | established (cited: MM VI.1) | model instances ⚙ |
 | 0.9 | Wheeler bit-as-opposition reading | conjectural (project) | — |
-| 0.10 | Ω_𝒮 = (3 → 2), classifier verified | established (proved here) | full check ⚙ |
-| 0.11 | 𝒮 non-Boolean | established (proved here) | full check ⚙ |
+| 0.10 | Ω_𝒮 = (3 → 2), classifier verified | established (proved here) | both round trips on bounded 11-object family ⚙ |
+| 0.11 | 𝒮 non-Boolean | established (proved here) | bounded direct witness ⚙ |
 | 5.3 | Ω₀, Ω₁ in sSet; sSet non-Boolean | established (proved here, truncated; general form cited) | truncated check ⚙ |
 | 6 | id ⊣ id is the maximal level | established (proved here) | — |
 

@@ -29,7 +29,8 @@ recorded for the owner's gate:
 - **A generative discipline.** The text should make the reader predict
   before it tells. The rung-1 material is the perfect trap: a reader who
   guesses "♭ ⊣ ♯ sublates ∅ ⊣ ∗" is *wrong in 𝒮*, and discovering that
-  personally teaches the one-clause definition better than the ledger can.
+  personally teaches the order-plus-one-nonautomatic-clause definition
+  better than the ledger can.
 
 Working protocol adopted for the daily practice: one atom per day (one
 proposition, fork, passage, or OP item); a pre-committed prediction; a
@@ -59,11 +60,13 @@ cannot feel).
   doing necessary work: (i) adjoints are unique up to unique isomorphism —
   the poles determine each other, nothing is chosen (the objectivity);
   (ii) unit/counit need not invert — the difference is genuine, and
-  quantified rather than dissolved; (iii) the triangle identities — each
-  side's correction of its own correction is the identity; the exchange
-  locks after one round, a truce with exact terms, not an oscillation.
-  Weaken any clause and the opposition becomes arbitrary; strengthen any
-  and it collapses. Adjunction sits at the boundary point.
+  quantified rather than dissolved; (iii) the triangle identities make the
+  two canonical zig-zags identities, giving coherence without implying
+  idempotence. Remove the exactly-when/naturality and the relation becomes
+  arbitrary; make both unit and counit invertible and it becomes an
+  equivalence. Reflections and other proper strengthenings remain between
+  those extremes. Adjunction is the general exact form; the ladder uses its
+  idempotent special cases.
 - **Deeper than toposes — three precise senses, one counterweight.**
   (a) A topos is a category defined by the *existence* of adjoints to
   canonical functors (limits, exponentials, Ω-representability), its logic
@@ -128,15 +131,18 @@ exact content.
 
 ## 4. 𝒮 is the nursery of guarded self-reference (OP-13, sharpened)
 
-**Fact (modulo a variance dictionary to be pinned).** The topos of trees —
+**Fact (finite dictionary pinned August 12, 2026).** The topos of trees —
 presheaves on the chain ω, where Löb induction holds and self-reference is
-consistent when deferred by the "later" modality ▷ (Birkedal et al., LMCS
+consistent when deferred by the later endofunctor and predicate operator
+(Birkedal et al., LMCS
 2012) — truncates at two stages to presheaves on the walking arrow: the
 project's 𝒮. The truth-value counts match (trees: n+1 values at stage n;
 𝒮: three over two), and the spec's third truth value **later** is the
-two-stage shadow of the trees' "when does this become true?". Aligning the
-repo's now/later reading with step-indexing (whose restriction maps run the
-other way) is step zero of the exercise below. Wheeler's own citation for
+two-stage shadow of the trees' "when does this become true?". Precisely,
+set the repo's `X₀ = X(2)` and `X₁ = X(1)`; its arrow is the tree
+restriction `X(2) → X(1)`, and Birkedal et al. call the smaller index a
+future world. On Ω the predicate-level later operator acts
+`never → later → now → now`. Wheeler's own citation for
 "self-referential deductive system" is Smoryński's GL monograph — the
 provability logic whose characteristic axiom is Löb's. The repo has been
 computing in the nursery of guarded self-reference since its first spec
@@ -153,13 +159,17 @@ theorem; it is exactly the shape of coincidence the Phase 0 assessment says
 should be recorded as conjectural and then attacked with the cheapest
 countermodel.
 
-**Work program (weekend-sized; finite throughout).** Compute ▷ and its
-internal operator on Ω in 𝒮 and in the three- and four-stage truncations;
-pin the variance dictionary; locate ▷ against the level diamond (it is not
-idempotent, so it is no level's modality — the question is what relation it
-bears to the open level, and whether any level modality validates or
-refutes a Löb-type axiom). 𝒮 has four levels and the repo owns all of them;
-a wrong conjecture has nowhere to hide. → recorded under **OP-13**.
+**Bounded work-program result (August 12, 2026).** The finite part is now in
+`examples/src/guarded.mjs`: independent finite-sieve enumeration gives
+3/4/5 top-stage Ω-values in the 2/3/4-stage truncations; the predicate
+operator is natural; the two-stage dictionary above is exact; and a
+separate object-level witness shows the later endofunctor is not
+idempotent, so it is no level's modality. This is the intended kill test,
+not a new computation programme. It does not test Löb's rule. The remaining
+OP-13 question is subtler: what typed relation, if any, does the later
+structure bear to the open level, and does any level modality validate or
+refute a Löb-type axiom? 𝒮 has four levels and the repo owns all of them; a
+wrong conjecture still has nowhere to hide.
 
 ## 5. The room for two (new conjecture → OP-16, S17)
 

@@ -60,11 +60,13 @@ provisional until the Phase 0 spec exists to grade them against.*
 ## Spec-internal
 
 - **OP-15. The resolution-clause fork. RESOLVED (July 11, 2026).** D0.4
-  defines i ≪ j by the single clause ◯ⱼ□ᵢ ≅ □ᵢ; the question was whether
-  the literature adds the companion □ⱼ◯ᵢ ≅ ◯ᵢ — the two variants give
-  different Aufhebung answers in 𝒮 (`spec/01-level-1.md` §5.4). All three
-  parts are now discharged from primary sources:
-  1. *Clause question:* one-clause, unanimously (Lawvere 1991 Como / 1992 /
+  defines i ≪ j by i ≼ j plus the single nonautomatic clause
+  ◯ⱼ□ᵢ ≅ □ᵢ; the question was whether the literature adds the companion
+  □ⱼ◯ᵢ ≅ ◯ᵢ — the two variants give different Aufhebung answers in 𝒮
+  (`spec/01-level-1.md` §5.4). All three parts are now discharged from
+  primary sources:
+  1. *Clause question:* order plus one additional clause, unanimously
+     (Lawvere 1991 Como / 1992 /
      2009; Kennett–Riehl–Roy–Zaks 2011; Marmolejo–Menni "Level ε"; Menni
      TAC 2019; nLab "Aufhebung"). The companion clause is the nLab's
      separate notion of *co-resolution*, never part of the Aufhebung. Hence
@@ -79,8 +81,9 @@ provisional until the Phase 0 spec exists to grade them against.*
      0-skeletal one; Marmolejo–Menni's "level ε" degenerates to level 0 in
      sSet.
   Residue for the red leg: the D0.4 source note and Lemma 1.12a citation
-  were verified by research agents (July 10–11), not independently;
-  re-verification is cheap and requested. *Grade: resolved.*
+  were independently re-verified during P0.7. That review also repaired one
+  residual defect: way-above's “above” relation is reflexive, so an
+  Aufhebung need not be strictly higher (erratum E5). *Grade: resolved.*
 
 ## Wheeler / self-reference (from `notes/bootstrap-stones.md`)
 
@@ -95,12 +98,20 @@ provisional until the Phase 0 spec exists to grade them against.*
   candidate Phase 2 side-quest.* **Sharpened (July 14, 2026):** 𝒮 is the
   two-stage truncation of the topos of trees (modulo a variance dictionary
   to be pinned), so Ω_𝒮's third truth value "later" is ▷'s two-stage
-  shadow. Finite attack available now: compute ▷ and its internal
-  Ω-operator in the 2-/3-/4-stage truncations and locate ▷ against the
-  level diamond of `spec/01-level-1.md` §4 (▷ is not idempotent, so it is
-  no level's modality — the question is its relation to the open level,
-  and whether any level modality validates or refutes a Löb-type axiom).
-  See `notes/internal-language-and-room-for-two.md` §4.
+  shadow. The finite attack was to distinguish the later endofunctor,
+  `next`, and its induced Ω-operator in the 2-/3-/4-stage truncations, then
+  locate the later structure against the level diamond of
+  `spec/01-level-1.md` §4. The endofunctor is not idempotent, so it is no
+  level's modality; the question is its typed relation to the open level
+  and whether any level modality validates or refutes a Löb-type axiom.
+  **Bounded result (August 12, 2026):** independent finite-sieve
+  enumeration, the 2/3/4-stage Ω counts, predicate-level later action, and
+  exact variance dictionary are implemented in
+  `examples/src/guarded.mjs`; a separate object-level witness shows the
+  later endofunctor is non-idempotent and kills the naive identification
+  with a level modality. The script does not test Löb's rule. The broader
+  typed-relation and Löb questions remain open. See
+  `notes/internal-language-and-room-for-two.md` §4.
 - **OP-14. Wheeler's clue as a theorem.** State Kheyfets–Wheeler's
   "all law from no law" via ∂∂ = 0 as the theorem it wants to be: the
   brane-scan cocycle conditions (Baez–Huerta; Schreiber's L∞ formulation)

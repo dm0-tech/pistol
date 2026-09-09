@@ -60,6 +60,46 @@ passage now shows Hegel's "twofold meaning" line (shown, not leaned on);
 W-0002's topos-of-trees identification surfaces as a flagged A0′ remark,
 ledgered under OP-13; the stale explorer "(pending)" corrected.
 
+## [2026-08-12] file | Rung 0→1 source dossier and analogy atlas
+
+Primary Hegel, Lawvere, Menni, Kelly–Lawvere, internal-language, and guarded
+recursion joints mapped against the existing spec and text. The resulting
+`notes/rung-0-to-1-research-dossier.md` separates source fact, mathematical
+theorem, modeling correspondence, and conjectural resonance; defines
+analogy-card promotion rules; and records the exact two-stage guarded
+dictionary. W-0010 files the ladder/lattice distinction; W-0011 files the
+graded Hegel–Lawvere correspondence.
+
+## [2026-08-12] audit | W-0002 finite guarded dictionary computed
+
+Birkedal et al.'s stage, restriction, Ω, and predicate-level ▷ formulas
+reproduced in 2/3/4-stage truncations. The dictionary
+`X₀ = X(2)`, `X₁ = X(1)` matches repo 𝒮 exactly; an object-level witness
+shows the later endofunctor is non-idempotent and refutes its naive
+identification with a level modality. W-0002 upgraded to
+machine-computed for the finite claim; the deferral/Aufhebung resonance
+remains conjectural and moves to the typed-relation attack queue.
+
+## [2026-08-12] audit | W-0004 internal-language claims narrowed and sourced
+
+P0.7 confirmed Mitchell–Bénabou interpretation from topos structure and
+Kripke–Joyal evaluation at generalized stages. “Secreted,”
+observer-participancy, and world→logic remain explicitly graded readings.
+The untyped diagonal ceiling (“no topos defines its own truth”) was
+withdrawn: any obstruction must specify a syntax object, truth predicate,
+and the hypotheses of Lawvere's fixed-point theorem. W-0004 upgraded to
+source-audited at its narrowed theorem scope.
+
+## [2026-08-12] audit | Phase 0 P0.7 red leg passed
+
+Fresh-context artifacts-only review found three Breaks and four Underpriced
+items. Breaks repaired: reflexive way-above/self-Aufhebung (notation erratum
+E5), the general-adjunction versus idempotent-modality distinction, and the
+typed outer/inner formulas in B7. Evidence claims were narrowed; guarded
+sieves gained independent enumeration and an object-level
+non-idempotence witness; philosophical readings were graded. The reviewer
+reran every attack and returned PASS. Memo:
+`reviews/phase-0-red-leg.md`. Phase 0 still awaits the owner exit gate.
 ## [2026-08-20] audit | Direction review by the originating agent
 
 Full-repo review filed as `notes/direction-review-2026-08-20.md`: examples
@@ -162,3 +202,12 @@ orbifold template reaches it; uniqueness scan shows (3,4) is the only
 triangle group whose sphere output carries a generator (PSL2(Z) gives
 order 6). Third pun-flag: the three special fibres as two prime-dialing
 referents plus the cusp-becoming.
+
+## [2026-09-09] reprocess | Merge main: renumber ladder/Hegel wiki IDs
+
+`main` had independently assigned W-0006–W-0009 (linear bridge, triple,
+Hopf load gauge, twelve). This branch's Aug 12 ladder/lattice and
+Hegel–Lawvere entries were renumbered to W-0010 and W-0011 to preserve
+both ID assignments. INDEX and standing queues merged; W-0002/W-0004
+label upgrades from this branch kept.
+
