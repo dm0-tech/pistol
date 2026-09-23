@@ -211,3 +211,24 @@ Hegel–Lawvere entries were renumbered to W-0010 and W-0011 to preserve
 both ID assignments. INDEX and standing queues merged; W-0002/W-0004
 label upgrades from this branch kept.
 
+## [2026-09-24] ingest | Foil session: no nothing, no thing (W-0012–W-0020)
+
+A second Claude, working as foil at the owner's invitation (T-2026-09-23-A),
+took the owner's ontology "there is no nothing and no thing" as an axiom
+on the level-0 opposition, and filed nine entries:
+- W-0012, pointing: the literal reading collapses to zero.
+- W-0013, reversible becoming forces Sp.
+- W-0014, BPQ: 𝕊 is counting with relabelings.
+- W-0015, the Cox reading and the codomain ladder in π*𝕊 (OP-11 candidate).
+- W-0016, 24/240/E8.
+- W-0017, Jaynes and Burnside.
+- W-0018, the ambidexterity ladder and height-n cardinality.
+- W-0019, the ontology holds fibrewise.
+- W-0020, the circle pun, disposed.
+
+Machine checks were added to examples/run.mjs. A fresh-context red leg ran
+before filing and returned three Breaks, all fixed:
+- The pole identification collapses the world.
+- The chromatic table holds only for p-groups.
+- The π₀/Ω^∞ overclaims.
+

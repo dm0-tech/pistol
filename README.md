@@ -63,6 +63,13 @@ Bayes' rule; then He drew His pistol."*
   primary Hegel/Lawvere lineage, level/Aufhebung source joints, the exact
   finite guarded-recursion dictionary, graded analogy cards, and promotion
   rules.
+- [`notes/no-nothing-no-thing.md`](notes/no-nothing-no-thing.md) —
+  foil note (Sept 24, 2026). Takes the owner's "no nothing, no thing" as an
+  axiom on ∅ ⊣ ∗. Read literally it collapses the world. Read as
+  pointedness it exits the topos. With reversible becoming it forces
+  spectra and 𝕊. It also places Cox, the codomain ladder (Hopf invariant
+  one) and chromatic cardinalities (height-n |BG| = n-torus Dijkgraaf–Witten
+  for p-groups) relative to that. Red-legged; W-0012–W-0020, OP-18–OP-20.
 - [`notes/project-complexity-handoff.md`](notes/project-complexity-handoff.md) —
   artifact/dependency map for the post-push complexity review: which
   mechanisms are mathematically necessary, epistemically protective,

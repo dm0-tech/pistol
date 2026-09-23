@@ -169,3 +169,23 @@ provisional until the Phase 0 spec exists to grade them against.*
   d = 3 real case. *Grade: conjectural. Thread P4; cross-references OP-13,
   OP-14, OP-16; S7, S9, S15; W-0007;
   `notes/direction-review-2026-08-20.md` §5.*
+
+## Foil session (Sept 24, 2026; `notes/no-nothing-no-thing.md`)
+
+- **OP-18. Does descent force 𝕊 over ℤ?** State precisely that counting on
+  a site of possibility-spaces which glues along covers must be
+  groupoid-valued, so that its group completion is 𝕊 (BPQ) and not ℤ.
+  This would turn "𝕊 is initial" from cheap into forced. First test: count
+  sections of finite covering spaces. *Grade: conjectural. W-0014.*
+- **OP-19. Is reversible becoming forced?** The owner's ontology gives
+  pointedness (W-0012). Stability, Σ ⊣ Ω an equivalence, is a second axiom
+  (W-0013). Does anything in the ontology, or in Hegel §§176–180, force it,
+  or is 𝒮_∗ with the smash product the honest stopping point?
+  *Grade: open.*
+- **OP-20. Height as the dimension of the possibility field theory.** For
+  p-groups, height-n cardinality |BG|ₙ equals the untwisted
+  Dijkgraaf–Witten number on Tⁿ (W-0018). Do twisted cardinalities
+  reproduce twisted Dijkgraaf–Witten (cocycle ω ∈ Hⁿ(BG; U(1)))? And is the
+  owner's ontology the (−1) rung of the same ambidexterity ladder in any
+  sense stronger than indexing? *Grade: conjectural.*
+
