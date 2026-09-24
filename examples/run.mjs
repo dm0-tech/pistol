@@ -21,7 +21,7 @@ import {
 import {
   perms, abelianizationOrder, signIsHomomorphism, imJAndEisenstein,
   e8CountByNorm, sigma, bP, orbits, invariantDimension, burnsideCount,
-  heightCardinality, heightCardinalityByLoops, conjugacyClasses, cyclic, dihedral4,
+  heightCardinality, heightCardinalityByLoops, zetaNeg, chiAmalgam, harder, conjugacyClasses, cyclic, dihedral4,
   quaternion8, compose, inverse, pAdicHeightCardinality,
 } from './src/stable.mjs';
 import * as Oct from './src/octonions.mjs';
@@ -401,6 +401,17 @@ check('W-0026', 'G₂ Coxeter picture: 12 roots (6 short, 6 long, length² ratio
 
 check('W-0026', 'the hexagram splits as 14 = 8 + 6: the long roots form a closed A₂ subsystem (SU(3), Weyl group S₃ of order 6), and the short roots fall into two W(A₂)-orbits of 3 weights each, summing to 0 and negatives of each other (3 ⊕ 3̄)',
   () => { const r = G2.report(); return r.longClosed && r.longIsA2 && r.weylA2Order === 6 && r.tripletPair; });
+
+check('W-0027', 'SL₂(ℤ) ≅ ℤ/4 *_{ℤ/2} ℤ/6 has orbifold Euler characteristic (height-0 cardinality of BSL₂(ℤ)) 1/4 + 1/6 − 1/2 = −1/12 = ζ(−1), computed independently from B₂',
+  () => { const a = chiAmalgam(4, 6, 2), z = zetaNeg(2); return a[0] === -1n && a[1] === 12n && z[0] === -1n && z[1] === 12n; });
+
+check('W-0027', 'Harder\'s formula ∏ζ(1−dᵢ) on Weyl degrees: SL₂ {2} → −1/12 (matches the amalgam), SL₃ {2,3} → 0, Sp₄ {2,4} → −1/1440, G₂ {2,6} → ζ(−1)ζ(−5) = 1/3024',
+  () => { const e = (x, n, d) => x[0] === BigInt(n) && x[1] === BigInt(d);
+    return e(harder([2]), -1, 12) && harder([2, 3])[0] === 0n && e(harder([2, 4]), -1, 1440) && e(harder([2, 6]), 1, 3024); });
+
+check('W-0027', 'the dihedral 12 as a number: |W| = ∏dᵢ for rank-2 types is A₂ 6, B₂ 8, G₂ 12; only G₂ hits 1/|ζ(−1)| = 12 — no pattern, so |W(G₂)| = 12 is not (yet) the ζ(−1) twelve',
+  () => { const W = { A2: 2 * 3, B2: 2 * 4, G2: 2 * 6 }; const t = Number(zetaNeg(2)[1]);
+    return W.A2 === 6 && W.B2 === 8 && W.G2 === 12 && t === 12 && Object.values(W).filter(w => w === t).length === 1; });
 
 console.log(failures === 0
   ? '\nAll checks passed.'

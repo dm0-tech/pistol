@@ -76,6 +76,8 @@ Bayes' rule; then He drew His pistol."*
   possibility exists but cannot be composed (Barnum–Graydon–Wilce), so the
   ℍ ceiling is a composition ceiling. Genericity does not pick 𝕆 (two open
   orbits; positivity is the residual choice). Red-legged; W-0021–W-0024.
+- [`notes/epigraphs.md`](notes/epigraphs.md) — the project's epigraphs
+  and the state of their attribution.
 - [`notes/project-complexity-handoff.md`](notes/project-complexity-handoff.md) —
   artifact/dependency map for the post-push complexity review: which
   mechanisms are mathematically necessary, epistemically protective,

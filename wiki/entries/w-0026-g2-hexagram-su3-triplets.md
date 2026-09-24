@@ -32,8 +32,10 @@ That is another "classical system in plain sight" (OP-24). The claim is a
 structural resemblance only, and no functor to BGW's classical partners is
 known.
 
-*Pun guard.* This 12 is dihedral (hexagon symmetries). W-0009's 12 is
-cyclic (π₆(S³) = ℤ/12). Do not connect them without a map.
+*Pun guard, now pursued.* This 12 is dihedral (hexagon symmetries).
+W-0009's 12 is cyclic (π₆(S³) = ℤ/12). W-0027 pursues the connection. A
+typed map (Harder) runs from G₂'s degrees to ζ(−1), but the dihedral 12 as
+a number is not on it.
 
 ## Context
 

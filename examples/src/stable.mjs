@@ -260,3 +260,15 @@ export function pAdicHeightCardinality(G, mulG, n, p) {
   rec([]);
   return rat(count, G.length);
 }
+
+// ---------- the twelves (W-0027) ----------
+// ζ(1−n) = −B_n/n for n ≥ 2 (B_n with B_1 = −1/2 convention irrelevant here).
+export function zetaNeg(n) { // returns ζ(1−n) as exact rational
+  const B = bernoulli(n)[n];
+  return mul(rat(-1), div(B, rat(n)));
+}
+// Orbifold Euler characteristic of an amalgam A *_C B of finite groups:
+// χ = 1/|A| + 1/|B| − 1/|C|.  SL₂(ℤ) ≅ ℤ/4 *_{ℤ/2} ℤ/6.
+export const chiAmalgam = (a, b, c) => add(add(rat(1, a), rat(1, b)), rat(-1, c));
+// Harder: χ(G(ℤ)) = ∏ ζ(1 − dᵢ) over the degrees dᵢ of the Weyl group.
+export const harder = degrees => degrees.reduce((acc, d) => mul(acc, zetaNeg(d)), rat(1));
