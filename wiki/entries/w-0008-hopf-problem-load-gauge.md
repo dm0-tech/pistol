@@ -181,3 +181,4 @@ deliberate application.
   2015 framing). Author now attributable (Levent Alpöge, per owner +
   domain). Consequence-not-refutation discipline stated; the
   CP³-rigidity falsification surface added to the watch triggers.
+- 2026-09-24 — cross-ref from the foil session: W-0024 shows any integrable complex structure on S⁶ cannot be G₂-invariant (machine-checked commutant computation).

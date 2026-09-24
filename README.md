@@ -63,6 +63,21 @@ Bayes' rule; then He drew His pistol."*
   primary Hegel/Lawvere lineage, level/Aufhebung source joints, the exact
   finite guarded-recursion dictionary, graded analogy cards, and promotion
   rules.
+- [`notes/no-nothing-no-thing.md`](notes/no-nothing-no-thing.md) —
+  foil note (Sept 24, 2026). Takes the owner's "no nothing, no thing" as an
+  axiom on ∅ ⊣ ∗. Read literally it collapses the world. Read as
+  pointedness it exits the topos. With reversible becoming it forces
+  spectra and 𝕊. It also places Cox, the codomain ladder (Hopf invariant
+  one) and chromatic cardinalities (height-n |BG| = n-torus Dijkgraaf–Witten
+  for p-groups) relative to that. Red-legged; W-0012–W-0020, OP-18–OP-20; obstacles to physical content filed as OP-21–OP-23.
+- [`notes/shadow-of-the-octonions.md`](notes/shadow-of-the-octonions.md) —
+  foil note (Sept 24, 2026). 𝕆's associator carves out ℍ-slices
+  (Harvey–Lawson), which is where G₂-compactified M2s live. Octonionic
+  possibility exists but cannot be composed (Barnum–Graydon–Wilce), so the
+  ℍ ceiling is a composition ceiling. Genericity does not pick 𝕆 (two open
+  orbits; positivity is the residual choice). Red-legged; W-0021–W-0024.
+- [`notes/epigraphs.md`](notes/epigraphs.md) — the project's epigraphs
+  and the state of their attribution.
 - [`notes/project-complexity-handoff.md`](notes/project-complexity-handoff.md) —
   artifact/dependency map for the post-push complexity review: which
   mechanisms are mathematically necessary, epistemically protective,

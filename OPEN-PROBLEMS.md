@@ -169,3 +169,144 @@ provisional until the Phase 0 spec exists to grade them against.*
   d = 3 real case. *Grade: conjectural. Thread P4; cross-references OP-13,
   OP-14, OP-16; S7, S9, S15; W-0007;
   `notes/direction-review-2026-08-20.md` §5.*
+
+## Foil session (Sept 24, 2026; `notes/no-nothing-no-thing.md`)
+
+- **OP-18. Does descent force 𝕊 over ℤ?** State precisely that counting on
+  a site of possibility-spaces which glues along covers must be
+  groupoid-valued, so that its group completion is 𝕊 (BPQ) and not ℤ.
+  This would turn "𝕊 is initial" from cheap into forced. First test: count
+  sections of finite covering spaces. *Grade: conjectural. W-0014.*
+- **OP-19. Is reversible becoming forced?** The owner's ontology gives
+  pointedness (W-0012). Stability, Σ ⊣ Ω an equivalence, is a second axiom
+  (W-0013). Does anything in the ontology, or in Hegel §§176–180, force it,
+  or is 𝒮_∗ with the smash product the honest stopping point?
+  *Grade: open.*
+- **OP-20. Height as the dimension of the possibility field theory.** For
+  p-groups, height-n cardinality |BG|ₙ equals the untwisted
+  Dijkgraaf–Witten number on Tⁿ (W-0018). Do twisted cardinalities
+  reproduce twisted Dijkgraaf–Witten (cocycle ω ∈ Hⁿ(BG; U(1)))? And is the
+  owner's ontology the (−1) rung of the same ambidexterity ladder in any
+  sense stronger than indexing? This is also where amplitudes would first
+  enter. The untwisted cardinalities are *counts* (sectors, classes), with
+  no inner product, no |ψ|², no ħ. U(1)-twisting is the first place a phase
+  appears, so OP-20 doubles as the "counts, not amplitudes" obstacle
+  (session T-2026-09-23-A, obstacle 3). *Grade: conjectural.*
+
+### Obstacles to "reality oozing" (owner's challenge, Sept 24, 2026)
+
+*The owner's test: the geometry should "fly off the page" (Wheeler). It
+should yield an output about the world that was not put in, such as a
+number, a structure (Born rule, signature, arrow of time) or a checkable
+prediction. As of this filing the program yields none. The following name
+why. The realistic bar is the precedent where stable homotopy has already
+met experiment: Kitaev's periodic table (KO Bott periodicity) and the
+Freed–Hopkins classification of invertible phases (Anderson dual of the
+sphere).*
+
+- **OP-21. Universality versus particularity (the selection problem).**
+  𝕊 is initial, so it maps uniquely into every world and singles out none.
+  The more forced the object, the less it says about which world. Physics
+  enters Sati–Schreiber at a *choice* (4-cohomotopy, S⁴), and nothing in
+  the possibility chain makes a choice. What would: a selection principle,
+  plausibly self-reference in Wheeler's sense, typed as a fixed point
+  (Lawvere) rather than an initial object. Question: is there a
+  fixed-point characterization that picks out a specific cohomotopy degree
+  or a specific rung? *Grade: open. Cross-refs OP-7, OP-16, OP-17;
+  notes/bootstrap-stones.md.*
+  **Update (Sept 24, 2026; `notes/shadow-of-the-octonions.md` §4,
+  W-0023).** The owner's answer is "objectivity does the choosing," by
+  uniqueness "expressed in the right way," not initiality. The first
+  candidate was genericity plus extremality (Hitchin: open orbit of
+  3-forms in 7d, G₂-holonomy as critical points). It fails as stated.
+  There are two open orbits (compact and split G₂), and random 3-forms land
+  in the split one (machine-checked). Positivity (a definite metric) is the
+  residual choice. The sharpened question: does positivity of plausibility
+  force the definite orbit? Flagged as a possible pun until typed.
+- **OP-22. Reversible becoming cannot yield actuality.** Stability (A2,
+  W-0013) makes coming-to-be and ceasing-to-be mutually inverse. It is
+  time-symmetric, so it gives no arrow of time and no irreversible
+  measurement. Hegel's becoming "destroys itself" and collapses into
+  determinate being (§181), which is irreversible. Conjecture: A2 is the
+  right axiom for *possibility* and the wrong one for *actuality*.
+  Actuality should be sought where stabilization loses information: the
+  unstable pointed world 𝒮_∗, the failure of X → ΩΣX to be an
+  equivalence, and the Freudenthal range. Question: is there a typed sense
+  in which "measurement" is the unstable-to-stable comparison map, or its
+  failure? *Grade: conjectural. Cross-refs OP-6 (where time lives), OP-19,
+  W-0013.*
+  **Revision (Sept 24, 2026; `notes/shadow-of-the-octonions.md` §6).** The
+  owner: "a reversible actuality being some inconvenient glitch to a
+  stable eternity." That names structure Hypothesis H already has. Charges
+  live in J-twisted *unstable* 4-cohomotopy. The quaternionic Hopf
+  fibration is unstable and stabilizes to ν. Stabilization
+  π₇S⁴ ≅ ℤ ⊕ ℤ/12 → π₃ˢ = ℤ/24 is not injective. So "stable for
+  possibility, unstable for actuality" is existing structure read in the
+  project's terms (the owner's reading, not Sati–Schreiber's claim). What
+  remains open is typing measurement via the non-injectivity of
+  stabilization, and whether reversible dynamics is the glitch's inside
+  view.
+- **OP-23. The associativity ceiling: possibility stops at ℍ, M-theory sits
+  at 𝕆.** Consistent possibility calculi are associative: Cox's
+  combination rule obeys an associativity functional equation, and Solèr
+  admits only ℝ, ℂ, ℍ. The M2-brane sits at 𝕆 in the Baez–Huerta brane scan
+  (membranes in dimensions n + 3 = 4, 5, 7, 11). The obstruction survives
+  passage to homotopy: S⁷ is not homotopy-associative (James), while S³ is
+  a group. So the geometric summit sits on exactly the rung that
+  consistent possibility forbids, and this cuts against W-0015's "one
+  summit" candidate (OP-11). Attack plan, in two directions: (a) find a
+  possibility calculus that is coherent without being associative (the
+  only candidate known is the exceptional Jordan algebra 𝔥₃(𝕆), OP-12, for
+  which no Cox-type derivation exists); or (b) prove that every Cox-type
+  calculus is associative up to coherent homotopy, hence stops at ℍ, and
+  dispose of "one summit". Either outcome is a result. *Grade: open. The
+  individual facts are established (Solèr 1995; Baez–Huerta 2009–10; James
+  1957). Cross-refs OP-11, OP-12, W-0015.*
+  **Retyping (Sept 24, 2026; `notes/shadow-of-the-octonions.md` §1–§3,
+  W-0021, W-0022).** Two corrections and one sharpening.
+  - (i) The red leg: Cox's associativity is a functional equation on real
+    values and never touches 𝕆's product. Cox alone gives ℝ, and the ℍ
+    ceiling is Solèr's.
+  - (ii) Octonionic possibility *exists*, as the single-system state space
+    of 𝔥₃(𝕆), but Barnum–Graydon–Wilce (Quantum 2020) show no composite of
+    Euclidean Jordan algebras admits an exceptional summand or factor
+    (except with classical partners). So the ceiling is a **composition
+    ceiling**: every composable possibility calculus is ℝ, ℂ or ℍ, and 𝕆 is
+    possible alone and impossible in company. That is the owner's "operates
+    from the shadows by its own impossibility," as a theorem.
+  - (iii) Geometrically, 𝕆's associator carves out ℍ-slices (Harvey–Lawson),
+    and the M2 of G₂ compactifications lives on them.
+
+  New central question: *are the composition obstruction (BGW) and the
+  associator (Harvey–Lawson) the same obstruction?* If so, OP-23 resolves
+  as “ℍ composes; 𝕆 calibrates.”
+- **OP-24. The classical system in plain sight.** Barnum–Graydon–Wilce,
+  Prop. 4.14: if an exceptional (octonionic) Jordan factor has a
+  composite, the partner is a direct sum of ℝ, i.e. finite Cox–Jaynes
+  probability. This is a necessary condition only. Whether even classical
+  composites exist in their category is unverified: the abstract's first
+  clause may exclude them, in which case 𝕆 is fully isolated. Classical
+  composites are trivial in any theory. The substance is that 𝕆 composes
+  with nothing non-classical, within BGW's Jordan-algebraic category. The owner's question: *what if we are
+  missing a classical system in plain sight?* Candidates:
+  - spacetime points (𝔥₃(𝕆)/F₄-bundles over a classical base; cf. W-0019);
+  - superselection labels;
+  - BGW's own "extra classical bit" in complex composites;
+  - the measurement record;
+  - a chosen direction in Im 𝕆 (fixing one breaks G₂ to SU(3)).
+
+  Reading: classical probability is the only interface to octonionic
+  possibility, and its smallest instance is the bit S⁰ that survived
+  W-0012. A colour-confinement reading ("only singlets are seen" as
+  non-composability) is flagged as possibly numerological. Its test lives
+  at the level of the algebra of observables, not states. First move: read
+  BGW's definition of composite and judge whether it is physically
+  forced. *Grade: conjectural. W-0025; cross-refs OP-12, OP-23, W-0022.*
+  **Addendum (Sept 24, 2026; W-0026).** Coxeter's picture shows the same
+  SU(3) at root level. G₂'s 12 roots form a hexagram. The long hexagon is
+  A₂ (SU(3)) and the short one is 3 ⊕ 3̄, so 14 = 8 + 6 and, on Im 𝕆,
+  7 = 1 + 3 + 3̄. The 1 is the fixed direction: classical *data*, but a
+  point of S⁶, not a finite BGW partner. Extending BGW to continuous
+  classical labels is itself part of this problem. Machine-checked, except
+  the 7-dimensional weight statement, which is recalled.
+
