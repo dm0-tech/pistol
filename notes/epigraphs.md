@@ -7,9 +7,13 @@ results are recorded, so that nobody re-searches from scratch.*
 
 - **Where used:** `README.md`, `objective-logic-roadmap.md` §1.3 (Thread P
   epigraph). It gives the project its name.
-- **Attribution: unknown.** A web search on 2026-09-24 (exact phrase and
-  variants) found no prior source. The repo does not attribute it, so the
-  owner should say whether it is his, or the roadmap agent's.
+- **Attribution: print only, author to be confirmed.** The owner
+  (2026-09-24): "No it's Carlo Riviolli or somebody like that. It only
+  exists in book form." The name is as the owner recalled it, and may be
+  Carlo Rovelli. That identification is *unverified*; do not cite it
+  until the book and page are found. A web search on 2026-09-24 (exact
+  phrase and variants) found no online source, which is consistent with a
+  print-only origin.
 - **Likely templates:**
   - the nineteenth-century American saying "God created men, but Sam
     Colt made them equal" (Colt-revolver lore; itself of uncertain

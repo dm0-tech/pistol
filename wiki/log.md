@@ -317,3 +317,10 @@ pursue, then grade. Filed W-0027:
 Attribution search for the pistol epigraph: no source found. The likely
 templates (Colt saying; Kronecker) are recorded in notes/epigraphs.md.
 
+## [2026-09-24] reprocess | Pistol epigraph attribution: print-only, author to be confirmed
+
+The owner recalls the source as "Carlo Riviolli or somebody like that",
+in book form only. Recorded in notes/epigraphs.md with the name
+unverified (possibly Carlo Rovelli); not citable until book and page are
+found.
+
