@@ -270,3 +270,16 @@ octonionic possibility exists but cannot be composed. Filed:
 New machine checks were added. The owner's quote is captured as the note's
 epigraph (attribution to be completed by the owner).
 
+## [2026-09-24] file | OP-24 and W-0025: the classical system in plain sight
+
+The owner seized on BGW's exception ("composes only with classical
+systems") and asked whether we are missing a classical system in plain
+sight. Filed:
+- the interface reading: classical probability as the only interface to
+  octonionic possibility; the bit loop to W-0012;
+- five candidates;
+- a hard-flagged colour-confinement reading.
+
+A G₂ stabilizer check was added (SU(3) of a unit, dimension 8; SO(4) of an
+ℍ-slice, dimension 6). The entry is not yet red-legged.
+

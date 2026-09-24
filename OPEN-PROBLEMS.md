@@ -280,4 +280,23 @@ sphere).*
   New central question: *are the composition obstruction (BGW) and the
   associator (Harvey–Lawson) the same obstruction?* If so, OP-23 resolves
   as “ℍ composes; 𝕆 calibrates.”
+- **OP-24. The classical system in plain sight.** Barnum–Graydon–Wilce:
+  an exceptional (octonionic) Jordan factor composes only with classical
+  systems (direct sums of ℝ, i.e. finite Cox–Jaynes probability). Every
+  system composes trivially with classical ones. The substance is that 𝕆
+  composes with nothing else. The owner's question: *what if we are
+  missing a classical system in plain sight?* Candidates:
+  - spacetime points (𝔥₃(𝕆)/F₄-bundles over a classical base; cf. W-0019);
+  - superselection labels;
+  - BGW's own "extra classical bit" in complex composites;
+  - the measurement record;
+  - a chosen direction in Im 𝕆 (fixing one breaks G₂ to SU(3)).
+
+  Reading: classical probability is the only interface to octonionic
+  possibility, and its smallest instance is the bit S⁰ that survived
+  W-0012. A colour-confinement reading ("only singlets are seen" as
+  non-composability) is flagged as possibly numerological. Its test lives
+  at the level of the algebra of observables, not states. First move: read
+  BGW's definition of composite and judge whether it is physically
+  forced. *Grade: conjectural. W-0025; cross-refs OP-12, OP-23, W-0022.*
 

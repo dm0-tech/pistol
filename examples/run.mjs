@@ -391,6 +391,9 @@ check('W-0024', 'S⁶: Der(𝕆) is 14-dim, the isotropy at e₁ is 8-dim (𝔰�
     return r.derivations === 14 && r.isotropy === 8 && r.commutant === 2 && r.jSquaredIsMinusOne && r.commutantIsSpanIJ;
   });
 
+check('W-0025', 'G₂ geometry: the derivations fixing a unit (e₁) form an 8-dim algebra (SU(3), so G₂/SU(3) = S⁶), and those preserving the quaternion slice span{e₁,e₂,e₃} form a 6-dim algebra (SO(4)), so the space of ℍ-slices is 14 − 6 = 8-dimensional',
+  () => Oct.s6InvariantComplexStructures().isotropy === 8 && Oct.quaternionSliceStabilizerDimension() === 6);
+
 console.log(failures === 0
   ? '\nAll checks passed.'
   : `\n${failures} check(s) FAILED.`);

@@ -321,3 +321,16 @@ export function derivationsAnnihilatePhi() {
   }
   return D.length === 14;
 }
+
+// G₂ acts transitively on quaternion subalgebras (associative 3-planes) with
+// stabilizer SO(4): the derivations preserving span{e1,e2,e3} form a
+// 6-dimensional algebra, so the space of ℍ-slices has dimension 14 − 6 = 8.
+export function quaternionSliceStabilizerDimension() {
+  const toNum = ([a, b]) => Number(a) / Number(b);
+  const D = derivationBasis().map(v => v.map(toNum));
+  const rows = [];
+  for (const inIdx of [1, 2, 3]) for (const out of [0, 4, 5, 6, 7]) {
+    rows.push(D.map(d => Math.round(d[out * 8 + inIdx] * 1e6)));
+  }
+  return nullspace(rows, D.length).length;
+}
