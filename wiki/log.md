@@ -232,3 +232,17 @@ before filing and returned three Breaks, all fixed:
 - The chromatic table holds only for p-groups.
 - The π₀/Ω^∞ overclaims.
 
+## [2026-09-24] file | Obstacles to "reality oozing": OP-21–OP-23; OP-20 extended
+
+The owner challenged the foil's session: no output about the world has
+emerged from the geometry (Wheeler's "flying off the page"). The foil
+agreed and named four obstacles:
+- selection (OP-21);
+- reversible becoming cannot give actuality (OP-22);
+- counts, not amplitudes (folded into OP-20);
+- the associativity ceiling, ℍ vs 𝕆 (OP-23), which cuts against W-0015's
+  "one summit".
+
+Precedent bar: Kitaev periodic table and Freed–Hopkins. Filed at the
+owner's request (T-2026-09-23-A, continuation).
+

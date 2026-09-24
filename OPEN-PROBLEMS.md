@@ -187,5 +187,59 @@ provisional until the Phase 0 spec exists to grade them against.*
   Dijkgraaf–Witten number on Tⁿ (W-0018). Do twisted cardinalities
   reproduce twisted Dijkgraaf–Witten (cocycle ω ∈ Hⁿ(BG; U(1)))? And is the
   owner's ontology the (−1) rung of the same ambidexterity ladder in any
-  sense stronger than indexing? *Grade: conjectural.*
+  sense stronger than indexing? This is also where amplitudes would first
+  enter. The untwisted cardinalities are *counts* (sectors, classes), with
+  no inner product, no |ψ|², no ħ. U(1)-twisting is the first place a phase
+  appears, so OP-20 doubles as the "counts, not amplitudes" obstacle
+  (session T-2026-09-23-A, obstacle 3). *Grade: conjectural.*
+
+### Obstacles to "reality oozing" (owner's challenge, Sept 24, 2026)
+
+*The owner's test: the geometry should "fly off the page" (Wheeler). It
+should yield an output about the world that was not put in, such as a
+number, a structure (Born rule, signature, arrow of time) or a checkable
+prediction. As of this filing the program yields none. The following name
+why. The realistic bar is the precedent where stable homotopy has already
+met experiment: Kitaev's periodic table (KO Bott periodicity) and the
+Freed–Hopkins classification of invertible phases (Anderson dual of the
+sphere).*
+
+- **OP-21. Universality versus particularity (the selection problem).**
+  𝕊 is initial, so it maps uniquely into every world and singles out none.
+  The more forced the object, the less it says about which world. Physics
+  enters Sati–Schreiber at a *choice* (4-cohomotopy, S⁴), and nothing in
+  the possibility chain makes a choice. What would: a selection principle,
+  plausibly self-reference in Wheeler's sense, typed as a fixed point
+  (Lawvere) rather than an initial object. Question: is there a
+  fixed-point characterization that picks out a specific cohomotopy degree
+  or a specific rung? *Grade: open. Cross-refs OP-7, OP-16, OP-17;
+  notes/bootstrap-stones.md.*
+- **OP-22. Reversible becoming cannot yield actuality.** Stability (A2,
+  W-0013) makes coming-to-be and ceasing-to-be mutually inverse. It is
+  time-symmetric, so it gives no arrow of time and no irreversible
+  measurement. Hegel's becoming "destroys itself" and collapses into
+  determinate being (§181), which is irreversible. Conjecture: A2 is the
+  right axiom for *possibility* and the wrong one for *actuality*.
+  Actuality should be sought where stabilization loses information: the
+  unstable pointed world 𝒮_∗, the failure of X → ΩΣX to be an
+  equivalence, and the Freudenthal range. Question: is there a typed sense
+  in which "measurement" is the unstable-to-stable comparison map, or its
+  failure? *Grade: conjectural. Cross-refs OP-6 (where time lives), OP-19,
+  W-0013.*
+- **OP-23. The associativity ceiling: possibility stops at ℍ, M-theory sits
+  at 𝕆.** Consistent possibility calculi are associative: Cox's
+  combination rule obeys an associativity functional equation, and Solèr
+  admits only ℝ, ℂ, ℍ. The M2-brane sits at 𝕆 in the Baez–Huerta brane scan
+  (membranes in dimensions n + 3 = 4, 5, 7, 11). The obstruction survives
+  passage to homotopy: S⁷ is not homotopy-associative (James), while S³ is
+  a group. So the geometric summit sits on exactly the rung that
+  consistent possibility forbids, and this cuts against W-0015's "one
+  summit" candidate (OP-11). Attack plan, in two directions: (a) find a
+  possibility calculus that is coherent without being associative (the
+  only candidate known is the exceptional Jordan algebra 𝔥₃(𝕆), OP-12, for
+  which no Cox-type derivation exists); or (b) prove that every Cox-type
+  calculus is associative up to coherent homotopy, hence stops at ℍ, and
+  dispose of "one summit". Either outcome is a result. *Grade: open. The
+  individual facts are established (Solèr 1995; Baez–Huerta 2009–10; James
+  1957). Cross-refs OP-11, OP-12, W-0015.*
 

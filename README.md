@@ -69,7 +69,7 @@ Bayes' rule; then He drew His pistol."*
   pointedness it exits the topos. With reversible becoming it forces
   spectra and 𝕊. It also places Cox, the codomain ladder (Hopf invariant
   one) and chromatic cardinalities (height-n |BG| = n-torus Dijkgraaf–Witten
-  for p-groups) relative to that. Red-legged; W-0012–W-0020, OP-18–OP-20.
+  for p-groups) relative to that. Red-legged; W-0012–W-0020, OP-18–OP-20; obstacles to physical content filed as OP-21–OP-23.
 - [`notes/project-complexity-handoff.md`](notes/project-complexity-handoff.md) —
   artifact/dependency map for the post-push complexity review: which
   mechanisms are mathematically necessary, epistemically protective,
