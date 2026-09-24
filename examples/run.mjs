@@ -24,6 +24,7 @@ import {
   heightCardinality, heightCardinalityByLoops, conjugacyClasses, cyclic, dihedral4,
   quaternion8, compose, inverse, pAdicHeightCardinality,
 } from './src/stable.mjs';
+import * as Oct from './src/octonions.mjs';
 
 let failures = 0;
 function check(ledger, description, condition) {
@@ -311,6 +312,83 @@ check('W-0018', 'non-p-group Σ₃ (red-leg correction): the integral count is 3
       eq(pAdicHeightCardinality(S3, compose, 2, 2), 5, 3) &&
       eq(pAdicHeightCardinality(S3, compose, 2, 3), 3, 2) &&
       eq(pAdicHeightCardinality(cyclic(3), compose, 1, 2), 1, 3);
+  });
+
+console.log('— notes/shadow-of-the-octonions.md (W-0021–W-0024) —');
+
+check('W-0021', '𝕆 (Fano table) is a normed division algebra and alternative: |xy|² = |x|²|y|², (x,x,y) = (y,x,x) = 0 on 200 random integer octonions',
+  () => {
+    const r = Oct.rng(11);
+    for (let t = 0; t < 200; t++) {
+      const x = Oct.randomOct(r), y = Oct.randomOct(r);
+      if (Oct.norm2(Oct.mul(x, y)) !== Oct.norm2(x) * Oct.norm2(y)) return false;
+      if (Oct.norm2(Oct.associator(x, x, y)) !== 0 || Oct.norm2(Oct.associator(y, x, x)) !== 0) return false;
+    }
+    return true;
+  });
+
+check('W-0021', 'of the 35 coordinate 3-planes in Im 𝕆, exactly the 7 Fano lines are associative: associator 0 and |φ| = 1 there; associator ≠ 0 and φ = 0 on the other 28; each line closes into a copy of ℍ',
+  () => {
+    const ts = Oct.triples();
+    const good = ts.every(t => {
+      const [a, b, c] = t.map(Oct.basis);
+      const assocZero = Oct.norm2(Oct.associator(a, b, c)) === 0;
+      const ph = Oct.phi(a, b, c);
+      return Oct.isFanoLine(t) ? (assocZero && Math.abs(ph) === 1) : (!assocZero && ph === 0);
+    });
+    const quaternionic = Oct.FANO.every(([a, b, c]) => {
+      const [i, j, k] = [a, b, c].map(Oct.basis);
+      const eq = (u, v) => u.every((x, n) => x === v[n]);
+      return eq(Oct.mul(i, j), k) && eq(Oct.mul(j, k), i) && eq(Oct.mul(k, i), j) &&
+        eq(Oct.mul(i, i), Oct.scale(-1, Oct.basis(0))) && eq(Oct.mul(Oct.mul(i, j), k), Oct.scale(-1, Oct.basis(0)));
+    });
+    return ts.length === 35 && ts.filter(Oct.isFanoLine).length === 7 && good && quaternionic;
+  });
+
+check('W-0021', 'Harvey–Lawson associator identity φ(x,y,z)² + ¼|[x,y,z]|² = |x∧y∧z|² on 300 random imaginary triples (so |φ| ≤ volume, with equality iff the associator vanishes)',
+  () => {
+    const r = Oct.rng(23);
+    for (let t = 0; t < 300; t++) {
+      const x = Oct.randomImag(r), y = Oct.randomImag(r), z = Oct.randomImag(r);
+      const lhs = 4 * Oct.phi(x, y, z) ** 2 + Oct.norm2(Oct.associator(x, y, z));
+      if (lhs !== 4 * Oct.gram3(x, y, z)) return false;
+    }
+    return true;
+  });
+
+check('W-0021', 'every 3-plane span{x, y, xy} (x, y imaginary) is associative: associator 0 and φ(x,y,xy)² = |x∧y∧xy|² (calibrated), 200 random pairs',
+  () => {
+    const r = Oct.rng(31);
+    for (let t = 0; t < 200; t++) {
+      const x = Oct.randomImag(r), y = Oct.randomImag(r), xy = Oct.mul(x, y);
+      const xyIm = [0, ...xy.slice(1)];
+      if (Oct.norm2(Oct.associator(x, y, xyIm)) !== 0) return false;
+      if (Oct.phi(x, y, xyIm) ** 2 !== Oct.gram3(x, y, xyIm)) return false;
+    }
+    return true;
+  });
+
+check('W-0023', 'Hitchin open orbit: the stabilizer of φ in gl(7) has dimension 14, so the GL(7)-orbit has dimension 49 − 14 = 35 = dim Λ³ℝ⁷ (open); every derivation of 𝕆 annihilates φ, so stab(φ) = Der(𝕆) = 𝔤₂',
+  () => Oct.phiStabilizerDimension() === 14 && Oct.derivationDimension() === 14 &&
+    Oct.derivationsAnnihilatePhi());
+
+check('W-0023', 'two open orbits (red-leg correction): φ has stabilizer 14 and definite B (compact G₂); 40 random integer 3-forms all have stabilizer 14 and nondegenerate B, and every one lands in the split orbit, signature (3,4) or (4,3): genericity does not pick compact G₂',
+  () => {
+    const f0 = Oct.formFromPhi(); const s0 = Oct.signature(Oct.bilinearB(f0));
+    if (Oct.stabilizerDimension(f0) !== 14 || !(s0.pos === 7 || s0.neg === 7)) return false;
+    const r = Oct.rng(5); let split = 0;
+    for (let t = 0; t < 40; t++) {
+      const f = Oct.randomForm(r); const sg = Oct.signature(Oct.bilinearB(f));
+      if (Oct.stabilizerDimension(f) !== 14 || sg.pos + sg.neg !== 7) return false;
+      if (sg.pos === 3 || sg.pos === 4) split++;
+    }
+    return split === 40;
+  });
+
+check('W-0024', 'S⁶: Der(𝕆) is 14-dim, the isotropy at e₁ is 8-dim (𝔰𝔲(3)), and its commutant on T_{e₁}S⁶ is span{I, J_𝕆} with J_𝕆² = −1 — so the only G₂-invariant almost complex structures are ±J_𝕆',
+  () => {
+    const r = Oct.s6InvariantComplexStructures();
+    return r.derivations === 14 && r.isotropy === 8 && r.commutant === 2 && r.jSquaredIsMinusOne && r.commutantIsSpanIJ;
   });
 
 console.log(failures === 0

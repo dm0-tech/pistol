@@ -246,3 +246,27 @@ agreed and named four obstacles:
 Precedent bar: Kitaev periodic table and Freed–Hopkins. Filed at the
 owner's request (T-2026-09-23-A, continuation).
 
+## [2026-09-24] file | The shadow of the octonions (W-0021–W-0024); OP-21/22/23 updated
+
+The owner's answers:
+- "objectivity does the choosing";
+- actuality as "a glitch to a stable eternity";
+- 𝕆 "operates from the mathematical shadows by its own impossibility".
+
+They were worked into notes/shadow-of-the-octonions.md. A fresh-context
+red leg broke two claims of the first draft:
+- genericity picks 𝕆: false, since there are two open orbits and random
+  forms are split, now machine-checked;
+- Cox associativity ⇒ ℍ: false, since Cox is a functional equation on
+  reals.
+
+Following the red leg's counterexample (𝔥₃(𝕆)) led to Barnum–Graydon–Wilce:
+octonionic possibility exists but cannot be composed. Filed:
+- W-0021, the associator carves ℍ-slices;
+- W-0022, 𝕆 cannot compose;
+- W-0023, objectivity and the two orbits;
+- W-0024, S⁶ invariance.
+
+New machine checks were added. The owner's quote is captured as the note's
+epigraph (attribution to be completed by the owner).
+

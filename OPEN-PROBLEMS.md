@@ -214,6 +214,15 @@ sphere).*
   fixed-point characterization that picks out a specific cohomotopy degree
   or a specific rung? *Grade: open. Cross-refs OP-7, OP-16, OP-17;
   notes/bootstrap-stones.md.*
+  **Update (Sept 24, 2026; `notes/shadow-of-the-octonions.md` §4,
+  W-0023).** The owner's answer is "objectivity does the choosing," by
+  uniqueness "expressed in the right way," not initiality. The first
+  candidate was genericity plus extremality (Hitchin: open orbit of
+  3-forms in 7d, G₂-holonomy as critical points). It fails as stated.
+  There are two open orbits (compact and split G₂), and random 3-forms land
+  in the split one (machine-checked). Positivity (a definite metric) is the
+  residual choice. The sharpened question: does positivity of plausibility
+  force the definite orbit? Flagged as a possible pun until typed.
 - **OP-22. Reversible becoming cannot yield actuality.** Stability (A2,
   W-0013) makes coming-to-be and ceasing-to-be mutually inverse. It is
   time-symmetric, so it gives no arrow of time and no irreversible
@@ -226,6 +235,17 @@ sphere).*
   in which "measurement" is the unstable-to-stable comparison map, or its
   failure? *Grade: conjectural. Cross-refs OP-6 (where time lives), OP-19,
   W-0013.*
+  **Revision (Sept 24, 2026; `notes/shadow-of-the-octonions.md` §6).** The
+  owner: "a reversible actuality being some inconvenient glitch to a
+  stable eternity." That names structure Hypothesis H already has. Charges
+  live in J-twisted *unstable* 4-cohomotopy. The quaternionic Hopf
+  fibration is unstable and stabilizes to ν. Stabilization
+  π₇S⁴ ≅ ℤ ⊕ ℤ/12 → π₃ˢ = ℤ/24 is not injective. So "stable for
+  possibility, unstable for actuality" is existing structure read in the
+  project's terms (the owner's reading, not Sati–Schreiber's claim). What
+  remains open is typing measurement via the non-injectivity of
+  stabilization, and whether reversible dynamics is the glitch's inside
+  view.
 - **OP-23. The associativity ceiling: possibility stops at ℍ, M-theory sits
   at 𝕆.** Consistent possibility calculi are associative: Cox's
   combination rule obeys an associativity functional equation, and Solèr
@@ -242,4 +262,22 @@ sphere).*
   dispose of "one summit". Either outcome is a result. *Grade: open. The
   individual facts are established (Solèr 1995; Baez–Huerta 2009–10; James
   1957). Cross-refs OP-11, OP-12, W-0015.*
+  **Retyping (Sept 24, 2026; `notes/shadow-of-the-octonions.md` §1–§3,
+  W-0021, W-0022).** Two corrections and one sharpening.
+  - (i) The red leg: Cox's associativity is a functional equation on real
+    values and never touches 𝕆's product. Cox alone gives ℝ, and the ℍ
+    ceiling is Solèr's.
+  - (ii) Octonionic possibility *exists*, as the single-system state space
+    of 𝔥₃(𝕆), but Barnum–Graydon–Wilce (Quantum 2020) show no composite of
+    Euclidean Jordan algebras admits an exceptional summand or factor
+    (except with classical partners). So the ceiling is a **composition
+    ceiling**: every composable possibility calculus is ℝ, ℂ or ℍ, and 𝕆 is
+    possible alone and impossible in company. That is the owner's "operates
+    from the shadows by its own impossibility," as a theorem.
+  - (iii) Geometrically, 𝕆's associator carves out ℍ-slices (Harvey–Lawson),
+    and the M2 of G₂ compactifications lives on them.
+
+  New central question: *are the composition obstruction (BGW) and the
+  associator (Harvey–Lawson) the same obstruction?* If so, OP-23 resolves
+  as “ℍ composes; 𝕆 calibrates.”
 

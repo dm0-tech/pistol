@@ -31,3 +31,4 @@ Attack: (iii) may only say "both involve division algebras." Upgrade: a map betw
 ## Log
 
 - 2026-09-24 — created by the foil session (T-2026-09-23-A); red-legged by a fresh-context subagent before filing, corrections applied.
+- 2026-09-24 — tension recorded: OP-23 (associativity/composition ceiling at ℍ) cuts against (iii); see W-0022 for the composition form.
