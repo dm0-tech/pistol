@@ -280,11 +280,14 @@ sphere).*
   New central question: *are the composition obstruction (BGW) and the
   associator (Harvey–Lawson) the same obstruction?* If so, OP-23 resolves
   as “ℍ composes; 𝕆 calibrates.”
-- **OP-24. The classical system in plain sight.** Barnum–Graydon–Wilce:
-  an exceptional (octonionic) Jordan factor composes only with classical
-  systems (direct sums of ℝ, i.e. finite Cox–Jaynes probability). Every
-  system composes trivially with classical ones. The substance is that 𝕆
-  composes with nothing else. The owner's question: *what if we are
+- **OP-24. The classical system in plain sight.** Barnum–Graydon–Wilce,
+  Prop. 4.14: if an exceptional (octonionic) Jordan factor has a
+  composite, the partner is a direct sum of ℝ, i.e. finite Cox–Jaynes
+  probability. This is a necessary condition only. Whether even classical
+  composites exist in their category is unverified: the abstract's first
+  clause may exclude them, in which case 𝕆 is fully isolated. Classical
+  composites are trivial in any theory. The substance is that 𝕆 composes
+  with nothing non-classical, within BGW's Jordan-algebraic category. The owner's question: *what if we are
   missing a classical system in plain sight?* Candidates:
   - spacetime points (𝔥₃(𝕆)/F₄-bundles over a classical base; cf. W-0019);
   - superselection labels;
@@ -299,4 +302,11 @@ sphere).*
   at the level of the algebra of observables, not states. First move: read
   BGW's definition of composite and judge whether it is physically
   forced. *Grade: conjectural. W-0025; cross-refs OP-12, OP-23, W-0022.*
+  **Addendum (Sept 24, 2026; W-0026).** Coxeter's picture shows the same
+  SU(3) at root level. G₂'s 12 roots form a hexagram. The long hexagon is
+  A₂ (SU(3)) and the short one is 3 ⊕ 3̄, so 14 = 8 + 6 and, on Im 𝕆,
+  7 = 1 + 3 + 3̄. The 1 is the fixed direction: classical *data*, but a
+  point of S⁶, not a finite BGW partner. Extending BGW to continuous
+  classical labels is itself part of this problem. Machine-checked, except
+  the 7-dimensional weight statement, which is recalled.
 

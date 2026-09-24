@@ -283,3 +283,22 @@ sight. Filed:
 A G₂ stabilizer check was added (SU(3) of a unit, dimension 8; SO(4) of an
 ℍ-slice, dimension 6). The entry is not yet red-legged.
 
+## [2026-09-24] audit | W-0026 filed; local red leg on W-0025, W-0026, OP-24
+
+Filed W-0026, the G₂ hexagram (Coxeter group dihedral of order 12,
+h = 6, long roots A₂ = SU(3), short roots 3 ⊕ 3̄, 14 = 8 + 6), with
+machine checks. A fresh-context red leg confirmed all the G₂ facts and
+found one Break in W-0025: the composite ⊕ₙ 𝔥₃(𝕆) had been filed as
+established. The BGW body was then read (Def. 4.1, Thm 4.12, Prop. 4.14).
+BGW give only a necessary condition (an exceptional factor's partner must
+be classical), and whether even classical composites exist is unverified.
+
+Also fixed:
+- the interface reading made conditional on BGW's category;
+- continuous classical labels distinguished from finite BGW partners;
+- the complex-composite classical bit demoted;
+- dimension-only checks labelled as such;
+- code comments justifying the A₂ and dihedral tests.
+
+Next: independent red legs by other model families (owner).
+
