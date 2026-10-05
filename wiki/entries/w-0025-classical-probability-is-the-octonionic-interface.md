@@ -1,11 +1,11 @@
-# Classical probability is the only interface to octonionic possibility (reading of BGW); the classical system in plain sight is open
+# Classical probability is the only BGW interface to octonionic possibility; the composite is classical control
 
 - **ID:** W-0025
-- **Provenance:** sourced (Barnum–Graydon–Wilce; G₂ structure theory) + human-conjecture (the owner's "a classical system in plain sight") + llm-conjecture (the interface reading; the bit loop; the candidates, including colour)
-- **Verification:** source-audited (BGW abstract, Def. 4.1, Thm 4.12, Prop. 4.14, arXiv:1606.09331); machine-computed (dimensions only: stabilizer of a unit 8, of an ℍ-slice 6; identifications SU(3), SO(4) recalled); unverified (whether classical composites with 𝔥₃(𝕆) exist; the readings); red-legged
+- **Provenance:** sourced (Barnum–Graydon–Wilce; G₂ structure theory) + human-conjecture (the owner's "a classical system in plain sight") + llm-derived (the classical-composite construction) + llm-conjecture (the interface reading; the bit loop; the candidates, including colour)
+- **Verification:** source-audited (BGW Def. 4.1, Props. 4.3, 4.9, 4.14, arXiv:1606.09331); machine-computed (dimensions only: stabilizer of a unit 8, of an ℍ-slice 6; identifications SU(3), SO(4) recalled); unverified (the physical readings); red-legged
 - **Grade:** established (BGW; G₂ facts) / conjectural (everything interpretive)
 - **Sources:** Barnum, Graydon, Wilce, *Composites and categories of Euclidean Jordan algebras*, Quantum 4, 359 (2020); Baez, *The octonions* (Bull. AMS 2002); Baez–Huerta, *G₂ and the rolling ball* (Trans. AMS 2014); Dubois-Violette–Todorov and Boyle on 𝔥₃(𝕆) and the Standard Model (recalled, not audited)
-- **Transcript:** T-2026-09-23-A
+- **Transcript:** T-2026-09-23-A; T-2026-10-05-A
 - **Cross-refs:** `notes/shadow-of-the-octonions.md`; OP-24; W-0022; W-0012 (the bit); W-0019 (base/fibre); W-0021; W-0007 (triality); `examples/run.mjs` [W-0025]
 - **Status:** draft
 
@@ -20,15 +20,20 @@ Proposition 4.14).*
 - Prop. 4.14: if A has an exceptional ideal and B a nontrivial ideal, no
   composite AB exists. So if A is exceptional and AB exists, B is a direct
   sum of one-dimensional EJAs: ℝⁿ with the pointwise product, i.e. the
-  functions on n points, i.e. finite classical probability (Cox–Jaynes).
-- This is a **necessary condition only**. Whether an exceptional factor
-  admits a composite even with a classical partner is *not* settled by
-  what has been read. The obvious candidate ⊕ₙ 𝔥₃(𝕆) would have an
-  exceptional summand, and the abstract's first clause ("no such
-  composite has the exceptional Jordan algebra as a direct summand") may
-  exclude it, depending on that clause's scope (Theorem 4.12 is stated for
-  simple, nontrivial factors). *Unverified until the paper body is read in
-  full.*
+  functions on n points, i.e. finite classical probability.
+- Classical composites **do exist**. For every EJA A and C = ℝⁿ,
+  A C = A^⊕n with π(a,(bᵢ)) = (bᵢa) satisfies Definition 4.1. Conversely,
+  Proposition 4.9 splits any A(ℝⁿ) into n copies of Aℝ, and Proposition
+  4.3 identifies Aℝ with A. Thus the construction is forced up to the
+  canonical factorwise isomorphisms.
+- The composite has no entangled sector: a state is a probability
+  distribution over n classical labels together with an A-state
+  conditional on each label. It is a classically controlled family of
+  octonionic systems, not a larger irreducible system containing one.
+- The abstract's clause that “no such composite has the exceptional Jordan
+  algebra as a direct summand” must be read in the nontrivial-factor scope
+  proved in §4.3; read without that scope it conflicts with the paper's
+  explicit A⊗ℝ ≅ A observation and Propositions 4.3 and 4.9.
 - **Caveat either way:** combining with classical systems is the trivial
   case in any theory. The substance is that 𝕆 admits no non-classical
   partner in BGW's category.
@@ -39,9 +44,6 @@ Proposition 4.14).*
   touches it. Outside that setting, for example with minimal tensor
   products in general probabilistic theories, classical correlations with
   anything always exist, and the reading does not transfer automatically.
-- If the paper also excludes classical composites, 𝕆 is *fully* isolated
-  within BGW's category. That is a stronger version of "possible alone,
-  impossible in company".
 - The smallest classical partner, ℝ² = functions on S⁰, is the bit that
   survived W-0012.
 
@@ -82,9 +84,9 @@ system in plain sight?" The foil's reminder of what G₂ is:
 
 ## What would change the labels
 
-- **First audit:** read BGW's definition of composite and judge whether it
-  is physically forced. A weaker, physically acceptable notion admitting
-  octonionic partners would drain the reading.
+- **First attack:** judge which parts of BGW's definition of composite are
+  physically forced. A weaker, physically acceptable notion admitting
+  non-classical octonionic partners would drain the reading.
 - **Cheapest mathematical test:** do "classical base × 𝔥₃(𝕆) fibre"
   composites with local, gauge-invariant observables satisfy BGW's axioms?
   Could a colour-singlet observable algebra?
@@ -93,3 +95,5 @@ system in plain sight?" The foil's reminder of what G₂ is:
 
 - 2026-09-24 — created by the foil session (T-2026-09-23-A) at the owner's request.
 - 2026-09-24 — red-legged. Break: the ⊕ₙ 𝔥₃(𝕆) composite had been filed as established, but BGW give only a necessary condition, and their abstract's first clause may exclude even that composite; downgraded to unverified after reading Def. 4.1, Thm 4.12 and Prop. 4.14. Also fixed: the reading made conditional on BGW's category; continuous labels distinguished from BGW's finite partners; the complex-composite classical bit demoted; the SU(3)/SO(4) identifications marked as dimension-checked; the M-theory holonomy phrasing.
+- 2026-10-05 — full §4 audit reversed the earlier Break: the componentwise A^⊕n construction satisfies Definition 4.1, and Propositions 4.3 and 4.9 force it. Classical composition is established; its physical interpretation remains conjectural.
+- 2026-10-05 — fresh-context red leg confirmed the construction and removed the over-identification of finite classical probability with Cox–Jaynes.

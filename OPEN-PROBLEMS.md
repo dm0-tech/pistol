@@ -37,6 +37,21 @@ provisional until the Phase 0 spec exists to grade them against.*
 - **OP-7. Does the Wheeler reading survive precision?** "It from bit,
   transformationally" as a defensible formal claim rather than a slogan.
   *Grade: conjectural. Phase 1 essay.*
+  **S⁴ test (Oct 5, 2026; W-0028).** “Possibility, incarnate” remains
+  structural. Mosseri–Dandoloff's oriented Hopf map turns a chosen
+  two-qubit state into S⁴ coordinates with
+  c²=x₃²+x₄², but this uses a bipartition, complex structure and fibre
+  orientation not supplied by bare S⁴. Globally, Hypothesis H supplies a
+  twisted cocycle represented by a section of an associated S⁴-bundle,
+  considered up to homotopy. An ordinary map χ:X→S⁴ requires a
+  trivialization of the twist; flatness alone does not suffice. This and
+  the C-field flux character do not yet supply the extra two-qubit data.
+  If the target-bundle data alone is to carry the Born reading, its
+  twist/equivariance must canonically reduce to a
+  subgroup preserving the separable S² and concurrence foliation, making
+  the corresponding fibrewise function gauge invariant. Extra physical
+  fields could instead supply such a reduction. Until either mechanism is
+  exhibited, the reading adds no constraint beyond the geometry.
 
 ## Thread P (from roadmap §1.3)
 
@@ -221,8 +236,13 @@ sphere).*
   3-forms in 7d, G₂-holonomy as critical points). It fails as stated.
   There are two open orbits (compact and split G₂), and random 3-forms land
   in the split one (machine-checked). Positivity (a definite metric) is the
-  residual choice. The sharpened question: does positivity of plausibility
-  force the definite orbit? Flagged as a possible pun until typed.
+  residual choice. Independently, formal reality/Euclidean positivity
+  selects the division-octonion Albert algebra over the split Albert
+  algebra: an isotropic split octonion produces a nonzero Hermitian X with
+  X²=0. Thus positivity rather than genericity does select compact 𝕆 in
+  two precise mathematical settings. The sharpened question is whether
+  positivity of plausibility forces either the definite orbit or the
+  homogeneous self-dual cone. Flagged as a possible pun until typed.
 - **OP-22. Reversible becoming cannot yield actuality.** Stability (A2,
   W-0013) makes coming-to-be and ceasing-to-be mutually inverse. It is
   time-symmetric, so it gives no arrow of time and no irreversible
@@ -246,62 +266,55 @@ sphere).*
   remains open is typing measurement via the non-injectivity of
   stabilization, and whether reversible dynamics is the glitch's inside
   view.
-- **OP-23. The associativity ceiling: possibility stops at ℍ, M-theory sits
-  at 𝕆.** Consistent possibility calculi are associative: Cox's
-  combination rule obeys an associativity functional equation, and Solèr
-  admits only ℝ, ℂ, ℍ. The M2-brane sits at 𝕆 in the Baez–Huerta brane scan
-  (membranes in dimensions n + 3 = 4, 5, 7, 11). The obstruction survives
-  passage to homotopy: S⁷ is not homotopy-associative (James), while S³ is
-  a group. So the geometric summit sits on exactly the rung that
-  consistent possibility forbids, and this cuts against W-0015's "one
-  summit" candidate (OP-11). Attack plan, in two directions: (a) find a
-  possibility calculus that is coherent without being associative (the
-  only candidate known is the exceptional Jordan algebra 𝔥₃(𝕆), OP-12, for
-  which no Cox-type derivation exists); or (b) prove that every Cox-type
-  calculus is associative up to coherent homotopy, hence stops at ℍ, and
-  dispose of "one summit". Either outcome is a result. *Grade: open. The
-  individual facts are established (Solèr 1995; Baez–Huerta 2009–10; James
-  1957). Cross-refs OP-11, OP-12, W-0015.*
-  **Retyping (Sept 24, 2026; `notes/shadow-of-the-octonions.md` §1–§3,
-  W-0021, W-0022).** Two corrections and one sharpening.
-  - (i) The red leg: Cox's associativity is a functional equation on real
-    values and never touches 𝕆's product. Cox alone gives ℝ, and the ℍ
-    ceiling is Solèr's.
-  - (ii) Octonionic possibility *exists*, as the single-system state space
-    of 𝔥₃(𝕆), but Barnum–Graydon–Wilce (Quantum 2020) show no composite of
-    Euclidean Jordan algebras admits an exceptional summand or factor
-    (except with classical partners). So the ceiling is a **composition
-    ceiling**: every composable possibility calculus is ℝ, ℂ or ℍ, and 𝕆 is
-    possible alone and impossible in company. That is the owner's "operates
-    from the shadows by its own impossibility," as a theorem.
-  - (iii) Geometrically, 𝕆's associator carves out ℍ-slices (Harvey–Lawson),
-    and the M2 of G₂ compactifications lives on them.
+- **OP-23. Is the exceptional composition obstruction a shadow of the
+  octonion associator?** Octonionic single-system possibility exists as
+  the exceptional Jordan algebra 𝔥₃(𝕆). Barnum–Graydon–Wilce show that,
+  under their Definition 4.1, an EJA with an exceptional ideal has no
+  non-classical partner. Finite classical partners do exist and are forced
+  to be classical control: 𝔥₃(𝕆)⊗ℝⁿ ≅ ⊕ₙ𝔥₃(𝕆), with no entangled sector.
+  This is an **exceptional composition boundary**, not an ℝ/ℂ/ℍ
+  classification: special spin factors remain, while the three-fold
+  conclusion belongs to the separate Hilbert/Solèr hypotheses. Cox's
+  associativity is only a functional equation on real plausibility values
+  and does not touch the octonion product.
 
-  New central question: *are the composition obstruction (BGW) and the
-  associator (Harvey–Lawson) the same obstruction?* If so, OP-23 resolves
-  as “ℍ composes; 𝕆 calibrates.”
+  Geometrically, 𝕆's associator carves out ℍ-slices (Harvey–Lawson), and
+  the M2 of G₂ compactifications lives on associative cycles. But the two
+  obstructions are not presently the same theorem. BGW's proof forces a
+  nontrivial composite to be special by a rank argument, then contradicts
+  the faithful embedding of the exceptional factor. Harvey–Lawson's
+  obstruction is the trilinear octonion associator and its zero locus.
+  Central question: *is there a natural map from associator data to the
+  failure of special embeddability/composability?* Without such a map,
+  “same obstruction” is only a common-cause conjecture. *Grade: open.
+  Cross-refs OP-11, OP-12, W-0015, W-0021, W-0022.*
 - **OP-24. The classical system in plain sight.** Barnum–Graydon–Wilce,
   Prop. 4.14: if an exceptional (octonionic) Jordan factor has a
-  composite, the partner is a direct sum of ℝ, i.e. finite Cox–Jaynes
-  probability. This is a necessary condition only. Whether even classical
-  composites exist in their category is unverified: the abstract's first
-  clause may exclude them, in which case 𝕆 is fully isolated. Classical
-  composites are trivial in any theory. The substance is that 𝕆 composes
-  with nothing non-classical, within BGW's Jordan-algebraic category. The owner's question: *what if we are
+  composite, the partner is a direct sum of ℝ, i.e. finite classical
+  probability. Such composites exist and are unique up to canonical
+  factorwise isomorphisms: A⊗ℝⁿ ≅ A^⊕n (Definition 4.1; Propositions 4.3
+  and 4.9). Their states are classical distributions over labels with an
+  A-state conditional on each label; they add no entangled sector. The
+  substance is that 𝕆 composes with nothing non-classical within BGW's
+  Jordan-algebraic category. The owner's question: *what if we are
   missing a classical system in plain sight?* Candidates:
   - spacetime points (𝔥₃(𝕆)/F₄-bundles over a classical base; cf. W-0019);
   - superselection labels;
-  - BGW's own "extra classical bit" in complex composites;
   - the measurement record;
   - a chosen direction in Im 𝕆 (fixing one breaks G₂ to SU(3)).
+  BGW's “extra classical bit” in complex–complex composites is contextual
+  evidence that classical structure may appear in their tensor products,
+  not a candidate octonionic interface.
 
   Reading: classical probability is the only interface to octonionic
-  possibility, and its smallest instance is the bit S⁰ that survived
+  possibility, and its smallest nontrivial instance is the bit S⁰ that survived
   W-0012. A colour-confinement reading ("only singlets are seen" as
   non-composability) is flagged as possibly numerological. Its test lives
-  at the level of the algebra of observables, not states. First move: read
-  BGW's definition of composite and judge whether it is physically
-  forced. *Grade: conjectural. W-0025; cross-refs OP-12, OP-23, W-0022.*
+  at the level of the algebra of observables, not states. First move: judge
+  which BGW axioms are physically forced and whether a weaker acceptable
+  composite admits a non-classical exceptional partner. *Grade:
+  established (classical composite and no-go) / conjectural (reading).
+  W-0025; cross-refs OP-12, OP-23, W-0022.*
   **Addendum (Sept 24, 2026; W-0026).** Coxeter's picture shows the same
   SU(3) at root level. G₂'s 12 roots form a hexagram. The long hexagon is
   A₂ (SU(3)) and the short one is 3 ⊕ 3̄, so 14 = 8 + 6 and, on Im 𝕆,

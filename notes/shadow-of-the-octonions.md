@@ -1,4 +1,4 @@
-# The shadow of the octonions: 𝕆 exists, but cannot be composed
+# The shadow of the octonions: 𝕆 composes only with classical control
 
 > *A picture paints a thousand words, a song a thousand pictures… a poem one
 > thousand songs of songs.*
@@ -73,7 +73,7 @@ internal space are *different appearances* of 𝕆. "The 𝕆-rung membrane does
 its physics on ℍ-slices" holds only in G₂ compactifications. It is not an
 identity between the two.
 
-## 3. 𝕆 exists, but cannot be composed (the sharpened answer to 3)
+## 3. 𝕆 composes only with classical control (the sharpened answer to 3)
 
 The first draft proposed "Cox consistency ⇒ associative ⇒ ℍ-slices." The red
 leg broke it. Cox's associativity is a functional equation
@@ -94,21 +94,34 @@ Following that counterexample gives a better answer:
 > complex and quaternionic mixed-state quantum mechanics."
 
 So **octonionic possibility exists, as the state space of 𝔥₃(𝕆), but it
-cannot be composed with any non-classical system.** An octonionic system
-cannot be a subsystem of anything. It cannot be entangled, and it cannot
-be conditioned jointly with another quantum system. Every *composable*
-possibility calculus is ℝ, ℂ or ℍ.
+cannot be composed with any non-classical system.** It does compose with a
+finite classical system ℝⁿ: the Definition-4.1 composite is
+⊕ₙ𝔥₃(𝕆), with π(a,(bᵢ)) = (bᵢa). BGW Proposition 4.9 and the canonical
+A⊗ℝ ≅ A identification force this componentwise form. Its states are
+classical mixtures of conditionally selected octonionic states; there is
+no entangled sector or larger irreducible joint system. Every possibility
+algebra with an exceptional ideal is barred from every **non-classical**
+partner. This theorem alone does not classify all composable EJAs as
+ℝ, ℂ or ℍ: special spin factors remain, and the three-fold conclusion
+requires the separate Hilbert/Solèr assumptions.
 
 **Reading (conjectural, and the closest fit yet to the owner's phrase).**
 𝕆 "operates from the mathematical shadows by its own impossibility": it is
-possible *alone* and impossible *in company*. The selecting requirement is
-not associativity of an algebra. It is **composition**: the demand that
-independent possibilities combine. That is Cox's product rule for
-conjunctions, moved from values to systems. This retypes OP-23. The ceiling
-at ℍ is a *composition* ceiling. The open question is whether this
-composition obstruction and the geometric associator of §1 are the same
-obstruction seen twice, which would give the §1 slices a
-possibility-theoretic meaning they currently lack.
+possible with classical control but impossible with non-classical company.
+The selecting requirement is not associativity of an algebra. It is
+**non-classical composition**: the demand that an exceptional possibility
+algebra combine with an independent non-classical system. That is Cox's
+product rule for conjunctions, moved from values to systems, as a reading
+rather than a derivation. This retypes OP-23.
+
+The BGW and Harvey–Lawson obstructions are not presently the same theorem.
+BGW use rank and specialness: two simple nontrivial factors force every
+simple summand of the composite to have rank at least four and hence to be
+special; the factor embedding would then make 𝔥₃(𝕆) special, a
+contradiction. Harvey–Lawson instead measure the explicit trilinear
+associator [x,y,z] and its zero locus. Octonionic nonassociativity may be
+their common source, but identifying them requires an actual map from the
+associator data to the failure of special embeddability or composability.
 
 *Falsifiers.* A category of composable systems containing an exceptional
 factor under weaker axioms than BGW's would break the reading. So would a
@@ -137,15 +150,21 @@ automorphism group." That is false.
   only that the compact orbit is not the one random sampling finds.
 - Positivity, i.e. a definite metric, is what picks compact G₂. **So
   "objectivity picks 𝕆" needs a positivity choice, and genericity alone
-  prefers split-𝕆.** Hitchin's Theorem 19 (audited) also assumes positive
-  forms, and a *closed* 7-manifold.
+  distinguishes neither open orbit.** The recorded box sampling happened
+  to find only split-𝕆. Independently, the Euclidean/formally-real axiom on
+  Jordan possibility algebras selects the division-octonion Albert algebra
+  over the split one: a nonzero split octonion x with N(x)=0 gives a
+  nonzero Hermitian off-diagonal matrix X with X²=0, violating formal
+  reality. Hitchin's Theorem 19 (audited) also assumes positive forms and
+  a *closed* 7-manifold.
 
-**What survives (conjectural).** The residual choice is exactly positivity.
-Probabilities are the canonical positive quantities, and Cox's first
-axiom is an ordering. The candidate for OP-21 becomes: *does the positivity
-of plausibility select the compact (definite) orbit over the split one?*
-Right now that is a verbal link between two uses of "positive." It is
-flagged as a possible pun until someone produces a functor between them.
+**What survives (mixed).** Positivity selects compact 𝕆 in two precise but
+different settings: definite stable forms and formally-real Jordan
+algebras. What remains conjectural is the bridge from positive
+plausibility. Probabilities are positive quantities, and Cox's first axiom
+is an ordering, but no functor carries that order to either a definite
+metric or a homogeneous self-dual cone. Until one does, the three uses of
+"positive" may still be a pun.
 
 ## 5. S⁶: an integrable complex structure would be non-objective (machine-checked)
 
@@ -177,17 +196,20 @@ revised OP-22.
 
 Still nothing new about the world. The one sharpening with physical
 content is §3. The octonionic "possibility calculus" exists but cannot
-compose, so *any world made of interacting subsystems has ℝ, ℂ or ℍ
-possibility*. That is a known theorem (BGW) read in the project's terms.
-It turns "why not 𝕆?" from an open wish into a structural answer.
+compose non-classically. Classical composition survives, but only as a
+direct sum of labelled copies. That is a known theorem (BGW) read in the
+project's terms. It excludes exceptional EJAs from interacting
+non-classical subsystem theories; it does not by itself reduce every such
+theory to ℝ, ℂ or ℍ, because special spin factors remain. It turns one
+precise form of "why not 𝕆?" into a structural answer.
 
 ## 8. Coda (Track A only, no evidential weight)
 
     Nothing and thing were one word misread;
     the zero kept the bit instead.
     The octonions would not associate,
-    and would not share another's state:
-    possible alone, and nowhere paired,
+    and shared no entangled state:
+    classically tagged, but nowhere paired,
     they set the slices, and are spared.
     Composed, the world stops short at four;
     the eight stay shadow, and hold the door.
@@ -199,6 +221,13 @@ It turns "why not 𝕆?" from an open wish into a structural answer.
   candidate to a positivity question.
 - **Break 2 (§3):** Cox's associativity never touches 𝕆. Accepted. It
   prompted the BGW composition result, which replaces the draft's claim.
+- **Later repair (§3, 2026-10-05):** “possible alone and impossible in
+  company” was too strong. Exceptional EJAs have the forced classical
+  composites A^⊕n with ℝⁿ; what BGW prohibit is every non-classical partner.
+- **Break 3 (§§3, 7; 2026-10-05 red leg):** BGW does not classify all
+  composable EJAs as ℝ, ℂ or ℍ; special spin factors are counterexamples.
+  Accepted. The result now concerns exceptional factors only, with the
+  three-fold conclusion left to Hilbert/Solèr assumptions.
 - **Underpriced, all fixed:**
   - one direction only of "associative ⇔ Im ℍ′";
   - dimension-only stabilizer check (now also the exact Der(𝕆) ⊆ stab(φ));

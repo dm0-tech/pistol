@@ -324,3 +324,35 @@ in book form only. Recorded in notes/epigraphs.md with the name
 unverified (possibly Carlo Rovelli); not citable until book and page are
 found.
 
+## [2026-10-05] reprocess | Exceptional classical composites, positivity, and the S⁴ test
+
+The BGW classical exception was fully audited against Definition 4.1 and
+Propositions 4.3, 4.9 and 4.14. W-0022, W-0025, OP-23, OP-24 and
+`notes/shadow-of-the-octonions.md` now state the corrected result:
+A⊗ℝⁿ ≅ A^⊕n exists and is forced, while an exceptional EJA has no
+non-classical partner. The BGW obstruction was separated from the
+Harvey–Lawson associator: rank/specialness versus a trilinear zero locus,
+with no identifying map yet.
+
+W-0023 and OP-21 now distinguish two established positivity selections
+(definite stable 3-forms and formally-real Albert algebras) from the
+untyped positivity-of-plausibility bridge.
+
+Filed W-0028 and updated OP-7. Mosseri–Dandoloff's concurrence directions
+on S⁴ require a bipartition, complex structure and oriented grouping not
+currently supplied by Hypothesis H. The Born reading earns physical
+content only if the twist/equivariance canonically supplies that reduction
+and identifies a gauge-invariant concurrence-like pullback with C-field
+data. Transcript T-2026-10-05-A registered.
+
+A fresh-context red leg found one Break: BGW does not classify every
+composable EJA as ℝ, ℂ or ℍ, since special spin factors remain. All
+ℝ/ℂ/ℍ-only language was removed from the BGW claim and left to separate
+Hilbert/Solèr assumptions. Underpriced findings also repaired the globally
+twisted S⁴ language, allowed extra physical fields to supply the required
+symmetry reduction, scoped random-form claims to the recorded samples, and
+kept BGW's complex-composite bit out of the octonionic candidate list.
+A second fresh-context pass found no Breaks; it corrected flatness versus
+trivialization for the twisted S⁴-bundle and removed the last suggestion
+that genericity itself prefers the split orbit.
+

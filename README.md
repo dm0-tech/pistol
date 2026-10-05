@@ -71,11 +71,13 @@ Bayes' rule; then He drew His pistol."*
   one) and chromatic cardinalities (height-n |BG| = n-torus Dijkgraaf–Witten
   for p-groups) relative to that. Red-legged; W-0012–W-0020, OP-18–OP-20; obstacles to physical content filed as OP-21–OP-23.
 - [`notes/shadow-of-the-octonions.md`](notes/shadow-of-the-octonions.md) —
-  foil note (Sept 24, 2026). 𝕆's associator carves out ℍ-slices
-  (Harvey–Lawson), which is where G₂-compactified M2s live. Octonionic
-  possibility exists but cannot be composed (Barnum–Graydon–Wilce), so the
-  ℍ ceiling is a composition ceiling. Genericity does not pick 𝕆 (two open
-  orbits; positivity is the residual choice). Red-legged; W-0021–W-0024.
+  foil note (Sept 24, revised Oct 5, 2026). 𝕆's associator carves out
+  ℍ-slices (Harvey–Lawson), which is where G₂-compactified M2s live.
+  Exceptional Jordan possibility composes with finite classical control
+  but no non-classical partner (Barnum–Graydon–Wilce). This rank/specialness
+  obstruction is not yet identified with the associator. Genericity does
+  not pick compact 𝕆; definiteness and formal reality do, while the bridge
+  from positive plausibility remains open. Red-legged; W-0021–W-0025.
 - [`notes/epigraphs.md`](notes/epigraphs.md) — the project's epigraphs
   and the state of their attribution.
 - [`notes/project-complexity-handoff.md`](notes/project-complexity-handoff.md) —

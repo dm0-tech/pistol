@@ -13,6 +13,7 @@ index.*
 | T-2026-08-20-A | 2026-08-20 | owner + cloud agent (originating) | Direction review by the roadmap session's agent (`notes/direction-review-2026-08-20.md`); the endpoint named; linear bridge for OP-16 (W-0006); owner's ternary sharpening and triality hope (W-0007, OP-17); red-leg disqualification finding | [digest](T-2026-08-20-A.md); verbatim pending |
 | T-2026-08-28-A | 2026-08-28 | owner + cloud agent (originating) | Continuation: S⁶ community responses (W-0008 update — Pingali blow-up, Tosatti framing); owner's Seifert/π₆(S³) observation and the e-invariant sharpening (W-0009) | [digest](T-2026-08-28-A.md); verbatim pending |
 | T-2026-09-23-A | 2026-09-23 | owner + cloud agent (foil; not the originating agent) | Sphere-spectrum guess for a geometric Cox theorem; the owner's "no nothing, no thing" ontology worked as an axiom; I/∂I circle disposed; W-0012–W-0020, OP-18–OP-20. Distilled in `notes/no-nothing-no-thing.md` | [digest](T-2026-09-23-A.md); verbatim pending |
+| T-2026-10-05-A | 2026-10-05 | owner + GPT-5.6 Sol | Exceptional composites with classical systems; positivity versus genericity; BGW obstruction versus associator; Mosseri–Dandoloff/Hypothesis-H S⁴ test (W-0022/23/25/28) | [digest](T-2026-10-05-A.md); verbatim pending |
 
 ## Conventions
 
