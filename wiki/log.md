@@ -356,3 +356,15 @@ A second fresh-context pass found no Breaks; it corrected flatness versus
 trivialization for the twisted S⁴-bundle and removed the last suggestion
 that genericity itself prefers the split orbit.
 
+## [2026-10-05] promote | Phase 0 owner exit
+
+The owner closed Phase 0 and declared its roadmap exit criterion met:
+notation is frozen and rungs 0–1 are checkable by a category-literate
+reader. The educational component is accepted as good enough for this
+gate, not declared final. P0.7 remains the August 12 PASS recorded in
+`reviews/phase-0-red-leg.md` (three Breaks and four Underpriced findings,
+all dispositioned). `README.md`, `PHASE-0-PLAN.md`, the roadmap's current
+actions, the historical assessment header, both text-draft status footers,
+and the open-problems grading note were updated. The prepared
+project-complexity review is deferred as non-blocking Phase 1 housekeeping.
+

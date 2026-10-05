@@ -1,7 +1,9 @@
 # Phase 0 Plan — Spec and Seed
 
-*Status: **approved** (July 9, 2026) — notation frozen (N1–N4), decisions
-N5–N7 in force. Process decisions recorded at approval: public repo at
+*Status: **closed** by owner exit decision (October 5, 2026); approved
+July 9, 2026. The exit criterion below is met. Notation remains frozen
+(N1–N4), with decisions N5–N7 in force. Process decisions recorded at
+approval: public repo at
 `dm0-tech/pistol`; licensing CC BY 4.0 for text/spec/notes, MIT for code
 (explorer, examples), confirmed with client; lightweight push-to-main until
 the project demonstrably needs more. Derived from

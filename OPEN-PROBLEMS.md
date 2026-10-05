@@ -2,8 +2,9 @@
 
 *Maintained, public. Seeded from `objective-logic-roadmap.md` §4.3. Each item
 carries a grade — **established** / **claimed** / **conjectural** / **open** —
-and a note on which phase it blocks or informs. Gradings marked (†) are
-provisional until the Phase 0 spec exists to grade them against.*
+and a note on which phase it blocks or informs. Phase 0 closed on October
+5, 2026; claims above its scope remain graded against their cited sources
+until the destination-phase spec treats them.*
 
 ## Formalization
 
@@ -27,7 +28,7 @@ provisional until the Phase 0 spec exists to grade them against.*
 - **OP-5. Rheonomy-as-modality coverage.** Beyond the flagship cases, to what
   extent has the modal characterization been checked against D'Auria–Fré?
   The Giotopoulos–Sati–Schreiber super-embedding work is the live frontier.
-  *Grade: claimed (†). Phase 4.*
+  *Grade: claimed. Phase 4.*
 
 ## Conceptual (from roadmap §1.1)
 

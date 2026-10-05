@@ -217,17 +217,23 @@ Each phase ends with a *dialectical review*: what did the material itself teach 
 
 ## 8. Current next actions
 
-The original five Phase 0 actions have landed, as have the source dossier,
-generative Track-H pass, bounded guarded-recursion kill test, and P0.7
-authorship-blind review. P0.7 passed after three Breaks and four Underpriced
-findings were dispositioned. The current actions are:
+Phase 0 closed by owner exit decision on October 5, 2026. The owner judged
+the educational ascent good enough for this gate while recognizing that
+education is open-ended. P0.7's August 12 PASS remains the adversarial
+record: three Breaks and four Underpriced findings were dispositioned.
 
-1. owner review of the revised educational ascent and red-leg memo;
-2. the planned project-complexity review, using
-   `notes/project-complexity-handoff.md`;
-3. an explicit Phase 0 exit decision.
+Phase 1 begins with a bounded cohesive-rung slice:
 
-Do not begin rung 2 before that owner gate.
+1. source-audit the cohesive quadruple and the exact hypotheses of the
+   fracture results;
+2. draft `spec/02-level-2.md` around Π₀ ⊣ Disc ⊣ Γ and ʃ ⊣ ♭, with
+   Sierpiński and truncated-sSet instances;
+3. write the first three-track rung-2 slice and red-leg the artifacts
+   authorship-blind.
+
+The project-complexity review prepared in
+`notes/project-complexity-handoff.md` remains non-blocking Phase 1
+housekeeping.
 
 ## Appendix: core bibliography (working)
 

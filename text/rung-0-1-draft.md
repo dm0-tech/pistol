@@ -619,8 +619,9 @@ substantive A-claim, its B-statement, its spec home, and its script check:
 | Hegel Being/Nothing/Becoming beside the trivial level | — source facts; correspondence **claimed**; isomorphism reading rejected | *Science of Logic* §134; Lawvere 1991 §II; W-0011 | `0.5` rejects ∅ ≅ ∗ in a nondegenerate topos |
 
 *Draft status: P0.7 passed on August 12, 2026 after the review's Breaks and
-Underpriced findings were dispositioned; the draft now awaits the owner
-gate. Revised August 2026 (T-2026-08-05-A), after rung 0·0 landed: precise
+Underpriced findings were dispositioned; accepted as good enough for the
+Phase 0 owner exit on October 5, 2026, without claiming the education is
+final. Revised August 2026 (T-2026-08-05-A), after rung 0·0 landed: precise
 vocabulary (topos, adjoint triple, moment) now used throughout, with
 "universe" retained only in the most expository sentences; ⊢ Predict
 prompts added (the generative discipline — including the trap at A2 that

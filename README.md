@@ -117,7 +117,9 @@ licensed under [MIT](LICENSE-MIT).
 
 ## Where things stand
 
-Phase 0 is approved (July 9, 2026) and at its owner exit gate. The
+Phase 0 is **closed** by owner exit decision (October 5, 2026). Its exit
+criterion is met: notation is frozen and rungs 0–1 are checkable by a
+category-literate reader. The
 notation register, rung-0/1 specs, three-track text, Sierpiński explorer,
 finite-model checks, and open-problems register exist. The spec's central
 early finding is that the named ladder sits inside a model-dependent level
@@ -126,8 +128,9 @@ Sierpiński diamond resolves first.
 
 P0.7 ran on August 12, 2026 and passed after three Breaks and four
 Underpriced findings were fixed or narrowed
-(`reviews/phase-0-red-leg.md`). This does not self-declare Phase 0 complete:
-the owner still judges the education and closes the phase.
+(`reviews/phase-0-red-leg.md`). The owner judges the educational component
+good enough for this gate without treating exposition as ever finally
+complete. Phase 1 begins with the cohesive rung.
 
 Proof-assistant work is descoped (roadmap draft 1.2, decision N6): the July
 2026 toolchain survey showed Agda's `--cohesion` is a bolt-on (no native ♯,
