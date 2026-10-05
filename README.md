@@ -97,6 +97,16 @@ Bayes' rule; then He drew His pistol."*
   knowledge base ([Epic 2](epics/epic-2-knowledge-base.md)); ready to
   mirror into GitHub issues on owner approval.
 
+## Dev shell
+
+Toolchain is a Nix flake + direnv (same pattern as `~/repos/nix-config#devshell`). There is no global Node.
+
+```bash
+direnv allow
+node examples/run.mjs
+node wiki/lint.mjs
+```
+
 ## License
 
 Text, specs, and notes (everything except code) are licensed under
