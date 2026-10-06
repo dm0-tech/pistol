@@ -1,8 +1,9 @@
 # Executable examples (P0.5)
 
 Plain-code computations of every finite-model claim marked ⚙ in the spec's
-claim ledgers (`spec/00-level-0.md` §8, `spec/01-level-1.md` §8). No proof
-assistant, no dependencies — Node ≥ 18 only.
+claim ledgers (`spec/00-level-0.md` §8, `spec/01-level-1.md` §8, and the
+draft `spec/02-level-2.md` §7). No proof assistant, no dependencies —
+Node ≥ 18 only.
 
 ```
 node examples/run.mjs
@@ -16,9 +17,9 @@ spec is a spec bug to be filed, never silently patched around.
 
 | Module | Contents |
 |---|---|
-| `src/sierpinski.mjs` | Finite 𝒮 = Set^→ implementation: hom-set enumeration and iso testing for supplied finite objects, the four levels' modalities (□₀/◯₀, open, ♭/♯, max), subobjects, Ω = (3 → 2) with classifier and pullback |
+| `src/sierpinski.mjs` | Finite 𝒮 = Set^→ implementation: hom-set enumeration and iso testing for supplied finite objects, the four levels' modalities (□₀/◯₀, open, ♭/♯, max), rung-2 Π₀/ʃ and products, subobjects, Ω = (3 → 2) with classifier and pullback |
 | `src/topologies.mjs` | All Grothendieck topologies on the walking arrow {a → b}, enumerated **from the axioms** (maximality, stability, transitivity over honest sieve pullbacks) — not from the spec's derived shortcuts — so the "exactly four" claim is independently confirmed |
-| `src/sset.mjs` | Truncated simplicial sets (dims ≤ 2): Δ[0], Δ[1], sub-presheaf enumeration (Ω₀ = 2, Ω₁ = 5), Disc/coDisc constructions, level-wise iso testing |
+| `src/sset.mjs` | Truncated simplicial sets (dims ≤ 2): Δ[0], Δ[1], sub-presheaf enumeration (Ω₀ = 2, Ω₁ = 5), Disc/coDisc, π₀/ʃ/♭ and pointwise products, level-wise iso testing |
 | `src/guarded.mjs` | Bounded OP-13 experiment: independently enumerated finite-chain sieves; Ω and predicate-level later in 2/3/4-stage truncations; the exact stage-2/stage-1 dictionary with repo 𝒮; an object-level witness that the later endofunctor is non-idempotent |
 | `run.mjs` | The check battery, one line per ledger item |
 
@@ -37,6 +38,14 @@ their candidates from closure axioms and are independent of the claimed
 counts. By contrast, modality constructors and several sSet checks are
 bounded formula-regression tests: agreement with the spec catches code/spec
 drift but is not independent derivation.
+
+The rung-2 Sierpiński checks cover the same 11-object family and all 121
+ordered pairs for the inner adjunction's hom-set cardinalities. The sSet
+π₀/product checks use only four named finite truncations and test the
+canonical comparison, not only cardinality. They regress the formulas and
+scope boundary; the coordinate-at-a-time zigzag proof of
+`π₀(X × Y) ≅ π₀X × π₀Y` is in `spec/02-level-2.md`, not established by
+this finite sample.
 
 ## Scope (approved)
 

@@ -35,6 +35,12 @@ until the destination-phase spec treats them.*
 - **OP-6. Where does time live?** Is ʃ-as-ℝ¹-localization the right formal
   home of physical time, or does it belong to the elastic rung's jet/PDE
   structure, or Lawvere's dynamical-systems toposes? *Grade: conjectural. Phase 1 essay.*
+  **Initial rung-2 boundary (Oct 5, 2026):** `spec/02-level-2.md` constructs
+  abstract shape from `Π₀ ⊣ Disc` and the Sierpiński model reads it as
+  freezing the target of one transition. Neither fact identifies shape
+  with physical time. Shulman's real-cohesion result requires the further
+  assertion that shape is localization at ℝ; the physical question remains
+  open.
 - **OP-7. Does the Wheeler reading survive precision?** "It from bit,
   transformationally" as a defensible formal claim rather than a slogan.
   *Grade: conjectural. Phase 1 essay.*
@@ -100,6 +106,18 @@ until the destination-phase spec treats them.*
   were independently re-verified during P0.7. That review also repaired one
   residual defect: way-above's “above” relation is reflexive, so an
   Aufhebung need not be strictly higher (erratum E5). *Grade: resolved.*
+
+- **OP-25. What is the next level after the inner-shape rung?** The initial
+  rung-2 theorem (`spec/02-level-2.md`) produces the inner modality
+  `ʃ ⊣ ♭` from a triple whose fully faithful functor is in the middle.
+  D0.2 levels are outer-shape essential subtoposes, so D0.3 ordering and
+  D0.4 Aufhebung do not apply to this pair. In 𝒮 the pair crosses the
+  open/closed diamond: `ʃ = ◯_open`, `♭ = □_closed`. Is there a canonical
+  essential subtopos that should be called the next *level*, or should the
+  roadmap track inner rungs and levels on separate axes? A related stronger
+  question is which lex/disjointness, crisp-group, or stable hypotheses
+  promote the bare unity to a fracture theorem. *Grade: open. Phase 1;
+  source boundary in `notes/rung-1-to-2-research-dossier.md`.*
 
 ## Wheeler / self-reference (from `notes/bootstrap-stones.md`)
 

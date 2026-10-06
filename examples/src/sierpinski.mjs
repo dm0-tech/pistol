@@ -74,6 +74,23 @@ export const coDisc = S =>                               // coDisc S = (S → 1)
 export const gamma = X => [...X.X0];                     // Γ X = X₀
 export const jMinusOpen = S => obj([], [...S], {});      // open i₋ S = (∅ → S)
 
+// Rung 2 (spec 02-level-2.md): Π₀ is the colimit of an arrow, hence its
+// codomain. Shape and flat share the discrete fixed objects.
+export const pi0 = X => [...X.X1];
+export const shape = X => disc(pi0(X));                  // ʃX = (X₁ = X₁)
+
+const pair = (x, y) => JSON.stringify([x, y]);
+export const product = (X, Y) => {
+  const X0 = X.X0.flatMap(x => Y.X0.map(y => pair(x, y)));
+  const X1 = X.X1.flatMap(x => Y.X1.map(y => pair(x, y)));
+  return obj(
+    X0,
+    X1,
+    Object.fromEntries(X.X0.flatMap(x => Y.X0.map(y =>
+      [pair(x, y), pair(X.xi[x], Y.xi[y])]))),
+  );
+};
+
 // --- subobjects and Ω (spec 00-level-0.md §5.2) -----------------------------
 
 export function* subsets(arr) {

@@ -1,17 +1,19 @@
-// P0.5 executable examples: every finite-model claim marked ⚙ in the claim
-// ledgers of spec/00-level-0.md and spec/01-level-1.md, machine-computed.
+// Executable examples: every finite-model claim marked ⚙ in the claim
+// ledgers of spec/00-level-0.md, spec/01-level-1.md, and the draft
+// spec/02-level-2.md, machine-computed.
 // Run: node examples/run.mjs   (exits nonzero on any failure)
 
 import {
   obj, initial, terminal, ya, homs, isomorphic,
   box0, circ0, boxOpen, circOpen, flat, sharp, circMax, disc, coDisc, gamma,
   jMinusOpen, subobjects, subsets, omega, chi, pullbackTrue, serializeSub,
-  serializeMorphism, testFamily, countFunctions,
+  serializeMorphism, testFamily, countFunctions, pi0, shape, product,
 } from './src/sierpinski.mjs';
 import { allTopologies, named, topologyKey } from './src/topologies.mjs';
 import {
   truncEmpty, truncPoint, truncDelta1, subPresheaves, truncDisc, truncCoDisc,
-  truncIsomorphic,
+  truncIsomorphic, truncPi0, truncShape, truncFlat,
+  truncPi0ProductComparisonIsBijective,
 } from './src/sset.mjs';
 import {
   finiteChainSieves, omegaValues, laterTruth, laterIsNatural,
@@ -200,6 +202,55 @@ check('§3', 'sSet truncated: (coDisc S)_n = S^(n+1) — sizes for |S| = 2 are 2
   () => {
     const cd = truncCoDisc(['a', 'b']);
     return cd.S[0].length === 2 && cd.S[1].length === 4 && cd.S[2].length === 8;
+  });
+
+console.log('— spec/02-level-2.md —');
+
+check('2.3', '𝒮: Π₀X = X₁ and ʃX = (X₁ = X₁); |Hom(ʃX,Y)| = |Hom(X,♭Y)| = |X₁ → Y₀| for all 121 pairs',
+  () => family.every(X =>
+    pi0(X).length === X.X1.length &&
+    isomorphic(shape(X), disc(X.X1)) &&
+    family.every(Y =>
+      homs(shape(X), Y).length === homs(X, flat(Y)).length &&
+      homs(shape(X), Y).length === countFunctions(X.X1, Y.X0))));
+
+check('2.3', '𝒮: Π₀ preserves terminal objects and binary products on the 11-object family',
+  () => pi0(terminal).length === 1 &&
+    family.every(X => family.every(Y =>
+      pi0(product(X, Y)).length === pi0(X).length * pi0(Y).length)));
+
+check('2.3', '𝒮: ʃ and ♭ are idempotent with the same fixed objects on the 11-object family',
+  () => family.every(X =>
+    isomorphic(shape(shape(X)), shape(X)) &&
+    isomorphic(flat(flat(X)), flat(X)) &&
+    isomorphic(shape(X), X) === isomorphic(flat(X), X)));
+
+check('2.5', '𝒮 cross-diamond witness: inner ʃ is ◯_open and inner ♭ is □_closed, not the two moments of one diamond vertex',
+  () => family.every(X => isomorphic(shape(X), circOpen(X))) &&
+    !isomorphic(shape(ya), boxOpen(ya)) &&
+    !isomorphic(flat(ya), sharp(ya)));
+
+check('2.4', 'sSet truncated: π₀(∅)=∅, π₀(Δ[0])=1, π₀(Δ[1])=1, and π₀(Disc 2)=2',
+  () => truncPi0(truncEmpty).length === 0 &&
+    truncPi0(truncPoint).length === 1 &&
+    truncPi0(truncDelta1()).length === 1 &&
+    truncPi0(truncDisc(['a', 'b'])).length === 2);
+
+check('2.4', 'sSet truncated: canonical π₀(X×Y) → π₀X×π₀Y is bijective on named finite examples',
+  () => {
+    const samples = [truncEmpty, truncPoint, truncDelta1(), truncDisc(['a', 'b'])];
+    return samples.every(X => samples.every(Y =>
+      truncPi0ProductComparisonIsBijective(X, Y)));
+  });
+
+check('2.4', 'sSet truncated: shape and flat are idempotent on named finite examples and fix Disc 2',
+  () => {
+    const samples = [truncEmpty, truncPoint, truncDelta1(), truncDisc(['a', 'b'])];
+    const D2 = truncDisc(['a', 'b']);
+    return samples.every(X =>
+      truncIsomorphic(truncShape(truncShape(X)), truncShape(X)) &&
+      truncIsomorphic(truncFlat(truncFlat(X)), truncFlat(X))) &&
+      truncIsomorphic(truncShape(D2), D2) && truncIsomorphic(truncFlat(D2), D2);
   });
 
 console.log('— OP-13 bounded guarded-recursion check —');

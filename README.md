@@ -31,6 +31,11 @@ Bayes' rule; then He drew His pistol."*
   level 1 (proved via the Kelly–Lawvere classification), while in 𝒮 rung 1
   is obstructed by the site's pointless representable and the Aufhebung is
   the smaller open level (OP-15, resolved from primary sources).
+- [`spec/02-level-2.md`](spec/02-level-2.md) — initial Phase 1 draft for
+  rung 2: the inner-shape theorem `ʃ := Disc Π₀ ⊣ ♭ := Disc Γ`, its common
+  discrete fixed objects and unity, product preservation in the two models,
+  and the finding that this inner rung is not thereby a D0.2 level or an
+  Aufhebung.
 - [`text/rung-0-0-draft.md`](text/rung-0-0-draft.md) — rung 0·0, the
   self-contained on-ramp preceding the ladder: adjunctions ("best" as an
   exactly-when, and why adjunction is the last word in suspended
@@ -45,6 +50,10 @@ Bayes' rule; then He drew His pistol."*
   the mathematics with spec pointers (Track B), and the executable checks
   (Track C), ending in a track-discipline ledger tying every A-claim to a
   proved B-statement.
+- [`text/rung-2-draft.md`](text/rung-2-draft.md) — the first three-track
+  rung-2 slice: shape versus flatness, the typed theorem, bounded models,
+  the level/Aufhebung type correction, and a graded boundary around
+  fracture, time, Wheeler, and gauge-field readings.
 - [`examples/`](examples/README.md) — the executable examples (P0.5):
   every finite-model claim in the spec's ledgers, machine-computed
   (`node examples/run.mjs`).
@@ -63,6 +72,10 @@ Bayes' rule; then He drew His pistol."*
   primary Hegel/Lawvere lineage, level/Aufhebung source joints, the exact
   finite guarded-recursion dictionary, graded analogy cards, and promotion
   rules.
+- [`notes/rung-1-to-2-research-dossier.md`](notes/rung-1-to-2-research-dossier.md) —
+  source audit for Lawvere's cohesive hypotheses, Shulman's shape,
+  Schreiber/Myers fracture results, and the exact boundary between the
+  initial inner-shape unity and a genuine fracture theorem.
 - [`notes/no-nothing-no-thing.md`](notes/no-nothing-no-thing.md) —
   foil note (Sept 24, 2026). Takes the owner's "no nothing, no thing" as an
   axiom on ∅ ⊣ ∗. Read literally it collapses the world. Read as

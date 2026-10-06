@@ -368,3 +368,24 @@ actions, the historical assessment header, both text-draft status footers,
 and the open-problems grading note were updated. The prepared
 project-complexity review is deferred as non-blocking Phase 1 housekeeping.
 
+## [2026-10-05] file | Initial rung 2: inner shape is not yet a level
+
+Built the first Phase 1 slice from `Π₀ ⊣ Disc ⊣ Γ`: the draft
+`spec/02-level-2.md` proves `ʃ := Disc Π₀ ⊣ ♭ := Disc Γ`, idempotence,
+common discrete fixed objects, unity, and finite-product preservation in
+the two worked models. The source dossier separates bare unity from the
+extra hypotheses in Rijke–Shulman–Spitters, Schreiber, and Myers fracture
+results. The D0.4 test exposed a typing boundary: the inner triple does not
+itself exhibit a level, and in 𝒮 its moments cross the open/closed diamond.
+OP-25 records the resulting question.
+
+Executable checks now cover the Sierpiński formulas and all 121 bounded
+adjunction pairs, plus the canonical `π₀(X×Y) → π₀X×π₀Y` comparison on
+named finite simplicial truncations. Two fresh-context red legs found and
+repaired the edge-orientation error in the first product proof, an
+overstatement about level nonexistence, bounded-scope and inclusion
+language, a unit/counit attribution error, and an abstract
+Π₀-versus-connected-components overreach. Full dispositions are in
+`reviews/rung-2-red-leg.md`; no unaddressed Break or Underpriced finding
+remains.
+
