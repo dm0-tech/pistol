@@ -2,12 +2,12 @@
 
 - **ID:** W-0029
 - **Provenance:** sourced
-- **Verification:** source-audited
+- **Verification:** source-audited; red-legged
 - **Grade:** established
 - **Sources:** Freed, “Classical Chern-Simons Theory, Part 2,” HJM 28(2) (2002), equations (1.5)–(1.6) and §2.3; Duncan, “Flat connections and holonomy,” §§1–3 (supporting lecture note)
 - **Transcript:** —
 - **Cross-refs:** `notes/flat-u1-connections-on-circle.md`; `spec/02-level-2.md` §5; `reviews/critique-2026-10-26-before-the-harder-rungs.md`
-- **Status:** draft
+- **Status:** checked
 
 ## Statement
 
@@ -72,3 +72,7 @@ stacks.
 ## Log
 
 - 2026-10-26 — filed from source-audited critique increment 3; initial status draft pending the convention/groupoid red leg.
+- 2026-10-26 — authorship-blind red leg reconstructed the conventions,
+  groupoid guard, exact-sequence specialization, and boundary checks; no
+  Breaks. Its one Underpriced finding added the connected/basepoint or
+  fundamental-groupoid qualification to the note's general holonomy formula.

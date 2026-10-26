@@ -37,11 +37,19 @@ authorship-blind red leg. The review text below is archived verbatim.
 - The explorer was not edited, so the conditional esbuild-pinning cleanup
   was not triggered.
 
-### Deferred to increment 3
+### Accepted in increment 3
 
-- Build the flat U(1)-connections-on-S¹ pilot.
-- State the ordinary-to-homotopical boundary and what survives it.
-- Add the point/interval and a loop-bearing example as boundary tests.
+- Built the flat U(1)-connections-on-S¹ pilot, including the elementary
+  gauge/holonomy calculation and the degree-2 differential-cohomology
+  specialization.
+- Stated the ordinary-to-homotopical boundary and what survives it, with
+  explicit ambient categories and equivalence notions.
+- Added narrowly scoped point/interval and loop-bearing exploratory
+  boundary checks.
+- Filed W-0029 and passed an authorship-blind convention/groupoid red leg
+  after one qualification was repaired.
+- This pilot does not complete differential cohesion, prove a fracture
+  theorem, or alter the roadmap's later rungs.
 
 ### Proposals for owner review
 

@@ -54,11 +54,13 @@ classes. Therefore
 \]
 
 This is the circle case of the holonomy classification of flat
-connections:
+connections. For a connected based manifold \(X\):
 \[
   \coprod_{[P]}\mathcal A_{\mathrm{flat}}(P)/\mathcal G(P)
   \;\cong\;\operatorname{Hom}(\pi_1(X),G)/G.
 \]
+For disconnected \(X\), use the fundamental groupoid (or apply the
+statement componentwise); that qualification is immaterial for \(S^1\).
 For \(X=S^1\) and abelian \(G=U(1)\), conjugation is trivial and a
 homomorphism \(\mathbb Z\to U(1)\) is determined by the image of \(1\).
 

@@ -427,3 +427,27 @@ regression test. The temporary external-review probe script was retired
 after conversion. The point/interval and loop-bearing semantic boundary,
 and the U(1)-on-S¹ pilot, remain for increment 3.
 
+## [2026-10-26] file | W-0029 and the flat U(1)-on-S¹ boundary pilot
+
+Filed W-0029 and `notes/flat-u1-connections-on-circle.md`. The elementary
+calculation reduces every U(1) connection on S¹ to
+`d + 2πi α dt`, identifies large gauges by `α ~ α+n`, and classifies
+isomorphism classes by holonomy in U(1) ≅ ℝ/ℤ. Freed's HJM equations
+(1.5)–(1.6) and §2.3 were source-audited for the curvature exact sequence
+and degree-2 bundle-with-connection classification. The note keeps the full
+moduli groupoid separate: constant U(1) stabilizers survive.
+
+Added a validated 2-truncated simplicial circle and two exploratory boundary
+checks. Repository `flat` distinguishes the weakly equivalent point and
+interval by vertex count, while repository `shape = Disc π₀` identifies the
+point and circle despite the circle's nondegenerate loop edge. The scripts
+do not compute weak equivalence, π₁, holonomy, or differential cohesion.
+
+An authorship-blind red leg at commit `fe4bb7c` reconstructed signs and
+gauge classes, attacked the groupoid/exact-sequence hypotheses, and checked
+the boundary predicates. It found no Breaks and one Underpriced omission:
+the general π₁ holonomy formula needed connectedness/basepoint or a
+fundamental-groupoid form. That qualification was added. The remaining
+bridge is the actual move into a smooth/cohesive ∞-topos; this pilot is not
+a fracture theorem or a new rung.
+
