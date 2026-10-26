@@ -389,3 +389,21 @@ language, a unit/counit attribution error, and an abstract
 `reviews/rung-2-red-leg.md`; no unaddressed Break or Underpriced finding
 remains.
 
+## [2026-10-26] audit | External critique: image/codomain and Sp-selection repaired
+
+Archived the external critique of commit `a4deb2a` and its read-only probes
+under `reviews/`. Its two first-priority counterexamples were accepted.
+W-0012 and `notes/no-nothing-no-thing.md` now distinguish a zero functor's
+essential image from its codomain and state the missing colimit-generation
+hypothesis. W-0013 and its summaries now state Sp's free universal property
+without inferring that pointedness, stability, and presentability uniquely
+select Sp; Mod_HR remains the counterexample.
+
+Added scoped-evidence blocks for those two hinges and clarified that wiki
+verification kinds answer different questions. `AGENTS.md` now requires
+object/image/ambient-category distinctions, named red-leg attacks and
+reviewer provenance, while moving spec/text to red-leg gates with owner
+review at phase exit. The owner should inspect that process change then.
+Tool tightening is deferred to critique increment 2; the U(1)-on-S¹ pilot
+and ordinary/homotopical boundary are deferred to increment 3.
+
