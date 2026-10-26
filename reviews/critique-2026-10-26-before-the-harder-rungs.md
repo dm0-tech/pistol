@@ -20,16 +20,22 @@ authorship-blind red leg. The review text below is archived verbatim.
 - Strengthened red-leg attack records and lightened per-edit owner gates in
   `AGENTS.md`.
 
-### Deferred to increment 2
+### Accepted in increment 2
 
-- Compare INDEX labels against entry headers in `wiki/lint.mjs`.
-- Add a finite simplicial-model validator and a malformed-model rejection
-  check.
-- Separate core and exploratory example summaries or entry points.
-- Add a small CI job for core checks and wiki lint.
-- Convert the accompanying probes into permanent checks, then remove the
-  temporary reproduction script.
-- Pin the explorer's esbuild invocation if the explorer is edited.
+- `wiki/lint.mjs` now compares INDEX provenance, verification, grade and
+  status against canonical entry headers; `wiki/lint-test.mjs` proves a
+  stale row is rejected.
+- The truncated-sSet core now validates map domains/codomains and all
+  represented simplicial identities, with a known malformed input.
+- `examples/run.mjs` exposes separately summarized `core`, `exploratory`
+  and default `all` modes.
+- A small GitHub Actions job runs the core group, wiki lint and its
+  regression test on Node 22.
+- The relevant probes now have permanent homes; the temporary reproduction
+  script was removed. The point/interval boundary probe remains deferred
+  with the semantic-boundary work in increment 3.
+- The explorer was not edited, so the conditional esbuild-pinning cleanup
+  was not triggered.
 
 ### Deferred to increment 3
 

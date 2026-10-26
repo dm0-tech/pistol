@@ -407,3 +407,23 @@ review at phase exit. The owner should inspect that process change then.
 Tool tightening is deferred to critique increment 2; the U(1)-on-S¹ pilot
 and ordinary/homotopical boundary are deferred to increment 3.
 
+## [2026-10-26] wire | Critique increment 2: scoped checks and input validation
+
+Closed the critique's cheap-tool gaps. Wiki lint now compares each index
+row's provenance, verification, grade and status exactly with canonical
+entry headers; a disposable-copy regression test proves stale labels fail.
+The check exposed and repaired seven already-stale index rows.
+
+The truncated-sSet module now validates represented map domains/codomains
+and every simplicial identity expressible through dimension 2. The core
+runner validates all named and product fixtures and rejects a deliberately
+broken face identity before its sSet theorem checks. The independent
+`π₀(Disc 2)=2` control remains beside the product-comparison test.
+
+`examples/run.mjs` now reports `core` (spec 00–02) and `exploratory`
+(OP/wiki research) groups separately, with `all` as the compatible default.
+A dependency-free Node 22 GitHub Actions job runs core, wiki lint and its
+regression test. The temporary external-review probe script was retired
+after conversion. The point/interval and loop-bearing semantic boundary,
+and the U(1)-on-S¹ pilot, remain for increment 3.
+

@@ -1,0 +1,23 @@
+name: Core checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Run finite-model core
+        run: node examples/run.mjs core
+      - name: Lint wiki structure
+        run: node wiki/lint.mjs
+      - name: Test stale-index rejection
+        run: node wiki/lint-test.mjs
