@@ -120,8 +120,11 @@ Toolchain is a Nix flake + direnv (same pattern as `~/repos/nix-config#devshell`
 
 ```bash
 direnv allow
-node examples/run.mjs
+node examples/run.mjs              # all groups, reported separately
+node examples/run.mjs core         # spec 00–02 finite-model gate
+node examples/run.mjs exploratory  # OP/wiki research computations
 node wiki/lint.mjs
+node wiki/lint-test.mjs
 ```
 
 ## License

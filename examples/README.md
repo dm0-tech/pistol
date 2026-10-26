@@ -6,12 +6,16 @@ draft `spec/02-level-2.md` §7). No proof assistant, no dependencies —
 Node ≥ 18 only.
 
 ```
-node examples/run.mjs
+node examples/run.mjs              # all groups (default)
+node examples/run.mjs core         # spec 00–02 finite-model checks
+node examples/run.mjs exploratory  # OP/wiki research computations
 ```
 
-Each check prints its ledger item; the run exits nonzero on any failure. Per
-the honesty mechanism (PHASE-0-PLAN.md), a mismatch between a script and the
-spec is a spec bug to be filed, never silently patched around.
+Each enabled check prints its ledger item; each group gets a separate
+pass/fail summary, and the run exits nonzero on any enabled failure. `core`
+does not run or make claims for the exploratory bridges. Per the honesty
+mechanism (PHASE-0-PLAN.md), a mismatch between a script and the spec is a
+spec bug to be filed, never silently patched around.
 
 ## What is computed, and how honestly
 
@@ -19,7 +23,7 @@ spec is a spec bug to be filed, never silently patched around.
 |---|---|
 | `src/sierpinski.mjs` | Finite 𝒮 = Set^→ implementation: hom-set enumeration and iso testing for supplied finite objects, the four levels' modalities (□₀/◯₀, open, ♭/♯, max), rung-2 Π₀/ʃ and products, subobjects, Ω = (3 → 2) with classifier and pullback |
 | `src/topologies.mjs` | All Grothendieck topologies on the walking arrow {a → b}, enumerated **from the axioms** (maximality, stability, transitivity over honest sieve pullbacks) — not from the spec's derived shortcuts — so the "exactly four" claim is independently confirmed |
-| `src/sset.mjs` | Truncated simplicial sets (dims ≤ 2): Δ[0], Δ[1], sub-presheaf enumeration (Ω₀ = 2, Ω₁ = 5), Disc/coDisc, π₀/ʃ/♭ and pointwise products, level-wise iso testing |
+| `src/sset.mjs` | Truncated simplicial sets (dims ≤ 2): Δ[0], Δ[1], sub-presheaf enumeration (Ω₀ = 2, Ω₁ = 5), Disc/coDisc, π₀/ʃ/♭ and pointwise products, level-wise iso testing, and validation of represented domains, codomains and simplicial identities |
 | `src/guarded.mjs` | Bounded OP-13 experiment: independently enumerated finite-chain sieves; Ω and predicate-level later in 2/3/4-stage truncations; the exact stage-2/stage-1 dictionary with repo 𝒮; an object-level witness that the later endofunctor is non-idempotent |
 | `run.mjs` | The check battery, one line per ledger item |
 
@@ -45,7 +49,9 @@ ordered pairs for the inner adjunction's hom-set cardinalities. The sSet
 canonical comparison, not only cardinality. They regress the formulas and
 scope boundary; the coordinate-at-a-time zigzag proof of
 `π₀(X × Y) ≅ π₀X × π₀Y` is in `spec/02-level-2.md`, not established by
-this finite sample.
+this finite sample. The product-comparison property alone does not validate
+the component implementation: the independent `π₀(Disc 2)=2` assertion is
+the control that rejects indiscriminate component collapse.
 
 ## Scope (approved)
 
@@ -53,6 +59,11 @@ Everything here is finite or truncated. sSet claims are computed in
 dimensions ≤ 2 only; the scripts never claim the infinite case
 (PHASE-0-PLAN.md, P0.5 scope note). The mathematical core is written to be
 shared with the P0.4 explorer.
+
+The `core` group consists only of the spec 00–02 checks and the sSet model
+preflight. The `exploratory` group contains OP-13 and the W-0014–W-0027
+research computations, including randomized finite samples. Default `all`
+runs both but reports their outcomes separately.
 
 The guarded-recursion module is deliberately a **bounded kill test**, not a
 new verification programme. It independently enumerates the finite sieves,

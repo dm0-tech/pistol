@@ -12,7 +12,8 @@ import {
 import { allTopologies, named, topologyKey } from './src/topologies.mjs';
 import {
   truncEmpty, truncPoint, truncDelta1, subPresheaves, truncDisc, truncCoDisc,
-  truncIsomorphic, truncPi0, truncShape, truncFlat,
+  truncIsomorphic, truncPi0, truncShape, truncFlat, truncProduct,
+  truncValidationErrors, truncValid,
   truncPi0ProductComparisonIsBijective,
 } from './src/sset.mjs';
 import {
@@ -29,17 +30,54 @@ import {
 import * as Oct from './src/octonions.mjs';
 import * as G2 from './src/g2roots.mjs';
 
+const mode = process.argv[2] || 'all';
+const MODES = ['core', 'exploratory', 'all'];
+if (!MODES.includes(mode)) {
+  console.error('Usage: node examples/run.mjs [core|exploratory|all]');
+  process.exit(2);
+}
+
 let failures = 0;
+let currentGroup = 'core';
+const stats = {
+  core: { checks: 0, failures: 0 },
+  exploratory: { checks: 0, failures: 0 },
+};
+const enabled = group => mode === 'all' || mode === group;
+function section(group, title) {
+  currentGroup = group;
+  if (enabled(group)) console.log(title);
+}
 function check(ledger, description, condition) {
+  if (!enabled(currentGroup)) return;
+  stats[currentGroup].checks++;
   const ok = typeof condition === 'function' ? condition() : condition;
   console.log(`${ok ? 'PASS' : 'FAIL'}  [${ledger}] ${description}`);
-  if (!ok) failures++;
+  if (!ok) {
+    failures++;
+    stats[currentGroup].failures++;
+  }
 }
 
 const family = testFamily();
 const sample = obj(['x', 'y'], ['p', 'q', 'r'], { x: 'p', y: 'p' });
 
-console.log('— spec/00-level-0.md —');
+const validationBases = [
+  truncEmpty, truncPoint, truncDelta1(), truncDisc(['a', 'b']),
+  truncCoDisc(['a', 'b']),
+];
+const validationSamples = [
+  ...validationBases,
+  ...validationBases.flatMap(X => validationBases.map(Y => truncProduct(X, Y))),
+];
+const malformed = structuredClone(truncCoDisc(['a', 'b']));
+malformed.d[2][0]['a|a|a'] = 'b|b';
+const malformedErrors = truncValidationErrors(malformed);
+check('MODEL', 'sSet preflight: all named/constructed fixtures satisfy the represented simplicial identities; a deliberately broken face identity is rejected',
+  () => validationSamples.every(truncValid) &&
+    malformedErrors.some(error => error.includes('face identity')));
+
+section('core', '— spec/00-level-0.md —');
 
 check('0.1/0.2', '𝒮: □₀X ≅ ∅ and ◯₀X ≅ ∗ for all 11 test objects',
   () => family.every(X => isomorphic(box0(X), initial) && isomorphic(circ0(X), terminal)));
@@ -101,7 +139,7 @@ check('5.3', 'sSet non-Boolean: (∗+∗)₁ = 2 ≠ 5 = Ω₁',
       subPresheaves(truncDelta1()).length === 5;
   });
 
-console.log('— spec/01-level-1.md —');
+section('core', '— spec/01-level-1.md —');
 
 check('§2', '𝒮 dictionary: y a ≅ (∅ → 1) and y b ≅ ∗',
   () => isomorphic(ya, obj([], ['1'], {})) && isomorphic(terminal, coDisc(['s'])));
@@ -204,7 +242,7 @@ check('§3', 'sSet truncated: (coDisc S)_n = S^(n+1) — sizes for |S| = 2 are 2
     return cd.S[0].length === 2 && cd.S[1].length === 4 && cd.S[2].length === 8;
   });
 
-console.log('— spec/02-level-2.md —');
+section('core', '— spec/02-level-2.md —');
 
 check('2.3', '𝒮: Π₀X = X₁ and ʃX = (X₁ = X₁); |Hom(ʃX,Y)| = |Hom(X,♭Y)| = |X₁ → Y₀| for all 121 pairs',
   () => family.every(X =>
@@ -253,7 +291,7 @@ check('2.4', 'sSet truncated: shape and flat are idempotent on named finite exam
       truncIsomorphic(truncShape(D2), D2) && truncIsomorphic(truncFlat(D2), D2);
   });
 
-console.log('— OP-13 bounded guarded-recursion check —');
+section('exploratory', '— OP-13 bounded guarded-recursion check —');
 
 check('OP-13', 'finite trees: independent sieve enumeration gives 3, 4, 5 Ω-values at stages 2, 3, 4',
   () => [2, 3, 4].every(stage =>
@@ -273,7 +311,7 @@ check('OP-13', 'predicate later is non-idempotent; an object-level witness indep
     laterTruth(laterTruth(0, 2), 2) !== laterTruth(0, 2) &&
     laterEndofunctorIsNotIdempotentWitness());
 
-console.log('— notes/no-nothing-no-thing.md (W-0014–W-0018) —');
+section('exploratory', '— notes/no-nothing-no-thing.md (W-0014–W-0018) —');
 
 check('W-0014', 'Σₙ^ab ≅ ℤ/2 for n = 2..6 (|Σₙ| / |[Σₙ,Σₙ]| = 2) and sign is a homomorphism — the finite shadow of π₁𝕊 = H₁(BΣ_∞) = ℤ/2',
   () => [2, 3, 4, 5, 6].every(n => abelianizationOrder(n) === 2 && signIsHomomorphism(n)) &&
@@ -366,7 +404,7 @@ check('W-0018', 'non-p-group Σ₃ (red-leg correction): the integral count is 3
       eq(pAdicHeightCardinality(cyclic(3), compose, 1, 2), 1, 3);
   });
 
-console.log('— notes/shadow-of-the-octonions.md (W-0021–W-0024) —');
+section('exploratory', '— notes/shadow-of-the-octonions.md (W-0021–W-0024) —');
 
 check('W-0021', '𝕆 (Fano table) is a normed division algebra and alternative: |xy|² = |x|²|y|², (x,x,y) = (y,x,x) = 0 on 200 random integer octonions',
   () => {
@@ -464,7 +502,15 @@ check('W-0027', 'the dihedral 12 as a number: |W| = ∏dᵢ for rank-2 types is 
   () => { const W = { A2: 2 * 3, B2: 2 * 4, G2: 2 * 6 }; const t = Number(zetaNeg(2)[1]);
     return W.A2 === 6 && W.B2 === 8 && W.G2 === 12 && t === 12 && Object.values(W).filter(w => w === t).length === 1; });
 
+for (const group of ['core', 'exploratory']) {
+  if (!enabled(group)) continue;
+  const { checks, failures: groupFailures } = stats[group];
+  console.log(
+    `\n${group.toUpperCase()}: ${checks - groupFailures}/${checks} checks passed` +
+    (groupFailures === 0 ? '.' : `; ${groupFailures} FAILED.`),
+  );
+}
 console.log(failures === 0
-  ? '\nAll checks passed.'
-  : `\n${failures} check(s) FAILED.`);
+  ? `\nAll ${mode === 'all' ? 'enabled' : mode} checks passed.`
+  : `\n${failures} enabled check(s) FAILED.`);
 process.exit(failures === 0 ? 0 : 1);

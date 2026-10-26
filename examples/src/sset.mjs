@@ -4,8 +4,9 @@
 //
 // A truncated simplicial set is levels S[0], S[1], S[2] with face maps
 // d[n][i] : S[n] → S[n-1] (0 ≤ i ≤ n) and degeneracies s[n][i] :
-// S[n] → S[n+1] (0 ≤ i ≤ n). We only need small hand-built instances and
-// the generic constructions Disc/coDisc, so no simplicial-identity engine.
+// S[n] → S[n+1] (0 ≤ i ≤ n). The validator below checks the represented
+// domains, codomains, and every simplicial identity expressible through
+// dimension 2.
 
 export const truncEmpty = { S: [[], [], []], d: [null, [{}, {}], [{}, {}, {}]], s: [[{}], [{}, {}], null] };
 
@@ -48,6 +49,107 @@ export function truncDelta1() {
   }
   return { S, d, s };
 }
+
+// Return structural/identity failures for a purported 2-truncated simplicial
+// set. Empty means valid. Messages include a witness simplex when possible.
+export function truncValidationErrors(X) {
+  const errors = [];
+  if (!X || !Array.isArray(X.S) || X.S.length !== 3) {
+    return ['expected S to contain exactly the levels S[0], S[1], S[2]'];
+  }
+  if (!Array.isArray(X.d) || !Array.isArray(X.s)) {
+    return ['expected d and s to be arrays of structure maps'];
+  }
+
+  const levelSets = [];
+  for (let n = 0; n <= 2; n++) {
+    if (!Array.isArray(X.S[n])) {
+      errors.push(`S[${n}] is not an array`);
+      levelSets[n] = new Set();
+      continue;
+    }
+    if (X.S[n].some(x => typeof x !== 'string')) {
+      errors.push(`S[${n}] contains a non-string simplex name`);
+    }
+    levelSets[n] = new Set(X.S[n]);
+    if (levelSets[n].size !== X.S[n].length) {
+      errors.push(`S[${n}] contains duplicate simplex names`);
+    }
+  }
+
+  const checkMap = (kind, n, i, codomain) => {
+    const maps = X[kind][n];
+    const map = Array.isArray(maps) ? maps[i] : undefined;
+    const label = `${kind}[${n}][${i}]`;
+    if (!map || typeof map !== 'object' || Array.isArray(map)) {
+      errors.push(`${label} is not a map object`);
+      return;
+    }
+    const domain = X.S[n] || [];
+    const keys = Object.keys(map);
+    const missing = domain.filter(x => !Object.hasOwn(map, x));
+    const extra = keys.filter(x => !levelSets[n].has(x));
+    if (missing.length > 0) errors.push(`${label} misses domain elements: ${missing.join(', ')}`);
+    if (extra.length > 0) errors.push(`${label} has extra domain elements: ${extra.join(', ')}`);
+    for (const x of domain) {
+      if (Object.hasOwn(map, x) && !levelSets[codomain].has(map[x])) {
+        errors.push(`${label}(${x}) = ${map[x]} is not in S[${codomain}]`);
+      }
+    }
+  };
+
+  for (let n = 1; n <= 2; n++) {
+    for (let i = 0; i <= n; i++) checkMap('d', n, i, n - 1);
+  }
+  for (let n = 0; n <= 1; n++) {
+    for (let i = 0; i <= n; i++) checkMap('s', n, i, n + 1);
+  }
+  if (errors.length > 0) return errors;
+
+  // d_i d_j = d_{j-1} d_i for i < j.
+  for (const x of X.S[2]) {
+    for (let i = 0; i < 2; i++) {
+      for (let j = i + 1; j <= 2; j++) {
+        const lhs = X.d[1][i][X.d[2][j][x]];
+        const rhs = X.d[1][j - 1][X.d[2][i][x]];
+        if (lhs !== rhs) {
+          errors.push(`face identity d${i}d${j} = d${j - 1}d${i} fails at ${x}: ${lhs} ≠ ${rhs}`);
+        }
+      }
+    }
+  }
+
+  // s_i s_j = s_{j+1} s_i for i ≤ j; through dimension 2 only n=0 occurs.
+  for (const x of X.S[0]) {
+    const lhs = X.s[1][0][X.s[0][0][x]];
+    const rhs = X.s[1][1][X.s[0][0][x]];
+    if (lhs !== rhs) {
+      errors.push(`degeneracy identity s0s0 = s1s0 fails at ${x}: ${lhs} ≠ ${rhs}`);
+    }
+  }
+
+  // d_i s_j: the two middle cases are identities; the outer cases commute.
+  for (let n = 0; n <= 1; n++) {
+    for (const x of X.S[n]) {
+      for (let j = 0; j <= n; j++) {
+        for (let i = 0; i <= n + 1; i++) {
+          const lhs = X.d[n + 1][i][X.s[n][j][x]];
+          let rhs;
+          if (i < j) rhs = X.s[n - 1][j - 1][X.d[n][i][x]];
+          else if (i === j || i === j + 1) rhs = x;
+          else rhs = X.s[n - 1][j][X.d[n][i - 1][x]];
+          if (lhs !== rhs) {
+            errors.push(`face-degeneracy identity d${i}s${j} fails at dimension ${n} simplex ${x}: ${lhs} ≠ ${rhs}`);
+          }
+        }
+      }
+    }
+  }
+
+  return errors;
+}
+
+export const truncValid = X => truncValidationErrors(X).length === 0;
 
 // Sub-presheaves of a truncated simplicial set: level-wise subsets closed
 // under ALL structure maps (faces and degeneracies).
