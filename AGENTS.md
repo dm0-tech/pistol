@@ -13,18 +13,19 @@ coupled artifact streams plus process:
 
 | Layer | Directory | Nature | Who gates it |
 |---|---|---|---|
-| Spec | `spec/` | Canon: terse, checkable mathematics; frozen notation | Owner gate; never edit casually |
-| Text | `text/` | The three-track education (A story / B math / C compute) | Owner gate |
+| Spec | `spec/` | Canon: terse, checkable mathematics; frozen notation | Red-leg gate; owner reviews at phase exit and may revert |
+| Text | `text/` | The three-track education (A story / B math / C compute) | Red-leg gate; owner reviews at phase exit and may revert |
 | Notes | `notes/` | Narrative research documents, graded claims | Lightweight |
 | Wiki | `wiki/` | **Atomic labeled claims** — the knowledge base | This file's rules |
 | Examples | `examples/` | Machine-computes every finite-model spec claim | `node examples/run.mjs` must stay green |
-| Epics | `epics/` | Gate-A briefs for standing work | Owner approval (`approved-A`) before execution |
+| Epics | `epics/` | Briefs for standing work | Execute when useful; Epic 1 automation still requires three manual trials |
 
 Frozen and not re-litigated in passing: the notation register
 (`spec/NOTATION.md`, decisions N1–N7), the grade vocabulary
 (established / claimed / conjectural / open), and the plan's exit criteria
 (`PHASE-0-PLAN.md`). Corrections to frozen artifacts go through recorded
-errata, not silent edits.
+errata, not silent edits; an agent may file an erratum without waiting for
+prior owner approval.
 
 ## The wiki discipline (the load-bearing part)
 
@@ -66,11 +67,24 @@ errata, not silent edits.
   never the rationale, the brief, or this session's history. Findings use
   Break / Underpriced / Preference. Do not grade your own homework and
   call it review.
+- At each red-leg gate assign one or two named attacks: search for a
+  countermodel; check the most expensive source import against its exact
+  hypotheses; rederive one hinge without the author's proof; or find an
+  unacknowledged extra choice. Record the reviewed commit, reviewer/tool
+  identity, attacks attempted, and unresolved assumptions. If an argument
+  changes, reopen the affected attack; it does not inherit a blanket
+  “reviewed” status.
 - LLMs (you) are conjecture engines here: propose boldly, label
   immediately, demand a typed statement before promoting, seek the
   cheapest countermodel before confirming examples. The happy accident is
   allowed to originate anywhere; its justification cannot remain an
   accident.
+- Any argument that “forces the world to be” something must separately
+  identify what it proves about an object, a functor's essential image,
+  and the ambient category. When `forced`, `canonical`, `initial`, or
+  `unique` does substantive work, record the category in which the
+  universal property lives, the allowed morphisms, the chosen inputs, and
+  the exact freedom the property removes.
 
 ## Session protocol
 
@@ -80,5 +94,5 @@ errata, not silent edits.
 3. Work. File claims as you go (intake rule), not in a terminal dump.
 4. Before finishing: lint the wiki if touched, run the examples if
    touched, append the log line, update `INDEX.md`, commit in logical
-   units, and leave gated things (spec, text, plan, epic approval) as
-   proposals for the owner.
+   units, and record in the log line what the owner should inspect at the
+   next phase-exit review.

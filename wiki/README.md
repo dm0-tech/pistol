@@ -51,6 +51,13 @@ body; the header grade is the weakest one that occurs.
 `machine-computed` (the finite model confirms it). Verification upgrades
 never change provenance — the wiki remembers where ideas were born.
 
+The verification field is a headline, not a single ladder of confidence.
+A source audit, executable check, mathematical argument, adversarial review,
+and interpretive bridge answer different questions; none subsumes the
+others. For a load-bearing claim on the active path, use TEMPLATE.md's
+optional **Evidence, scoped** block to say exactly what each check supports,
+what extra bridge or choice remains, and what it does not establish.
+
 ## Entry format
 
 One file per entry in `entries/`, named `w-NNNN-slug.md`, following
