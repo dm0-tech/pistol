@@ -50,6 +50,35 @@ export function truncDelta1() {
   return { S, d, s };
 }
 
+// The simplicial circle Δ[1]/∂Δ[1], truncated in dimensions ≤ 2.
+// v is the sole vertex, sv/ssv are its degeneracies, and e is the
+// nondegenerate loop with its two degenerate 2-simplices s0e and s1e.
+export function truncCircle() {
+  return {
+    S: [['v'], ['sv', 'e'], ['ssv', 's0e', 's1e']],
+    d: [
+      null,
+      [
+        { sv: 'v', e: 'v' },
+        { sv: 'v', e: 'v' },
+      ],
+      [
+        { ssv: 'sv', s0e: 'e', s1e: 'sv' },
+        { ssv: 'sv', s0e: 'e', s1e: 'e' },
+        { ssv: 'sv', s0e: 'sv', s1e: 'e' },
+      ],
+    ],
+    s: [
+      [{ v: 'sv' }],
+      [
+        { sv: 'ssv', e: 's0e' },
+        { sv: 'ssv', e: 's1e' },
+      ],
+      null,
+    ],
+  };
+}
+
 // Return structural/identity failures for a purported 2-truncated simplicial
 // set. Empty means valid. Messages include a witness simplex when possible.
 export function truncValidationErrors(X) {

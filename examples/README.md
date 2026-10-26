@@ -23,7 +23,7 @@ spec bug to be filed, never silently patched around.
 |---|---|
 | `src/sierpinski.mjs` | Finite 𝒮 = Set^→ implementation: hom-set enumeration and iso testing for supplied finite objects, the four levels' modalities (□₀/◯₀, open, ♭/♯, max), rung-2 Π₀/ʃ and products, subobjects, Ω = (3 → 2) with classifier and pullback |
 | `src/topologies.mjs` | All Grothendieck topologies on the walking arrow {a → b}, enumerated **from the axioms** (maximality, stability, transitivity over honest sieve pullbacks) — not from the spec's derived shortcuts — so the "exactly four" claim is independently confirmed |
-| `src/sset.mjs` | Truncated simplicial sets (dims ≤ 2): Δ[0], Δ[1], sub-presheaf enumeration (Ω₀ = 2, Ω₁ = 5), Disc/coDisc, π₀/ʃ/♭ and pointwise products, level-wise iso testing, and validation of represented domains, codomains and simplicial identities |
+| `src/sset.mjs` | Truncated simplicial sets (dims ≤ 2): Δ[0], Δ[1], the simplicial circle Δ[1]/∂Δ[1], sub-presheaf enumeration (Ω₀ = 2, Ω₁ = 5), Disc/coDisc, π₀/ʃ/♭ and pointwise products, level-wise iso testing, and validation of represented domains, codomains and simplicial identities |
 | `src/guarded.mjs` | Bounded OP-13 experiment: independently enumerated finite-chain sieves; Ω and predicate-level later in 2/3/4-stage truncations; the exact stage-2/stage-1 dictionary with repo 𝒮; an object-level witness that the later endofunctor is non-idempotent |
 | `run.mjs` | The check battery, one line per ledger item |
 
@@ -64,6 +64,15 @@ The `core` group consists only of the spec 00–02 checks and the sSet model
 preflight. The `exploratory` group contains OP-13 and the W-0014–W-0027
 research computations, including randomized finite samples. Default `all`
 runs both but reports their outcomes separately.
+
+The exploratory semantic-boundary checks are deliberately negative in
+scope. They compute that repository `flat` distinguishes Δ[0] from Δ[1],
+and that repository `shape = Disc π₀` identifies a point with the truncated
+simplicial circle despite the circle model's nondegenerate loop edge.
+External homotopy theory supplies the weak equivalence Δ[0] ≃ Δ[1] and the
+circle's loop information; the script does not compute weak equivalences,
+π₁, holonomy, or differential cohesion. See
+`notes/flat-u1-connections-on-circle.md`.
 
 The guarded-recursion module is deliberately a **bounded kill test**, not a
 new verification programme. It independently enumerates the finite sieves,

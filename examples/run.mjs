@@ -11,7 +11,7 @@ import {
 } from './src/sierpinski.mjs';
 import { allTopologies, named, topologyKey } from './src/topologies.mjs';
 import {
-  truncEmpty, truncPoint, truncDelta1, subPresheaves, truncDisc, truncCoDisc,
+  truncEmpty, truncPoint, truncDelta1, truncCircle, subPresheaves, truncDisc, truncCoDisc,
   truncIsomorphic, truncPi0, truncShape, truncFlat, truncProduct,
   truncValidationErrors, truncValid,
   truncPi0ProductComparisonIsBijective,
@@ -63,7 +63,7 @@ const family = testFamily();
 const sample = obj(['x', 'y'], ['p', 'q', 'r'], { x: 'p', y: 'p' });
 
 const validationBases = [
-  truncEmpty, truncPoint, truncDelta1(), truncDisc(['a', 'b']),
+  truncEmpty, truncPoint, truncDelta1(), truncCircle(), truncDisc(['a', 'b']),
   truncCoDisc(['a', 'b']),
 ];
 const validationSamples = [
@@ -289,6 +289,23 @@ check('2.4', 'sSet truncated: shape and flat are idempotent on named finite exam
       truncIsomorphic(truncShape(truncShape(X)), truncShape(X)) &&
       truncIsomorphic(truncFlat(truncFlat(X)), truncFlat(X))) &&
       truncIsomorphic(truncShape(D2), D2) && truncIsomorphic(truncFlat(D2), D2);
+  });
+
+section('exploratory', '— ordinary/homotopical semantic boundary —');
+
+check('BOUNDARY', 'repository flat distinguishes point from Δ[1] by vertex count (their weak equivalence is source-backed, not computed here)',
+  () => !truncIsomorphic(truncFlat(truncPoint), truncFlat(truncDelta1())));
+
+check('BOUNDARY', 'point and truncated simplicial circle have the same π₀/shape, while the circle model contains one nondegenerate loop edge',
+  () => {
+    const circle = truncCircle();
+    const degenerateEdges = new Set(Object.values(circle.s[0][0]));
+    const nondegenerateEdges = circle.S[1].filter(edge => !degenerateEdges.has(edge));
+    return truncPi0(circle).length === truncPi0(truncPoint).length &&
+      truncIsomorphic(truncShape(circle), truncShape(truncPoint)) &&
+      nondegenerateEdges.length === 1 &&
+      circle.d[1][0][nondegenerateEdges[0]] === 'v' &&
+      circle.d[1][1][nondegenerateEdges[0]] === 'v';
   });
 
 section('exploratory', '— OP-13 bounded guarded-recursion check —');
