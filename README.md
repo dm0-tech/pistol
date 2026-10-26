@@ -76,6 +76,11 @@ Bayes' rule; then He drew His pistol."*
   source audit for Lawvere's cohesive hypotheses, Shulman's shape,
   Schreiber/Myers fracture results, and the exact boundary between the
   initial inner-shape unity and a genuine fracture theorem.
+- [`notes/flat-u1-connections-on-circle.md`](notes/flat-u1-connections-on-circle.md) —
+  higher-information pilot: flat U(1) connections on S¹ classified by
+  holonomy, the degree-2 differential-cohomology specialization, and the
+  explicit boundary between the ordinary truncated-sSet operations and a
+  homotopy-sensitive setting.
 - [`notes/no-nothing-no-thing.md`](notes/no-nothing-no-thing.md) —
   foil note (Sept 24, 2026). Takes the owner's "no nothing, no thing" as an
   axiom on ∅ ⊣ ∗. Read literally it kills the chosen functor's image (and
