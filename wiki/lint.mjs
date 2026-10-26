@@ -50,6 +50,7 @@ const hasToken = (value, vocab) =>
 
 const entryFiles = readdirSync(ENTRIES).filter((f) => f.endsWith('.md')).sort();
 const registry = readFileSync(join(TRANSCRIPTS, 'README.md'), 'utf8');
+const entryRecords = new Map();
 
 for (const file of entryFiles) {
   const rel = `entries/${file}`;
@@ -71,6 +72,7 @@ for (const file of entryFiles) {
   for (const f of FIELDS) {
     if (!(f in fields)) err(rel, `missing header field "${f}"`);
   }
+  entryRecords.set(file, fields);
 
   const idMatch = file.match(/^w-(\d{4})-/);
   if (fields.ID && idMatch && fields.ID !== `W-${idMatch[1]}`) {
@@ -125,9 +127,27 @@ for (const file of entryFiles) {
 // ---- index -----------------------------------------------------------------
 
 const index = readFileSync(join(WIKI, 'INDEX.md'), 'utf8');
+const indexLines = index.split('\n');
 for (const file of entryFiles) {
-  if (!index.includes(`](entries/${file})`)) {
+  const link = `](entries/${file})`;
+  const rows = indexLines.filter((line) => line.includes(link));
+  if (rows.length === 0) {
     err('INDEX.md', `no row links to entries/${file}`);
+    continue;
+  }
+  if (rows.length > 1) {
+    err('INDEX.md', `${rows.length} rows link to entries/${file}; expected exactly one`);
+    continue;
+  }
+  const fields = entryRecords.get(file);
+  const expectedLabels =
+    `| ${fields.Provenance} | ${fields.Verification} | ${fields.Grade} | ${fields.Status} |`;
+  if (!rows[0].includes(expectedLabels)) {
+    err(
+      'INDEX.md',
+      `labels for ${fields.ID} do not exactly match entry headers; expected ` +
+      `Provenance | Verification | Grade | Status = ${expectedLabels}`,
+    );
   }
 }
 for (const m of index.matchAll(/\]\((entries\/[^)#]+)\)/g)) {

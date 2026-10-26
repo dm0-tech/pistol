@@ -93,11 +93,14 @@ destination's own standard, not that the entry is trusted.
   must resolve to an archived file (digest or verbatim).
 - [`lint.mjs`](lint.mjs) — deterministic structural lint:
   `node wiki/lint.mjs` checks header fields and vocabularies, ID/filename
-  agreement, required sections, index/entry agreement, link integrity,
+  agreement, required sections, exact index/header agreement for
+  provenance, verification, grade and status, link integrity,
   transcript resolvability, and log format. Run it before committing any
   wiki change. **A green lint is not verification** — it checks structure,
   never whether a source says what an entry claims; that remains the
-  audit's job (below).
+  audit's job (below). `node wiki/lint-test.mjs` runs the regression test
+  that deliberately stales an index row in a disposable copy and requires
+  lint to reject it.
 
 ## Audit discipline
 
