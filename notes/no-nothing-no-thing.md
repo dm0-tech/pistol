@@ -24,7 +24,9 @@ Verdict: it does, but not inside topos theory, and not in one step.
    ladder is built on (§1).
 2. **A1 must be read as a property of the world, not as an identification
    of the old poles.** Forcing the *images* of ∅ and ∗ to be equivalent
-   collapses any presentable world under 𝒮 to zero (red leg, finding 2).
+   forces the chosen colimit-preserving functor out of 𝒮 to be zero. It
+   collapses the codomain only when that image generates the codomain under
+   colimits.
    What survives is pointing: the universal world with a zero object. In
    it, the old nothing becomes the zero, and the old thing becomes S⁰, the
    bit {⊥, ⊤} pointed at ⊥. The thing does not survive as a thing. It
@@ -32,9 +34,11 @@ Verdict: it does, but not inside topos theory, and not in one step.
    the reading supplies all the content (§2).
 3. **A2 (becoming is reversible): stability.** In a pointed world, becoming
    (Σ) is trivial 1-categorically. A stable ∞-category whose mapping spaces
-   are discrete is zero. So A1 + A2 *force* higher homotopy, and the
-   universal result, assuming presentability, is spectra with unit 𝕊. A2
-   is a **second axiom**, not a consequence of A1 (§3).
+   are discrete is zero. So A1 + A2 *force* higher homotopy. If one also
+   selects the free presentable stable construction on one generator, the
+   result is spectra with generator 𝕊. Pointedness, stability, and
+   presentability alone do not select Sp. A2 is a **second axiom**, not a
+   consequence of A1 (§3).
 4. **The unit 𝕊 is counting possibilities without forgetting relabelings**
    (Barratt–Priddy–Quillen–Segal). That answers the earlier objection
    "why 𝕊 and not ℤ?" (§4).
@@ -69,17 +73,23 @@ poles, not merely their difference. Read as an axiom, it cannot hold in any
 world that has an internal logic in Lawvere's sense. So "neither is real"
 cannot mean "delete both objects", because then the world is not
 (co)complete. Nor can it mean "identify the old poles", because that
-collapses everything (§2). The reading that keeps a nontrivial world is
+annihilates their image under the chosen colimit-preserving functor and
+collapses a generated codomain (§2). The reading that keeps a nontrivial world is
 **the world has a zero object, in a setting that is not a nondegenerate
 topos.** *(W-0012; the obstruction is established and the reading is
 conjectural.)*
 
 ## 2. Pointing is Aufhebung-shaped, and it is tautological
 
-**First, the literal reading fails (red leg).** Let F : 𝒮 → D be a colimit-
-preserving functor into a presentable D with F(∅) ≃ F(∗). F(∅) is initial
-and F(∗) generates the image, so D is forced to be zero. Identifying the old
-poles is degenerate in ∞-categories too, not only in topoi.
+**First, the literal reading kills the chosen image (red-leg claim repaired
+after external review).** Let F : 𝒮 → D be a colimit-preserving functor into
+a presentable D with F(∅) ≃ F(∗). Since F(∅) is initial and every space is a
+colimit of points, F is the zero functor: its entire essential image is zero.
+This does **not** by itself force D to be zero. For example, the constant-zero
+functor 𝒮 → Sp preserves colimits while Sp contains nonzero objects. The
+codomain collapses only under an additional condition, such as the essential
+image of F generating D under colimits. The conclusion must distinguish the
+functor's image from its ambient category.
 
 **What survives.** For a presentable ∞-category C, the universal pointed
 presentable ∞-category under C is C_∗ ≃ C ⊗ 𝒮_∗, with the free functor
@@ -103,7 +113,7 @@ cause to cease. At the topos level the analogous move destroys the world
 Nothing here is a theorem about Hegel. The non-tautological content arrives
 only in §3–§6.
 
-## 3. Reversible becoming forces higher structure, then spectra, then 𝕊
+## 3. Reversible becoming forces higher structure; the free construction gives Sp and 𝕊
 
 In a pointed world the only primitive "processes" are built from the zero
 object:
@@ -121,14 +131,20 @@ reversible (Σ ⊣ Ω an equivalence, equivalently pushout squares = pullback
 squares), the world either vanishes or carries genuinely higher homotopy.
 **Higher structure is forced, not chosen.**
 
-**Fact 3 (established, given presentability).** The universal stable
-presentable ∞-category is Sp. Stab(C) ≃ C ⊗ Sp, Sp is idempotent in Pr^L,
+**Fact 3 (established universal property; selection not established).**
+For every presentable stable ∞-category D, evaluation at the sphere gives
+Fun^L(Sp,D) ≃ D (Lurie, HA Cor. 1.4.4.6). Thus Sp is the free presentable
+stable ∞-category on one generator, which corresponds to
+𝕊 = Σ^∞S⁰ = Σ^∞₊∗. Relatedly, Stab(C) ≃ C ⊗ Sp, Sp is idempotent in Pr^L,
 and Sp with ⊗ is initial among stable presentably symmetric monoidal
-∞-categories. The red leg locates these at HA Ex. 4.8.1.23, Prop. 4.8.2.18
-and Cor. 4.8.2.19, recalled from memory and not yet audited. Fact 2 forces
-only non-discrete mapping spaces. Landing on Sp itself needs the
-presentability assumption as well. Its unit is 𝕊 = Σ^∞S⁰ = Σ^∞₊∗, the stabilized image of the
-thing.
+∞-categories (HA Ex. 4.8.1.23, Prop. 4.8.2.18, Cor. 4.8.2.19 per the
+red leg, still unaudited).
+
+This universal availability is not unique selection. Pointedness, stability,
+and presentability do not imply D ≃ Sp: derived module categories Mod_HR
+give other presentable stable worlds. Fact 2 forces only non-discrete mapping
+spaces. Landing on Sp itself additionally chooses the free/initial
+construction; neither A1 nor A2 currently supplies that choice.
 
 **The Hegel reading (llm-conjecture, structural at best).** *Science of
 Logic* §§176–180 (Miller numbering, marxists.org) gives becoming two
@@ -378,3 +394,7 @@ not evidence that it is true.
   semiadditive vs chromatic height; the novelty of the torus/DW link;
   presentability made explicit; the tangent-topos "in each fibre"; the
   bP₄ guard.
+- 2026-10-26: external critique found that the §2 argument collapsed the
+  codomain from a statement only about the functor's image. Repaired with
+  the missing colimit-generation hypothesis and the constant-zero functor
+  𝒮 → Sp counterexample.

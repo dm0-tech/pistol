@@ -2,7 +2,7 @@
 
 - **ID:** W-0012
 - **Provenance:** human-conjecture (the ontology) + llm-derived (reading it as pointedness; the collapse of the literal reading, found by the red leg)
-- **Verification:** llm-checked (red-legged by a fresh-context subagent; HA section numbers unaudited)
+- **Verification:** llm-checked (red-legged by a fresh-context subagent; HA section numbers unaudited); refuted (original (ii) as stated, by the constant-zero functor countermodel; repaired in place)
 - **Grade:** established (Prop 0.5; the collapse; the pointing construction) / conjectural (the reading)
 - **Sources:** spec Prop 0.5, 0.7; Lurie, *Higher Algebra*, §4.8.2 (C ⊗ 𝒮_∗ ≃ C_∗; Prop. 4.8.2.11 per the red leg, unaudited)
 - **Transcript:** T-2026-09-23-A
@@ -13,9 +13,12 @@
 
 (i) *Established.* In any nondegenerate topos (or ∞-topos) the initial and
 terminal objects are not equivalent (spec Prop 0.5; strict initial objects).
-(ii) *Established.* If F : 𝒮 → D is colimit-preserving into a presentable D
-and F(∅) ≃ F(∗), then D ≃ 0. Identifying the old poles collapses every
-presentable world under 𝒮.
+(ii) *Established, repaired.* If F : 𝒮 → D is colimit-preserving into a
+presentable D and F(∅) ≃ F(∗), then F is the zero functor. This forces
+D ≃ 0 only with a further hypothesis, such as the essential image of F
+generating D under colimits. Without that hypothesis the conclusion concerns
+the image, not the codomain: the constant-zero functor 𝒮 → Sp preserves
+colimits while Sp has nonzero objects.
 (iii) *Established.* The universal pointed presentable ∞-category under 𝒮 is
 𝒮_∗, and the free functor sends ∅ ↦ 0 and ∗ ↦ S⁰ = {⊥, ⊤} pointed at ⊥.
 (iv) *Conjectural reading.* The owner's ontology is the property
@@ -29,6 +32,22 @@ The owner denied both poles of the level-0 opposition ∅ ⊣ ∗ and asked
 whether that tells us something. W-0011 had already warned that Hegel's
 "same" must not be rendered as ∅ ≅ ∗ in a topos.
 
+## Evidence, scoped
+
+- **Claim:** Statement (ii), after repair.
+- **Ambient setting and hypotheses:** A colimit-preserving F : 𝒮 → D with D
+  presentable and F(∅) ≃ F(∗); add colimit-generation of D by the essential
+  image only for the codomain conclusion.
+- **Conclusion:** F is zero; with the added generation hypothesis, D is zero.
+- **Depends on:** Every space is a colimit of points; F preserves colimits.
+- **Evidence, with scope:** Mathematical argument for the functor's image;
+  the external review supplied a countermodel to the stronger codomain claim.
+- **Additional bridge or choice:** Generation of D by the essential image.
+- **What this does not establish:** That an arbitrary codomain of such an F
+  is zero.
+- **Best current counterexample attempt:** The constant-zero functor 𝒮 → Sp;
+  it refutes the original codomain conclusion.
+
 ## What would change the labels
 
 Audit the HA reference. Refutation route: a reading of the ontology that keeps a
@@ -37,3 +56,7 @@ nondegenerate topos and still denies both poles (none known).
 ## Log
 
 - 2026-09-24 — created by the foil session (T-2026-09-23-A); red-legged by a fresh-context subagent before filing, corrections applied.
+- 2026-10-26 — original (ii) refuted by the constant-zero functor
+  𝒮 → Sp in the archived external critique; repaired by distinguishing the
+  functor's image from its codomain and stating the missing generation
+  hypothesis.

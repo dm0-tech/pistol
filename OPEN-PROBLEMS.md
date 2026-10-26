@@ -214,7 +214,9 @@ until the destination-phase spec treats them.*
 - **OP-19. Is reversible becoming forced?** The owner's ontology gives
   pointedness (W-0012). Stability, Σ ⊣ Ω an equivalence, is a second axiom
   (W-0013). Does anything in the ontology, or in Hegel §§176–180, force it,
-  or is 𝒮_∗ with the smash product the honest stopping point?
+  or is 𝒮_∗ with the smash product the honest stopping point? If stability
+  is granted, what additionally selects the free/initial construction Sp,
+  rather than another presentable stable world such as Mod_HR?
   *Grade: open.*
 - **OP-20. Height as the dimension of the possibility field theory.** For
   p-groups, height-n cardinality |BG|ₙ equals the untwisted

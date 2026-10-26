@@ -78,9 +78,11 @@ Bayes' rule; then He drew His pistol."*
   initial inner-shape unity and a genuine fracture theorem.
 - [`notes/no-nothing-no-thing.md`](notes/no-nothing-no-thing.md) —
   foil note (Sept 24, 2026). Takes the owner's "no nothing, no thing" as an
-  axiom on ∅ ⊣ ∗. Read literally it collapses the world. Read as
-  pointedness it exits the topos. With reversible becoming it forces
-  spectra and 𝕊. It also places Cox, the codomain ladder (Hopf invariant
+  axiom on ∅ ⊣ ∗. Read literally it kills the chosen functor's image (and
+  its codomain only under a generation hypothesis). Read as pointedness it
+  exits the topos. Reversible becoming forces higher
+  structure; selecting the free stable construction lands on spectra and
+  𝕊. It also places Cox, the codomain ladder (Hopf invariant
   one) and chromatic cardinalities (height-n |BG| = n-torus Dijkgraaf–Witten
   for p-groups) relative to that. Red-legged; W-0012–W-0020, OP-18–OP-20; obstacles to physical content filed as OP-21–OP-23.
 - [`notes/shadow-of-the-octonions.md`](notes/shadow-of-the-octonions.md) —
