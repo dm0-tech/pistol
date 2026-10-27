@@ -451,3 +451,27 @@ fundamental-groupoid form. That qualification was added. The remaining
 bridge is the actual move into a smooth/cohesive ∞-topos; this pilot is not
 a fracture theorem or a new rung.
 
+## [2026-10-27] ingest | W-0031: K from M and the small-cyclification comparison
+
+Added a dedicated source entry for Golub-Sati-Schreiber's October 6
+manuscript, also checking the earlier arXiv:2609.36048v1, prompted by the
+owner's Schreiber K-from-M link.
+Audited the definitions and stated results against the full text rather
+than only the abstract. Recorded the bounded-energy smallness condition,
+the Cauchy-surface setting and lift obstruction, the even-multiple
+comparison, the Bott-normalized DMW case, and the NS1/torsion information
+lost by the K-theory approximation.
+
+The entry explicitly preserves two source limitations: the deferred
+tangential twist in Section 4.3(i), and the proof outlines with substantial
+spectral-sequence computations left to the reader. Rational agreement is
+recorded with the corollary's degree bound and degree-7 exception, not as
+an integral equivalence or a parity restriction on degrees.
+
+Linked W-0028 in both directions and retained the September 23 transcript
+as historical context, not proof provenance. The entry starts
+draft/claimed with scoped source-audit verification; no independent
+proof reconstruction, new finite computation, red leg, spec promotion,
+or phase-gate change is claimed. At phase exit the owner should inspect
+the exact smallness and tangential-twist boundaries before using this
+as an input to the higher-rung development.
