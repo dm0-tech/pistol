@@ -6,7 +6,7 @@
 - **Grade:** established (the two uses of S⁴ and their current mismatch) / conjectural (a C-field entanglement observable)
 - **Sources:** Mosseri and Dandoloff, *Geometry of entangled states, Bloch spheres and Hopf fibrations*, J. Phys. A 34 (2001) 10243–10252, quant-ph/0108137; Sati and Schreiber, *Introduction to Hypothesis H* (2025); Fiorenza, Sati, Schreiber, *Twistorial Cohomotopy implies Green–Schwarz anomaly cancellation* (2022)
 - **Transcript:** T-2026-10-05-A
-- **Cross-refs:** OP-7; OP-21; OP-22; W-0015; W-0021; `notes/shadow-of-the-octonions.md` §6
+- **Cross-refs:** OP-7; OP-21; OP-22; W-0015; W-0021; [W-0031](w-0031-k-from-m-small-cyclification.md); `notes/shadow-of-the-octonions.md` §6
 - **Status:** draft
 
 ## Statement
