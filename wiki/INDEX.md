@@ -35,6 +35,7 @@ mirrors its entry's header exactly (the audit checks this). See
 | [W-0027](entries/w-0027-the-twelves.md) | The twelves: S³'s self-commutator, ζ(−1) as the cardinality of the modular group, and why G₂'s dihedral 12 is not (yet) one of them | sourced (Samelson/Kono; Harder; Serre; Harer–Zagier; Goerss–Hopkins–Miller) + human-conjecture (the owner: connections, "especially if the connection is self-realizing/autopoetic") + llm-derived (the chain) + llm-conjecture (the M_ell reading) | machine-computed (χ(SL₂(ℤ)) = −1/12 via the amalgam; ζ(1−n) from Bernoulli numbers; Harder's product on SL₂, SL₃, Sp₄, G₂; the rank-2 |W| table); source-audited (⟨ι,ι⟩ generates π₆(SU(2)) ≅ ℤ/12: Wockel, arXiv:math/0511404, Prop. III.2 proof); llm-checked (Harder's theorem statement, the Sp₄ value −1/1440, Harer–Zagier, π₃ tmf = ℤ/24, recalled); not red-legged | established (each fact) / conjectural (the unifying reading) | draft | W-0009 (π₆(S³) = ℤ/12, e = 1/12); W-0016 (Bernoulli common cause); W-0018 (height-0 cardinality; height 2 = elliptic); W-0026 (G₂'s dihedral 12); OP-20; `examples/run.mjs` [W-0027] |
 | [W-0028](entries/w-0028-s4-born-reading-needs-symmetry-reduction.md) | The Born reading of S⁴ constrains Hypothesis H only if its twist selects an entanglement observable | sourced (Mosseri–Dandoloff; Sati–Schreiber) + human-conjecture (the owner's physical-quantity test) + llm-derived (the symmetry-reduction criterion) | source-audited (Mosseri–Dandoloff equations (10), (14), (22), (23); Sati–Schreiber statement of Hypothesis H); red-legged | established (the two uses of S⁴ and their current mismatch) / conjectural (a C-field entanglement observable) | draft | OP-7; OP-21; OP-22; W-0015; W-0021; `notes/shadow-of-the-octonions.md` §6 |
 | [W-0029](entries/w-0029-flat-u1-circle-holonomy.md) | Flat U(1) connections on S¹ are classified by holonomy, not curvature | sourced | source-audited; red-legged | established | checked | `notes/flat-u1-connections-on-circle.md`; `spec/02-level-2.md` §5; `reviews/critique-2026-10-26-before-the-harder-rungs.md` |
+| [W-0030](entries/w-0030-yang-mills-announcement-and-audit-boundary.md) | Yang-Mills AI announcement: proof claims and public verification are separate | sourced (primary records); sourced-tier2 (Woit/Baez commentary) | source-audited (public records only); unverified (announced proof and Lean artifacts) | claimed | draft | W-0005; W-0008; W-0029; AGENTS.md |
 
 ## Standing queues
 
@@ -47,7 +48,9 @@ mirrors its entry's header exactly (the audit checks this). See
   Etesi revisions, responses to Clemente, the generalized-complex
   program; the alpo.ge claim and its CP³-rigidity falsification
   surface); W-0009 (rides on W-0008's adjudication; C1 is attackable
-  now — the collapse map in the paper's own coordinates).
+  now — the collapse map in the paper's own coordinates); W-0030 (release
+  of the Yang-Mills theorem, definitions and proof artifacts; independent
+  audit of target correspondence, assumptions and formalization).
 - **Attack queue:** W-0003 (d = 24 rootless, d = 32 generic-doubling
   countermodels; the exponential/orthogonal-sum bridge — now candidate-typed
   in W-0006); W-0006 (the D16⁺/Spin(32)/ℤ₂ necessity attack; the
