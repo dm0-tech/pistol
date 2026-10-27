@@ -451,3 +451,17 @@ fundamental-groupoid form. That qualification was added. The remaining
 bridge is the actual move into a smooth/cohesive ∞-topos; this pilot is not
 a fracture theorem or a new rung.
 
+## [2026-10-27] ingest | W-0030: Yang-Mills announcement and audit boundary
+
+Added a sourced watch entry prompted by the owner's Woit link. Audited the
+OpenAI announcement, AGMAI release recommendation, official Clay problem,
+Woit/Baez commentary, and the public Alpoge-Sussman experiment README.
+The entry distinguishes established facts about the announcement from
+claimed mathematics, and reported Lean formalization from a reproducible
+artifact check and identification of the intended physical theory.
+
+No proof artifact was inspected or kernel-checked. The entry remains
+draft/claimed; no spec, text, phase gate, or formalization-budget change
+is made. At the next phase-exit review, the owner should inspect whether
+its target-mismatch checklist usefully sharpens existing review attacks
+without importing a proof-assistant requirement.
